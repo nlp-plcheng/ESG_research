@@ -1,0 +1,12 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+
+# runtime inputs/outputs produced when running inside an edition folder
+english/pdf/
+english/result/
+chinese/pdf/
+chinese/result/
