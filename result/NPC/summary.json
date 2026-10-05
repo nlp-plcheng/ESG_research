@@ -11,7 +11,7 @@
       "commitment": "全面盤點溫室氣體排放量",
       "declared_year": 111,
       "target_year": 112,
-      "source_page": "52",
+      "source_page": "53",
       "final_status": "部分達成",
       "status": [
         {
@@ -26,15 +26,62 @@
             "「2023 國泰永續金融暨氣候變遷高峰論壇」（第30頁）",
             "公司所營加油站為提供汽柴油作為車輛動力來源，屬零售業。2023 年範疇一及範疇二之溫室氣體排放量合計約為 5,163.64 公噸 CO2e，95% 來自外購電力，減碳首要改善來自各項的節電措施，次為發展加油站屋頂太陽能光電。（第55頁）",
             "本公司身為地球公民的一分子，為減緩氣候變遷所造成之衝擊，目前已擬定每年減排的目標，並透過盤查與查證了解執行情形及成果，進行檢討。（第59頁）"
-          ]
+          ],
+          "evidence_page_orig": "49"
         }
-      ]
+      ],
+      "source_page_orig": "52",
+      "page_shift": {
+        "src": {
+          "orig": "52",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "49",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "建置屋頂型太陽能光電",
       "declared_year": 111,
       "target_year": 112,
-      "source_page": "62",
+      "source_page": "63",
       "final_status": "已達成",
       "status": [
         {
@@ -47,15 +94,54 @@
             "公司所營加油站為提供汽柴油作為車輛動力來源，屬零售業。2023 年範疇一及範疇二之溫室氣體排放量合計約為 5,163.64 公噸 CO2e，95% 來自外購電力，減碳首要改善來自各項的節電措施，次為發展加油站屋頂太陽能光電。（第55頁）",
             "因應 公司所營加油站為提供汽柴油作為車輛動力來源，屬零售業。2023 年範疇一及範疇二之溫室氣體排放量合計約為 5,163.64 公噸 CO2e，95% 來自外購電力，減碳首要改善來自各項的節電措施，次為發展加油站屋頂太陽能光電。（第55頁）",
             "本公司身為地球公民的一分子，為減緩氣候變遷所造成之衝擊，目前已擬定每年減排的目標，並透過盤查與查證了解執行情形及成果，進行檢討。就因應管理氣候風險的轉型計畫，公司於 2022 年開始規劃、投入建置充電站及屋頂太陽能發電，希望能透過低碳綠色經濟轉型，減緩氣候衝擊。（第59頁）"
-          ]
+          ],
+          "evidence_page_orig": "50"
         }
-      ]
+      ],
+      "source_page_orig": "62",
+      "page_shift": {
+        "src": {
+          "orig": "62",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "50",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "排定第三方查證進程，以確保數據可信度",
       "declared_year": 111,
       "target_year": 112,
-      "source_page": "27",
+      "source_page": "28",
       "final_status": "未提及",
       "status": [
         {
@@ -72,13 +158,55 @@
             "「9 溫室氣體盤查及確信情形 與減量目標、策略及具體行動計畫 ( 另填於 1-1 及 1-2)。」（第92頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "27",
+      "page_shift": {
+        "src": {
+          "orig": "27",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "於部分加油站提供充電服務",
       "declared_year": 111,
       "target_year": 112,
-      "source_page": "5",
+      "source_page": "6",
       "final_status": "部分達成",
       "status": [
         {
@@ -91,15 +219,54 @@
             "以現有加油站基地為基礎，發展電動車充電站，提供用車人加油、充電、洗車的全方位服務。（第56頁）",
             "逐步轉型為加油與充電的雙能源通路。（第56頁）",
             "本公司之加油站會員涵蓋信用卡會員、大利卡會員及 APP 會員，會員數逾 150 萬人，以現有加油站會員為基礎，有利發展電動車充電站之運營，提供用車人加油、充電、洗車的全方位服務。（第57頁）"
-          ]
+          ],
+          "evidence_page_orig": "6"
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "6",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "設置充電站 5 站",
       "declared_year": 111,
       "target_year": 112,
-      "source_page": "62",
+      "source_page": "63",
       "final_status": "部分達成",
       "status": [
         {
@@ -109,15 +276,42 @@
           "evidence_page": "6",
           "clues": [
             "台北交流道站（充電站）（第10頁）"
-          ]
+          ],
+          "evidence_page_orig": "6"
         }
-      ]
+      ],
+      "source_page_orig": "62",
+      "page_shift": {
+        "src": {
+          "orig": "62",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "6",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "重新擬定淨零策略",
       "declared_year": 111,
       "target_year": 112,
-      "source_page": "52",
+      "source_page": "53",
       "final_status": "未提及",
       "status": [
         {
@@ -134,13 +328,55 @@
             "由於全球淨零碳排的趨勢，政府所擬定的燃油運具禁售的時間表將影響到加油站未來發展，有鑑於此，董事會亦持續追蹤產業趨勢以因應未來營運的變化。（第54頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "52",
+      "page_shift": {
+        "src": {
+          "orig": "52",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "設置充電站 7 站",
       "declared_year": 111,
       "target_year": 113,
-      "source_page": "62",
+      "source_page": "63",
       "final_status": "部分達成",
       "status": [
         {
@@ -161,15 +397,62 @@
             "(充電站 )（第12頁）",
             "響應政府政策及因應運具電動化的趨勢，2022 年規劃之充電站已於 2024 年 2 月營運。未來將視營運狀況檢討未來年度的充電站設置政策。（第72頁）",
             "加油站站點持續汰弱留強，並發展充電站。（第70頁）"
-          ]
+          ],
+          "evidence_page_orig": "7"
         }
-      ]
+      ],
+      "source_page_orig": "62",
+      "page_shift": {
+        "src": {
+          "orig": "62",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": []
+          },
+          "113": {
+            "evidence": {
+              "orig": "7",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "設置充電站 8 站",
       "declared_year": 111,
       "target_year": 114,
-      "source_page": "62",
+      "source_page": "63",
       "final_status": "部分達成",
       "status": [
         {
@@ -190,9 +473,56 @@
             "(充電站 )（第12頁）",
             "響應政府政策及因應運具電動化的趨勢，2022 年規劃之充電站已於 2024 年 2 月營運。未來將視營運狀況檢討未來年度的充電站設置政策。（第72頁）",
             "加油站站點持續汰弱留強，並發展充電站。（第70頁）"
-          ]
+          ],
+          "evidence_page_orig": "7"
         }
-      ]
+      ],
+      "source_page_orig": "62",
+      "page_shift": {
+        "src": {
+          "orig": "62",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": []
+          },
+          "113": {
+            "evidence": {
+              "orig": "7",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "發行報告書",
@@ -213,15 +543,62 @@
             "於報告中完整揭露管理方式與績效成果。（第19頁）",
             "2024 年度無因違反產品與服務的健康和安全法規、產品資訊或標示及違反行銷傳播 ( 包括廣告、促銷及贊助 ) 等相關法規而遭裁罰或被禁止銷售或相關法規之情事。（第49頁）",
             "「附錄一：GRI 永續性報導準則（GRI 準則）對照表」（第101頁）"
-          ]
+          ],
+          "evidence_page_orig": "6"
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "6",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "碳排放量較基準年減少 30%",
       "declared_year": 111,
       "target_year": 119,
-      "source_page": "62",
+      "source_page": "63",
       "final_status": "部分達成",
       "status": [
         {
@@ -250,9 +627,85 @@
             "2030 年→碳排放量減少 30%。（第74頁）",
             "本公司配合國家政策制定之減碳目標與路徑，經「企業減碳溫度計」(TRIPs) 認定，符合《巴黎協議》溫控目標認證，並獲頒認證標章。（第77頁）",
             "若有設定氣候相關目標，應說明所涵蓋之活動、溫室氣體排放範疇、規劃期程，每年達成進度等資訊；若使用碳抵換或再生能源憑證 (RECs) 以達成相關目標，應說明所抵換之減碳額度來源及數量或再生能源憑證 (RECs) 數量。（第118頁）"
-          ]
+          ],
+          "evidence_page_orig": "66"
         }
-      ]
+      ],
+      "source_page_orig": "62",
+      "page_shift": {
+        "src": {
+          "orig": "62",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "66",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "市區公車和公部門公務車全面電動化",
@@ -271,7 +724,33 @@
             "RT-RM-410a.2 先進生質燃料的整體潛在市場和相關基礎設施（第116頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "54",
+      "page_shift": {
+        "src": {
+          "orig": "54",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "發展充電站",
@@ -292,9 +771,56 @@
             "加油站站點持續汰弱留強，並發展充電站。（第70頁）",
             "2024 年設置 4 個充電站。（第74頁）",
             "短期 以現有加油站基地為基礎，發展電動車充電站，提供用車人加油、充電、洗車的全方位服務。（第72頁）"
-          ]
+          ],
+          "evidence_page_orig": "74"
         }
-      ]
+      ],
+      "source_page_orig": "55",
+      "page_shift": {
+        "src": {
+          "orig": "55",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "74",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "電動車（含機車）市售比達 100%",
@@ -312,13 +838,35 @@
             "台灣也追隨國際步伐訂下目標，宣示 2030 年市區公車和公部門公務車將全面電動化，2040 年則達成電動車 ( 含機車 ) 市售比達 100%。（第70頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "54",
+      "page_shift": {
+        "src": {
+          "orig": "54",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "達成淨零排放",
       "declared_year": 111,
       "target_year": 139,
-      "source_page": "62",
+      "source_page": "63",
       "final_status": "未提及",
       "status": [
         {
@@ -348,13 +896,80 @@
             "營業面 氣候變遷引發淨零碳排的影響，燃油車退出市場的時間表，長期將影響公司加油站業務，公司定期評估新能源車發展方向與市場銷售趨勢，調整公司未來發展方向（第73頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "62",
+      "page_shift": {
+        "src": {
+          "orig": "62",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年減排 3%",
       "declared_year": 111,
       "target_year": 205,
-      "source_page": "5",
+      "source_page": "6",
       "final_status": "部分達成",
       "status": [
         {
@@ -369,7 +984,8 @@
             "公司所營加油站為提供汽柴油作為車輛動力來源，屬零售業。2023 年範疇一及範疇二之溫室氣體排放量合計約為 5,163.64 公噸 CO2e，95% 來自外購電力，減碳首要改善來自各項的節電措施，次為發展加油站屋頂太陽能光電。（第55頁）",
             "本公司身為地球公民的一分子，為減緩氣候變遷所造成之衝擊，目前已擬定每年減排的目標，並透過盤查與查證了解執行情形及成果，進行檢討。（第59頁）",
             "以 2022 年基準年，訂定每年碳排放量減少 3% 的目標。（第59頁）"
-          ]
+          ],
+          "evidence_page_orig": "6"
         },
         {
           "year": 113,
@@ -383,15 +999,95 @@
             "響應政府淨零倡議，守護環境、永續發展。（第21頁）",
             "為減少碳排放量，公司勢必會耗費更多資源並嘗試不同方向，增加財務支出負擔。（第21頁）",
             "使用低耗能等工具，以達到永續經營的結果。（第21頁）"
-          ]
+          ],
+          "evidence_page_orig": "66"
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "6",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "66",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "達成淨零目標",
       "declared_year": 111,
       "target_year": 205,
-      "source_page": "51",
+      "source_page": "52",
       "final_status": "未提及",
       "status": [
         {
@@ -422,7 +1118,78 @@
             "淨零碳排宣導會 - 台北場（第35頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "51",
+      "page_shift": {
+        "src": {
+          "orig": "51",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     }
   ]
 }

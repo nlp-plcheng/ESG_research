@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+{% block title %}My statistics{% endblock %}
+{% block body %}
+<style>
+  .tiles { display: grid; gap: 12px; margin: 16px 0 4px;
+           grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+  .tile { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: #fbfcfe; }
+  .tile b { display: block; font-size: 24px; line-height: 1.35; font-variant-numeric: tabular-nums; }
+  .tile span { font-size: 13px; color: var(--mute); }
+  .bar { height: 8px; border-radius: 6px; background: #eef0f4; overflow: hidden; margin-top: 8px; }
+  .bar i { display: block; height: 100%; background: var(--accent); }
+  .num { font-variant-numeric: tabular-nums; }
+  .of { color: var(--mute); font-size: 13px; }
+  .hist { display: grid; grid-template-columns: 64px 1fr 46px; gap: 5px 10px;
+          align-items: center; font-size: 13px; margin: 8px 0 4px; }
+  .hist .lab { color: var(--mute); text-align: right; font-variant-numeric: tabular-nums; }
+  .hist .bar { margin: 0; height: 14px; }
+  .hist .bar i.low { background: var(--f); }
+  .hist .bar i.mid { background: var(--p); }
+  .hist .bar i.high { background: var(--a); }
+  .hist .n { font-variant-numeric: tabular-nums; }
+  .scroll { overflow-x: auto; }
+  table.matrix td.diag { background: #f7f8fa; color: var(--mute); }
+  table.matrix td.zero { color: #ccced4; }
+  table.matrix th.corner { font-weight: 600; color: var(--mute); font-size: 13px; }
+</style>
+{% set s = stats %}
+<div class="card">
+  <h1>My statistics</h1>
+  <p class="note">Your own answers only — identified by your personal link. Nobody else's numbers
+     appear here, and nobody else sees yours. This is a summary of what you have submitted, not a
+     score: there is no target figure, so please don't adjust your judgements to move it.
+     <span class="navlinks"><a href="{{ url_for('Task') }}">Back to the current item →</a>
+     <a href="{{ url_for('History') }}">My answers →</a></span></p>
+
+  {% if not s.done %}
+  <p>You have not submitted an item yet. Your statistics appear here after the first one.</p>
+  {% else %}
+
+  <div class="tiles">
+    <div class="tile"><b class="num">{{ s.done }}</b>
+      <span>items submitted{% if s.total %} (of {{ s.total }} in your set){% endif %}</span>
+      {% if s.total %}<div class="bar"><i style="width: {{ pct(s.done, s.total) }}%"></i></div>{% endif %}</div>
+    <div class="tile"><b class="num">{{ s.gold_done }} / {{ s.gold_total }}</b>
+      <span>calibration items (the first few, shared by everyone)</span></div>
+    <div class="tile"><b class="num">{{ s.years }}</b><span>report years you checked</span></div>
+    {% if s.minutes_q %}
+    <div class="tile"><b class="num">{{ s.minutes_q.median }}</b>
+      <span>minutes per item (median; half of your items took {{ s.minutes_q.q1 }}–{{ s.minutes_q.q3 }} minutes; only time you were actually in that tab)</span></div>
+    {% endif %}
+    {% if s.open %}<div class="tile"><b class="num">{{ s.open }}</b><span>in progress (opened, not submitted)</span></div>{% endif %}
+    {% if s.edits %}<div class="tile"><b class="num">{{ s.edits }}</b><span>later revisions</span></div>{% endif %}
+  </div>
+
+  <h2>Your corrections to the AI</h2>
+  <table class="grid">
+    <tr><th>Years where you said the AI's verdict was wrong</th>
+      <td><span class="num">{{ s.flagged }}</span> <span class="of">of {{ s.years }} years
+        {%- if s.years %} ({{ pct(s.flagged, s.years) }}%){% endif %}</span>
+        {% if s.years %}<div class="bar"><i style="width: {{ pct(s.flagged, s.years) }}%"></i></div>{% endif %}</td></tr>
+    <tr><th>… of those, years where you changed the status label</th>
+      <td><span class="num">{{ s.flips }}</span> <span class="of">years
+        {%- if s.years %} ({{ pct(s.flips, s.years) }}% of all years){% endif %}</span></td></tr>
+    <tr><th>Overall conclusion different from the AI's</th>
+      <td><span class="num">{{ s.final_flips }}</span> <span class="of">of {{ s.finals }} items
+        {%- if s.finals %} ({{ pct(s.final_flips, s.finals) }}%){% endif %}</span>
+        {% if s.finals %}<div class="bar"><i style="width: {{ pct(s.final_flips, s.finals) }}%"></i></div>{% endif %}</td></tr>
+    <tr><th>Tracking window you flagged as wrong</th>
+      <td><span class="num">{{ s.window_bad }}</span> <span class="of">of {{ s.finals }} items</span></td></tr>
+    <tr><th>Marked “not a commitment”</th>
+      <td><span class="num">{{ s.not_commit }}</span> <span class="of">items{% if s.no_target %} ({{ s.no_target }} more marked “no target year”){% endif %}{% if s.unsure %} ({{ s.unsure }} more marked “unsure”){% endif %}</span></td></tr>
+    {% if s.starred or s.noted %}
+    <tr><th>Items you starred / noted</th>
+      <td><span class="num">{{ s.starred }}</span> <span class="of">starred, {{ s.noted }} with a note (<a href="{{ url_for('History', starred=1) }}">starred items</a>)</span></td></tr>
+    {% endif %}
+    <tr><th>Page numbers you corrected</th>
+      <td><span class="num">{{ s.page_fixes }}</span> <span class="of">years</span></td></tr>
+  </table>
+
+  {% if s.flagged %}
+  <h2>The AI's label vs yours</h2>
+  <div class="scroll">
+  <table class="grid matrix">
+    <tr><th class="corner">AI ＼ you</th>
+      {% for h in s.labels %}<th>{{ h }}</th>{% endfor %}<th>Total</th></tr>
+    {% for ai in s.labels %}
+    {% set row = s.matrix[ai] %}
+    {% if row.values()|sum %}
+    <tr><th>{{ ai }}</th>
+      {% for h in s.labels %}
+      <td class="num {% if ai == h %}diag{% elif not row[h] %}zero{% endif %}">{{ row[h] or '·' }}</td>
+      {% endfor %}
+      <td class="num">{{ row.values()|sum }}</td></tr>
+    {% endif %}
+    {% endfor %}
+  </table>
+  </div>
+  <p class="note">The grey diagonal is where you agreed with the AI; every other cell is a change you made.</p>
+
+  {% if s.basis %}
+  <h2>When you said the AI was wrong, the basis you picked</h2>
+  <table class="grid">
+    {% for label, n in s.basis %}
+    <tr><th>{{ label }}</th><td><span class="num">{{ n }}</span>
+      <span class="of">years ({{ pct(n, s.flagged) }}%)</span>
+      <div class="bar"><i style="width: {{ pct(n, s.flagged) }}%"></i></div></td></tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+  {% endif %}
+
+  {% if s.probs %}
+  <h2>Your achievement-probability slider (0–100)</h2>
+  <div class="tiles">
+    <div class="tile"><b class="num">{{ s.prob_q.q1 }}</b><span>first quartile (Q1): a quarter of your years sit below this</span></div>
+    <div class="tile"><b class="num">{{ s.prob_q.median }}</b><span>median</span></div>
+    <div class="tile"><b class="num">{{ s.prob_q.q3 }}</b><span>third quartile (Q3): three quarters of your years sit below this</span></div>
+    <div class="tile"><b class="num">{{ s.prob_q.mean }}</b><span>mean</span></div>
+    <div class="tile"><b class="num">{{ s.probs }}</b><span>years rated</span></div>
+  </div>
+  <div class="hist">
+    {% for b in s.bins %}
+    <span class="lab">{{ b.label }}</span>
+    <span class="bar"><i class="{{ b.cls }}" style="width: {{ (100 * b.n / s.hist_max)|round(1) }}%"></i></span>
+    <span class="n">{{ b.n }}</span>
+    {% endfor %}
+  </div>
+  <p class="note">Each row is the number of years that landed in that band. 50 is where the slider
+     starts, and a year you never touched keeps the previous year's value.</p>
+
+  {% if s.by_status %}
+  <table class="grid">
+    <tr><th>Status you gave</th><th>Years</th><th>Mean probability</th><th>Median</th></tr>
+    {% for label, n, mean, median in s.by_status %}
+    <tr><td><span class="badge s{{ label|status_class }}">{{ label }}</span></td>
+      <td class="num">{{ n }}</td><td class="num">{{ mean }}</td><td class="num">{{ median }}</td></tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+  {% endif %}
+
+  <h2>Evidence look-ups and time</h2>
+  <table class="grid">
+    <tr><th>Evidence pages opened (PDF excerpt / page image)</th>
+      <td><span class="num">{{ s.views }}</span> in total{% if s.views_avg %}<span class="of">, {{ s.views_avg }} per item on average{% if s.views_q %}; per item Q1 / median / Q3: {{ s.views_q.q1 }} / {{ s.views_q.median }} / {{ s.views_q.q3 }}{% endif %}</span>{% endif %}</td></tr>
+    <tr class="{% if s.no_views %}bad{% endif %}"><th>Items submitted without opening a single evidence page</th>
+      <td><span class="num">{{ s.no_views }}</span> <span class="of">of {{ s.finals }}</span></td></tr>
+    {% if s.minutes_total %}
+    <tr><th>Total time on task</th>
+      <td>about <span class="num">{{ s.minutes_total }}</span> minutes</td></tr>
+    {% endif %}
+    {% if s.gold_pass or s.gold_fail %}
+    <tr><th>Calibration items compared</th>
+      <td>matched <span class="num">{{ s.gold_pass }}</span>, differed <span class="num">{{ s.gold_fail }}</span></td></tr>
+    {% endif %}
+  </table>
+  {% if s.no_views %}
+  <p class="note">Not opening an evidence page is not a mistake — if the quoted passage was enough to decide, that is fine.</p>
+  {% endif %}
+  <p class="note">Time counts only while you are actually in the item's tab: switching tab or
+     window, sending the window to the background, locking the screen, or two minutes with no
+     mouse, key or scroll at all all pause the clock; it resumes when you come back.</p>
+
+  {% if s.gold_rows %}
+  <h2>Calibration items (the first few, shared by everyone): your answers</h2>
+  <p class="note">Only your own answers are listed; nobody else's answers to these items appear here.</p>
+  <div class="scroll">
+  <table class="grid tight">
+    <tr><th>#</th><th>Company</th><th>Commitment</th><th>Q0</th><th>Conclusion (you / AI)</th><th>Years wrong / all</th><th>Last-year estimate</th><th>Minutes</th></tr>
+    {% for r in s.gold_rows %}
+    <tr><td>calibration {{ r.gold_rank }}</td><td>{{ r.company }}</td>
+      <td><a href="{{ url_for('Post', assign_id=r.assign_id) }}">{{ r.commitment[:30] }}{% if r.commitment|length > 30 %}…{% endif %}</a></td>
+      <td>{% if r.is_commitment == 'valid' %}yes{% elif r.is_commitment == 'not_commitment' %}not a commitment{% elif r.is_commitment == 'no_target' %}no target year{% elif r.is_commitment == 'unsure' %}unsure{% else %}—{% endif %}</td>
+      <td>{% if r.human_final %}<span class="badge s{{ r.human_final|status_class }}">{{ r.human_final }}</span>{% else %}—{% endif %} / <span class="badge s{{ r.ai_final|status_class }}">{{ r.ai_final }}</span></td>
+      <td class="num">{{ r.flagged }} / {{ r.years }}</td>
+      <td class="num">{{ r.prob_last if r.prob_last is not none else '—' }}</td>
+      <td class="num">{{ r.minutes if r.minutes is not none else '—' }}</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+  {% endif %}
+
+  <h2>Item by item</h2>
+  <p class="note">Every item you submitted; click the commitment to open that item again and revise it. “Wrong” = years where you said the AI's verdict was wrong; “relabelled” = those where you changed the status label. ★ = starred by you; a commitment whose wording you corrected is shown as corrected.</p>
+  <div class="scroll">
+  <table class="grid tight">
+    <tr><th>Item</th><th>★</th><th>Company</th><th>Commitment</th><th>Q0</th><th>Source page</th><th>Conclusion (you / AI)</th><th>Years wrong / relabelled / all</th><th>Last-year estimate</th><th>Minutes</th><th>Evidence opened</th><th>Revisions</th><th>Note</th></tr>
+    {% for r in s.item_rows %}
+    <tr>
+      <td>{{ r.idx }}{% if r.is_gold %} <span class="note">calibration</span>{% endif %}</td>
+      <td>{% if r.starred %}★{% endif %}</td>
+      <td>{{ r.company }}</td>
+      {% set cm = r.commitment_fix or r.commitment %}
+      <td><a href="{{ url_for('Post', assign_id=r.assign_id) }}">{{ cm[:30] }}{% if cm|length > 30 %}…{% endif %}</a>{% if r.commitment_fix %} <span class="note" title="Original wording: {{ r.commitment }}">(corrected)</span>{% endif %}</td>
+      <td>{% if r.is_commitment == 'valid' %}yes{% elif r.is_commitment == 'not_commitment' %}not a commitment{% elif r.is_commitment == 'no_target' %}no target year{% elif r.is_commitment == 'unsure' %}unsure{% else %}—{% endif %}</td>
+      <td>{% if r.source_page_ok == 'ok' %}✓{% elif r.source_page_ok == 'wrong_page' %}wrong page{% elif r.source_page_ok == 'not_found' %}not found{% else %}—{% endif %}</td>
+      <td>{% if r.human_final %}<span class="badge s{{ r.human_final|status_class }}">{{ r.human_final }}</span>{% else %}—{% endif %} / <span class="badge s{{ r.ai_final|status_class }}">{{ r.ai_final }}</span>{% if r.final_agree == 0 %} <span class="note">≠</span>{% endif %}</td>
+      <td class="num">{{ r.flagged }} / {{ r.flips }} / {{ r.years }}</td>
+      <td class="num">{{ r.prob_last if r.prob_last is not none else '—' }}</td>
+      <td class="num">{{ r.minutes if r.minutes is not none else '—' }}</td>
+      <td class="num">{{ r.views if r.views is not none else '—' }}</td>
+      <td class="num">{{ r.n_edits or '' }}</td>
+      <td class="note">{{ r.note[:40] }}{% if r.note|length > 40 %}…{% endif %}</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+
+  <p class="note">First entered {{ s.first_seen }} UTC. The numbers update as you submit more items.</p>
+  {% endif %}
+</div>
+{% endblock %}

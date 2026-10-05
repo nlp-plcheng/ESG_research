@@ -19,9 +19,31 @@
           "status": "已達成",
           "evidence": "本公司目前每年發行一次CSR報告書（前次發行時間為2014年10月），並張貼於公司網站上，歡迎參觀瀏覽。網址: www.scinopharm.com",
           "evidence_page": "1",
-          "clues": []
+          "clues": [],
+          "evidence_page_orig": "1"
         }
-      ]
+      ],
+      "source_page_orig": "3",
+      "page_shift": {
+        "src": {
+          "orig": "3",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "103": {
+            "evidence": {
+              "orig": "1",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "舉辦子宮頸癌疫苗施打",
@@ -37,7 +59,24 @@
           "evidence_page": null,
           "clues": []
         }
-      ]
+      ],
+      "source_page_orig": "14",
+      "page_shift": {
+        "src": {
+          "orig": "14",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "103": {
+            "evidence": null,
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "舉辦「神隆藝壇」系列講座",
@@ -55,7 +94,8 @@
             "●神隆藝壇藝文活動（第17頁）",
             "員工旅遊活動、尾牙活動、廠慶活動、家庭日活動、神隆藝壇、園遊會、員工幸福月活動（第26頁）",
             "台灣神隆長期贊助藝文展出活動，捐助國內藝術表演團體海外演出，促進跨國際文化交流。（第39頁）"
-          ]
+          ],
+          "evidence_page_orig": "39"
         },
         {
           "year": 104,
@@ -64,9 +104,57 @@
           "evidence_page": "70",
           "clues": [
             "連續6年舉辦「神隆藝壇」系列講座，邀請郭子乾、王浩一、洪蘭、戴勝通等重量級講師群，提供一連串豐富生活與心靈的饗宴。（第69頁）"
-          ]
+          ],
+          "evidence_page_orig": "70"
         }
-      ]
+      ],
+      "source_page_orig": "35",
+      "page_shift": {
+        "src": {
+          "orig": "35",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "103": {
+            "evidence": {
+              "orig": "39",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "104": {
+            "evidence": {
+              "orig": "70",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成公司員工 CPR+AED 訓練",
@@ -86,9 +174,52 @@
             "「持續透過各項教育訓練與定期演練，強化全體員工對於維護工安與環保之觀念。」（第15頁）",
             "安全衛生環境保護訓練 工業安全衛生及環境保護訓練、消防訓練、CPR 訓練、年度工安會議（第55頁）",
             "訓練實際操作 自動體外心臟電擊去顫器 (AED)（第59頁）"
-          ]
+          ],
+          "evidence_page_orig": "59"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "104": {
+            "evidence": {
+              "orig": "59",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "汰換效率不良冰水主機並納入系統運轉",
@@ -106,9 +237,44 @@
             "「每百萬產值的用電量降低 12 %」（第4頁）",
             "「由生產副總經理擔任召集人，底下設有：配銷、健康、安全、減廢、節能共五個功能小組，藉由每年提出永續管理計畫、檢討執行成效，做為內部檢視的依據。」（第14頁）",
             "用電節能措施（第43頁）"
-          ]
+          ],
+          "evidence_page_orig": "43"
         }
-      ]
+      ],
+      "source_page_orig": "23",
+      "page_shift": {
+        "src": {
+          "orig": "23",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "104": {
+            "evidence": {
+              "orig": "43",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "公開發行企業社會責任報告書",
@@ -121,8 +287,17 @@
           "year": 105,
           "status": "已達成",
           "evidence": "由於本公司依據臺灣證券交易所「上市公司編製與申報企業社會責任報告書作業辦法」之要求公開發行社會企業責任報告書，此報告書亦須符合前述辦法之相關規定。",
-          "evidence_page": "2",
+          "evidence_page": "3",
           "clues": [
+            "台灣神隆公司將於每年定期發行企業社會責任報告書，本公司網站可下載本報告電子版。（第3頁）",
+            "2016企業社會責任報告書（第2頁）",
+            "台灣神隆 2016 企業社會責任報告書（第20頁）",
+            "● 每年發行 CSR 報告書（第33頁）",
+            "本公司於 2014 年 6 月 18 日董事會通過訂定「企業社會責任實務守則」，並於 2015 年 3 月 25 日及 2016 年 12 月 20 日進行修訂，以做為公司推動企業社會責任相關作為之指導方針。（第29頁）",
+            "有關　貴公司所選定民國 105 年度社會責任報告書所報導之績效指標（以下稱「確信標的資訊」）及其報導基準詳列於　貴公司民國 105 年度社會責任報告書第 85 頁之「確信項目彙總表」。（第86頁）"
+          ],
+          "evidence_page_orig": "2",
+          "clues_orig": [
             "台灣神隆公司將於每年定期發行企業社會責任報告書，本公司網站可下載本報告電子版。（第2頁）",
             "2016企業社會責任報告書（第1頁）",
             "台灣神隆 2016 企業社會責任報告書（第19頁）",
@@ -131,7 +306,65 @@
             "有關　貴公司所選定民國 105 年度社會責任報告書所報導之績效指標（以下稱「確信標的資訊」）及其報導基準詳列於　貴公司民國 105 年度社會責任報告書第 84 頁之「確信項目彙總表」。（第85頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "2",
+      "page_shift": {
+        "src": {
+          "orig": "2",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "105": {
+            "evidence": {
+              "orig": "2",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform",
+                "refs": [
+                  {
+                    "p": 84,
+                    "d": 1,
+                    "kind": "uniform"
+                  },
+                  {
+                    "p": 85,
+                    "d": 1,
+                    "kind": "uniform"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成員工接受 CPR+AED 訓練達七成",
@@ -146,6 +379,14 @@
           "evidence": null,
           "evidence_page": null,
           "clues": [
+            "員工　健康職場　平等待遇　尊重人權 ● 環境法規遵循 ● 職業健康與安全 ● 教育與訓練 ● 經濟績效 ● 顧客隱私 ● 定期勞資溝通會議 ● 每季召開員工大會 ● 公司內部網站及刊物 ● 部門安全會議、cGMP 教育訓練 ● 內部徵才 / 員工輪調（第33頁）",
+            "1. 持續透過各項教育訓練與定期演練，強化全體員工對於維護工安之觀念。（第31頁）",
+            "職業健康與安全 ◎ 4.3 健康促進活動 4.4 安全的工作環境（第37頁）",
+            "安全衛生環境保護訓練 工業安全衛生及環境保護訓練、消防訓練、CPR 訓練、年度工安會議（第64頁）",
+            "五、員工急救訓練（ CPR + AEDTraining ）近年來心血管疾病造成國人健康危害升高，為加強緊急醫療救護，本公司去年初已設置「自動體外心臟電擊去顫器（AED）」，並放置於生產大樓一樓，當夜間時段警衛室接獲各單位緊急傷患通知時，立即通知安衛環保部人員，並由所屬單位判定傷患情況並通知 119 救護車至發生地點進行緊急傷患載送，在救護車到達前由受過 CPR+AED Training 同仁先行急救，待救護車到達接手救護。（第68頁）",
+            "台灣神隆要求公司員工及長期駐廠廠商每人每年均需進行滅火器實火訓練，以增進火災初期應變的熟悉度。（第74頁）"
+          ],
+          "clues_orig": [
             "員工　健康職場　平等待遇　尊重人權 ● 環境法規遵循 ● 職業健康與安全 ● 教育與訓練 ● 經濟績效 ● 顧客隱私 ● 定期勞資溝通會議 ● 每季召開員工大會 ● 公司內部網站及刊物 ● 部門安全會議、cGMP 教育訓練 ● 內部徵才 / 員工輪調（第32頁）",
             "1. 持續透過各項教育訓練與定期演練，強化全體員工對於維護工安之觀念。（第30頁）",
             "職業健康與安全 ◎ 4.3 健康促進活動 4.4 安全的工作環境（第36頁）",
@@ -154,7 +395,49 @@
             "台灣神隆要求公司員工及長期駐廠廠商每人每年均需進行滅火器實火訓練，以增進火災初期應變的熟悉度。（第73頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "60",
+      "page_shift": {
+        "src": {
+          "orig": "60",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "105": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "依法辦理甲醛製造、處置或使用作業之健康檢查",
@@ -169,6 +452,14 @@
           "evidence": null,
           "evidence_page": null,
           "clues": [
+            "在環境安全衛生方面，由「安衛環保處」負責，研究規劃與監督管理全公司關於製造生產風險、環安衛維護及健康促進之工作推展。（第29頁）",
+            "● 童工 ● 環境法規遵循 ● 職業健康與安全 ● 勞資關係 ● 勞僱關係（第33頁）",
+            "職業健康與安全 ◎ 4.3 健康促進活動 4.4 安全的工作環境（第37頁）",
+            "神隆每年約 8 月底 9 月初舉辦為期三天員工健康檢查，健檢項目會依【勞工健康保護規則】中法規項目及公司原料藥製程影響員工健康風險評估來增加檢查項目，統稱為一般健康檢查。（第66頁）",
+            "另依據法規對生產線作業人員進行特殊作業健康檢查 ( 特殊作業健檢類別主要為二甲基甲醯胺、正己烷、噪音 )。（第66頁）",
+            "105 年度員工健康檢查統計 健檢日期 到檢人數 特 11 二甲基甲醯胺 特 12 正己烷 特 02 噪音 檢查總數 452 134 134 9（第67頁）"
+          ],
+          "clues_orig": [
             "在環境安全衛生方面，由「安衛環保處」負責，研究規劃與監督管理全公司關於製造生產風險、環安衛維護及健康促進之工作推展。（第28頁）",
             "● 童工 ● 環境法規遵循 ● 職業健康與安全 ● 勞資關係 ● 勞僱關係（第32頁）",
             "職業健康與安全 ◎ 4.3 健康促進活動 4.4 安全的工作環境（第36頁）",
@@ -183,6 +474,14 @@
           "evidence": null,
           "evidence_page": null,
           "clues": [
+            "「在環境安全衛生方面，由「安衛環保處」負責，研究規劃與監督管理全公司關於製造生產風險、環安衛維護及健康促進之工作推展。」（第27頁）",
+            "「公司另設有「職業安全衛生委員會」及「永續管理委員會」」 （第27頁）",
+            "「職業健康與安全 ◎ 4.3 健康促進活動 4.4 安全的工作環境」（第35頁）",
+            "另依據法規對生產線作業人員進行特殊作業健康檢查 ( 今年度特殊作業健檢類別為二甲基甲醯胺、正己烷、噪音 )。（第67頁）",
+            "特殊作業健康檢查異常之人員，會由職業衛生護理師先初步了解同仁作業環境及健康評估後，安排職醫諮詢並提供健康指導計畫（第66頁）",
+            "神隆每年約 8 月底 9 月初舉辦為期三天員工健康檢查，健檢項目會依【勞工健康保護規則】中法規項目及公司原料藥製程影響員工健康風險評估來增加檢查項目，統稱為一般健康檢查。（第66頁）"
+          ],
+          "clues_orig": [
             "「在環境安全衛生方面，由「安衛環保處」負責，研究規劃與監督管理全公司關於製造生產風險、環安衛維護及健康促進之工作推展。」（第26頁）",
             "「公司另設有「職業安全衛生委員會」及「永續管理委員會」」 （第26頁）",
             "「職業健康與安全 ◎ 4.3 健康促進活動 4.4 安全的工作環境」（第34頁）",
@@ -191,34 +490,150 @@
             "神隆每年約 8 月底 9 月初舉辦為期三天員工健康檢查，健檢項目會依【勞工健康保護規則】中法規項目及公司原料藥製程影響員工健康風險評估來增加檢查項目，統稱為一般健康檢查。（第65頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "58",
+      "page_shift": {
+        "src": {
+          "orig": "58",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "105": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          },
+          "106": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "增設汽提塔進料槽以處理更多廢溶劑，減少委外處理的廢溶劑數量",
       "declared_year": 105,
       "target_year": 106,
-      "source_page": "53",
+      "source_page": "54",
       "final_status": "已達成",
       "status": [
         {
           "year": 106,
           "status": "已達成",
           "evidence": "2017 年雖然因產品產能的提升及製程排廢特性致使廢溶劑量提升為 3066 噸，但汽提塔處理量則因斥資近一仟萬元增設汽提塔三個進料槽擴大可處理的廢溶劑量，而增為 1148 噸。",
-          "evidence_page": "51",
+          "evidence_page": "52",
           "clues": [
+            "減廢用之汽提塔處理量提升至1,148噸（第6頁）",
+            "近年來，本公司致力於提升汽提塔處理效率，使用汽提塔可將含水率高之廢溶劑進行水相及有機相分離，水相可直接排至污水處理廠進行處理，有機相則成為廢溶劑，如此即可達到廢溶劑減量之目的。（第51頁）",
+            "台灣神隆自汽提塔啟用後，廢溶劑減量的數量年年提高，2015 年廢溶劑量為 3389 噸，汽提塔處理量為 105 噸；2016 年廢溶劑量降為 2746 噸，汽提塔處理量增為 352 噸；（第52頁）",
+            "經汽提塔處理之廢溶劑，其濃縮之廢溶劑由南科園區清運或委由合格廠商處理減少廢溶劑數量。（第53頁）"
+          ],
+          "evidence_page_orig": "51",
+          "clues_orig": [
             "減廢用之汽提塔處理量提升至1,148噸（第5頁）",
             "近年來，本公司致力於提升汽提塔處理效率，使用汽提塔可將含水率高之廢溶劑進行水相及有機相分離，水相可直接排至污水處理廠進行處理，有機相則成為廢溶劑，如此即可達到廢溶劑減量之目的。（第50頁）",
             "台灣神隆自汽提塔啟用後，廢溶劑減量的數量年年提高，2015 年廢溶劑量為 3389 噸，汽提塔處理量為 105 噸；2016 年廢溶劑量降為 2746 噸，汽提塔處理量增為 352 噸；（第51頁）",
             "經汽提塔處理之廢溶劑，其濃縮之廢溶劑由南科園區清運或委由合格廠商處理減少廢溶劑數量。（第52頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "53",
+      "page_shift": {
+        "src": {
+          "orig": "53",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "106": {
+            "evidence": {
+              "orig": "51",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成針劑廠第一條生產線機台儀器確效並著手試產註冊批次",
       "declared_year": 105,
       "target_year": 106,
-      "source_page": "5",
+      "source_page": "6",
       "final_status": "未提及",
       "status": [
         {
@@ -227,6 +642,13 @@
           "evidence": null,
           "evidence_page": null,
           "clues": [
+            "連結原料藥的優勢，台灣神隆加速拓展針劑製劑產品的業務，切入高附加價值的產品市場，積極締結策略夥伴，並建立自有針劑產品研發生產及營運能力，以「Double A」模式，即原料藥（API）加製劑（ANDA）雙引擎，搶攻全球市場，相信將更加鞏固並擴展神隆既有的原料藥業務，提升公司長期競爭優勢與擴大成長空間。（第8頁）",
+            "● 中程：利用台南所興建針劑廠，提升神隆於癌症原料藥之附加價值，滿足神隆廣大客戶一次購足服務之需求。（第12頁）",
+            "本公司為提供全球規範市場癌症原料藥之領導者，產品種類及客戶群均領先群雄。近年來本公司因應針劑製造之市場需求，並根據全球客戶之市場調查，規劃自原料藥向下整合之策略，於台南廠現址興建針劑廠，以提供原料藥研發至針劑生產等一次到位服務。（第16頁）",
+            "「廠內生產線具有生產高活性針劑用原料藥的特殊能力，生產廠房採負壓空氣設計並設有先進的手套箱裝置」（第36頁）",
+            "「可進行公斤級至噸級的生產批次。」（第36頁）"
+          ],
+          "clues_orig": [
             "連結原料藥的優勢，台灣神隆加速拓展針劑製劑產品的業務，切入高附加價值的產品市場，積極締結策略夥伴，並建立自有針劑產品研發生產及營運能力，以「Double A」模式，即原料藥（API）加製劑（ANDA）雙引擎，搶攻全球市場，相信將更加鞏固並擴展神隆既有的原料藥業務，提升公司長期競爭優勢與擴大成長空間。（第7頁）",
             "● 中程：利用台南所興建針劑廠，提升神隆於癌症原料藥之附加價值，滿足神隆廣大客戶一次購足服務之需求。（第11頁）",
             "本公司為提供全球規範市場癌症原料藥之領導者，產品種類及客戶群均領先群雄。近年來本公司因應針劑製造之市場需求，並根據全球客戶之市場調查，規劃自原料藥向下整合之策略，於台南廠現址興建針劑廠，以提供原料藥研發至針劑生產等一次到位服務。（第15頁）",
@@ -234,21 +656,68 @@
             "「可進行公斤級至噸級的生產批次。」（第35頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "106": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提撥退休準備金以支付符合退休資格員工之退休金請領",
       "declared_year": 105,
       "target_year": 106,
-      "source_page": "60",
+      "source_page": "61",
       "final_status": "已達成",
       "status": [
         {
           "year": 106,
           "status": "已達成",
           "evidence": "相關退休準備金提撥足以支付 2017 年符合退休資格員工之退休金請領",
-          "evidence_page": "57",
+          "evidence_page": "58",
           "clues": [
+            "「另外，本公司並設有「職工福利委員會」及「勞資會議」依規定運作，進行職工福利事業之審議、促進和督導，以及協調勞資關係、促進勞資合作等事宜。」（第27頁）",
+            "「員工 健康職場 平等待遇 尊重人權」（第31頁）",
+            "「● 勞資關係」（第34頁）",
+            "本公司依法成立職工福利委員會，提撥足額之福利基金及按月提撥福利金以供員工運用之外，在員工退休制度實施上，針對 2005 年 6 月 30 日（含）前到職員工，依其意願選擇，舊制退休金者由公司按月提撥退休準備金（第58頁）",
+            "即按每位具舊制退休金年資者至少 2％月薪資到勞工退休準備金專戶，並依法成立勞工退休準備金監督委員會運作管理（第58頁）",
+            "而就 2005 年 7 月 1 日起到職員工，則依照政府法令規定公司按月提繳不低於其每月工資 6％勞工退休金（第58頁）"
+          ],
+          "evidence_page_orig": "57",
+          "clues_orig": [
             "「另外，本公司並設有「職工福利委員會」及「勞資會議」依規定運作，進行職工福利事業之審議、促進和督導，以及協調勞資關係、促進勞資合作等事宜。」（第26頁）",
             "「員工 健康職場 平等待遇 尊重人權」（第30頁）",
             "「● 勞資關係」（第33頁）",
@@ -257,21 +726,76 @@
             "而就 2005 年 7 月 1 日起到職員工，則依照政府法令規定公司按月提繳不低於其每月工資 6％勞工退休金（第57頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "60",
+      "page_shift": {
+        "src": {
+          "orig": "60",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "106": {
+            "evidence": {
+              "orig": "57",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "審核年度公司安全衛生執行計畫",
       "declared_year": 106,
       "target_year": 107,
-      "source_page": "72",
+      "source_page": "73",
       "final_status": "部分達成",
       "status": [
         {
           "year": 107,
           "status": "部分達成",
           "evidence": "並成立永續管理委員會為公司安全衛生委員會（安委會）下之功能性委員會，於永續管理委員會下設立各功能小組，分別就涵蓋之安全範疇進行系統面審核與檢討。",
-          "evidence_page": "56",
+          "evidence_page": "59",
           "clues": [
+            "神隆追求公司與社會的永續發展，在產品安全方面始終落實國際現行 GMP 制度，制定能源效率計畫、廢棄物及風險管理與生產製程的優化與技術提升等。（第5頁）",
+            "第三章 環境保護 31",
+            "3.1 安全衛生環保政策 31（第5頁）",
+            "公司另設有「職業安全衛生委員會」及「永續管理委員會」，前者為依職業安全衛生管理辦法規定建置的最高環安衛決策單位，由總經理召集各業務及工廠一級主管、各部門主管及員工代表，每一季進行公司環安衛運作審查，並提出未來重點改善方向（第34頁）",
+            "檢討安全議題",
+            "提出改善計畫"
+          ],
+          "evidence_page_orig": "56",
+          "clues_orig": [
             "神隆追求公司與社會的永續發展，在產品安全方面始終落實國際現行 GMP 制度，制定能源效率計畫、廢棄物及風險管理與生產製程的優化與技術提升等。（第2頁）",
             "第三章 環境保護 31",
             "3.1 安全衛生環保政策 31（第2頁）",
@@ -280,21 +804,76 @@
             "提出改善計畫"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "72",
+      "page_shift": {
+        "src": {
+          "orig": "72",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "107": {
+            "evidence": {
+              "orig": "56",
+              "d": 3,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 3,
+                "kind": "uniform"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 3,
+                "kind": "uniform"
+              },
+              {
+                "d": 3,
+                "kind": "uniform"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提出永續管理計畫",
       "declared_year": 106,
       "target_year": 107,
-      "source_page": "71",
+      "source_page": "72",
       "final_status": "已達成",
       "status": [
         {
           "year": 107,
           "status": "已達成",
           "evidence": "藉由每年提出永續管理計畫、檢討執行成效，做為內部檢視的依據。",
-          "evidence_page": "31",
+          "evidence_page": "34",
           "clues": [
+            "本報告書揭露公司在永續發展與經營的目標下，面對關鍵主題的應對立場及因應作為，並回應利害關係人對於各項主題之關注。（第4頁）",
+            "我們從經濟、社會、環境三個面向出發思考符合神隆精神的施作計畫，並貫徹執行。（第5頁）",
+            "台灣神隆永續發展目標與聯合國永續發展目標 (SDGs) 對應（第8頁）",
+            "公司另設有「職業安全衛生委員會」及「永續管理委員會」。（第34頁）",
+            "後者為整合推動公司環保、安衛、節能、節水及溫室氣體管理相關工作，以提升公司永續競爭力的目的而成立的，由生產副總經理擔任召集人，底下設有：配銷、健康、安全、衛生、減廢、節能共 6 個功能小組（第34頁）",
+            "台灣神隆在責任照顧架構下成立永續管理委員會之一的健康小組，由小組成員不定期辦理健康促進活動，透過組織的鼓勵及帶動，培養同仁養成規律的運動習慣，同時根據每年員工健康檢查之各項數據，制定符合同仁需求之健康促進計畫，並且每年依據計畫之成效調整方向（第55頁）"
+          ],
+          "evidence_page_orig": "31",
+          "clues_orig": [
             "本報告書揭露公司在永續發展與經營的目標下，面對關鍵主題的應對立場及因應作為，並回應利害關係人對於各項主題之關注。（第1頁）",
             "我們從經濟、社會、環境三個面向出發思考符合神隆精神的施作計畫，並貫徹執行。（第2頁）",
             "台灣神隆永續發展目標與聯合國永續發展目標 (SDGs) 對應（第5頁）",
@@ -303,31 +882,107 @@
             "台灣神隆在責任照顧架構下成立永續管理委員會之一的健康小組，由小組成員不定期辦理健康促進活動，透過組織的鼓勵及帶動，培養同仁養成規律的運動習慣，同時根據每年員工健康檢查之各項數據，制定符合同仁需求之健康促進計畫，並且每年依據計畫之成效調整方向（第52頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "71",
+      "page_shift": {
+        "src": {
+          "orig": "71",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "107": {
+            "evidence": {
+              "orig": "31",
+              "d": 3,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 3,
+                "kind": "uniform"
+              },
+              {
+                "d": 3,
+                "kind": "uniform"
+              },
+              {
+                "d": 3,
+                "kind": "uniform"
+              },
+              {
+                "d": 3,
+                "kind": "uniform"
+              },
+              {
+                "d": 3,
+                "kind": "uniform"
+              },
+              {
+                "d": 3,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "揭露董事及經理人參與進修課程與時數",
       "declared_year": 106,
       "target_year": 107,
-      "source_page": "22",
+      "source_page": "23",
       "final_status": "部分達成",
       "status": [
         {
           "year": 107,
           "status": "部分達成",
           "evidence": "2018 年全體董事參加相關進修課程均已符合「上市上櫃公司董事、監察人進修推行要點」之規定；董事及經理人所參與之進修課程與時數詳情請參照本公司 2018 年年報內容。",
-          "evidence_page": "19",
+          "evidence_page": "22",
           "clues": [
+            "本公司除訂定「內部重大資訊處理作業程序」，並陸續安排董事、經理人參加外部機構舉辦之公司治理進修課程；此外，為使重大訊息與公告申報之揭露符合主管機關要求，本公司另頒布「公開資訊反映申報處理辦法」。（第24頁）"
+          ],
+          "evidence_page_orig": "19",
+          "clues_orig": [
             "本公司除訂定「內部重大資訊處理作業程序」，並陸續安排董事、經理人參加外部機構舉辦之公司治理進修課程；此外，為使重大訊息與公告申報之揭露符合主管機關要求，本公司另頒布「公開資訊反映申報處理辦法」。（第21頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "22",
+      "page_shift": {
+        "src": {
+          "orig": "22",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "107": {
+            "evidence": {
+              "orig": "19",
+              "d": 3,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 3,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成空調機馬達變頻器安裝以調降風車轉速、達成節能效果",
       "declared_year": 107,
       "target_year": 108,
-      "source_page": "37",
+      "source_page": "40",
       "final_status": "已達成",
       "status": [
         {
@@ -337,15 +992,42 @@
           "evidence_page": "51",
           "clues": [
             "「空壓機運轉改用變頻機控制」（第50頁）"
-          ]
+          ],
+          "evidence_page_orig": "51"
         }
-      ]
+      ],
+      "source_page_orig": "37",
+      "page_shift": {
+        "src": {
+          "orig": "37",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "51",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "妥善管理化學藥品與廢棄物生命週期，減少對空氣、水與土壤的排放",
       "declared_year": 107,
       "target_year": 109,
-      "source_page": "7",
+      "source_page": "10",
       "final_status": "部分達成",
       "status": [
         {
@@ -360,7 +1042,8 @@
             "生物可分解性廢水採用活性污泥與超薄膜過濾單元系統處理，所產生之有機污泥則經由分離過濾後，交由符合法律規範的環保清運公司清運，委託合規的廢棄物處理商進行熱處理後再利用，處理過之廢水連同生活污水一併經管線傳送至園區污水處理廠。（第76頁）",
             "有害或一般固體廢棄物運送至園區的資源再生中心或其他合格處理廠商焚化處理。生產工廠排放之空氣污染物，如粒狀污染物、酸性氣體、鹼性污染物或有機蒸氣等，均會經由兩段式冷凝器與洗滌塔去除。關係企業可回收利用的溶劑則運送至昆山德潤環保發展有限公司提純回收。（第76頁）",
             "化學品使用已控管其安全存量及標準分類程序，並備置完整的個人安全防護具供操作者使用，確保化學品使用及儲存上的安全。（第80頁）"
-          ]
+          ],
+          "evidence_page_orig": "54"
         },
         {
           "year": 109,
@@ -374,9 +1057,89 @@
             "「● 廢棄物」（第44頁）",
             "「● 排放」（第44頁）",
             "本公司屬於化學製藥業，製程所產生的廢水均透過廠區內的廢水處理設備合法處理、排放。（第64頁）"
-          ]
+          ],
+          "evidence_page_orig": "73"
         }
-      ]
+      ],
+      "source_page_orig": "7",
+      "page_shift": {
+        "src": {
+          "orig": "7",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "54",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "73",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成廠商和公司員工雙方人員處理危機的演習訓練",
@@ -397,9 +1160,56 @@
             "●接受入廠講習訓練，領取綠色講習證、登記入廠資料（第55頁）",
             "●接受安衛環保部門危害告知，並簽認安衛環保講習切結書（第55頁）",
             "●接受區轄單位危害告知及現場監督（第55頁）"
-          ]
+          ],
+          "evidence_page_orig": "101"
         }
-      ]
+      ],
+      "source_page_orig": "78",
+      "page_shift": {
+        "src": {
+          "orig": "78",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "109": {
+            "evidence": {
+              "orig": "101",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年廢棄物產出量減少約 3%~5%",
@@ -420,9 +1230,56 @@
             "總量 2019：2,763；2020：3,576（第74頁）",
             "「2020 年強化減廢程序，提高高含水率廢液之處理量，氣提塔之處理量增為 1121 噸」（第73頁）",
             "「總量 4,036 2,763 3,576」（第74頁）"
-          ]
+          ],
+          "evidence_page_orig": "73"
         }
-      ]
+      ],
+      "source_page_orig": "45",
+      "page_shift": {
+        "src": {
+          "orig": "45",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "109": {
+            "evidence": {
+              "orig": "73",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年用水量及溫室氣體排放量減少約 1%~2%",
@@ -440,9 +1297,44 @@
             "2019年 溫室氣體排放量 23,132 tCO2e（第71頁）",
             "2020年 溫室氣體排放量 23,302 tCO2e（第71頁）",
             "2020 年度本公司行政大樓頂樓設置之太陽能板總發電度數為 38,684 度 , 所生產綠電售電收入為 248,310 元；相當於減少溫室氣體排放 19,690.15kg CO2e。（第72頁）"
-          ]
+          ],
+          "evidence_page_orig": "63"
         }
-      ]
+      ],
+      "source_page_orig": "45",
+      "page_shift": {
+        "src": {
+          "orig": "45",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "109": {
+            "evidence": {
+              "orig": "63",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "長期夜間工作與連續輪班者安排專案健康檢查",
@@ -462,9 +1354,52 @@
             "「台灣神隆公司重視員工的健康，除了公司政策遵守「職業安全衛生法」及「勞工健康保護規則」之外；內部另訂「健康管理程序書」、「員工健康管理規範」建立合理之員工健康管理規範。」（第92頁）",
             "「同時根據每年員工健康檢查之各項數據，制定符合同仁需求之健康促進計畫，並且每年依據計畫成效調整方向，並獲得衛生福利部國民健康署健康職場認證標章。」（第92頁）",
             "2020年度員工健康檢查統計（第93頁）"
-          ]
+          ],
+          "evidence_page_orig": "93"
         }
-      ]
+      ],
+      "source_page_orig": "69",
+      "page_shift": {
+        "src": {
+          "orig": "69",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "109": {
+            "evidence": {
+              "orig": "93",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年定期發行企業永續報告書",
@@ -484,9 +1419,52 @@
             "2021 年台灣神隆永續報告書將依照臺灣證券交易所「上市公司編製與申報永續報告書作業辦法」規定，採用 GRI Standards 作為主要考量主題（第28頁）",
             "102-52 報導週期 關於本報告書 03（第72頁）",
             "102-51 上一次報告書的日期 關於本報告書 03（第72頁）"
-          ]
+          ],
+          "evidence_page_orig": "3"
         }
-      ]
+      ],
+      "source_page_orig": "3",
+      "page_shift": {
+        "src": {
+          "orig": "3",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "110": {
+            "evidence": {
+              "orig": "3",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年廢棄物產出量減少約 3%～5%",
@@ -507,9 +1485,56 @@
             "2020 年委外處理之高含水率廢液量由 2019 年 282 公噸減為 94 公噸；2021 年由汽提塔處理為 357.4 公噸，委外處理之高含水率廢液更降至 59 公噸。（第48頁）",
             "2021 年廢棄物申報總量。（第80頁）",
             "2021 年度公司依廢棄物清理法及事業主管機關所訂之申報規定於事業廢棄物申報及管理資訊系統登載之事業廢棄物處理總量。（第80頁）"
-          ]
+          ],
+          "evidence_page_orig": "40"
         }
-      ]
+      ],
+      "source_page_orig": "63",
+      "page_shift": {
+        "src": {
+          "orig": "63",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "110": {
+            "evidence": {
+              "orig": "40",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年用水量及溫室氣體排放量減少約 1%～2%",
@@ -530,9 +1555,56 @@
             "2021 年取水、排水及耗水總量。（第80頁）",
             "2021 年度公司自行政大樓及針劑廠頂樓設置之太陽能板總發電度數及躉售台灣電力公司之綠電收入，並依照經濟部能源局公告最新電力排碳係數計算減碳總量。（第80頁）",
             "305-1 直接（範疇一）溫室氣體排放　3.3 溫室氣體排放 40（第74頁）"
-          ]
+          ],
+          "evidence_page_orig": "40"
         }
-      ]
+      ],
+      "source_page_orig": "63",
+      "page_shift": {
+        "src": {
+          "orig": "63",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "110": {
+            "evidence": {
+              "orig": "40",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "增設 1 台空調機馬達變頻器",
@@ -552,7 +1624,37 @@
             "廢水廠溶氧控制（鼓風機改變頻機控制）。（第58頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "44",
+      "page_shift": {
+        "src": {
+          "orig": "44",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "111": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "正式運轉監控應變中心",
@@ -573,9 +1675,56 @@
             "監控應變中心及 ERT 成員之急救技能訓練 每季二次（第74頁）",
             "● 監控應變中心及 ERT 成員之急救技能訓練 每季二次（第74頁）",
             "並由監控應變中心監測，對監控應變中心應變專員及緊急應變小組加強訓練（第75頁）"
-          ]
+          ],
+          "evidence_page_orig": "78"
         }
-      ]
+      ],
+      "source_page_orig": "63",
+      "page_shift": {
+        "src": {
+          "orig": "63",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "111": {
+            "evidence": {
+              "orig": "78",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "汰換 3 台老舊空調箱",
@@ -591,9 +1740,36 @@
           "evidence_page": "57",
           "clues": [
             "全球氣候變遷，水資源成為嚴肅課題。神隆用水量以製程用水占比較高，其餘為生活用水，因夏天冷卻水蒸發占比較高，為有效利用水資源，將空調冷凝水、RO 濃縮廢水回收至冷卻水塔散熱後再利用。（第56頁）"
-          ]
+          ],
+          "evidence_page_orig": "57"
         }
-      ]
+      ],
+      "source_page_orig": "44",
+      "page_shift": {
+        "src": {
+          "orig": "44",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "111": {
+            "evidence": {
+              "orig": "57",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "投入約新台幣 5 億元研發費用以支持研發計畫並提升競爭力",
@@ -612,7 +1788,8 @@
             "截至 2022 年底台灣神隆擁有發明共 47 項，專利達 263 件，其中製程專利與晶型專利，占所有專利的 80%。（第29頁）",
             "「討論科學家與研發人員之人才招募與留任作為」參閱 4.1 人力概況",
             "「神隆更深入各專業領域延攬生物醫藥相關的研發人才，並與各校維繫良好關係，推動產學合作，吸引研發人才加入。」（第94頁）"
-          ]
+          ],
+          "evidence_page_orig": "50"
         },
         {
           "year": 112,
@@ -628,7 +1805,74 @@
             "「本公司預計投入之研發費用金額係依預算及新產品開發編列，往年研發經費約占營業收入的百分之七 ~ 十二左右。未來隨營業額成長，將逐步提高年度研發費用，藉以支持未來研發計畫，增加本公司之競爭力，預估未來二年內將投入約新台幣 8 億元的研發費用。」（第56頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "37",
+      "page_shift": {
+        "src": {
+          "orig": "37",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "111": {
+            "evidence": {
+              "orig": "50",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "碳邊境調整機制試行",
@@ -658,7 +1902,53 @@
           "evidence_page": null,
           "clues": []
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "111": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": null,
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "取得範疇 1～2 合理保證等級報告書",
@@ -672,9 +1962,31 @@
           "status": "已達成",
           "evidence": "2023 年 9 月完成 2022年溫室氣體盤查通過ISO 14064-1第三方查證，取得範疇1~2 合理保證等報告書",
           "evidence_page": "109",
-          "clues": []
+          "clues": [],
+          "evidence_page_orig": "109"
         }
-      ]
+      ],
+      "source_page_orig": "96",
+      "page_shift": {
+        "src": {
+          "orig": "96",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "109",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "委託外部專業機構進行溫室氣體查證",
@@ -694,9 +2006,52 @@
             "● 完成個體 ISO 14064-1 溫室氣體第三方查證，取得範疇 1~2 合理保證等級報告書（第45頁）",
             "「註 2：2022 年溫室氣體排放數據通過第三方查證。」（第64頁）",
             "「2023 年 9 月完成 2022年溫室氣體盤查通過ISO 14064-1第三方查證，取得範疇1~2 合理保證等報告書」（第109頁）"
-          ]
+          ],
+          "evidence_page_orig": "4"
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "4",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成 ISO 14064-1 溫室氣體第三方查證",
@@ -713,9 +2068,40 @@
           "clues": [
             "9 月 2022 年度溫室氣體盤查通過 ISO 14064-1 第三方查證（第15頁）",
             "金管會 2022 年公布推動「上市櫃公司永續發展路徑圖」，神隆依規定辦理「溫室氣體盤查與查證」之資訊揭露，更於規定時程前完成盤查與查證，並每季向董事會報告執行進度。（第45頁）"
-          ]
+          ],
+          "evidence_page_orig": "109"
         }
-      ]
+      ],
+      "source_page_orig": "40",
+      "page_shift": {
+        "src": {
+          "orig": "40",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "109",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "廢棄物產量密集度每年減少約 1%～2%",
@@ -738,7 +2124,49 @@
             "「廢棄物總量中以廢溶劑為最大宗，為節能減碳及降低廢棄物處理費用，同時考量循環經濟及碳足跡等國際環保需求，內部擬定相關作為：」（第67頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "30",
+      "page_shift": {
+        "src": {
+          "orig": "30",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "持續追蹤母性健康保護對象至產後一年或哺乳結束後",
@@ -755,9 +2183,40 @@
           "clues": [
             "另外，職護每月以電子郵件發送母性健康保護宣導主題及母性健康保護法規，提醒主管及同仁主動告知職醫護以利安排面談諮詢，或評估後須轉介婦產科事宜。（第83頁）",
             "2023 年每月母性健康保護宣導主題（第84頁）"
-          ]
+          ],
+          "evidence_page_orig": "83"
         }
-      ]
+      ],
+      "source_page_orig": "74",
+      "page_shift": {
+        "src": {
+          "orig": "74",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "83",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "汰換更新空調箱以提高效能並降低耗能",
@@ -775,9 +2234,44 @@
             "廠內已設置太陽能板，未來將推動溫室氣體減量計畫，逐步檢視汰換效能衰減設備，如空調冰機設備等，降低碳排放量。（第43頁）",
             "神隆內部節能減碳小組，加強節能減碳工作之規劃推展，多方評估汰換低效率改為高效能之設備可行性，減少營運過程對環境造成的各項衝擊。（第45頁）",
             "「2024 年投資 98 萬購置 1 台空調箱，進行汰換行政一樓老舊空調箱，可將空調箱效能提高，避免過度降低冰水主機溫度而耗能。」（第62頁）"
-          ]
+          ],
+          "evidence_page_orig": "62"
         }
-      ]
+      ],
+      "source_page_orig": "57",
+      "page_shift": {
+        "src": {
+          "orig": "57",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "62",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "溫室氣體排放強度減少約 1%～2%",
@@ -797,7 +2291,37 @@
             "「台灣神隆近三年溫室氣體盤查紀錄表」中「tCO2e/ 百萬元產值」2022 年為 6.29、2023 年為 7.11。（第64頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "30",
+      "page_shift": {
+        "src": {
+          "orig": "30",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "進行標的產品 SPT1025 碳足跡盤查及查證作業",
@@ -817,9 +2341,52 @@
             "1 月 完成ISO 14067 主力核心產品之一碳足跡盤查第三方查證（第15頁）",
             "● 完成 ISO 14067 主力核心產品 SPT1025 碳足跡盤查第三方查證（第45頁）",
             "「SPT1025 產品碳足跡查證證書」（第64頁）"
-          ]
+          ],
+          "evidence_page_orig": "64"
         }
-      ]
+      ],
+      "source_page_orig": "59",
+      "page_shift": {
+        "src": {
+          "orig": "59",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "64",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "進行科技大樓外部溫室氣體排放查證",
@@ -835,7 +2402,24 @@
           "evidence_page": null,
           "clues": []
         }
-      ]
+      ],
+      "source_page_orig": "59",
+      "page_shift": {
+        "src": {
+          "orig": "59",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成製程廢溶劑再利用硬體建置及申請",
@@ -868,9 +2452,77 @@
             "● 短中期向主管機關提出廢液再利用製程之空污許可申請，以汽提或蒸餾塔方式純化處理上述說明外之製程廢液 , 以次級產品方式外售給其他產業再使用（預估每年約可降低處理費用為 380 萬元）。（第45頁）",
             "「與可回收再利用之廠商合作，以廢液再利用的方式處理無法回收製程再使用的高純度廢液（如甲醇（MeOH）、丙酮（Acetone）、乙酸乙酯（EA）、甲苯（Toluene）及異丙醇（Isopropanol）等常用溶劑）。」（第68頁）",
             "「一般廢溶劑 (C-0301) 441.710 724.690 644.340 再利用」（第69頁）"
-          ]
+          ],
+          "evidence_page_orig": "46"
         }
-      ]
+      ],
+      "source_page_orig": "40",
+      "page_shift": {
+        "src": {
+          "orig": "40",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "46",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "以 SPT1217 為標的逐步建立主要產品碳足跡資料並規劃減量",
@@ -891,9 +2543,56 @@
             "● 以 2023 年為溫室氣體排放 ( 合併報表 ) 範疇一及範疇二為減量基準年，範疇一及範疇二加總之排放量每年遞減至少 4.2% 為目標。（第44頁）",
             "「2024 年及 2025 年將延續此基礎，以 SPT1217 及 SPT1091 為標的產品，逐步建立公司主要產品的碳足跡資料，進而進行碳排放減量規劃。」（第63頁）",
             "「若有設定氣候相關目標，應說明所涵蓋之活動、溫室氣體排放範疇、規劃期程，每年達成進度等資訊；若使用碳抵換或再生能源憑證 (RECs) 以達成相關目標，應說明所抵換之減碳額度來源及數量或再生能源憑證（RECs）數量。」（第112頁）"
-          ]
+          ],
+          "evidence_page_orig": "46"
         }
-      ]
+      ],
+      "source_page_orig": "64",
+      "page_shift": {
+        "src": {
+          "orig": "64",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "46",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "以無機清潔溶液替代有機溶劑，執行產品線洗滌劑替換",
@@ -909,9 +2608,36 @@
           "evidence_page": "61",
           "clues": [
             "全面檢視製程洗滌程序並優化清洗設備，減少有機溶劑使用量。（第9頁）"
-          ]
+          ],
+          "evidence_page_orig": "61"
         }
-      ]
+      ],
+      "source_page_orig": "61",
+      "page_shift": {
+        "src": {
+          "orig": "61",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "61",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成 SPT1217 產品碳足跡盤查",
@@ -929,9 +2655,44 @@
             "在淨零排放這一關乎產業競爭力的重要議題上，台灣神隆提前於法定要求前，自主完成碳盤查及進行主要產品碳足跡驗證（第6頁）",
             "完成ISO �����主力核心產品之一碳足跡盤查第三方查證（第12頁）",
             "● 本公司規劃每年針對量產產品進行產品碳足跡盤查，2023 年已完成 SPT1025 產品碳足跡盤查與查證，預計2025年完成SPT1217及SPT1091產品碳足跡盤查。（第44頁）"
-          ]
+          ],
+          "evidence_page_orig": "46"
         }
-      ]
+      ],
+      "source_page_orig": "43",
+      "page_shift": {
+        "src": {
+          "orig": "43",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "46",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成範疇一至範疇三盤查與查證",
@@ -952,9 +2713,56 @@
             "● 預計 2025 年完成 2024 年範疇一至全面範疇三盤查與查證，經全面查證後，掌握完整資訊做為節能減碳之檢視優化依據。（第46頁）",
             "「2023 年溫室氣體排放數據通過第三方查證。」（第63頁）",
             "「2024 年溫室氣體排放數據，擬於 2025 年 11 月完成查證。」（第63頁）"
-          ]
+          ],
+          "evidence_page_orig": "113"
         }
-      ]
+      ],
+      "source_page_orig": "45",
+      "page_shift": {
+        "src": {
+          "orig": "45",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "113",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "將實習時間延長並擴大實習對象，以強化實習生培育及留任",
@@ -974,9 +2782,52 @@
             "「2024 年共有 10 位實習生參與」（第72頁）",
             "「公司提供多種教育訓練課程，協助各層級人員持續提高工作效能、展現符合企業文化價值之工作行為；並依據考評成果進一步提供專業相關指導與個人職涯發展所需之教育訓練與實作機會。」（第81頁）",
             "「另外，為提升在職員工的專業知能，公司提供在職進修補助，鼓勵同仁至大專院校修習正式學歷、學位或在職學分班，提升專業知識。」（第81頁）"
-          ]
+          ],
+          "evidence_page_orig": "72"
         }
-      ]
+      ],
+      "source_page_orig": "71",
+      "page_shift": {
+        "src": {
+          "orig": "71",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "72",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "投資購置空調箱，汰換老舊空調箱以提升效能並降低耗能",
@@ -999,7 +2850,49 @@
             "「2025 年編列 2,400 萬預算進行冰水主機、空調設備等汰舊換新提高其效能以減少碳排放量。」（第62頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "62",
+      "page_shift": {
+        "src": {
+          "orig": "62",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "持續穩定供應第一項針劑代工產品",
@@ -1019,9 +2912,52 @@
             "「委託研製業務受惠於治療遺傳性癲癇、晚期肝癌 / 甲狀腺癌、前列腺癌、非洲嗜睡症等適應症用藥與心血管支架醫材塗層等產品配合客戶需求穩定供貨，以及代客生產之紫杉醇注射液針劑持續出貨，占整體營收比例上升至 29%」（第20頁）",
             "本公司主要產品為原料藥，非製劑藥品；2024 年所出貨製劑為受託代工產品，未在生產世界衛生組織藥品預審計劃（ PQP ）中預審藥品清單中的產品。（第109頁）",
             "本公司 2024 年所出貨製劑為受託代工產品，配合顧客生產非神隆自有銷售藥品，故不適用。（第109頁）"
-          ]
+          ],
+          "evidence_page_orig": "19"
         }
-      ]
+      ],
+      "source_page_orig": "21",
+      "page_shift": {
+        "src": {
+          "orig": "21",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "19",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提升董事會、董事成員、薪資報酬委員會及審計委員會績效評估結果並提報相關會議",
@@ -1037,9 +2973,36 @@
           "evidence_page": "25",
           "clues": [
             "「為落實公司治理精神並提升董事會功能，本公司訂定「董事會績效評估辦法」，明訂董事會每年應至少執行一次針對整體董事會、個別董事成員及各功能性委員會之績效評估」（第25頁）"
-          ]
+          ],
+          "evidence_page_orig": "25"
         }
-      ]
+      ],
+      "source_page_orig": "28",
+      "page_shift": {
+        "src": {
+          "orig": "28",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "25",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年規劃國內優秀藝術創作者作品於公司內展出",
@@ -1060,9 +3023,56 @@
             "「尾牙活動、親子家庭日、神隆藝壇、地方創生工作坊、開齋節歡慶活動、母親節活動、神隆電影包場活動、中秋點心共享活動、神隆講堂、感恩聖誕幸福三重奏、實境解謎遊戲、冬至享湯圓、社團活動 ( 註 )」（第79頁）",
             "神隆藝廊定期展出 • 贊助經費 3.7 萬元（含畫作運送費） 打造富有藝文氣息的工作環境，同時提升員工美學素養（第95頁）",
             "台灣神隆藝術走廊（第96頁）"
-          ]
+          ],
+          "evidence_page_orig": "94"
         }
-      ]
+      ],
+      "source_page_orig": "90",
+      "page_shift": {
+        "src": {
+          "orig": "90",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "94",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "籌建能管系統以精準監測冰水系統能耗，達成節能減碳",
@@ -1083,9 +3093,56 @@
             "● 建立完善能源管理系統，透過資料收集、監測和分析來最佳化能源使用，降低碳排放。（第44頁）",
             "「2024 年進行調整產線空調系統冰水主機操作參數，於夜間 10 點至早上 5 點，提升冰水設定溫度 1℃，預估 2025 年可節省用電約為 183,456 百萬焦耳。」（第61頁）",
             "「2025 年編列 2,400 萬預算進行冰水主機、空調設備等汰舊換新提高其效能以減少碳排放量。」（第62頁）"
-          ]
+          ],
+          "evidence_page_orig": "33"
         }
-      ]
+      ],
+      "source_page_orig": "61",
+      "page_shift": {
+        "src": {
+          "orig": "61",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "33",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "向主管機關辦理製程廢溶劑再利用文件變更及申請作業",
@@ -1115,9 +3172,65 @@
             "● 短中期向主管機關提出廢液再利用製程之空污許可申請，以汽提或蒸餾塔方式純化處理上述說明外之製程廢液 , 以次級產品方式外售給其他產業再使用（預估每年約可降低處理費用為 380 萬元）。（第45頁）",
             "「本公司已投入約 1,500 萬元之環保資本支出，規劃於廠內設置廢液再利用製程以自行處理製藥製程產出的廢液，經由汽提或蒸餾方式純化成次級產品供其他產業再使用，或與再利用處理廠商合作，以廢液再利用方式處理，提升再使用率。」（第68頁）",
             "「一般廢溶劑 (C-0301) 644.340 再利用」（第114頁）"
-          ]
+          ],
+          "evidence_page_orig": "46"
         }
-      ]
+      ],
+      "source_page_orig": "40",
+      "page_shift": {
+        "src": {
+          "orig": "40",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "46",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "啟用製程廢溶劑再利用計畫",
@@ -1150,9 +3263,77 @@
             "● ● 啟用「製程廢溶劑再利用」計劃（第46頁）",
             "「一般廢溶劑 (C-0301) 441.710 724.690 644.340 再利用」（第69頁）",
             "「本公司已投入約 1,500 萬元之環保資本支出，規劃於廠內設置廢液再利用製程以自行處理製藥製程產出的廢液」（第68頁）"
-          ]
+          ],
+          "evidence_page_orig": "114"
         }
-      ]
+      ],
+      "source_page_orig": "40",
+      "page_shift": {
+        "src": {
+          "orig": "40",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "114",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成母公司個體溫室氣體盤查",
@@ -1171,7 +3352,8 @@
             "「台灣神隆近三年溫室氣體盤查紀錄表」（第64頁）",
             "■ 母公司個體盤查 -2025 年完成盤查（第109頁）",
             "本公司擬於2024年10 月依 GHG Protocol標準完成 2023 年溫室氣體盤查與查證，將依規定2025 年前完成個體盤查，2027 年前完成個體查確信。（第109頁）"
-          ]
+          ],
+          "evidence_page_orig": "64"
         },
         {
           "year": 113,
@@ -1183,9 +3365,73 @@
             "「註 1：2022 年僅為台灣神隆母公司溫室氣體排放數據，且通過第三方查證。」（第63頁）",
             "「2022 母公司個體 3,069 3,262.84 1.063 16,045.18 5.228 - -」（第113頁）",
             "「■ 母公司個體盤查 -2025 年完成盤查」（第113頁）"
-          ]
+          ],
+          "evidence_page_orig": "63"
         }
-      ]
+      ],
+      "source_page_orig": "96",
+      "page_shift": {
+        "src": {
+          "orig": "96",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "64",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "63",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "投入研發費用以支持未來研發計畫並提升競爭力",
@@ -1206,9 +3452,56 @@
             "「截至 2024 年底台灣神隆擁有發明共 42 項，專利達 144 件，其中製程專利與晶型專利，占所有專利的 82%。」（第32頁）",
             "● 基於醫藥產業產品研發時程長、不確定性高的特性，神隆藉由內部充沛的研發能量與技術優勢，每年皆有高額研發投資。（第56頁）",
             "「本公司預計投入之研發費用金額係依預算及新產品開發編列，往年研發經費約占營業收入的百分之七 ~ 十二左右。未來隨營業額成長，將逐步提高年度研發費用，藉以支持未來研發計畫，增加本公司之競爭力，預估未來二年內將投入約新台幣 10 億元的研發費用。」（第56頁）"
-          ]
+          ],
+          "evidence_page_orig": "18"
         }
-      ]
+      ],
+      "source_page_orig": "56",
+      "page_shift": {
+        "src": {
+          "orig": "56",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "18",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提出範疇三減量目標",
@@ -1231,7 +3524,49 @@
             "「2024 年及 2025 年將延續此基礎，以 SPT1217 及 SPT1091 為標的產品，逐步建立公司主要產品的碳足跡資料，進而進行碳排放減量規劃。」（第63頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "4",
+      "page_shift": {
+        "src": {
+          "orig": "4",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "碳邊境調整機制正式上路",
@@ -1271,7 +3606,66 @@
             "● 情境設定：歐盟預計跟產品增收碳關稅（第44頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "111": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": null,
+            "clues": []
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "合併報表子公司完成溫室氣體盤查",
@@ -1289,7 +3683,8 @@
             "為因應國際及客戶端對環境保護的需求，台灣神隆參考國際科學基礎減量目標倡議 (Science-Based Target Initiative, SBTi)，設定其目標於 2024 年以 GHG Protocol 為標準，完成 2023 年的範疇一至範疇三盤查與查證，盤查邊界涵蓋台灣神隆台南廠、台北辦公室；其子公司神隆醫藥（常熟）有限公司及上海神隆生化科技有限公司。（第45頁）",
             "● 合併報表子公司完成溫室氣體盤查（第45頁）",
             "「2023 年子公司溫室氣體盤查紀錄表」（第65頁）"
-          ]
+          ],
+          "evidence_page_orig": "64"
         },
         {
           "year": 113,
@@ -1301,9 +3696,69 @@
             "● ○ 合併報表子公司完成溫室氣體盤查（第46頁）",
             "「註 2：2023 年及 2024 年盤查範圍包含：台灣神隆母公司，及子公司神隆醫藥（常熟）有限公司、神隆上海生化科技有限公司。」（第63頁）",
             "「3. 台灣神隆子公司盤查範疇包含：神隆醫藥（常熟）有限公司、神隆上海生化科技有限公司。」（第113頁）"
-          ]
+          ],
+          "evidence_page_orig": "63"
         }
-      ]
+      ],
+      "source_page_orig": "40",
+      "page_shift": {
+        "src": {
+          "orig": "40",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "64",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "63",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成個體查確信",
@@ -1326,7 +3781,49 @@
             "「附錄 6 會計師有限確信報告」（第116頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "109",
+      "page_shift": {
+        "src": {
+          "orig": "109",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "合併報表子公司完成溫室氣體第三方查證",
@@ -1357,15 +3854,75 @@
             "「註 3：2023 年溫室氣體排放數據通過第三方查證。」（第63頁）",
             "「註 5：2024 年溫室氣體排放數據，擬於 2025 年 11 月完成查證。」（第63頁）",
             "「3. 台灣神隆子公司盤查範疇包含：神隆醫藥（常熟）有限公司、神隆上海生化科技有限公司。」（第113頁）"
-          ]
+          ],
+          "evidence_page_orig": "113"
         }
-      ]
+      ],
+      "source_page_orig": "40",
+      "page_shift": {
+        "src": {
+          "orig": "40",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "113",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "實現全面且具生產力的就業，保障同工同酬",
       "declared_year": 107,
       "target_year": 119,
-      "source_page": "6",
+      "source_page": "9",
       "final_status": "已達成",
       "status": [
         {
@@ -1380,7 +3937,8 @@
             "我們在招募、任用及發展上提供公平機會，並依據職務內容及所需職能招募培育人才，不因性別、年齡、種族、宗教、國籍或其他法令保護情事等因素而產生歧視行為。（第57頁）",
             "高階主管女性員工占比為48%，可見神隆營業機會平等的用人政策。（第57頁）",
             "GRI 405-2 女性對男性基本薪資加薪酬的比率　4.2員工福利與照顧　62（第92頁）"
-          ]
+          ],
+          "evidence_page_orig": "59"
         },
         {
           "year": 109,
@@ -1394,7 +3952,8 @@
             "「以 2020 年度薪資資料 為例，男性與女性之薪資比例為 1：1.11」（第80頁）",
             "「不因地域、種族、宗教、性別、婚姻狀況、政治立場或工會社團之差異有所不同。」（第80頁）",
             "「截至 2020 年 12 月 31 日止公司雇用具有身心障礙身分者為正式職員人數達 9 人，就業比例高於法定水準」（第78頁）"
-          ]
+          ],
+          "evidence_page_orig": "10"
         },
         {
           "year": 110,
@@ -1408,7 +3967,8 @@
             "本屆董事席次中包含 12 席男性及 3 席女性，女性董事席次占 20%（第22頁）",
             "2021 年人力配置依據業務接單量及事業發展需求，進用超過 100 位人員；總體離職率為 16.6%。（第51頁）",
             "我們在招募、任用及發展上提供公平機會，並依據職務內容及所需職能招聘並培育人才，不因性別、年齡、種族、宗教、國籍或其他法令保護情事等因素而產生歧視行為。（第51頁）"
-          ]
+          ],
+          "evidence_page_orig": "53"
         },
         {
           "year": 111,
@@ -1422,7 +3982,8 @@
             "員工 健康職場 平等待遇 尊重人權（第32頁）",
             "神隆在經營企業之同時，積極實踐企業永續發展，以符合國際發展趨勢，並透過企業公民擔當，提升國家經濟貢獻，改善員工、社區、社會之生活品質，促進以永續發展為本之競爭優勢，亦遵守相關法規及遵循國際人權公約，包含性別平等、員工照顧及禁止歧視等人權聲明，亦將人權政策推廣至供應鏈之管理，共同打造永續環境。（41）",
             "神隆秉持同工同酬的原則及遵守各經營據點當地勞動法令之規範（第67頁）"
-          ]
+          ],
+          "evidence_page_orig": "67"
         },
         {
           "year": 112,
@@ -1436,7 +3997,8 @@
             "員工 健康職場 平等待遇 尊重人權（第37頁）",
             "神隆在經營企業之同時，積極實踐企業永續發展，以符合國際發展趨勢，並透過企業公民擔當，提升國家經濟貢獻，改善員工、社區、社會之生活品質，促進以永續發展為本之競爭優勢，亦遵守相關法規及遵循國際人權公約，包含性別平等、員工照顧及禁止歧視等人權聲明（第46頁）",
             "「在招募、任用及發展上提供公平機會，並依據職務內容及所需職能招聘並培育人才，不因性別、年齡、種族、宗教、國籍或其他法令保護情事等因素而產生歧視行為。」（第71頁）"
-          ]
+          ],
+          "evidence_page_orig": "75"
         },
         {
           "year": 113,
@@ -1450,15 +4012,227 @@
             "「員工是公司的最大資產，神隆相當重視員工的待遇與福利，並提供優於相關法令之保障。」（第75頁）",
             "「2024 年平均調薪率高於物價指數年增率，為物價指數年增率之 1.7 倍。」（第75頁）",
             "202-1 不同性別的基層人員標準薪資與當地最低薪資的比率 4.1 人力概況 72（第104頁）"
-          ]
+          ],
+          "evidence_page_orig": "75"
         }
-      ]
+      ],
+      "source_page_orig": "6",
+      "page_shift": {
+        "src": {
+          "orig": "6",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "59",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "10",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "53",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "67",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "75",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "75",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提升乾淨能源與相關科技的取得，促進能源基礎建設及乾淨能源科技投資",
       "declared_year": 107,
       "target_year": 119,
-      "source_page": "6",
+      "source_page": "9",
       "final_status": "已達成",
       "status": [
         {
@@ -1469,7 +4243,8 @@
           "clues": [
             "7.4在西元2030年以前，確保所有的學子都習得必要的知識與技能而可以促進永續發展，包括永續發展教育、永續生活模式、人權、性別平等、和平及非暴力提倡、全球公民、文化差異欣賞，以及文化對永續發展的貢獻。（第6頁）",
             "2019 年度行政光電系統發電量統計表（第53頁）"
-          ]
+          ],
+          "evidence_page_orig": "53"
         },
         {
           "year": 109,
@@ -1482,7 +4257,8 @@
             "2020 年度本公司行政大樓頂樓設置之太陽能板總發電度數為 38,684 度 , 所生產綠電售電收入為 248,310 元；相當於減少溫室氣體排放 19,690.15kg CO2e。（第72頁）",
             "「2020年太陽能板發電電量及綠電販賣收入。」（第117頁）",
             "「2020年度自公司行政大樓頂樓設置之太陽能板總發電度數及躉售台灣電力公司之綠電收入，並依照經濟部能源局公告最新電力排碳係數計算減碳總量。」（第117頁）"
-          ]
+          ],
+          "evidence_page_orig": "72"
         },
         {
           "year": 110,
@@ -1496,7 +4272,8 @@
             "302-1 組織內部的能源消耗量 3.2 能、資源使用與管理 34（第73頁）",
             "302-4 減少能源消耗 3.2 能、資源使用與管理 3.3 溫室氣體排放 34 40（第73頁）",
             "2021 年太陽能板發電電量及綠電販賣收入。（第80頁）"
-          ]
+          ],
+          "evidence_page_orig": "6"
         },
         {
           "year": 111,
@@ -1510,7 +4287,8 @@
             "廠內已設置太陽能板，未來將推動溫室氣體減量計畫，逐步檢視汰換效能衰減設備，如空調冰機設備等，降低碳排放量。（38）",
             "2022 年度自產總發電量為 834,681.6 百萬焦耳，較 2021 年增加約 35%，其中 707,140.8 百萬焦耳為自用。（55）",
             "2022 年度本公司行政大樓頂樓設置之太陽能板總發電度數為 35,428 度 , 所生產綠電售電收入為 227,412 元；相當於減少溫室氣體排放 17,536.86 kg CO2e（第60頁）"
-          ]
+          ],
+          "evidence_page_orig": "60"
         },
         {
           "year": 112,
@@ -1524,7 +4302,8 @@
             "「2023 年度本公司行政大樓頂樓設置之太陽能板總發電度數為 34,416 度 , 所生產綠電售電收入為 220,916 元；相當於減少溫室氣體排放 17,001.50 kg CO2e；」（第66頁）",
             "年度總和 34,416 - 220,916 17,001.50 1.72（第110頁）",
             "年度總和 184,548 91,166.71 9.21（第110頁）"
-          ]
+          ],
+          "evidence_page_orig": "66"
         },
         {
           "year": 113,
@@ -1538,15 +4317,207 @@
             "302-4 減少能源消耗 3.2 能、資源使用與管理 60（第105頁）",
             "302-5 降低產品和服務的能源需求 3.2 能、資源使用與管理 60（第105頁）",
             "「2024 年度針劑廠發電量統計表」（第114頁）"
-          ]
+          ],
+          "evidence_page_orig": "67"
         }
-      ]
+      ],
+      "source_page_orig": "6",
+      "page_shift": {
+        "src": {
+          "orig": "6",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "53",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "72",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "6",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "60",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "66",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "67",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提升各產業水資源使用效率，確保永續淡水供應與回收",
       "declared_year": 107,
       "target_year": 119,
-      "source_page": "6",
+      "source_page": "9",
       "final_status": "已達成",
       "status": [
         {
@@ -1560,7 +4531,8 @@
             "6.4在西元2030年以前，大幅增加各個產業的水使用效率，確保永續的淡水供應與回收，以解決水資源問題，並大幅減少因為水計畫而受苦的人數。（第7頁）",
             "台灣神隆公司用水量統計（第47頁）",
             "台灣神隆公司用水量、廢水量與每公斤產品之關係（第47頁）"
-          ]
+          ],
+          "evidence_page_orig": "49"
         },
         {
           "year": 109,
@@ -1574,7 +4546,8 @@
             "台灣神隆公司取水量統計（第64頁）",
             "空調冷凝水及純水系統排廢回收至冷卻水塔，可節省約用水。（第68頁）",
             "冷卻水塔增設擋水簾，減少飛散損失及蒸發量。（第68頁）"
-          ]
+          ],
+          "evidence_page_orig": "9"
         },
         {
           "year": 110,
@@ -1588,7 +4561,8 @@
             "● 風險管理 ● 資訊安全 ● 顧客健康與安全 ● 水與放流水 ● 空污（第31頁）",
             "本公司每年均配合主管機關南科管理局調查園區整體用水回收情形，填報「進駐廠商資料進行水回收調問卷調查」計算出本公司之廢水回收率。（第44頁）",
             "台灣神隆公司取水量、排水量與每公斤產品之關係（第42頁）"
-          ]
+          ],
+          "evidence_page_orig": "44"
         },
         {
           "year": 111,
@@ -1602,7 +4576,8 @@
             "排水量 ( 百萬公升 ) 59.92 74.18 81.89",
             "本公司每年均配合主管機關南科管理局調查園區整體用水回收情形，填報「進駐廠商資料進行水回收調問卷調查」計算出本公司之廢水回收率。（第56頁）",
             "空調冷凝水及純水系統排廢回收至冷卻水塔，可節省約用水。（第56頁）"
-          ]
+          ],
+          "evidence_page_orig": "56"
         },
         {
           "year": 112,
@@ -1616,7 +4591,8 @@
             "● 平日加強節水管理，配合南科園區執行限水計劃確實執行內部節約用水。（第43頁）",
             "● 公司內部有 1600 噸容積一般用水蓄水池，及南科園區設有蓄水池可供 3 萬噸水量及水塔 3 千噸水量。（第43頁）",
             "「提高冷卻水塔濃縮倍數，減少冷卻水排放量。」（第61頁）"
-          ]
+          ],
+          "evidence_page_orig": "61"
         },
         {
           "year": 113,
@@ -1629,15 +4605,219 @@
             "303-4 排水量 3.2 能、資源使用與管理 60（第105頁）",
             "303-5 耗水量 3.2 能、資源使用與管理 60（第105頁）",
             "「依公司所示之 2024 年度每月自水表統計之用水量，及每月污水處理單位統計之排水量，並依 GRI 相關規定計算耗水總量及揭露」（第115頁）"
-          ]
+          ],
+          "evidence_page_orig": "115"
         }
-      ]
+      ],
+      "source_page_orig": "6",
+      "page_shift": {
+        "src": {
+          "orig": "6",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "49",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "9",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "44",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "56",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "61",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "115",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提升貧窮與弱勢族群對極端氣候事件及災害的復原能力，降低其暴露與受害程度",
       "declared_year": 107,
       "target_year": 119,
-      "source_page": "5",
+      "source_page": "8",
       "final_status": "部分達成",
       "status": [
         {
@@ -1664,7 +4844,8 @@
             "「不定期彙整國內外相關資訊與各部門反饋意見，持續觀測並鑑別氣候變遷議題對神隆造成的潛在風險與相應之機會及效益，例如：極端氣候造成原物料價格上漲與預先規劃並建立多元供應管道、溫室氣體排放成本增加與建構減碳裝置改善排放水準、水電供應不穩對生產造成衝擊與改善資源運用效率、能源轉型造成短期電費成本增加與未來潛在效益等，並擬定對應風險管理與因應措施，以提升神隆對於氣候變遷、能資源使用等相關議題之管理與調適能力。」（第40頁）",
             "「此外，台灣神隆本著實踐企業社會責任，提供身心障礙身分者平等之就業機會。截至 2020 年 12 月 31 日止公司雇用具有身心障礙身分者為正式職員人數達 9 人，就業比例高於法定水準，並依據「適才適所」的原則按員工能力興趣任用提供適合工作。」（第78頁）",
             "2020 年疫情期間，在遵守防疫新生活下神隆仍積極推動社會公益活動，提供社區的弱勢團體關懷與協助。（第108頁）"
-          ]
+          ],
+          "evidence_page_orig": "109"
         },
         {
           "year": 110,
@@ -1677,7 +4858,8 @@
             "● 「台灣加油」公益活動，捐助防疫物資包及女性生理衛生用品（第7頁）",
             "2021 年中，本土確診案例快速飆升，全國進入三級警戒，國內產業陸續受到疫情衝擊，勞工生計大受影響，以迅雷不及掩耳速度帶來最大衝擊。（第67頁）",
             "「台灣加油」公益活動 1.捐助90份物資包，價值 4.5 萬元 2. 捐助 2 萬餘片女性生理衛生用品，價值約 5.7 萬元（第68頁）"
-          ]
+          ],
+          "evidence_page_orig": "67"
         },
         {
           "year": 111,
@@ -1715,13 +4897,172 @@
             "2024 年神隆主動響應集團舉辦的「衣舊有愛」二手衣、二手書捐贈活動，以實際行動關心社會弱勢族群，實現愛與關懷並善盡社會企業責任。（第94頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "109",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "67",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提高能源使用效率",
       "declared_year": 107,
       "target_year": 119,
-      "source_page": "6",
+      "source_page": "9",
       "final_status": "已達成",
       "status": [
         {
@@ -1734,7 +5075,8 @@
             "為達節能效果，於 15 台空調機馬達安裝變頻器，調降風車轉速，降低輸出功率，2019 年度節電量 474,336（度）。（第51頁）",
             "調整各製程換氣率至合理範圍使空調機降載，每年可減少 1-2% 的年度用電度數。（第51頁）",
             "透過監控蒸氣供應，減少 5% 的天然氣用量。（第51頁）"
-          ]
+          ],
+          "evidence_page_orig": "50"
         },
         {
           "year": 109,
@@ -1748,7 +5090,8 @@
             "「能源」（第42頁）",
             "調控及優化製程冷卻水使用量，全年可只開一台 75 匹馬力的冷卻水泵便可符合製程需求，節電量 402,960 度 ( 相當於 1,450,656 百萬焦耳 )。（第69頁）",
             "完成15台空調機馬達變頻器安裝，調降風車轉速(降低輸出功率)，以達節能效果。（第69頁）"
-          ]
+          ],
+          "evidence_page_orig": "69"
         },
         {
           "year": 110,
@@ -1762,7 +5105,8 @@
             "2020 年研發實驗室透過空調系統控制非上班時間降載運轉，每年均可節電 362,000 度 ( 相當於 1,303,200 百萬焦耳 )。（第44頁）",
             "調控及優化製程冷卻水使用量，全年可只開一台 75 匹馬力的冷卻水泵便可符合製程需求，節電量 402,960 度 ( 相當於 1,450,656 百萬焦耳 )。（第44頁）",
             "目前已完成 15 台空調機馬達變頻器安裝，調降風車轉速 ( 降低輸出功率 )，預計 2022 年再增 1 台，可再提高節能之成效。（第44頁）"
-          ]
+          ],
+          "evidence_page_orig": "6"
         },
         {
           "year": 111,
@@ -1776,7 +5120,8 @@
             "自 2015 年起，達成每年年平均節電 1% 目標。2022 年設為基準年，於溫室氣體排放量範疇一和範疇二之加總排放強度減少約 1% ～ 2% 為目標，及廢棄物產量密集度每年減少約 1% ～ 2%。（第30頁）",
             "使用更高效率的生產 8 3 24 短期（第37頁）",
             "公司於 2023 年與能源服務產業（Energy Service Company, ESCO）評估合作事宜，研擬減碳配套措施，包含盤點電力耗用清單、能源效率及節能診斷，進而提出節能改善工程設計，以降低碳費之衝擊成本。（第38頁）"
-          ]
+          ],
+          "evidence_page_orig": "57"
         },
         {
           "year": 112,
@@ -1790,7 +5135,8 @@
             "「每月統計水電使用量，持續提出改善方案」（第34頁）",
             "「生產產能排程調控最佳化，降低不必要的產線開啟。」（第34頁）",
             "與節能技術服務公司合作，執行公司主要產品計畫之碳足跡排放盤點，確認主要的碳排放來源並進行節能改善措施，以減少耗能，降低成本，增加利潤。（第44頁）"
-          ]
+          ],
+          "evidence_page_orig": "45"
         },
         {
           "year": 113,
@@ -1804,15 +5150,219 @@
             "「2023 年投資金額約為 154.8 萬元，於廠內防爆區內更換 86 座防爆 LED 燈具，2024 全年度約可節電 97,366 百萬焦耳。」（第61頁）",
             "「2024 年投入 86.2 萬於廠區照明更換防爆 LED 燈 40 座，及汰換空調設備風車馬達效率自 92.7% 提升至 95.4% 之相關節電作業，估計 2025 年共可節電 80,708 百萬焦耳。」（第61頁）",
             "302-1 組織內部的能源消耗量 3.2 能、資源使用與管理 60（第105頁）"
-          ]
+          ],
+          "evidence_page_orig": "7"
         }
-      ]
+      ],
+      "source_page_orig": "6",
+      "page_shift": {
+        "src": {
+          "orig": "6",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "50",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "69",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "6",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "57",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "45",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "7",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "改善水質、減少污染與危險物質釋出，提升用水效率、回收與安全再利用",
       "declared_year": 107,
       "target_year": 119,
-      "source_page": "6",
+      "source_page": "9",
       "final_status": "已達成",
       "status": [
         {
@@ -1826,7 +5376,8 @@
             "6.3在西元2030年以前，改善水質，減少污染，消除垃圾傾倒，減少有害化學物質與危險材料的釋出；將未經處理的廢水比例減少一半，將全球的回收與安全再利用率提高x%。（第7頁）",
             "本公司屬於化學與藥業，製程所產生的廢水均透過廠區內的廢水處理設備合法處理、排放。（第47頁）",
             "台灣神隆可處理或清運廠內生成之所有廢棄物，包含生物可分解性廢水、廢溶劑、固體廢棄物及空氣污染物。（第54頁）"
-          ]
+          ],
+          "evidence_page_orig": "49"
         },
         {
           "year": 109,
@@ -1840,7 +5391,8 @@
             "本公司屬於化學製藥業，製程所產生的廢水均透過廠區內的廢水處理設備合法處理、排放。（第64頁）",
             "提高冷卻水塔濃縮倍數，減少冷卻水排放量。（第68頁）",
             "將汙泥脫水機清洗水導入廢水系統中再處理過濾後，再用於脫水機脫泥操作，每年亦可節省部分水資源。（第68頁）"
-          ]
+          ],
+          "evidence_page_orig": "9"
         },
         {
           "year": 110,
@@ -1854,7 +5406,8 @@
             "● 風險管理 ● 資訊安全 ● 顧客健康與安全 ● 水與放流水 ● 空污（第31頁）",
             "空調冷凝水及純水系統排廢回收至冷卻水塔，可節省約用水。（第44頁）",
             "提高冷卻水塔濃縮倍數，減少冷卻水排放量。（第44頁）"
-          ]
+          ],
+          "evidence_page_orig": "41"
         },
         {
           "year": 111,
@@ -1868,7 +5421,8 @@
             "每月統計水電使用量，持續提出改善方案，定期檢視廢棄物存放統計與執行紀錄，且每年皆進行 PDCA 之有效性評量。（第30頁）",
             "全球氣候變遷，水資源成為嚴肅課題。神隆用水量以製程用水占比較高，其餘為生活用水，因夏天冷卻水蒸發占比較高，為有效利用水資源，將空調冷凝水、RO 濃縮廢水回收至冷卻水塔散熱後再利用。（56）",
             "空調冷凝水及純水系統排廢回收至冷卻水塔，可節省約用水。（56）"
-          ]
+          ],
+          "evidence_page_orig": "56"
         },
         {
           "year": 112,
@@ -1882,7 +5436,8 @@
             "1.整合推動公司環保、安衛、節能、節水、溫室氣體管理等相關工作，每年提出永續管理計畫，並檢討執行成效，作為內部執行與檢視之依據。（第39頁）",
             "2. 配合政府法規與倡導，妥善建構各項廢氣、廢水之排放及環保維護設備，並積極研擬及執行各項節能減廢措施。（第39頁）",
             "● 平日加強節水管理，配合南科園區執行限水計劃確實執行內部節約用水。（第43頁）"
-          ]
+          ],
+          "evidence_page_orig": "60"
         },
         {
           "year": 113,
@@ -1896,15 +5451,223 @@
             "303-2 與排水相關衝擊的管理 3.2 能、資源使用與管理 60（第105頁）",
             "303-5 耗水量 3.2 能、資源使用與管理 60（第105頁）",
             "「依公司所示之 2024 年度每月自水表統計之用水量，及每月污水處理單位統計之排水量，並依 GRI 相關規定計算耗水總量及揭露」（第115頁）"
-          ]
+          ],
+          "evidence_page_orig": "9"
         }
-      ]
+      ],
+      "source_page_orig": "6",
+      "page_shift": {
+        "src": {
+          "orig": "6",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "49",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "9",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "41",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "56",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "60",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "9",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "消除教育中的性別不平等，確保弱勢族群接受各階級教育與職業訓練的機會",
       "declared_year": 107,
       "target_year": 119,
-      "source_page": "5",
+      "source_page": "8",
       "final_status": "部分達成",
       "status": [
         {
@@ -1933,7 +5696,8 @@
             "「我們在招募、任用及發展上提供公平機會，並依據職務內容及所需職能招聘並培育人才，不因性別、年齡、種族、宗教、國籍或其他法令保護情事等因素而產生歧視行為。」（第78頁）",
             "「高階主管女性員工占比為 41%，神隆的員工人數男女比大約為 6:4，可見神隆落實機會平等的用人政策。」（第78頁）",
             "「台灣神隆，每位員工依據其職務所需、個人能力及發展需求、以及學習興趣，參與訓練活動。」（第91頁）"
-          ]
+          ],
+          "evidence_page_orig": "109"
         },
         {
           "year": 110,
@@ -1947,7 +5711,8 @@
             "員工 健康職場、平等待遇、尊重人權（第30頁）",
             "專家學者 教育與訓練、法規遵循（第31頁）",
             "神隆論文獎學金 10 萬元 各大專院校理工學院學生 為協助人才培育，促進學子對製藥生技業有所瞭解。（第68頁）"
-          ]
+          ],
+          "evidence_page_orig": "67"
         },
         {
           "year": 111,
@@ -1961,7 +5726,8 @@
             "神隆在經營企業之同時，積極實踐企業永續發展，以符合國際發展趨勢，並透過企業公民擔當，提升國家經濟貢獻，改善員工、社區、社會之生活品質，促進以永續發展為本之競爭優勢，亦遵守相關法規及遵循國際人權公約，包含性別平等、員工照顧及禁止歧視等人權聲明，亦將人權政策推廣至供應鏈之管理，共同打造永續環境。（41）",
             "好孕到 女孩男孩一樣好 + 工作場所母性健康保護宣導（第75頁）",
             "在教育方面，自 2011 年至今神隆持續與中國化學會合作設置「神隆論文獎學金」，並積極贊助國內大專院校生技、化工等相關科系之研討會之舉辦，每年贊助經費 10 萬元，作為協助人才培育，促進學子對業界之瞭解。（第81頁）"
-          ]
+          ],
+          "evidence_page_orig": "7"
         },
         {
           "year": 112,
@@ -1975,7 +5741,8 @@
             "為協助學子進入就業市場，台灣神隆透過深入校園參與、徵才活動和就業博覽會，積極與國內大專院校進行產學合作，亦提供在校學生到企業實習之機會，協助年青學子體驗職場文化及培養產業所需能力（第90頁）",
             "男性與女性之薪資比例為 1：0.92，顯示神隆薪資結構之公平性與薪資市場競爭力，亦可於男女近 1：1 之薪資比例顯現性別平權之落實。（第75頁）",
             "神隆獎學金所贊助之學生，在畢業後投入生技製藥業相關產業貢獻專才，是為間接透過培育人才幫助社群、整體社會的成長與未來發展。（第91頁）"
-          ]
+          ],
+          "evidence_page_orig": "6"
         },
         {
           "year": 113,
@@ -1989,15 +5756,223 @@
             "「打造優質工作環境，以 DEI (Diversity, Equity, Inclusion) 為 原 則， 建立良好的雇主品牌。」（第36頁）",
             "「透過管理訓練課程提升主管之管理能力，並透過人權相關課程建立尊重、包容文化，建構良好工作環境以吸引人才加入。」（第36頁）",
             "「2024 年本公司員工總訓練時數為 43,317 小時，計 6,698 人次參加；CGMP 及安全衛生環境保護訓練總訓練時數為 32,879 小時。」（第82頁）"
-          ]
+          ],
+          "evidence_page_orig": "75"
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "109",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "67",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "7",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "6",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "75",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "確保所有學子習得促進永續發展所需的知識與技能",
       "declared_year": 107,
       "target_year": 119,
-      "source_page": "5",
+      "source_page": "8",
       "final_status": "已達成",
       "status": [
         {
@@ -2026,7 +6001,8 @@
             "「公司提供多種教育訓練課程，協助各層級人員持續提高工作效能、展現符合企業文化價值之工作行為；並依據考評成果進一步提供專業相關指導與個人職涯發展所需之教育訓練與實作機會。」（第87頁）",
             "「2020 年本公司員工總訓練時數為 52,035 小時，計 17,149 人次參加；CGMP 及安全衛生環境保護訓練總訓練時數為 34,150 小時。」（第91頁）",
             "「學校一日工作坊」 活動經費10萬元 1.觸及5所學校 2.直接觸及53位學生（第109頁）"
-          ]
+          ],
+          "evidence_page_orig": "109"
         },
         {
           "year": 110,
@@ -2040,7 +6016,8 @@
             "專家學者 教育與訓練、法規遵循（第31頁）",
             "神隆論文獎學金 10 萬元 各大專院校理工學院學生 為協助人才培育，促進學子對製藥生技業有所瞭解。（第68頁）",
             "★訓練與教育（第76頁）"
-          ]
+          ],
+          "evidence_page_orig": "67"
         },
         {
           "year": 111,
@@ -2053,7 +6030,8 @@
             "以聯合國永續發展目標（SDGs）作為活動發想方向，「美好生活練習曲」為主題，藉由綠色和平大使 - 李李仁暢談環保議題（第81頁）",
             "在教育方面，自 2011 年至今神隆持續與中國化學會合作設置「神隆論文獎學金」，並積極贊助國內大專院校生技、化工等相關科系之研討會之舉辦，每年贊助經費 10 萬元，作為協助人才培育，促進學子對業界之瞭解。（第81頁）",
             "神隆論文獎學金 10 萬元 各大專院校理工學院學生（第82頁）"
-          ]
+          ],
+          "evidence_page_orig": "7"
         },
         {
           "year": 112,
@@ -2066,7 +6044,8 @@
             "並積極贊助國內大專院校生技、化工等相關科系之研討會舉辦，包括參與國際創新藥物制放研討會並贊助 8 萬元，及贊助化學產業徵才博覽會 7 萬元，協助學界培育人才，促進學子對業界之瞭解。（第90頁）",
             "神隆獎學金所贊助之學生，在畢業後投入生技製藥業相關產業貢獻專才，是為間接透過培育人才幫助社群、整體社會的成長與未來發展。（第91頁）",
             "神隆長期贊助藝文相關活動，2023 年除舉辦對外實體講座，亦進行線上轉播，透過網路無國界讓有興趣的大眾能參與此活動。企業與在地社區居民直接互動外，亦提供大眾能有永續發展的相關資訊與意識。（第91頁）"
-          ]
+          ],
+          "evidence_page_orig": "6"
         },
         {
           "year": 113,
@@ -2080,15 +6059,215 @@
             "「校園演講招募／ 2024 年舉辦 12 場校園徵才」（第37頁）",
             "「公司提供多種教育訓練課程，協助各層級人員持續提高工作效能、展現符合企業文化價值之工作行為；並依據考評成果進一步提供專業相關指導與個人職涯發展所需之教育訓練與實作機會。」（第81頁）",
             "「2024 年本公司員工總訓練時數為 43,317 小時，計 6,698 人次參加；CGMP 及安全衛生環境保護訓練總訓練時數為 32,879 小時。」（第82頁）"
-          ]
+          ],
+          "evidence_page_orig": "8"
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "109",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "67",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "7",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "6",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "8",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "與客戶合作開發孤兒藥",
       "declared_year": 107,
       "target_year": 119,
-      "source_page": "5",
+      "source_page": "8",
       "final_status": "已達成",
       "status": [
         {
@@ -2103,7 +6282,8 @@
             "「計畫開發之新產品」 （第22頁）",
             "註1：孤兒藥須為符合美國FDA Orphan Drug Designation program 定義之藥品。（第93頁）",
             "註2：2019年有收入之為客戶研發品項才類列。（第93頁）"
-          ]
+          ],
+          "evidence_page_orig": "93"
         },
         {
           "year": 109,
@@ -2115,7 +6295,8 @@
             "「與國際藥品大廠百特醫療產品股份有限公司 (Baxter) 策略聯盟，持續合作進行其他主要療效包含肺癌、多發性骨髓瘤、乳癌等產品。」（第20頁）",
             "「以及與國際藥品大廠百特醫療產品股份有限公司 (Baxter) 締結策略聯盟，合作開發、製造及量產之癌症化療止吐輔助用藥－福沙匹坦 (Fosaprepitant Dimeglumine)。」（第25頁）",
             "此外，本公司也與學名藥客戶密切合作，以專利訴訟觀點分析新藥所列示之專利的可能期限，採取避免專利爭議的模式，選擇可經雙方認可之高潛力的產品，透過不同的策略，依客戶需求，提供研發，製造等原料供應與服務。（第57頁）"
-          ]
+          ],
+          "evidence_page_orig": "16"
         },
         {
           "year": 110,
@@ -2129,7 +6310,8 @@
             "● 臺灣製藥工業同業公會 ● 中華民國製藥發展協會 ● 社團法人中華民國學名藥協會 ● 社團法人中華無菌製劑協會 ● 台灣生物產業發展協會（第69頁）",
             "★創新技術與專利（第78頁）",
             "2.4 創新技術與專利布局 30（第78頁）"
-          ]
+          ],
+          "evidence_page_orig": "7"
         },
         {
           "year": 111,
@@ -2143,7 +6325,8 @@
             "透過策略聯盟方式，一方面對已開發之原料藥產品，尋找下游製劑業者共同開發製劑產品；另一方面藉由製劑業者觀點，發展已開發原料藥產品之新衍生物，以獲得最大利益。（第20頁）",
             "本公司與國際學名藥客戶密切合作，以專利訴訟觀點切入，分析新藥所列示之專利的可能期限，採取避免專利爭議的模式，選擇高潛力的產品，並與研發單位協力，透過不同的策略，依客戶需求提供研發、製造等原料供應與服務；（51）",
             "「1. 既有產品的數量為 74 項 2. 無研發中藥品（Phases 1-3）」（第95頁）"
-          ]
+          ],
+          "evidence_page_orig": "13"
         },
         {
           "year": 112,
@@ -2154,7 +6337,8 @@
             "● 與客戶攜手合作開發孤兒藥（第10頁）",
             "「現有針劑產品合作案，包含抗血癌產品、化療止吐輔助用藥、抗凝血產品、非小細胞肺癌之新藥與學名藥產品，以及多發性骨髓瘤學名藥產品等。」（第21頁）",
             "「基於過去與各大藥廠建立之互信關係，近年來本公司進一步與廠商組成策略聯盟，以合作方式開發藥品，結合上下游從原料藥到製劑之研發與製造；」（第24頁）"
-          ]
+          ],
+          "evidence_page_orig": "17"
         },
         {
           "year": 113,
@@ -2165,15 +6349,195 @@
             "此外，亦與國際間的合作夥伴攜手投入孤兒藥產品的開發計劃。（第15頁）",
             "台灣神隆與國際間合作夥伴攜手投入孤兒藥產品研發，希望能協助貧困及弱勢族群獲得更好的醫療資源。（第5頁）",
             "「委託研製業務受惠於治療遺傳性癲癇、晚期肝癌 / 甲狀腺癌、前列腺癌、非洲嗜睡症等適應症用藥與心血管支架醫材塗層等產品配合客戶需求穩定供貨」（第20頁）"
-          ]
+          ],
+          "evidence_page_orig": "8"
         }
-      ]
+      ],
+      "source_page_orig": "5",
+      "page_shift": {
+        "src": {
+          "orig": "5",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "93",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "16",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "7",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "13",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "17",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "8",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "透過預防、減量、回收與再使用，大幅減少廢棄物產生",
       "declared_year": 107,
       "target_year": 119,
-      "source_page": "7",
+      "source_page": "10",
       "final_status": "已達成",
       "status": [
         {
@@ -2187,7 +6551,8 @@
             "售出的產品及包裝材料被要求收回的比率 因本公司產品為高活性原料藥，銷售以出口國外為主，且從製造至販售均需符合藥品相關之cGMP規範。故當產品與包裝材料接觸後，為防止產品之間交叉汙染，包裝材料不適合重新利用。（第55頁）",
             "依規定處理或清運廠內產生或上所產生之所有廢棄物，包含生物可分解性廢水、廢溶劑、固體廢棄物及空氣污染物。（第76頁）",
             "生物可分解性廢水採用活性污泥與超薄膜過濾單元系統處理，所產生之有機污泥則經由分離過濾後，交由符合法律規範的環保清運公司清運，委託合規的廢棄物處理商進行熱處理後再利用。（第76頁）"
-          ]
+          ],
+          "evidence_page_orig": "55"
         },
         {
           "year": 109,
@@ -2201,7 +6566,8 @@
             "「並積極研擬及執行各項節能減廢措施。」（第40頁）",
             "「● 廢棄物」（第44頁）",
             "近年來，本公司致力於提昇汽提塔處理效率，使用汽提塔可將含水率高之廢溶劑進行水相及有機相分離，水相可直接排至污水處理廠進行處理，有機相則成為廢溶劑，如此即可達到廢溶劑減量之目的。（第73頁）"
-          ]
+          ],
+          "evidence_page_orig": "73"
         },
         {
           "year": 110,
@@ -2215,7 +6581,8 @@
             "廢棄物 4.41 4.03 4.22（第29頁）",
             "● 勞資關係 ● 不歧視 ● 結社自由與團體協商 ● 強迫與強制勞動 ● 廢棄物（第31頁）",
             "一般廢空桶 161.4 186.8 196.11 回收再利用（第49頁）"
-          ]
+          ],
+          "evidence_page_orig": "48"
         },
         {
           "year": 111,
@@ -2229,7 +6596,8 @@
             "神隆在追求產品及技術創新的同時，亦進行產品碳足跡盤查、提升資源再利用率、減少廢棄物等節能減碳的綠色行動（40）",
             "神隆以實際行動響應政府循環經濟推動方案政策，實現提高廢溶劑再利用率以減少廢棄物為目標。2022 年已擬定製程廢溶劑再利用之規劃作業，並預計於 2023 ～ 2025 年向主管機關進行相關文件變更及申請作業，以達到資源循環利用及節能減碳之目的。（40）",
             "與可回收再利用之廠商合作，以廢液再利用的方式處理無法回收於製程再使用的高純度廢液（如甲醇（MeOH）、丙酮（Acetone）、乙酸乙酯（EA）等常用溶劑）。（第62頁）"
-          ]
+          ],
+          "evidence_page_orig": "62"
         },
         {
           "year": 112,
@@ -2243,7 +6611,8 @@
             "「檢視廢棄物處理與管理成效，擬定減量策略。」（第34頁）",
             "「廢棄物產量 ( 排除再利用處理之廢棄物量 ) 每年較基準年減少 1-2%。」（第34頁）",
             "● 短中期向主管機關提出廢液再利用製程之空污許可申請，以汽提或蒸餾塔方式純化處理上述說明外之製程廢液 , 以次級產品方式外售給其他產業再使用（預估每年約可降低處理費用為 380 萬元）。（第44頁）"
-          ]
+          ],
+          "evidence_page_orig": "61"
         },
         {
           "year": 113,
@@ -2257,9 +6626,217 @@
             "「一般廢溶劑 (C-0301) 441.710 724.690 644.340 再利用」（第69頁）",
             "301-2 使用回收再利用的物料 3.4 污染防治 68（第105頁）",
             "306-1 廢棄物的產生與廢棄物相關顯著衝擊 3.4 污染防治 68（第106頁）"
-          ]
+          ],
+          "evidence_page_orig": "7"
         }
-      ]
+      ],
+      "source_page_orig": "7",
+      "page_shift": {
+        "src": {
+          "orig": "7",
+          "d": 3,
+          "kind": "uniform"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "55",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "73",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "48",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "62",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "61",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "7",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "消除愛滋病、肺結核、瘧疾及受忽視熱帶性疾病，並對抗肝炎、水傳染性疾病及其他傳染病",
@@ -2280,7 +6857,8 @@
             "「若以產品適應症來區分，2020 年仍以治療癌症相關藥物占整體營收比例約為 58% 最高，其次為中樞神經類藥物占營收約 29%、其它包括心血管用藥、抗病毒藥物等則占營收約 13%」（第28頁）",
             "「在新冠肺炎期間公司推行入廠人員體溫測量、並備有可供全廠同仁使用至少 30 天的口罩庫存」（第92頁）",
             "「對於防疫用的酒精等相關清消備品，均以 1 年的需求用量作為防疫期間的備品庫存。」（第92頁）"
-          ]
+          ],
+          "evidence_page_orig": "92"
         },
         {
           "year": 110,
@@ -2294,7 +6872,8 @@
             "2020 年至今的新冠肺炎疫情對於全球帶來的衝擊劇烈，當各國進行封城管制時，有效的對於原物料供應商的出貨管理與追蹤，是神隆在抗疫期間原物料不虞匱乏的原因之一。（第35頁）",
             "● 預防流感宣導及疫苗注射活動（第59頁）",
             "11月 公費流感疫苗接種宣導 + 工作場所母性健康保護宣導（第60頁）"
-          ]
+          ],
+          "evidence_page_orig": "59"
         },
         {
           "year": 111,
@@ -2308,7 +6887,8 @@
             "創新研發醫藥產品，增加藥物近用性。（第29頁）",
             "自 2019 年 12 月全球陷入新冠狀肺炎（COVID-19）疫情為期近 3 年，公司於 2020 年 1 月 30 日立即成立防疫小組作為緊急應變的統籌單位（第73頁）",
             "「猴痘」列為第二類法定傳染病 + 工作場所母性健康保護宣導（第75頁）"
-          ]
+          ],
+          "evidence_page_orig": "74"
         },
         {
           "year": 112,
@@ -2319,7 +6899,8 @@
             "● 與客戶攜手合作開發孤兒藥（第10頁）",
             "「已開發完成之原料藥… D. 感染相關用途共 6 項」（第20頁）",
             "與客戶合作開發孤兒藥（第5頁）（第91~110頁附件中無直接證據，僅SASB顯示「(1) 既有產品的數量為 76 項」可供人工延伸比對）（第107頁）"
-          ]
+          ],
+          "evidence_page_orig": "8"
         },
         {
           "year": 113,
@@ -2332,9 +6913,184 @@
             "「水痘預防的方法 + 新冠流感接種 + 工作場所母性健康保護宣導。」（第86頁）",
             "藥品可及性（第109頁）",
             "本公司主要產品為原料藥，2024 年所出貨製劑為受託代工產品，配合顧客生產非神隆自有銷售藥品，故不適用。（第109頁）"
-          ]
+          ],
+          "evidence_page_orig": "8"
         }
-      ]
+      ],
+      "source_page_orig": "6",
+      "page_shift": {
+        "src": {
+          "orig": "6",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "109": {
+            "evidence": {
+              "orig": "92",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "59",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "74",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "8",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none",
+                "refs": [
+                  {
+                    "p": 5,
+                    "d": 0,
+                    "kind": "none"
+                  },
+                  {
+                    "p": 107,
+                    "d": 0,
+                    "kind": "none"
+                  }
+                ]
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "8",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "持續推動減碳專案",
@@ -2355,7 +7111,8 @@
             "本公司於 2023 年取得 2022 年溫室氣體查證結果，顯示範疇二輸入能源產生之間接溫室氣體排放占 80% 以上，為因應國際及客戶端對環境保護的需求，除了推動節能減碳措施以減少用電量外，規劃與能源服務產業（Energy Service Company, ESCO）評估合作事宜，研擬減碳配套措施，包含盤點電力耗用清單、能源效率及節能診斷，進而提出節能改善工程設計，以降低碳費之衝擊成本。（第43頁）",
             "● 持續推動減碳專案（第45頁）",
             "「2022 年投資金額約為 68.4 萬元，於廠內防爆區內更換 38 座防爆 LED 燈具，2023 全年度約可節電 43,139 百萬焦耳。」（第62頁）"
-          ]
+          ],
+          "evidence_page_orig": "61"
         },
         {
           "year": 113,
@@ -2369,9 +7126,89 @@
             "● 內部加強節能減碳工作之規劃推展，多方評估汰換低效率改為高效能之設備可行性，減少營運過程對環境造成的各項衝擊。（第46頁）",
             "● 神隆以實際行動響應政府循環經濟推動方案政策，實現提高廢溶劑再利用率以減少廢棄物為目標。（第46頁）",
             "「2023 年投資金額約為 154.8 萬元，於廠內防爆區內更換 86 座防爆 LED 燈具，2024 全年度約可節電 97,366 百萬焦耳。」（第61頁）"
-          ]
+          ],
+          "evidence_page_orig": "4"
         }
-      ]
+      ],
+      "source_page_orig": "40",
+      "page_shift": {
+        "src": {
+          "orig": "40",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "61",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "4",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "範疇一及範疇二總排放量減少 4.2%",
@@ -2392,9 +7229,56 @@
             "● 永續發展委員會一致同意，以 2023 年為溫室氣體排放 ( 合併報表 ) 範疇一及範疇二為減量基準年，範疇一及範疇二加總之排放量每年遞減至少 4.2% 為目標，朝向至 2030 年減量共計 42% 努力。（第46頁）",
             "「2023 年 範疇一 + 二總排放量（註2）37,799.847 tCO2e」（第64頁）",
             "「2024 年 範疇一 + 二總排放量（註2）30,873.271 tCO2e」（第64頁）"
-          ]
+          ],
+          "evidence_page_orig": "4"
         }
-      ]
+      ],
+      "source_page_orig": "34",
+      "page_shift": {
+        "src": {
+          "orig": "34",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "4",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     }
   ]
 }

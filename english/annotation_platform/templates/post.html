@@ -1,0 +1,1128 @@
+{% extends "base.html" %}
+{% block title %}Check the AI's tracking{% endblock %}
+{% block body %}
+<style>
+  .missing { outline: 2px solid #d9534f; outline-offset: 3px; }
+  .probslider { display: flex; align-items: center; gap: .6em; }
+  .probslider input[type=range] { flex: 1; }
+  .probslider output { min-width: 2.6em; text-align: right; font-weight: 700; }
+  .draftwarn { color: #b91c1c; font-size: 14px; margin: 0 0 8px; }
+  .commitment .orig { font-size: 13px; color: var(--mute); margin: 4px 0 0; }
+  .markbox { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: flex-start;
+             margin: 0 0 14px; padding: 8px 12px; border: 1px dashed var(--line); border-radius: 8px; }
+  .markbox label { flex: 1 1 320px; font-size: 13px; color: var(--mute); }
+  .markbox textarea { display: block; width: 100%; margin-top: 4px; font: inherit; font-size: 14px; }
+  .markbox .star { font-size: 15px; white-space: nowrap; }
+  .markbox .star.on { background: #fff3c4; border-color: #e0b000; color: #7a5a00; }
+  .markbox .state { font-size: 12px; color: var(--mute); flex-basis: 100%; }
+</style>
+<div class="card">
+  <h1>Did the AI track this commitment correctly?</h1>
+
+  {% if notice %}<div class="notice">{{ notice }}</div>{% endif %}
+  {% if page_note %}<div class="notice">{{ page_note }}</div>{% endif %}
+  {% if nav.editing %}
+  <div class="editbar">
+    <b>Revising item {{ nav.edit_index }}</b> (originally submitted {{ nav.submitted_at }} UTC).
+    Press “Save changes” at the bottom when done, or simply switch items — changes are saved automatically. Nothing to change? <a href="{{ url_for('Task') }}" data-goto="task">Back to the current item →</a>
+    <span class="navlinks">
+      {% if nav.next_id %}<a href="{{ url_for('Post', assign_id=nav.next_id) }}" data-goto="{{ nav.next_id }}">Next item →</a>{% endif %}
+      <a href="{{ url_for('History') }}" data-goto="history">All my answers</a>
+      {% if nav.prev_id %}<span class="note">(earlier items: the red “← Back to previous item” button at the bottom)</span>{% endif %}
+    </span>
+  </div>
+  {% else %}
+  <p class="navlinks">
+    {% if nav.prev_id %}<a href="{{ url_for('History') }}" data-goto="history">My answers</a>
+      <span class="note">(to revise the previous item: the red “← Back to previous item” button at the bottom)</span>{% endif %}
+    {% if restored %}<span class="note">Your unsent answers were restored.</span>{% endif %}
+  </p>
+  {% if skip.n_other or skip.this %}
+  <div class="notice">
+    {% if skip.this %}You skipped this item earlier; here it is again.{% endif %}
+    {% if skip.n_other %}You have {{ skip.n_other }} skipped item{% if skip.n_other != 1 %}s{% endif %} waiting; they come back automatically once the other items are done.
+      To return earlier: <a href="{{ url_for('SkippedList') }}" data-goto="skipped">Skipped items →</a>{% endif %}
+  </div>
+  {% endif %}
+  {% endif %}
+
+  <div class="commitment sticky">
+    <div class="meta">
+      <span>{{ item.company }}</span>
+      {% if item.industry and item.industry != 'n/a' %}<span>{{ item.industry }}</span>{% endif %}
+      <span>Declared: {{ item.declared_year|yr }}</span>
+      <span>Target: {{ item.target_year|yr }}</span>
+      {% if source_pages %}
+      <span><a class="pdflink" target="_blank"
+        href="{{ url_for('PdfExcerpt', company=item.company, year=item.declared_year, p=source_pages) }}">Commitment source: p. {{ item.source_page }}</a></span>
+      {% endif %}
+      <span><a class="pdflink alt" target="_blank"
+        href="{{ url_for('ReportPdf', company=item.company, year=item.declared_year) }}">Full report</a></span>
+    </div>
+    {# The wording as this person corrected it (Q0 field), else the original.
+       Only their own correction: another annotator's fix never shows here. #}
+    {% set fixed = (form.get('commitment_fix', '') if form else '')|trim %}
+    <blockquote id="cmtext" data-orig="{{ item.commitment }}">{{ fixed or item.commitment }}</blockquote>
+    <p class="orig{% if not fixed %} hidden{% endif %}" id="cmorig">Original wording: <span>{{ item.commitment }}</span> (shown above as you corrected it)</p>
+  </div>
+
+  {# Star + private note: a working aid that lives outside the answer form, so
+     it is neither part of the draft nor cleared with it; saved on its own. #}
+  <div class="markbox" id="markbox" data-mark="{{ mark_url }}" data-gen="{{ page_gen }}">
+    <button type="button" class="ghost star{% if mark and mark.starred %} on{% endif %}" id="starbtn"
+            aria-pressed="{{ 'true' if mark and mark.starred else 'false' }}"
+            title="Flag it: unsure, or worth coming back to">{% if mark and mark.starred %}★ Starred{% else %}☆ Star this item{% endif %}</button>
+    <label>Your own note (optional: a question, a reminder to yourself. Visible only to you and the admin, not part of the answer; it also shows in “My answers”)
+      <textarea id="notebox" rows="1" maxlength="1000" placeholder="e.g. the target value is in a table; not sure it counts as achieved">{{ mark.note if mark else '' }}</textarea></label>
+    <span class="state" id="markstate"></span>
+  </div>
+
+  <form method="post" id="taskform" data-draft="{{ url_for('Draft', assign_id=assign_id) }}"
+        {% if not nav.editing %}data-skip="{{ url_for('Skip', assign_id=assign_id) }}"{% endif %}
+        data-seq="{{ draft_seq }}" data-gen="{{ page_gen }}">
+    <p class="toolbar top">
+       {% if not nav.editing %}
+       <button type="button" class="ghost skipbtn" title="Move on to the next item; what you have filled in here is kept and this item comes back once the others are done">Skip for now</button>
+       <span class="note">No waiting, nothing to fill in: skip as soon as you see the item; it will come back later.</span>
+       {% endif %}
+       <button type="button" class="ghost clearbtn">Clear this item</button>
+       <span class="note">Start this item over (this item only)</span></p>
+    <p id="draftwarn" class="draftwarn hidden">⚠ Autosave is failing at the moment and will keep retrying — please do not close this page yet.</p>
+    <fieldset id="q0">
+      <legend>Q0　Is this a verifiable commitment about the future?</legend>
+      <div class="statuses">
+        <label class="st"><input type="radio" name="is_commitment" value="valid"
+          {% if form and form.get('is_commitment') == 'valid' %}checked{% endif %}>
+          <span>Yes</span></label>
+        <label class="st"><input type="radio" name="is_commitment" value="not_commitment"
+          {% if form and form.get('is_commitment') == 'not_commitment' %}checked{% endif %}>
+          <span>Not a commitment</span></label>
+        <label class="st"><input type="radio" name="is_commitment" value="no_target"
+          {% if form and form.get('is_commitment') == 'no_target' %}checked{% endif %}>
+          <span>No target year</span></label>
+        <label class="st"><input type="radio" name="is_commitment" value="unsure"
+          {% if form and form.get('is_commitment') == 'unsure' %}checked{% endif %}>
+          <span>Unsure</span></label>
+      </div>
+      <p class="note">Descriptions of the present, accomplished facts and slogans are not commitments. “No target year” = it reads like a commitment, but the report names no year by which it is to be met (the target year the AI shows is its own guess), so it cannot be tracked year by year.
+        Choosing “Not a commitment” or “No target year” ends this item. A target given as a range counts as a target year: take the latest year of the range.</p>
+      <div id="notreason" class="sub hidden">
+        <label><span class="lbl-nc">Why isn't it a commitment? (at least 5 characters)</span><span class="lbl-nt hidden">Optional note: how the commitment is worded, why no target year can be read from it</span>
+          <input type="text" name="not_reason" maxlength="200"
+                 value="{{ form.get('not_reason', '') if form else '' }}"></label>
+      </div>
+      <div id="cfix" class="sub hidden">
+        <label>Is the wording wrong? Enter the corrected wording (optional; leave blank if it is fine)
+          <input type="text" name="commitment_fix" maxlength="300"
+                 placeholder="e.g. when the sentence is cut off or a key number or year is missing, write the full, correct wording"
+                 value="{{ form.get('commitment_fix', '') if form else '' }}"></label>
+        <label>Target year ({{ item.target_year|yr }}) misread? Enter the correct year (optional; the years after it are then skipped)
+          <input type="text" name="target_year_fix" maxlength="4" inputmode="numeric"
+                 placeholder="{% if year_style == 'roc' %}e.g. 112{% else %}e.g. 2024{% endif %}"
+                 value="{{ form.get('target_year_fix', '') if form else '' }}"></label>
+      </div>
+      {# Whether the commitment really is on the page the pipeline cited. A bad
+         citation is a property of the pipeline, not of the company, so it gets
+         its own answer instead of being absorbed into the yearly judgements. #}
+      {% if source_pages %}
+      <div id="srcpage" class="sub hidden">
+        <p>Open <b>“Commitment source: p. {{ item.source_page }}”</b> above and check — is the
+          commitment really on that page?</p>
+        <div class="statuses">
+          <label class="st"><input type="radio" name="source_page_ok" value="ok"
+            {% if form and form.get('source_page_ok') == 'ok' %}checked{% endif %}>
+            <span>Yes, it is on that page</span></label>
+          <label class="st"><input type="radio" name="source_page_ok" value="no"
+            {% if form and form.get('source_page_ok') == 'no' %}checked{% endif %}>
+            <span>No</span></label>
+        </div>
+        <div id="srcbad" class="sub hidden">
+          <div class="statuses">
+            <label class="st"><input type="radio" name="source_page_bad" value="wrong_page"
+              {% if form and form.get('source_page_bad') == 'wrong_page' %}checked{% endif %}>
+              <span>Wrong page reference — the commitment is elsewhere in the report</span></label>
+            <label class="st"><input type="radio" name="source_page_bad" value="not_found"
+              {% if form and form.get('source_page_bad') == 'not_found' %}checked{% endif %}>
+              <span>Commitment not found — it is not in the full report either (this ends the item)</span></label>
+          </div>
+          <p class="note">Can't find it? Open the
+            <a class="pdflink" target="_blank"
+               href="{{ url_for('ReportPdf', company=item.company, year=item.declared_year) }}">full report</a>
+            and Ctrl+F a phrase from the commitment; or let the server look for you with
+            <a class="pdflink" target="_blank"
+               href="{{ url_for('Locate', item_id=item.item_id) }}">which page is this commitment on?</a>
+            (optional).</p>
+          <div id="srcfix" class="hidden">
+            <label>The correct page, if you know it (the PDF viewer's page number; optional; leave blank if you do not)
+              <input type="text" name="source_page_fix" maxlength="40" inputmode="numeric"
+                     placeholder="e.g. 85 or 85,86"
+                     value="{{ form.get('source_page_fix', '') if form else '' }}"></label>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </fieldset>
+
+    <div id="mainq">
+      <div class="toolbar">
+        {% if not progressive %}
+        <button type="button" id="agreeall" class="ghost">Mark every year's verdict “Correct”</button>
+        <span class="note">(the probability sliders are still answered year by year)</span>
+        {% else %}
+        <span class="note">Years unlock one at a time: finish a year to see the next.</span>
+        {% endif %}
+      </div>
+
+      {% for y in years %}
+      <section class="year{% if progressive and not loop.first %} locked{% endif %}" data-year="{{ y.year }}">
+        <h2>{{ y.year|yr }} report
+          <span class="badge s{{ y.ai_label|status_class }}">AI verdict: {{ y.ai_label }}</span>
+        </h2>
+        <p class="lockmsg">Finish the previous year first</p>
+
+        <div class="evidence">
+          <div class="lbl">Evidence quoted by the AI{% if y.evidence_page %}　<span class="src">Source: p. {{ y.evidence_page }}</span>{% endif %}</div>
+          {% if y.evidence %}<p class="quote">{{ y.evidence }}</p>
+          {% else %}<p class="quote empty">(The AI cited no evidence)</p>{% endif %}
+          {% if y.clues %}
+          <div class="lbl">Other clues from the same year</div>
+          <ul class="clues">{% for c in y.clues %}<li>{{ c }}</li>{% endfor %}</ul>
+          {% endif %}
+        </div>
+
+        {% if y.pages %}
+        <p class="pages">
+          <a class="pdflink" target="_blank"
+             href="{{ url_for('PdfExcerpt', company=item.company, year=y.year, p=y.pages) }}">
+            Open this year's report excerpt (PDF) — pages {{ y.pages|join(', ') }}: evidence source + clue pages, searchable with Ctrl+F</a>
+          <a class="pdflink alt" target="_blank"
+             href="{{ url_for('ReportPdf', company=item.company, year=y.year) }}">Full report</a>
+          {% if y.evidence %}
+          <a class="pdflink alt" target="_blank"
+             href="{{ url_for('Locate', item_id=item.item_id, year=y.year) }}">Which page is this evidence on?</a>
+          {% endif %}
+        </p>
+        {% else %}
+        <p class="note">There are no pages to check for this year; judge from the text above only, or
+          open the <a class="pdflink alt" target="_blank"
+             href="{{ url_for('ReportPdf', company=item.company, year=y.year) }}">full report</a> and search it yourself.</p>
+        {% endif %}
+
+        <fieldset>
+          <legend>Is the AI's verdict for this year correct? (are the evidence and reasoning sound)</legend>
+          <div class="statuses">
+            {% for key, label in verdict_choices %}
+            <label class="st{% if key == 'correct' %} isai{% endif %}">
+              <input type="radio" name="vq_{{ y.year }}" value="{{ key }}"
+                {% if form and form.get('vq_' ~ y.year) == key %}checked{% endif %}>
+              <span>{{ label }}</span></label>
+            {% endfor %}
+          </div>
+        </fieldset>
+
+        <div class="fix yfix hidden">
+          <fieldset>
+            <legend>Which is the correct basis? (tick all that apply)</legend>
+            <label class="opt"><input type="checkbox" name="ev_{{ y.year }}" value="current"
+              data-pages="{{ y.evidence_pages|join(',') }}"
+              {% if form and 'current' in form.getlist('ev_' ~ y.year) %}checked{% endif %}>
+              <span><b>Quoted evidence</b> — the passage the AI quoted is a valid basis; it is the status that was misjudged</span></label>
+            {# The escape hatch for a quote that is not in the report at all.
+               Without it the only way out is “none of these” + “not mentioned”,
+               which records a fact about the AI as a fact about the company's
+               disclosure. #}
+            {% if y.evidence %}
+            <label class="opt"><input type="checkbox" name="ev_{{ y.year }}" value="notfound"
+              {% if form and 'notfound' in form.getlist('ev_' ~ y.year) %}checked{% endif %}>
+              <span><b>I cannot find this text</b> — the sentence the AI quoted is not in this year's
+                report as far as I can tell (no need to hunt for it; tick this. To double-check, use
+                “Which page is this evidence on?” above)</span></label>
+            {% endif %}
+            {% for c in y.clues %}
+            <label class="opt"><input type="checkbox" name="ev_{{ y.year }}" value="{{ loop.index }}"
+              data-pages="{{ y.clue_pages[loop.index0]|join(',') }}"
+              {% if form and loop.index|string in form.getlist('ev_' ~ y.year) %}checked{% endif %}>
+              <span><b>Other clue</b> — #{{ loop.index }}: {{ c }}</span></label>
+            {% endfor %}
+            <label class="opt"><input type="checkbox" name="ev_{{ y.year }}" value="none"
+              {% if form and 'none' in form.getlist('ev_' ~ y.year) %}checked{% endif %}>
+              <span><b>None of these</b> — nothing listed fits. If you found other evidence yourself, pick the status and enter the page below; if there is nothing at all, choose “Not mentioned”</span></label>
+            <div class="sub">
+              <label>Other (optional): paste the passage or note you found in the report
+                <textarea name="cb_{{ y.year }}" rows="2" maxlength="500">{{ form.get('cb_' ~ y.year, '') if form else '' }}</textarea></label>
+            </div>
+          </fieldset>
+
+          <div class="stwrap">
+            <fieldset>
+              <legend>Re-judge this year's status:</legend>
+              <div class="statuses">
+                {% for s in status_choices %}
+                <label class="st{% if s == y.ai_label %} isai{% endif %}">
+                  <input type="radio" name="st_{{ y.year }}" value="{{ s }}"
+                    {% if form and form.get('st_' ~ y.year) == s %}checked{% endif %}>
+                  <span>{{ s }}{% if s == y.ai_label %} <em>· AI</em>{% endif %}</span></label>
+                {% endfor %}
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="fixpage hidden">
+            <label>Which page of the report supports this? (the PDF viewer's page number; required; several allowed — the pages of ticked clues or of the quoted evidence are filled in for you; with “None of these”, type it)
+              <input type="text" name="pg_{{ y.year }}" maxlength="40" placeholder="e.g. 87 or 87,88"
+                     value="{{ form.get('pg_' ~ y.year, '') if form else '' }}"></label>
+          </div>
+        </div>
+
+        <fieldset class="probyear">
+          <legend>Given the clues up to this year (the current status), how likely is it that the target is <b>actually met by {{ item.target_year|yr }}</b>? (0–100)</legend>
+          <div class="probslider">
+            <span class="note">0 = almost impossible</span>
+            <input type="range" name="pb_{{ y.year }}" min="0" max="100" step="1"
+                   value="{{ (form.get('pb_' ~ y.year) or 50) if form else 50 }}">
+            <span class="note">100 = almost certain</span>
+            <output>{{ (form.get('pb_' ~ y.year) or 50) if form else 50 }}</output>
+          </div>
+          <p class="note">The slider starts at last year's value: leave it if nothing changed; drag down when progress lags, up when concrete numbers appear.</p>
+        </fieldset>
+      </section>
+      {% endfor %}
+
+      {# Locked until every tracked year is answered: the AI's year-by-year
+         overview and its overall conclusion must not anchor the per-year
+         judgements. Starts locked so nothing flashes before the script runs. #}
+      <section class="wrapup locked">
+        <h2>Wrap-up: year range and overall conclusion</h2>
+        <p class="lockmsg">Finish every year above first. Only then do the AI's year-by-year overview and its overall conclusion appear here — judge for yourself first, then compare.</p>
+        <div class="aisummary">
+          AI verdicts by year:
+          {% for y in years %}<code class="s{{ y.ai_label|status_class }}">{{ y.year }}: {{ y.ai_label }}</code>{% endfor %}
+          　→　Overall conclusion: <b>{{ ai_final }}</b>
+        </div>
+        <fieldset>
+          <legend>Did the AI check the right years?
+            This commitment was declared in {{ item.declared_year|yr }} with a target of {{ item.target_year|yr }};
+            the AI checked {{ years[0].year|yr }} – {{ years[-1].year|yr }}, {{ years|length }} year(s).</legend>
+          {% for key, label in window_choices %}
+          <label class="opt"><input type="radio" name="window_ok" value="{{ key }}"
+            {% if form and form.get('window_ok') == key %}checked{% endif %}>
+            <span>{{ label }}</span></label>
+          {% endfor %}
+          <div id="tywrap" class="sub hidden">
+            <label>Correct target year{% if year_style == 'roc' %} (ROC){% endif %}
+              <input type="text" name="correct_target_year" maxlength="4" inputmode="numeric"
+                     value="{{ form.get('correct_target_year', '') if form else '' }}"></label>
+          </div>
+          <p id="tyauto" class="note hidden">You corrected the target year in Q0 to <span></span>: the range is recorded as “target year misread” and the years after it were skipped.</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Overall, what is the final status of this commitment? (the AI says “{{ ai_final }}”)</legend>
+          <div class="statuses">
+            {% for s in final_choices %}
+            <label class="st{% if s == ai_final %} isai{% endif %}">
+              <input type="radio" name="human_final_status" value="{{ s }}"
+                {% if form and form.get('human_final_status') == s %}checked{% endif %}>
+              <span>{{ s }}{% if s == ai_final %} <em>· AI</em>{% endif %}</span></label>
+            {% endfor %}
+          </div>
+        </fieldset>
+      </section>
+    </div>
+
+    {# What this render showed as the cited pages: stored with the answer, so a
+       later conversion of the item's pages can never be mistaken for what
+       the person actually judged. #}
+    <input type="hidden" name="seen_src" value="{{ item.source_page or '' }}">
+    {% for y in years %}<input type="hidden" name="seen_pg_{{ y.year }}" value="{{ y.evidence_page or '' }}">{% endfor %}
+    <input type="hidden" name="n_page_views" id="npv"
+           value="{{ form.get('n_page_views', 0) if form else 0 }}">
+    <input type="hidden" name="active_seconds" id="active"
+           value="{{ form.get('active_seconds', 0) if form else 0 }}">
+    <div class="actions">
+      {% if nav.prev_id %}
+      <a class="button back" id="backbtn" href="{{ url_for('Post', assign_id=nav.prev_id) }}" data-goto="{{ nav.prev_id }}">← Back to previous item</a>
+      {% endif %}
+      <button type="submit" class="primary" id="submit2">{% if nav.editing %}Save changes{% else %}Submit this item{% endif %}</button>
+      {% if not nav.editing %}
+      <button type="button" class="ghost skipbtn" title="Move on to the next item; what you have filled in here is kept and this item comes back once the others are done">Skip for now</button>
+      {% endif %}
+      <button type="button" class="ghost clearbtn">Clear this item</button>
+      <input type="hidden" name="goto" id="goto" value="">
+      <input type="hidden" name="draft_seq" id="draftseq" value="">
+      <input type="hidden" name="page_gen" value="{{ page_gen }}">
+    </div>
+    <p class="note">
+      {% if nav.editing %}Switching to another item saves your changes to this one first (same as “Save changes”); with no changes it just switches.
+      {% elif nav.prev_id %}“Back to previous item” saves what you have filled in here first and restores it when you return.{% endif %}
+      {% if not nav.editing %}“Skip for now” keeps what you have filled in and brings this item back after the others; every item must be answered in the end.{% endif %}
+      “Clear” only clears this item.
+    </p>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function () {
+  var progressive = {{ 'true' if progressive else 'false' }};
+  var editing = {{ 'true' if nav.editing else 'false' }};
+  var declared = {{ item.declared_year|tojson }};
+  var yearLo = {{ year_lo }}, yearHi = {{ year_hi }};
+  var NOT_MENTIONED = 'Not mentioned';
+  var form = document.getElementById('taskform');
+  var sections = [].slice.call(document.querySelectorAll('section.year'));
+  var wrapup = document.querySelector('section.wrapup');
+  var PAGES = /^\d{1,4}(\s*[,;，、]\s*\d{1,4})*$/;
+
+  function Checked(scope, name) {
+    var el = scope.querySelector('input[name="' + name + '"]:checked');
+    return el ? el.value : null;
+  }
+  function Val(scope, name) {
+    var el = scope.querySelector('[name="' + name + '"]');
+    return el ? el.value.trim() : '';
+  }
+  function ValidYear(v) {
+    if (!/^\d{2,4}$/.test(v)) { return null; }
+    var n = parseInt(v, 10);
+    return (n >= yearLo && n <= yearHi) ? n : null;
+  }
+
+  // Q0 target-year correction: a year later than the declared year. Years
+  // tracked past it are skipped -- there is nothing left to track there.
+  function TyFix() {
+    var n = ValidYear(Val(form, 'target_year_fix'));
+    if (n === null) { return null; }
+    return (declared && n <= declared) ? null : n;
+  }
+  function Skipped(sec, tyfix) {
+    return tyfix !== null && parseInt(sec.getAttribute('data-year'), 10) > tyfix;
+  }
+
+  // Q0: "not a commitment" collapses the whole yearly part. The source-page
+  // check appears alongside the corrections, and opens its "why" follow-up
+  // only when the page is said to be wrong.
+  var srcPage = document.getElementById('srcpage');
+  // The item ends at Q0 when the text is not a commitment, or when the
+  // commitment cannot be found in the report at all -- there is nothing to
+  // check year by year either way. A merely mis-cited page carries on as
+  // normal: the commitment is there, just on another page.
+  function SkipYears() {
+    var v = Checked(form, 'is_commitment');
+    if (v === 'not_commitment' || v === 'no_target') { return true; }
+    return !!srcPage && Checked(form, 'source_page_ok') === 'no' &&
+           Checked(form, 'source_page_bad') === 'not_found';
+  }
+  function SyncQ0() {
+    var v = Checked(form, 'is_commitment');
+    var judged = v === 'valid' || v === 'unsure';
+    document.getElementById('mainq').classList.toggle('hidden', SkipYears());
+    // The reason box serves both terminal answers: required for "not a
+    // commitment", optional (with its own wording) for "no target year".
+    var nr = document.getElementById('notreason');
+    nr.classList.toggle('hidden', v !== 'not_commitment' && v !== 'no_target');
+    nr.querySelector('.lbl-nc').classList.toggle('hidden', v === 'no_target');
+    nr.querySelector('.lbl-nt').classList.toggle('hidden', v !== 'no_target');
+    document.getElementById('cfix').classList.toggle('hidden', !judged || SkipYears());
+    if (srcPage) {
+      srcPage.classList.toggle('hidden', !judged);
+      var bad = Checked(form, 'source_page_ok') === 'no';
+      document.getElementById('srcbad').classList.toggle('hidden', !bad);
+      document.getElementById('srcfix').classList.toggle(
+          'hidden', !bad || Checked(form, 'source_page_bad') !== 'wrong_page');
+    }
+  }
+
+  // Per-year chain: wrong -> tick the basis (any mix of the quoted evidence
+  // and the same-year clues, or "none of these") -> re-judge the status ->
+  // a status other than "Not mentioned" needs the supporting page(s). The
+  // free-text "other" box is optional throughout.
+  function Basis(sec, y) {
+    return [].slice.call(sec.querySelectorAll('input[name="ev_' + y + '"]:checked'))
+      .map(function (b) { return b.value; });
+  }
+  function YearState(sec) {
+    var y = sec.getAttribute('data-year');
+    var s = { vq: Checked(sec, 'vq_' + y), basis: [], st: null, page: '' };
+    if (s.vq === 'wrong') {
+      s.basis = Basis(sec, y);
+      if (s.basis.length) {
+        s.st = Checked(sec, 'st_' + y);
+        if (s.st && s.st !== NOT_MENTIONED) { s.page = Val(sec, 'pg_' + y); }
+      }
+    }
+    return s;
+  }
+  function NeedsPage(s) {
+    return s.vq === 'wrong' && s.basis.length > 0 && !!s.st && s.st !== NOT_MENTIONED;
+  }
+  function YearComplete(sec) {
+    var s = YearState(sec);
+    if (!s.vq) { return false; }
+    if (s.vq === 'wrong') {
+      if (!s.basis.length) { return false; }
+      if (!s.st) { return false; }
+      if (NeedsPage(s) && !PAGES.test(s.page)) { return false; }
+    }
+    return true;
+  }
+  function SyncYear(sec) {
+    var s = YearState(sec);
+    sec.querySelector('.yfix').classList.toggle('hidden', s.vq !== 'wrong');
+    sec.querySelector('.stwrap').classList.toggle('hidden', !s.basis.length);
+    sec.querySelector('.fixpage').classList.toggle('hidden', !NeedsPage(s));
+  }
+
+  // Wrap-up: a Q0 target-year fix answers the window question by itself.
+  function SyncWrapup(tyfix) {
+    var radios = [].slice.call(form.querySelectorAll('input[name=window_ok]'));
+    var ty = form.querySelector('input[name=correct_target_year]');
+    var auto = document.getElementById('tyauto');
+    for (var i = 0; i < radios.length; i++) {
+      if (tyfix !== null) { radios[i].checked = radios[i].value === 'target_wrong'; }
+      radios[i].disabled = tyfix !== null;
+    }
+    if (tyfix !== null) { ty.value = tyfix; auto.querySelector('span').textContent = tyfix; }
+    ty.disabled = tyfix !== null;
+    auto.classList.toggle('hidden', tyfix === null);
+    var w = Checked(form, 'window_ok');
+    document.getElementById('tywrap').classList.toggle('hidden', w !== 'target_wrong');
+  }
+
+  // Progressive reveal: the next year unlocks only once this one is complete.
+  function Sync() {
+    SyncQ0();
+    var tyfix = TyFix();
+    var reached = true;
+    for (var i = 0; i < sections.length; i++) {
+      var skipped = Skipped(sections[i], tyfix);
+      sections[i].classList.toggle('skipped', skipped);
+      if (skipped) { continue; }
+      sections[i].classList.toggle('locked', progressive && !reached);
+      SyncYear(sections[i]);
+      if (!YearComplete(sections[i])) { reached = false; }
+    }
+    // The wrap-up -- with the AI's year-by-year overview and its overall
+    // conclusion -- opens only once every tracked year is answered.
+    wrapup.classList.toggle('locked', !reached);
+    SyncWrapup(tyfix);
+  }
+  form.addEventListener('change', Sync);
+  form.addEventListener('input', Sync);
+  Sync();
+
+  // The corrected wording (Q0) replaces the heading as it is typed -- for
+  // this person only; the original stays one line below.
+  var cmText = document.getElementById('cmtext'), cmOrig = document.getElementById('cmorig');
+  var cmFix = form.querySelector('input[name=commitment_fix]');
+  function SyncTitle() {
+    var v = cmFix ? cmFix.value.trim() : '';
+    if (SkipYears()) { v = ''; }
+    cmText.textContent = v || cmText.getAttribute('data-orig');
+    cmOrig.classList.toggle('hidden', !v);
+  }
+  form.addEventListener('input', SyncTitle);
+  form.addEventListener('change', SyncTitle);
+  SyncTitle();
+
+  // Star + note: saved on their own (not part of the answer), as soon as they
+  // change. A failed save is retried on the next change or when leaving.
+  var markBox = document.getElementById('markbox');
+  var starBtn = document.getElementById('starbtn'), noteBox = document.getElementById('notebox');
+  var markState = document.getElementById('markstate');
+  var markTimer = null, markDirty = false, markForce = false, markFails = 0;
+  // Every save is ordered by (page generation, sequence): the generation is
+  // the one the server stamped on this render of the page (strictly
+  // increasing with every render), the sequence counts this page's saves.
+  // The server keeps the highest pair, so a slow earlier save from this
+  // page can never overwrite a later one, and an older page can never
+  // overwrite what a newer page saved, however late its request arrives.
+  // When a newer page's state is stored the server answers 409 with it; the
+  // person then chooses between that and what is typed here.
+  //
+  // One request at a time: a change made while a save is in flight waits
+  // for that save's answer and goes out right after it. So every answer is
+  // about the newest content sent, "saved" is only ever said of the newest
+  // content, and a conflict prompt cannot be wiped by an earlier answer.
+  //
+  // Two separate things travel with every save. The page's identity: the
+  // generation the server stamped on this render, never changed, plus a
+  // running number of this page's saves -- the server keeps one page's
+  // saves in order by these alone. And the lineage the page builds on
+  // (baseGen/baseSeq, learnt from every answer; a forced overwrite or
+  // "use that version" moves it) plus the saves sent since: the pair a
+  // save claims is base + sends since, which is what the ordering rule
+  // compares against the stored pair.
+  var srcId = parseInt(markBox.getAttribute('data-gen'), 10) || 0;
+  var baseGen = srcId, baseSeq = 0, sent = 0, n = 0;
+  var inflight = false, markConflict = false, retryTimer = null;
+  // The save in flight, or waiting to be retried: {data, force}. One save is
+  // one number: a retry sends exactly this again -- same number, same
+  // content, same force flag -- so a save the server did apply but whose
+  // answer was lost is recognised there as already done, never carried out
+  // a second time. A change made meanwhile waits, and goes out as a new
+  // save after the answer.
+  var pending = null;
+  function MarkData(force) {
+    var d = new FormData();
+    d.append('starred', starBtn.classList.contains('on') ? '1' : '0');
+    d.append('note', noteBox.value);
+    n += 1;
+    sent += 1;
+    d.append('_src', String(srcId));
+    d.append('_n', String(n));
+    d.append('_gen', String(baseGen));
+    d.append('_seq', String(baseSeq + sent));
+    if (force) { d.append('_force', '1'); }
+    return d;
+  }
+  // The pair the server answered with becomes the base; sends restart.
+  function Rebase(body) {
+    if (body.gen) { baseGen = body.gen; }
+    if (body.seq != null) { baseSeq = body.seq; }
+    sent = 0;
+  }
+  function SetStar(on) {
+    starBtn.classList.toggle('on', on);
+    starBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    starBtn.textContent = on ? '★ Starred' : '☆ Star this item';
+  }
+  function Status(text) { markState.textContent = text; }
+  function Retry() {
+    markFails += 1;
+    Status('Could not save; will retry.');
+    clearTimeout(retryTimer);
+    retryTimer = setTimeout(function () { if (pending && !inflight) { Send(pending); } },
+                            Math.min(30000, 3000 * markFails));
+  }
+  // A newer page has stored something else. What is typed here stays as it
+  // is and nothing is sent until the person picks one of the two; edits
+  // made meanwhile wait with it.
+  function Conflict(body) {
+    markConflict = true;
+    Status('');
+    var p = document.createElement('span');
+    p.textContent = 'A newer tab has saved something else (star: ' + (body.starred ? 'yes' : 'no') + '; note: “' +
+                    (body.note || '(empty)') + '”). What is here is not saved yet. ';
+    var take = document.createElement('button');
+    take.type = 'button'; take.className = 'ghost'; take.textContent = 'Use that version';
+    var keep = document.createElement('button');
+    keep.type = 'button'; keep.className = 'ghost'; keep.textContent = 'Overwrite with this one';
+    // One choice only: the first click retires both buttons, so the other
+    // option cannot be taken while the chosen one is still being carried out.
+    take.addEventListener('click', function () {
+      take.disabled = keep.disabled = true;
+      SetStar(!!body.starred);
+      noteBox.value = body.note || '';
+      Rebase(body);
+      markDirty = false;
+      markConflict = false;
+      Status('Switched to the newer tab’s version.');
+    });
+    keep.addEventListener('click', function () {
+      take.disabled = keep.disabled = true;
+      Status('Overwriting…');
+      markConflict = false;
+      markForce = true;
+      markDirty = true;
+      SaveMark(false);
+    });
+    markState.appendChild(p); markState.appendChild(take); markState.appendChild(keep);
+  }
+  // Fire-and-forget delivery for a page that is going away: a beacon
+  // survives the navigation; when the browser refuses to queue one, a
+  // keepalive fetch is the fallback.
+  function Beam(url, d) {
+    if (!(navigator.sendBeacon && navigator.sendBeacon(url, d))) {
+      fetch(url, { method: 'POST', body: d, credentials: 'same-origin', keepalive: true }).catch(function () {});
+    }
+  }
+  function Send(p) {
+    inflight = true;
+    var url = markBox.getAttribute('data-mark');
+    fetch(url, { method: 'POST', body: p.data, credentials: 'same-origin', keepalive: true })
+      .then(function (r) {
+        return r.json().then(function (body) { return { status: r.status, body: body || {} }; },
+                             function () { return { status: r.status, body: {} }; });
+      })
+      .then(function (res) {
+        inflight = false;
+        var body = res.body;
+        if (res.status === 200) {
+          pending = null;
+          markFails = 0;
+          Rebase(body);   // continue from the pair the server stored (moved by a forced overwrite)
+          if (markDirty) { SaveMark(false); return; }   // changed meanwhile: send the newest
+          Status('Saved');
+          setTimeout(function () { if (!markDirty && !inflight && markState.textContent === 'Saved') { Status(''); } }, 2000);
+        } else if (res.status === 409) {
+          pending = null;
+          Conflict(body);
+        } else { Retry(); }   // the same save again, later
+      }, function () { inflight = false; Retry(); });
+  }
+  function SaveMark(leaving) {
+    if (markConflict) { return; }
+    if (leaving) {
+      var url = markBox.getAttribute('data-mark');
+      // Leaving. A save still waiting to be retried -- or in flight, since
+      // it may yet fail -- goes out again first, exactly as it is: same
+      // number, so the server applies it once at most. Then the newest
+      // content, if it changed since, as a beacon with the next number, so
+      // whichever lands last, the newer content stays. A forced overwrite
+      // still unanswered carries over to it: the page does not yet know the
+      // lineage it was moved onto, and the person did choose to overwrite.
+      if (pending) { Beam(url, pending.data); }
+      if (!markDirty) { return; }
+      markDirty = false;
+      var carry = markForce || !!(pending && pending.force);
+      Beam(url, MarkData(carry));
+      return;
+    }
+    // One request at a time: with a save in flight or waiting to be
+    // retried, the newest content follows after that save's answer.
+    if (!markDirty || inflight || pending) { return; }
+    markDirty = false;
+    var force = markForce;
+    markForce = false;
+    pending = { data: MarkData(force), force: force };
+    Send(pending);
+  }
+  function MarkChanged() {
+    markDirty = true;
+    if (markConflict) { return; }   // the prompt stays until one side is chosen
+    Status('Saving…');
+    clearTimeout(markTimer);
+    markTimer = setTimeout(function () { SaveMark(false); }, 600);
+  }
+  starBtn.addEventListener('click', function () { SetStar(!starBtn.classList.contains('on')); MarkChanged(); });
+  noteBox.addEventListener('input', MarkChanged);
+  noteBox.addEventListener('input', function () { noteBox.rows = Math.min(6, Math.max(1, noteBox.value.split('\n').length)); });
+  window.addEventListener('pagehide', function () { clearTimeout(markTimer); SaveMark(true); });
+
+  // Basis -> page prefill. Every clue carries its own page reference and the
+  // quoted evidence its source page (stamped on the box as data-pages); the
+  // union of the pages of everything ticked -- deduplicated, ascending, e.g.
+  // 13,14,14 -> "13,14" -- goes into the page field. Only an empty field or
+  // one still holding a previous prefill is overwritten; a hand-typed page
+  // stays. "None of these" brings no page of its own.
+  function Prefill(sec) {
+    var y = sec.getAttribute('data-year');
+    var pg = sec.querySelector('input[name="pg_' + y + '"]');
+    if (!pg) { return; }
+    var seen = {}, pages = [];
+    [].slice.call(sec.querySelectorAll('input[name="ev_' + y + '"]:checked')).forEach(function (b) {
+      (b.getAttribute('data-pages') || '').split(',').forEach(function (p) {
+        if (p && !seen[p]) { seen[p] = true; pages.push(parseInt(p, 10)); }
+      });
+    });
+    pages.sort(function (a, b) { return a - b; });
+    pages = pages.join(',');
+    var v = pg.value.trim();
+    if (v === '' || v === pg.dataset.auto || v === pages) {
+      pg.value = pages;
+      pg.dataset.auto = pages;
+    }
+  }
+  // "None" excludes every other basis and vice versa; "not found in the
+  // report" and "the quoted evidence holds" contradict each other, so they
+  // exclude each other too (a clue alongside either is fine). Then refresh the
+  // page prefill and the chain (Sync ran before this handler, on stale boxes).
+  var CONFLICT = { none: null, notfound: 'current', current: 'notfound' };
+  form.addEventListener('change', function (e) {
+    var t = e.target;
+    if (!t || !t.name || t.name.indexOf('ev_') !== 0) { return; }
+    if (t.checked && t.value in CONFLICT) {
+      var only = CONFLICT[t.value];   // null = excludes every other basis
+      [].slice.call(form.querySelectorAll('input[name="' + t.name + '"]')).forEach(function (b) {
+        if (b !== t && (only === null || b.value === only)) { b.checked = false; }
+      });
+    }
+    if (t.checked && t.value !== 'none') {
+      // Anything else unticks "none", which means "none of the above".
+      [].slice.call(form.querySelectorAll('input[name="' + t.name + '"]')).forEach(function (b) {
+        if (b.value === 'none') { b.checked = false; }
+      });
+    }
+    Prefill(t.closest('section.year'));
+    Sync();
+  });
+  sections.forEach(function (sec) { Prefill(sec); });
+
+  var agree = document.getElementById('agreeall');
+  if (agree) {
+    agree.addEventListener('click', function () {
+      var boxes = form.querySelectorAll('input[type=radio][value=correct]');
+      for (var i = 0; i < boxes.length; i++) {
+        if (boxes[i].name.indexOf('vq_') === 0) { boxes[i].checked = true; }
+      }
+      Sync();
+    });
+  }
+
+  // Count evidence look-ups. Not a gate -- it separates "read the page" from
+  // "guessed from the snippet" when filtering the collected data afterwards.
+  var npv = document.getElementById('npv');
+  var links = document.querySelectorAll('.thumbs a, .pdflink');
+  for (var k = 0; k < links.length; k++) {
+    links[k].addEventListener('click', function () {
+      npv.value = (parseInt(npv.value, 10) || 0) + 1;
+    });
+  }
+
+  // Sliders: live value display; an untouched slider inherits the previous
+  // year's value (the default IS "same as last year").
+  var sliders = [].slice.call(form.querySelectorAll('input[type=range]'));
+  function ShowVal(sl) { sl.parentNode.querySelector('output').textContent = sl.value; }
+  sliders.forEach(function (sl, i) {
+    ShowVal(sl);
+    sl.addEventListener('input', function () {
+      sl.dataset.touched = '1';
+      ShowVal(sl);
+      for (var j = i + 1; j < sliders.length; j++) {
+        if (sliders[j].dataset.touched === '1') { break; }
+        sliders[j].value = sl.value;
+        ShowVal(sliders[j]);
+      }
+    });
+  });
+
+  // Time actually spent on this item: the clock runs only while this tab is
+  // the one being worked in -- visible, focused, and with some sign of life
+  // within IDLE_MS. Switching tab, switching window, minimising, locking the
+  // screen and closing the page all stop it, and a break is credited only up
+  // to IDLE_MS (reading without touching anything is still work; walking away
+  // is not). It carries on from the draft when the person comes back and is
+  // sent as active_seconds.
+  var IDLE_MS = 120000;
+  var activeField = document.getElementById('active');
+  var activeSecs = parseFloat(activeField.value) || 0;
+  var lastAction = Date.now();
+  var countingSince = null;   // when the running stretch started; null = stopped
+  function Counting() {
+    return document.visibilityState === 'visible' && document.hasFocus() &&
+           Date.now() - lastAction < IDLE_MS;
+  }
+  // Credit up to now, or up to where the break began -- whichever is earlier
+  // -- and stop the clock.
+  function Accrue() {
+    if (countingSince === null) { return; }
+    var until = Math.min(Date.now(), lastAction + IDLE_MS);
+    if (until > countingSince) { activeSecs += (until - countingSince) / 1000; }
+    countingSince = null;
+  }
+  // Accrue, then run on if this tab is still the one being worked in.
+  function FlushActive() {
+    Accrue();
+    if (Counting()) { countingSince = Date.now(); }
+    activeField.value = Math.round(activeSecs);
+  }
+  // Any sign of life: keeps the clock running, and restarts it after a break.
+  function Interact() {
+    var now = Date.now();
+    if (countingSince !== null && now - lastAction < 1000) { lastAction = now; return; }
+    Accrue();
+    lastAction = now;
+    if (Counting()) { countingSince = now; }
+  }
+  ['mousemove', 'mousedown', 'keydown', 'wheel', 'scroll', 'touchstart'].forEach(
+    function (name) {
+      document.addEventListener(name, Interact, { passive: true, capture: true });
+    });
+  window.addEventListener('focus', Interact);
+  window.addEventListener('blur', FlushActive);   // another window on top: stop
+  FlushActive();                                  // start the clock
+
+  // Draft autosave: every change is kept server-side (debounced), and again
+  // when the page is left, so going back to revise an earlier item -- or
+  // closing the tab -- never loses what was already filled in.
+  var draftUrl = form.getAttribute('data-draft');
+  // frozen: the answer was submitted for real (or the draft deliberately
+  // discarded) -- no draft may be written after that.
+  var draftTimer = null, dirty = false, frozen = false;
+  // Every write carries the generation this render was given by the server
+  // and a strictly increasing sequence number that continues from the stored
+  // draft. A save from an older render (a stale tab) is refused; a save that
+  // reaches the server late can never overwrite a newer one; the real submit
+  // retires the draft at the next sequence.
+  var pageGen = form.getAttribute('data-gen') || '0';
+  var lastSeq = parseInt(form.getAttribute('data-seq'), 10) || 0;
+  function NextSeq() { lastSeq += 1; return lastSeq; }
+  var draftSeq = document.getElementById('draftseq');
+  function Stamp(data) {
+    data.append('_seq', String(NextSeq()));
+    data.append('_gen', pageGen);
+    return data;
+  }
+  function Payload() { FlushActive(); return Stamp(new FormData(form)); }
+  // A page brought back from the back/forward cache carries an outdated
+  // generation: reload it so it is registered afresh (and shows fresh data).
+  window.addEventListener('pageshow', function (e) { if (e.persisted) { window.location.reload(); } });
+  // Only a 204 means "stored". 409 means a newer render of this item exists
+  // (another tab): stop saving here and say so. Anything else -- 4xx/5xx, a
+  // redirect to the entry page (session gone), no response -- keeps the data
+  // dirty, retries with backoff and, after repeated failures, tells the
+  // person not to close the page.
+  var draftWarn = document.getElementById('draftwarn');
+  var draftFails = 0;
+  // stale: the server said a newer render of this item exists. Nothing from
+  // this page may be saved or submitted any more (the server refuses it too).
+  var stale = false;
+  function DraftResult(status) {
+    if (status === 204) { draftFails = 0; draftWarn.classList.add('hidden'); return; }
+    if (status === 409) {
+      stale = true;
+      frozen = true;
+      dirty = false;
+      clearTimeout(draftTimer);
+      draftWarn.textContent = '⚠ This item has been opened in another, more recent tab; this page no longer saves — close it and continue in the newest tab.';
+      draftWarn.classList.remove('hidden');
+      return;
+    }
+    dirty = true;
+    draftFails += 1;
+    draftWarn.classList.toggle('hidden', draftFails < 2);
+    clearTimeout(draftTimer);
+    draftTimer = setTimeout(function () { SaveDraft(false); }, Math.min(30000, 3000 * draftFails));
+  }
+  function PostDraft(data) {
+    return fetch(draftUrl, { method: 'POST', body: data, credentials: 'same-origin',
+                             keepalive: true, redirect: 'manual' })
+      .then(function (r) { return r.status; }, function () { return 0; });
+  }
+  // sendBeacon can refuse to queue (returns false: quota, size); then the
+  // keepalive fetch -- which also survives page unload -- is the fallback.
+  function Beacon(data) {
+    return !!(navigator.sendBeacon && navigator.sendBeacon(draftUrl, data));
+  }
+  function SaveDraft(leaving) {
+    if (frozen || !dirty) { return; }
+    dirty = false;
+    var data = Payload();
+    if (leaving && Beacon(data)) { return; }
+    PostDraft(data).then(DraftResult);
+  }
+  // Save, then continue (used before navigating within the site): wait for
+  // the server so the next page already sees this draft; a slow or failed
+  // request falls back to a beacon and does not hold the person up.
+  function SaveDraftThen(done) {
+    if (frozen || !dirty) { done(); return; }
+    dirty = false;
+    var data = Payload(), called = false;
+    function once() { if (!called) { called = true; done(); } }
+    setTimeout(once, 1500);
+    PostDraft(data).then(function (status) {
+      if (status !== 204 && status !== 409 && !Beacon(data)) { dirty = true; }
+      once();
+    });
+  }
+  function MarkDirty() {
+    dirty = true;
+    clearTimeout(draftTimer);
+    draftTimer = setTimeout(function () { SaveDraft(false); }, 800);
+  }
+  form.addEventListener('input', MarkDirty);
+  form.addEventListener('change', MarkDirty);
+  // Has the person changed anything since the page loaded? (Programmatic
+  // prefills fire no events, so they do not count.)
+  var changed = false;
+  form.addEventListener('input', function () { changed = true; });
+  form.addEventListener('change', function () { changed = true; });
+  // Leaving or hiding the page: on the open task the clock advanced even
+  // without edits, so the draft is written regardless; a revision only when
+  // something was changed (the stored answer keeps its original time anyway).
+  function Leave() {
+    if (!editing || changed) { dirty = true; }
+    SaveDraft(true);
+  }
+  window.addEventListener('pagehide', Leave);
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') { Interact(); return; }
+    FlushActive();   // hidden: the clock stops here and stays stopped
+    Leave();
+  });
+
+  // "Clear this item": blank every field of THIS form only (a plain
+  // form.reset() would bring the prefilled draft/answer back), drop the
+  // server-side draft, and start the year chain over.
+  [].slice.call(document.querySelectorAll('.clearbtn')).forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (!window.confirm('Clear everything you filled in on this item? Only this item is affected.')) { return; }
+      [].slice.call(form.querySelectorAll('input[type=radio], input[type=checkbox]')).forEach(function (r) { r.checked = false; r.disabled = false; });
+      [].slice.call(form.querySelectorAll('input[type=text], textarea')).forEach(function (t) { t.value = ''; t.disabled = false; delete t.dataset.auto; });
+      sliders.forEach(function (sl) { sl.value = 50; delete sl.dataset.touched; ShowVal(sl); });
+      [].slice.call(form.querySelectorAll('.missing')).forEach(function (m) { m.classList.remove('missing'); });
+      Sync();
+      SyncTitle();   // the corrected wording is gone: show the original again
+      clearTimeout(draftTimer);
+      dirty = false;
+      var data = Stamp(new FormData());
+      data.append('_clear', '1');
+      PostDraft(data).then(DraftResult);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // Submit-time completeness check: mark every unanswered block, jump to the
+  // first one, and never clear what is already filled in.
+  var btn = document.getElementById('submit2');
+  function Mark(el, bad) { if (el) { el.classList.toggle('missing', !!bad); } return !!bad; }
+  function Validate() {
+    var bad = [];
+    var v = Checked(form, 'is_commitment');
+    if (Mark(document.getElementById('q0'), !v)) { bad.push(document.getElementById('q0')); }
+    if (v === 'not_commitment') {
+      var nr = form.querySelector('input[name=not_reason]');
+      if (Mark(document.getElementById('notreason'), nr.value.trim().length < 5)) {
+        bad.push(document.getElementById('notreason'));
+      }
+    } else if (v === 'no_target') {
+      // Ends the item here; the note is optional and nothing below is asked.
+      sections.forEach(function (sec) { Mark(sec, false); });
+    } else if (v) {
+      var tyfix = TyFix();
+      var cfix = document.getElementById('cfix');
+      // A target-year value that is not a valid later year is a mistake,
+      // not a fix.
+      if (Mark(cfix, Val(form, 'target_year_fix') !== '' && tyfix === null)) { bad.push(cfix); }
+      if (srcPage) {
+        // "Is the commitment on the cited page?" -- and, when it is not, which
+        // of the two problems it is.
+        var sv = Checked(form, 'source_page_ok');
+        if (Mark(srcPage, !sv || (sv === 'no' && !Checked(form, 'source_page_bad')))) {
+          bad.push(srcPage);
+        }
+      }
+      // "The commitment is nowhere in the report" ends the item here, exactly
+      // as "not a commitment" does: nothing below is asked or checked.
+      if (SkipYears()) {
+        sections.forEach(function (sec) { Mark(sec, false); });
+        if (bad.length) { bad[0].scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+        return !bad.length;
+      }
+      for (var i = 0; i < sections.length; i++) {
+        var sec = sections[i];
+        if (Skipped(sec, tyfix)) { Mark(sec, false); continue; }
+        var s = YearState(sec);
+        Mark(sec.querySelector('.fixpage'), NeedsPage(s) && !PAGES.test(s.page));
+        if (Mark(sec, !YearComplete(sec))) { bad.push(sec); }
+      }
+      var w = Checked(form, 'window_ok');
+      var ty = form.querySelector('input[name=correct_target_year]');
+      var wBad = tyfix === null &&
+                 (!w || (w === 'target_wrong' && ValidYear(ty.value.trim()) === null));
+      var wfs = form.querySelector('input[name=window_ok]').closest('fieldset');
+      if (Mark(wfs, wBad)) { bad.push(wfs); }
+      var hf = Checked(form, 'human_final_status');
+      var ffs = form.querySelector('input[name=human_final_status]').closest('fieldset');
+      if (Mark(ffs, !hf)) { bad.push(ffs); }
+    }
+    if (bad.length) {
+      bad[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return false;
+    }
+    return true;
+  }
+  form.addEventListener('submit', function (e) {
+    if (stale) {
+      e.preventDefault();
+      draftWarn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    // A skip (or a nav link) is already on its way: a submit now would go to
+    // the wrong route, so it is ignored.
+    if (leaving) { e.preventDefault(); return; }
+    if (!Validate()) { e.preventDefault(); return; }
+    FlushActive();
+    clearTimeout(draftTimer);
+    // One last draft carrying exactly what is being submitted, before the POST
+    // that supersedes it. If that POST never lands -- the server restarted at
+    // this instant, the connection dropped -- reloading the page brings the
+    // full answer back instead of the state from up to a second earlier.
+    // Ordering is safe either way: the submit retires the draft at the NEXT
+    // sequence, so a beacon arriving late is refused rather than resurrecting
+    // anything.
+    Beacon(Payload());
+    dirty = false;
+    frozen = true;
+    draftSeq.value = String(NextSeq());
+    // One POST only: double-clicking submit must not count the item twice.
+    setTimeout(function () { btn.disabled = true; }, 0);
+  });
+
+  // "Skip for now": the whole form is posted to the skip route, with the
+  // page generation and the next sequence number, exactly like a submit but
+  // without validation. The server stores it as the draft and parks the item
+  // in one transaction, so nothing typed can fall between "saved" and
+  // "skipped", and a stale tab is refused there like any other write. No
+  // draft is written from here after that (frozen); if the request fails the
+  // browser shows the error and the page can simply be reloaded.
+  var skipBtns = [].slice.call(document.querySelectorAll('.skipbtn'));
+  var skipUrl = form.getAttribute('data-skip');
+  if (skipBtns.length && skipUrl) {
+    skipBtns.forEach(function (sb) {
+      sb.addEventListener('click', function () {
+        if (stale) { draftWarn.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+        if (leaving) { return; }
+        leaving = true;
+        clearTimeout(draftTimer);
+        FlushActive();
+        dirty = false;
+        frozen = true;
+        draftSeq.value = String(NextSeq());
+        // Nothing else may fire while the skip is on its way: not a second
+        // skip, and not the submit button either (see the submit handler).
+        skipBtns.forEach(function (b) { b.disabled = true; });
+        btn.disabled = true;
+        form.action = skipUrl;
+        form.submit();   // programmatic: the submit handler (validation) does not run
+      });
+    });
+  }
+
+  // Leaving through a nav link (previous / next / current task / history).
+  // The open task, or an unchanged revision: flush the draft (sendBeacon
+  // survives the navigation) and go. A changed revision is saved for real
+  // first -- a genuine submit carrying the destination in the hidden "goto"
+  // field -- otherwise the export would keep the old answer while the change
+  // sat in a draft. An incomplete revision cannot be saved; the person may
+  // discard it (the stored answer stays as it was).
+  var gotoField = document.getElementById('goto');
+  var leaving = false;
+  [].slice.call(document.querySelectorAll('a[data-goto]')).forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (leaving) { return; }
+      clearTimeout(draftTimer);
+      var href = a.getAttribute('href');
+      if (stale || !editing || !changed) {
+        // A stale page just leaves: the newer tab holds the real state.
+        leaving = true;
+        SaveDraftThen(function () { window.location.href = href; });
+        return;
+      }
+      gotoField.value = a.getAttribute('data-goto');
+      if (Validate()) {
+        FlushActive();
+        leaving = true;
+        dirty = false;
+        frozen = true;
+        draftSeq.value = String(NextSeq());
+        form.submit();
+        return;
+      }
+      if (window.confirm('This item still has gaps, so the changes cannot be saved. Discard them and leave anyway? (The answer you submitted earlier stays as it is.)')) {
+        leaving = true;
+        dirty = false;
+        frozen = true;
+        var data = Stamp(new FormData());
+        data.append('_clear', '1');
+        PostDraft(data).then(function () { window.location.href = href; });
+        setTimeout(function () { window.location.href = href; }, 1500);
+      }
+    });
+  });
+})();
+</script>
+{% endblock %}

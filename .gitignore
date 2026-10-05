@@ -1,12 +1,42 @@
 # secrets
 .env
+**/env.prod.sh
+**/env.local.sh
+**/env.*.local
+*.pem
+*.key
 
 # python
 __pycache__/
 *.pyc
+**/.venv/
 
 # runtime inputs/outputs produced when running inside an edition folder
 english/pdf/
 english/result/
 chinese/pdf/
 chinese/result/
+
+# annotation platform runtime (both editions)
+**/annotation_platform/logs/
+**/annotation_platform/exports/
+**/annotation_platform/static/pages/
+**/annotation_platform/cloudflared
+*.db
+*.db-wal
+*.db-shm
+
+# internal audit material -- not part of the hand-off
+platform_audit/
+
+# AI-assistant working folders and one-off review artefacts (conversations,
+# tool state, recheck logs/experiments) -- never part of the hand-off
+.codex/
+.agents/
+.claude/
+/recheck_result.md
+/recheck_timeline.py
+
+# page_shift.py keeps a copy of the pipeline output from before the page
+# conversion next to it; a duplicate with the old page numbers, not data
+**/_page_shift_backup_*/

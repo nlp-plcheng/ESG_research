@@ -40,6 +40,7 @@ unused in this PDF-file flow.
 
 import argparse
 import os
+import sys
 import traceback
 from collections import Counter
 from typing import Dict, List
@@ -261,8 +262,12 @@ def Main():
         print(f"\n[Success] Verification complete. Saved to: {out_path}")
 
     except Exception as error:
+        # Includes OpenaiCallFailed (retries exhausted): a failed verify chunk
+        # must not be written down as 未提及, so nothing is written and the exit
+        # status says so; openai_run_company.py reports the year as failed.
         print(f"\n[Error] Pipeline execution failed: {error}")
         traceback.print_exc()
+        sys.exit(1)
 
 
 if __name__ == "__main__":

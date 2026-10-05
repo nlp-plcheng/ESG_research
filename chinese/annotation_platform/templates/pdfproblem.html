@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}報告書節錄打不開{% endblock %}
+{% block body %}
+{# Shown in the tab the annotator opened the excerpt in. The task page itself is
+   untouched -- their填答 and自動儲存 are still running in the other tab. #}
+<div class="card">
+  <h1>這份報告書節錄打不開</h1>
+
+  <p class="notice">
+    你的填答沒有受到影響——這是另開的分頁，回到原本那一頁繼續作答就好。
+  </p>
+
+  <p>
+    {{ company }}　民國 {{ roc_year }} 年報告書，AI 引用第
+    <b>{{ pages|join('、') }}</b> 頁。
+    {% if reason == 'out_of_range' %}
+      但這個檔案只有 {{ page_count }} 頁——AI 很可能把頁碼判讀錯了。
+    {% elif reason == 'missing' %}
+      伺服器上找不到這一年的報告書檔案。
+    {% else %}
+      節錄檔製作失敗（這份 PDF 的內部結構讓解析器出錯），不是頁碼的問題。
+    {% endif %}
+  </p>
+
+  <h2>可以這樣繞過</h2>
+  <ul class="ways">
+    {% if has_report %}
+    <li><a class="pdflink" target="_blank"
+           href="{{ url_for('ReportPdf', company=company, roc_year=roc_year) }}">開啟完整報告書</a>
+      —— 檔案較大，開啟後用 Ctrl+F 搜尋證據裡的關鍵字（比翻頁碼可靠）。</li>
+    {% endif %}
+    {% if reason != 'out_of_range' and reason != 'missing' %}
+    <li>直接看單頁圖片：
+      {% for p in pages %}
+      <a target="_blank" href="{{ url_for('PageImage', company=company, roc_year=roc_year, page=p) }}">第 {{ p }} 頁</a>{% if not loop.last %}、{% endif %}
+      {% endfor %}
+      　（圖片不能 Ctrl+F，但看得到原文）</li>
+    {% endif %}
+    <li>回到作答頁，依 AI 引用的那段文字本身判斷夠不夠支持它的判定。</li>
+  </ul>
+
+  <p class="note">
+    <b>打不開報告書不等於「未提及」。</b>
+    查不到原文時，請照實勾選你的判斷，並在「其他」欄註明「報告書打不開，無法核對」，
+    不要因為看不到頁面就把該年改成未提及或把這題標成不是承諾。
+  </p>
+
+  <p class="note">
+    順手回報：把公司、年度、頁碼貼給研究團隊就好（這一頁的網址也可以）。
+  </p>
+</div>
+{% endblock %}

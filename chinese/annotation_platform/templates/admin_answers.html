@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}最近送出的填答{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>最近送出的填答</h1>
+  <p class="note">直接讀資料庫的內容，含測試帳號（標「測試」，不進資料集）。剛按下送出的那一題應該立刻出現在最上面。
+     顯示最新 {{ limit }} 筆{% if pid %}，只看 <code>{{ pid }}</code>{% endif %}。
+     <a href="{{ url_for('Admin', key=key) }}">← 回後台</a>
+     {% if pid %}　<a href="{{ url_for('AdminAnswers', key=key, limit=limit) }}">看全部人</a>
+     　<a href="{{ url_for('AdminAnswers', key=key, limit=200, pid=pid) }}">看 200 筆</a>
+     {% else %}　<a href="{{ url_for('AdminAnswers', key=key, limit=200) }}">看 200 筆</a>{% endif %}</p>
+  {% if not rows %}
+  <p>還沒有任何送出的填答。</p>
+  {% else %}
+  <table class="grid answers">
+    <tr><th>送出時間（UTC）</th><th>PID</th><th>題目</th><th>Q0</th><th>逐年</th><th>整體結論</th><th>年份範圍</th><th>秒數（停留／總）</th></tr>
+    {% for r in rows %}
+    <tr>
+      <td>{{ r.submitted_at }}{% if r.n_edits %}<br><span class="note">修改 {{ r.n_edits }} 次，最後 {{ r.edited_at }}</span>{% endif %}</td>
+      <td><code>{{ r.prolific_pid }}</code>{% if r.is_test %}<br><span class="note">測試（不計入）</span>{% endif %}</td>
+      <td>{% if r.is_gold %}<span class="note">校準 #{{ r.gold_rank }}</span><br>{% endif %}{{ r.company }}　{{ r.commitment[:36] }}{% if r.commitment|length > 36 %}…{% endif %}</td>
+      <td>{% if r.is_commitment == 'valid' %}是{% elif r.is_commitment == 'not_commitment' %}不是承諾<br><span class="note">{{ r.not_reason }}</span>{% elif r.is_commitment == 'no_target' %}沒有目標年份{% if r.not_reason %}<br><span class="note">{{ r.not_reason }}</span>{% endif %}{% elif r.is_commitment == 'unsure' %}不確定{% else %}—{% endif %}
+          {% if r.commitment_fix %}<br><span class="note">敘述修正：{{ r.commitment_fix }}</span>{% endif %}
+          {% if r.target_year_fix %}<br><span class="note">目標年修正：{{ r.target_year_fix }}</span>{% endif %}</td>
+      <td>{% for v in verdicts.get(r.assign_id, []) %}
+          <div><b>{{ v.year }}</b>
+            {% if v.evidence_quality == 'ok' %}正確{% else %}錯 → {{ v.human_status }}{% if v.evidence_quality == 'none' %}（無依據）{% elif v.evidence_quality == 'other' %}（另找依據）{% elif v.alt_clue %}（依據 {{ v.alt_clue }}）{% endif %}{% if v.correct_page %} p.{{ v.correct_page }}{% endif %}{% endif %}
+            <span class="note">機率 {{ v.achieve_prob }}</span>
+            {% if v.custom_basis %}<br><span class="note">自填依據：{{ v.custom_basis }}</span>{% endif %}</div>
+          {% else %}<span class="note">—</span>{% endfor %}</td>
+      <td>{{ (r.human_final_status|final) or '—' }}{% if r.human_final_status and (r.human_final_status|final) != (r.final_status|final) %}<br><span class="note">AI：{{ r.final_status|final }}</span>{% endif %}</td>
+      <td>{{ window_labels.get(r.window_ok, r.window_ok) or '—' }}{% if r.correct_target_year %}<br><span class="note">→ {{ r.correct_target_year }}</span>{% endif %}</td>
+      <td>{{ r.active_seconds if r.active_seconds is not none else '—' }}<br><span class="note">總 {{ r.seconds if r.seconds is not none else '—' }}</span></td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+</div>
+{% endblock %}

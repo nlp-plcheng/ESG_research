@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}跳過的題目{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>跳過的題目</h1>
+  {% if notice %}<div class="notice">{{ notice }}</div>{% endif %}
+  <p class="note">這些題目還沒送出，填到一半的內容都有保留。做完其他題目後系統會依跳過的順序回到它們；
+     想現在就回去，按「回到這題」。
+     <a href="{{ url_for('Task') }}">回到目前題目 →</a></p>
+  {% if not rows %}
+  <p>目前沒有跳過的題目。</p>
+  {% else %}
+  <table class="grid">
+    <tr><th>#</th><th>公司</th><th>承諾</th><th>年份</th><th>跳過時間（UTC）</th><th></th></tr>
+    {% for r in rows %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ r.company }}</td>
+      <td>{{ r.commitment[:60] }}{% if r.commitment|length > 60 %}…{% endif %}</td>
+      <td>{{ r.declared_year }} → {{ r.target_year }}</td>
+      <td>{{ r.skipped_at }}</td>
+      <td><form method="post" action="{{ url_for('Resume', assign_id=r.assign_id) }}" class="inline">
+            <button type="submit" class="ghost">回到這題</button></form></td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+</div>
+{% endblock %}

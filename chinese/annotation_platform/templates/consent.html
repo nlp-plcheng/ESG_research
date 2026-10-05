@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}參與說明與同意{% endblock %}
+{% block body %}
+
+{% if no_pid %}
+<div class="card">
+  <h1>你沒有權限</h1>
+  <p>此頁面需要有效的專屬代號才能作答。請使用研究者發給你的專屬連結進入；
+     直接輸入網址、或使用未登記的代號，都無法作答。</p>
+</div>
+{% else %}
+<div class="card">
+  <h1>參與說明與同意書</h1>
+  <p>感謝您參與本研究。我們正在檢驗一套 AI 系統對<strong>企業永續報告書（ESG 報告書）</strong>中
+     公開承諾的追蹤結果是否正確。您的工作是閱讀 AI 的判斷，並指出其中的錯誤。</p>
+
+  <h2>您會做什麼</h2>
+  <ul>
+    <li>每題是一條企業公開承諾，以及 AI 在後續各年度報告書中的判定結果、引用的證據文字與<strong>報告書節錄 PDF</strong>。</li>
+    <li>請逐年檢查 AI 的判定與證據是否合理，並在判錯時把狀態改正。</li>
+    <li>每一年也請根據當時的線索，用 0–100 的滑桿推算這條承諾<strong>到目標年份實際達成的機率</strong>。</li>
+    {% if n_tasks and volunteer %}<li>共 {{ n_tasks }} 題，可分多次完成：關掉頁面再用同一條連結回來，會接著上次的進度。</li>
+    {% elif n_tasks %}<li>共 {{ n_tasks }} 題，預估 25–35 分鐘。</li>
+    {% else %}<li>題目會一題接一題出現，您可以做到想停為止；關掉頁面再用同一條連結回來，會接著上次的進度。</li>{% endif %}
+  </ul>
+
+  <h2>資料與隱私</h2>
+  <ul>
+    <li>本研究<strong>不蒐集任何個人資料</strong>。我們只記錄您的匿名代號、作答內容與作答時間。</li>
+    <li>您看到的所有報告書內容皆為企業依法公開發布的文件。</li>
+    <li>資料僅用於學術研究與資料集建置，發表時以彙總形式呈現，不會識別個人。</li>
+    <li>您可隨時關閉頁面退出，已完成的部分不會對您造成任何影響。</li>
+  </ul>
+
+  {% if volunteer %}
+  <h2>參與方式</h2>
+  <p>本研究為志願參與，無金錢報酬。前幾題是所有人相同的校準題，請照平常的標準作答即可。</p>
+  {% else %}
+  <h2>報酬</h2>
+  <p>完成全部題目並回到 Prolific 送出後即可獲得報酬。品質檢核題答錯過多者可能無法通過審核。</p>
+  {% endif %}
+
+  <form method="post" action="{{ url_for('Consent') }}">
+    <label class="consent-line">
+      <input type="checkbox" name="agree" value="yes" required>
+      我已閱讀並理解上述說明，並同意參與本研究。
+    </label>
+    <button type="submit" class="primary">同意並開始</button>
+  </form>
+</div>
+{% endif %}
+{% endblock %}

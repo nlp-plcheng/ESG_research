@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>Collection progress</h1>
+  <p class="note"><a href="{{ url_for('AdminAnswers', key=key) }}">Latest submitted answers →</a>
+     every answer as stored in the database (test accounts included) — the quick way to confirm a submission really landed.</p>
+  <table class="grid">
+    <tr><th>Items (one commitment = one item)</th><td>{{ stats.items }} (flagged {{ stats.anomaly }} / control {{ stats.items - stats.anomaly }}; {{ stats.gold }} calibration items among them)</td></tr>
+    <tr><th>Dispatch mode</th><td>
+      {% if n_annotators %}balanced allocation to {{ n_annotators }} people ({{ stats.gold }} calibration items + an equal share each)
+        {% if stats.workers > n_annotators %}<br><b class="bad">⚠ {{ stats.workers }} people have entered, more than configured; the extra ones share slots. Raise ESG_N_ANNOTATORS and run restart_web.sh</b>{% endif %}
+      {% else %}first come, first served (ESG_N_ANNOTATORS not set){% endif %}</td></tr>
+    <tr><th>Annotators (test accounts excluded)</th><td>{{ stats.workers }}</td></tr>
+    <tr><th>Submitted answers</th><td>{{ stats.submitted }}</td></tr>
+    <tr><th>In progress (opened, not submitted)</th><td>{{ stats.open }}</td></tr>
+    <tr><th>Overall conclusion changed</th><td>{{ stats.final_flips }}</td></tr>
+    <tr><th>Yearly verdicts changed</th><td>{{ stats.year_flips }}</td></tr>
+    <tr><th>Year range flagged as wrong</th><td>{{ stats.window_bad }}</td></tr>
+    <tr><th>Corrected page references given</th><td>{{ stats.page_fixes }}</td></tr>
+    <tr><th>Answers without a single page opened</th><td class="{% if stats.no_page_views %}bad{% endif %}">{{ stats.no_page_views }}</td></tr>
+    <tr><th>Judged “not a commitment”</th><td>{{ stats.not_commit }}</td></tr>
+  </table>
+
+  <h2>Coverage (target: flagged items {{ redundancy }} people each, control items {{ redundancy_control }}; calibration items excluded)</h2>
+  <table class="grid">
+    <tr><th>Stratum</th><th>People done</th><th>Items</th></tr>
+    {% for c in coverage %}
+    <tr><td>{{ 'flagged' if c.stratum == 'anomaly' else c.stratum }}</td><td>{{ c.n }}</td><td>{{ c.items }}</td></tr>
+    {% endfor %}
+  </table>
+
+  {% if alloc %}
+  <h2>Balanced allocation (slot → person)</h2>
+  <table class="grid">
+    <tr><th>Slot</th><th>Items</th><th>Score total</th><th>Participant id</th></tr>
+    {% for r in alloc %}
+    <tr><td>{{ r.slot }}</td><td>{{ r.n }}</td><td>{{ r.score }}</td><td><code>{{ r.pids or '(nobody yet)' }}</code></td></tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+
+  <h2>Export</h2>
+  <ul>
+    <li><a href="{{ url_for('AdminExport', kind='item', key=key) }}">esg_item.csv</a> — one row per answer (AI conclusion + human conclusion)</li>
+    <li><a href="{{ url_for('AdminExport', kind='year', key=key) }}">esg_year.csv</a> — one row per year (the correction record)</li>
+    <li><a href="{{ url_for('AdminExport', kind='risk', key=key) }}">esg_risk.csv</a> — risk-model dataset (majority-vote aggregate)</li>
+  </ul>
+
+  <h2>Annotators</h2>
+  <p class="note"><a href="{{ url_for('AdminAnnotators', key=key) }}">Per-annotator statistics →</a>
+     each person's correction rate, source-page verdicts, quartiles of the probability estimates and of
+     the time on task, evidence look-ups, against the team figure.<br>
+     <a href="{{ url_for('AdminItems', key=key) }}">Results by item →</a>
+     every person's answer to each item side by side (Q0, conclusion, years flagged, minutes); filter to
+     items with disagreement or to one person's items.<br>
+     <a href="{{ url_for('AdminCalibration', key=key) }}">Calibration items →</a>
+     the items everyone answers, year by year: majority label, agreement, median and quartile range of
+     the estimates, and how closely each person tracks the majority.<br>
+     <a href="{{ url_for('AdminNotes', key=key) }}">Stars, notes and questions →</a>
+     every star and note people put on items, plus the reasons given for “not a commitment” /
+     “no target year” and corrected wordings, newest first.</p>
+  <table class="grid">
+    <tr><th>Id</th><th>Slot</th><th>Done</th><th>gold ✓</th><th>gold ✗</th><th>Status</th><th>First seen</th></tr>
+    {% for w in workers %}
+    <tr class="{% if w.gold_fail > w.gold_pass %}bad{% endif %}">
+      <td><code><a href="{{ url_for('AdminAnswers', key=key, pid=w.prolific_pid) }}">{{ w.prolific_pid }}</a></code></td>
+      <td>{% if w.is_test %}test (not counted){% elif w.slot is not none %}{{ w.slot }}{% else %}—{% endif %}</td>
+      <td>{{ w.n_done }}</td>
+      <td>{{ w.gold_pass }}</td><td>{{ w.gold_fail }}</td>
+      <td>{{ w.status }}</td><td>{{ w.first_seen }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

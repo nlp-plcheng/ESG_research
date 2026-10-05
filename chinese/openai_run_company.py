@@ -37,10 +37,21 @@ years still missing (delete a year's promise.md to force re-extraction).
 Phase 3 is likewise resume-friendly: any year whose check_result.md already exists
 is skipped (delete it to force re-verification).
 
+A phase never runs on top of a failed upstream phase: if any get_promise year
+failed, Phases 2 and 3 are blocked (and the exit status is non-zero); if
+consolidation failed, Phase 3 is blocked. Otherwise an incomplete list would be
+baked into promise/*.md and check_result.md, and a later successful re-run would
+skip those files as "already done". (Files left by a run from before this rule
+existed are not detected: delete the affected promise/*.md and check_result.md
+by hand to have them rebuilt.)
+
 Each invocation is a child subprocess. A non-zero exit in one year does not stop
-the others; a per-phase summary is printed at the end. If Phase 2 is skipped (or
-its promise/ output is missing), check_promise falls back to collecting and
-consolidating each year's promise.md on the fly.
+the others; a per-phase summary is printed at the end, and the exit status of
+this script is non-zero when any phase failed (or nothing could be run), so
+openai_run_all.py and shell scripts can tell an incomplete company from a
+finished one. If Phase 2 is skipped (or its promise/ output is missing),
+check_promise falls back to collecting and consolidating each year's promise.md
+on the fly.
 
 --image_dir is unused by the PDF-file OpenAI flow but accepted for CLI parity and
 forwarded to the child scripts.
@@ -126,7 +137,7 @@ def _PrintPhaseSummary(label: str, results: Dict[str, int]) -> None:
     print(line)
 
 
-def Main():
+def Main() -> int:
     p = argparse.ArgumentParser(
         description="Run get_promise -> consolidate_promises -> check_promise for "
                     "a company (OpenAI, PDF-file based)."
@@ -161,7 +172,7 @@ def Main():
     if not years:
         print(f"[Warn] No year PDFs found for {args.company} under {args.pdf_dir}/. "
               "Nothing to do.")
-        return
+        return 1
 
     common = [
         "--company", args.company,
@@ -181,6 +192,7 @@ def Main():
     skipped_get: List[str] = []
     skipped_check: List[str] = []
     consolidate_rc: Optional[int] = None
+    blocked: List[str] = []
 
     try:
         if not args.skip_get:
@@ -198,17 +210,34 @@ def Main():
         else:
             print("\n[Skip] Phase 1 (get_promise) skipped via --skip_get.")
 
+        # A phase never runs on top of a failed upstream phase: consolidating
+        # without a failed year's promise.md would bake an incomplete list into
+        # promise/*.md, and verifying against it would write check results that
+        # silently lack commitments -- files a later, successful re-run would
+        # then skip as "already done". Blocked phases count as failed.
+        get_failed = sorted((y for y, rc in get_results.items() if rc != 0), key=int)
+
         # Phase 2 runs ONCE (not per-year): it folds every year's promise.md into
         # one canonical promise/{T}.md per target year so each promise keeps a
         # single stable wording across the years that later verify it. It must run
         # after ALL get_promise years and before any check_promise year.
-        if not args.skip_consolidate:
+        if args.skip_consolidate:
+            print("\n[Skip] Phase 2 (consolidate_promises) skipped via --skip_consolidate.")
+        elif get_failed:
+            print(f"\n[Blocked] Phase 2 (consolidate_promises) not run: get_promise failed "
+                  f"for years {get_failed}. Fix the cause and re-run.")
+            blocked.append("consolidate")
+        else:
             print("\n##### Phase 2: consolidate_promises (1 pass, all target years) #####")
             consolidate_rc = RunScript("consolidate-promises", CONSOLIDATE, common)
-        else:
-            print("\n[Skip] Phase 2 (consolidate_promises) skipped via --skip_consolidate.")
 
-        if not args.skip_check:
+        if args.skip_check:
+            print("\n[Skip] Phase 3 (check_promise) skipped via --skip_check.")
+        elif get_failed or blocked or consolidate_rc not in (None, 0):
+            print("\n[Blocked] Phase 3 (check_promise) not run: an upstream phase failed "
+                  "(see above). Fix the cause and re-run.")
+            blocked.append("check")
+        else:
             print(f"\n##### Phase 3: check_promise ({len(years)} years, old -> new) #####")
             for year in years:
                 # Resume-friendly: a year whose check_result.md already exists is
@@ -220,8 +249,6 @@ def Main():
                     skipped_check.append(year)
                     continue
                 check_results[year] = RunScript("check-promise", CHECK_PROMISE, common, year)
-        else:
-            print("\n[Skip] Phase 3 (check_promise) skipped via --skip_check.")
     finally:
         print("\n=== Summary ===")
         _PrintPhaseSummary("get_promise  ", get_results)
@@ -233,7 +260,23 @@ def Main():
         _PrintPhaseSummary("check_promise", check_results)
         if skipped_check:
             print(f"  check_promise skipped (check_result.md already existed): {skipped_check}")
+        if blocked:
+            print(f"  blocked (upstream phase failed): {blocked}")
+
+    # A failed year leaves no output behind (or a stale one), so the company is
+    # incomplete: say so in the exit status instead of letting a caller count
+    # it as finished. Re-running resumes: finished years are skipped.
+    failed = (any(rc != 0 for rc in get_results.values())
+              or any(rc != 0 for rc in check_results.values())
+              or consolidate_rc not in (None, 0)
+              or bool(blocked))
+    if failed:
+        print("  RESULT: FAILED -- the outputs above are incomplete; fix the cause and re-run "
+              "(finished years are skipped, failed ones are redone)")
+        return 1
+    print("  RESULT: OK")
+    return 0
 
 
 if __name__ == "__main__":
-    Main()
+    sys.exit(Main())

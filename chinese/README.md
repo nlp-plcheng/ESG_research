@@ -77,6 +77,15 @@ python openai_run_all.py --pdf_dir pdf --result_dir result
 python openai_build_summary_json.py --result_dir result
 ```
 
+接著要做人工複核的話，進 `annotation_platform/`（人工複核平台，預設讀本資料夾的
+`result/` 與 `pdf/`；詳見 [`annotation_platform/README.md`](annotation_platform/README.md)）：
+
+```bash
+cd annotation_platform
+bash run.sh setup && bash run.sh test   # 先本機試用
+bash run.sh prod-init                   # 再編輯 env.prod.sh，然後 bash launch.sh
+```
+
 ---
 
 ## 4. 流程

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}作答紀錄{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>我的作答紀錄</h1>
+  {% if notice %}<div class="notice">{{ notice }}</div>{% endif %}
+  <p class="note">點「修改」可重新打開該題、改完按「儲存修改」或直接切換題目都會存起來；修改不會影響題數與進度。
+     星號與備註是你在題目頁上自己加的（只有你和管理者看得到）；承諾若你有修正敘述，這裡顯示修正後的版本。
+     <span class="navlinks">
+       {% if starred %}<a href="{{ url_for('History') }}">看全部</a>{% else %}<a href="{{ url_for('History', starred=1) }}">只看加星號的</a>{% endif %}
+       <a href="{{ url_for('Task') }}">回到目前題目 →</a></span></p>
+  {% if not rows %}
+  <p>{% if starred %}還沒有加星號的題目。{% else %}還沒有送出過任何題目。{% endif %}</p>
+  {% else %}
+  <table class="grid">
+    <tr><th>#</th><th>★</th><th>公司</th><th>承諾</th><th>你的結論</th><th>AI 結論</th><th>備註</th><th>送出時間（UTC）</th><th>修改</th><th></th></tr>
+    {% for r in rows %}
+    <tr>
+      <td>{{ r.idx }}</td>
+      <td>{% if r.starred %}<span title="你加了星號">★</span>{% endif %}</td>
+      <td>{{ r.company }}</td>
+      {% set cm = r.commitment_fix or r.commitment %}
+      <td>{{ cm[:40] }}{% if cm|length > 40 %}…{% endif %}{% if r.commitment_fix %} <span class="note" title="原始敘述：{{ r.commitment }}">（已修正）</span>{% endif %}</td>
+      <td>{% if r.is_commitment == 'not_commitment' %}不是承諾{% elif r.is_commitment == 'no_target' %}沒有目標年份{% else %}{{ (r.human_final_status|final) or '—' }}{% endif %}</td>
+      <td>{{ r.final_status|final }}</td>
+      <td class="note">{{ r.note[:60] }}{% if r.note|length > 60 %}…{% endif %}</td>
+      <td>{{ r.submitted_at }}</td>
+      <td>{% if r.n_edits %}{{ r.n_edits }} 次{% else %}—{% endif %}</td>
+      <td><a href="{{ url_for('Post', assign_id=r.assign_id) }}">修改</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+</div>
+{% endblock %}

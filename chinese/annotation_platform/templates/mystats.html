@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+{% block title %}我的作答統計{% endblock %}
+{% block body %}
+<style>
+  .tiles { display: grid; gap: 12px; margin: 16px 0 4px;
+           grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+  .tile { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: #fbfcfe; }
+  .tile b { display: block; font-size: 24px; line-height: 1.35; font-variant-numeric: tabular-nums; }
+  .tile span { font-size: 13px; color: var(--mute); }
+  .bar { height: 8px; border-radius: 6px; background: #eef0f4; overflow: hidden; margin-top: 8px; }
+  .bar i { display: block; height: 100%; background: var(--accent); }
+  .num { font-variant-numeric: tabular-nums; }
+  .of { color: var(--mute); font-size: 13px; }
+  .hist { display: grid; grid-template-columns: 64px 1fr 46px; gap: 5px 10px;
+          align-items: center; font-size: 13px; margin: 8px 0 4px; }
+  .hist .lab { color: var(--mute); text-align: right; font-variant-numeric: tabular-nums; }
+  .hist .bar { margin: 0; height: 14px; }
+  .hist .bar i.low { background: var(--f); }
+  .hist .bar i.mid { background: var(--p); }
+  .hist .bar i.high { background: var(--a); }
+  .hist .n { font-variant-numeric: tabular-nums; }
+  .scroll { overflow-x: auto; }
+  table.matrix td.diag { background: #f7f8fa; color: var(--mute); }
+  table.matrix td.zero { color: #ccced4; }
+  table.matrix th.corner { font-weight: 600; color: var(--mute); font-size: 13px; }
+  table.grid td.val { white-space: nowrap; }
+</style>
+{% set s = stats %}
+<div class="card">
+  <h1>我的作答統計</h1>
+  <p class="note">這頁只算你自己的作答（用你的專屬連結辨識），看不到、也不會顯示其他標註員的資料。
+     這些數字只是你的作答摘要，沒有「應該要多少」的標準，不需要為了數字改變自己的判斷。
+     <span class="navlinks"><a href="{{ url_for('Task') }}">回到目前題目 →</a>
+     <a href="{{ url_for('History') }}">作答紀錄 →</a></span></p>
+
+  {% if not s.done %}
+  <p>你還沒有送出任何題目。送出第一題之後，這裡就會出現你的統計。</p>
+  {% else %}
+
+  <div class="tiles">
+    <div class="tile"><b class="num">{{ s.done }}</b>
+      <span>已送出的題目{% if s.total %}（你這份共 {{ s.total }} 題）{% endif %}</span>
+      {% if s.total %}<div class="bar"><i style="width: {{ pct(s.done, s.total) }}%"></i></div>{% endif %}</div>
+    <div class="tile"><b class="num">{{ s.gold_done }} / {{ s.gold_total }}</b>
+      <span>校準題（所有人共同的前幾題）</span></div>
+    <div class="tile"><b class="num">{{ s.years }}</b><span>你檢查過的年度數</span></div>
+    {% if s.minutes_q %}
+    <div class="tile"><b class="num">{{ s.minutes_q.median }}</b>
+      <span>每題分鐘數（中位數；一半的題目落在 {{ s.minutes_q.q1 }}–{{ s.minutes_q.q3 }} 分鐘之間，只算你真的停在該題分頁的時間）</span></div>
+    {% endif %}
+    {% if s.open %}<div class="tile"><b class="num">{{ s.open }}</b><span>進行中（開了還沒送出）</span></div>{% endif %}
+    {% if s.edits %}<div class="tile"><b class="num">{{ s.edits }}</b><span>事後修改次數</span></div>{% endif %}
+  </div>
+
+  <h2>你對 AI 的修正</h2>
+  <table class="grid">
+    <tr><th>指出 AI 判定有問題的年度</th>
+      <td class="val"><span class="num">{{ s.flagged }}</span> <span class="of">/ {{ s.years }} 個年度
+        {%- if s.years %}（{{ pct(s.flagged, s.years) }}%）{% endif %}</span>
+        {% if s.years %}<div class="bar"><i style="width: {{ pct(s.flagged, s.years) }}%"></i></div>{% endif %}</td></tr>
+    <tr><th>其中，你把該年的狀態標籤改掉</th>
+      <td class="val"><span class="num">{{ s.flips }}</span> <span class="of">個年度
+        {%- if s.years %}（佔全部年度 {{ pct(s.flips, s.years) }}%）{% endif %}</span></td></tr>
+    <tr><th>整體結論與 AI 不同</th>
+      <td class="val"><span class="num">{{ s.final_flips }}</span> <span class="of">/ {{ s.finals }} 題
+        {%- if s.finals %}（{{ pct(s.final_flips, s.finals) }}%）{% endif %}</span>
+        {% if s.finals %}<div class="bar"><i style="width: {{ pct(s.final_flips, s.finals) }}%"></i></div>{% endif %}</td></tr>
+    <tr><th>你認為 AI 追蹤的年份範圍有問題</th>
+      <td class="val"><span class="num">{{ s.window_bad }}</span> <span class="of">/ {{ s.finals }} 題</span></td></tr>
+    <tr><th>你判定「不是承諾」</th>
+      <td class="val"><span class="num">{{ s.not_commit }}</span> <span class="of">題{% if s.no_target %}（另有 {{ s.no_target }} 題「沒有目標年份」）{% endif %}{% if s.unsure %}（另有 {{ s.unsure }} 題選「不確定」）{% endif %}</span></td></tr>
+    {% if s.starred or s.noted %}
+    <tr><th>你加了星號／備註的題</th>
+      <td class="val"><span class="num">{{ s.starred }}</span> <span class="of">題有星號、{{ s.noted }} 題有備註（<a href="{{ url_for('History', starred=1) }}">看加星號的題目</a>）</span></td></tr>
+    {% endif %}
+    <tr><th>你補上正確頁碼</th>
+      <td class="val"><span class="num">{{ s.page_fixes }}</span> <span class="of">個年度</span></td></tr>
+  </table>
+
+  {% if s.flagged %}
+  <h2>AI 的判定 vs 你的判定</h2>
+  <div class="scroll">
+  <table class="grid matrix">
+    <tr><th class="corner">AI 判定 ＼ 你的判定</th>
+      {% for h in s.labels %}<th>{{ h }}</th>{% endfor %}<th>合計</th></tr>
+    {% for ai in s.labels %}
+    {% set row = s.matrix[ai] %}
+    {% if row.values()|sum %}
+    <tr><th>{{ ai }}</th>
+      {% for h in s.labels %}
+      <td class="num {% if ai == h %}diag{% elif not row[h] %}zero{% endif %}">{{ row[h] or '·' }}</td>
+      {% endfor %}
+      <td class="num">{{ row.values()|sum }}</td></tr>
+    {% endif %}
+    {% endfor %}
+  </table>
+  </div>
+  <p class="note">灰色對角線＝你與 AI 判定相同；其他格子就是你改掉的方向。</p>
+
+  {% if s.basis %}
+  <h2>說「AI 錯了」的時候，你採用的依據</h2>
+  <table class="grid">
+    {% for label, n in s.basis %}
+    <tr><th>{{ label }}</th><td class="val"><span class="num">{{ n }}</span>
+      <span class="of">個年度（{{ pct(n, s.flagged) }}%）</span>
+      <div class="bar"><i style="width: {{ pct(n, s.flagged) }}%"></i></div></td></tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+  {% endif %}
+
+  {% if s.probs %}
+  <h2>你的預估達成率（0–100 滑桿）</h2>
+  <div class="tiles">
+    <div class="tile"><b class="num">{{ s.prob_q.q1 }}</b><span>第一四分位（Q1）：四分之一的年度低於這個值</span></div>
+    <div class="tile"><b class="num">{{ s.prob_q.median }}</b><span>中位數</span></div>
+    <div class="tile"><b class="num">{{ s.prob_q.q3 }}</b><span>第三四分位（Q3）：四分之三的年度低於這個值</span></div>
+    <div class="tile"><b class="num">{{ s.prob_q.mean }}</b><span>平均</span></div>
+    <div class="tile"><b class="num">{{ s.probs }}</b><span>已標的年度數</span></div>
+  </div>
+  <div class="hist">
+    {% for b in s.bins %}
+    <span class="lab">{{ b.label }}</span>
+    <span class="bar"><i class="{{ b.cls }}" style="width: {{ (100 * b.n / s.hist_max)|round(1) }}%"></i></span>
+    <span class="n">{{ b.n }}</span>
+    {% endfor %}
+  </div>
+  <p class="note">每一列是落在該區間的年度數；50 是滑桿的預設值，沒動過的年度會留在前一年的值。</p>
+
+  {% if s.by_status %}
+  <table class="grid">
+    <tr><th>你判定的年度狀態</th><th>年度數</th><th>平均預估達成率</th><th>中位數</th></tr>
+    {% for label, n, mean, median in s.by_status %}
+    <tr><td><span class="badge s{{ label|status_class }}">{{ label }}</span></td>
+      <td class="num">{{ n }}</td><td class="num">{{ mean }}</td><td class="num">{{ median }}</td></tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+  {% endif %}
+
+  <h2>證據查看與時間</h2>
+  <table class="grid">
+    <tr><th>點開證據頁（PDF 節錄／頁面圖）</th>
+      <td class="val">合計 <span class="num">{{ s.views }}</span> 次{% if s.views_avg %}<span class="of">，平均每題 {{ s.views_avg }} 次{% if s.views_q %}；每題 Q1／中位／Q3：{{ s.views_q.q1 }}／{{ s.views_q.median }}／{{ s.views_q.q3 }}{% endif %}</span>{% endif %}</td></tr>
+    <tr class="{% if s.no_views %}bad{% endif %}"><th>一張證據頁都沒點開就送出的題目</th>
+      <td class="val"><span class="num">{{ s.no_views }}</span> <span class="of">/ {{ s.finals }} 題</span></td></tr>
+    {% if s.minutes_total %}
+    <tr><th>累計作答時間</th>
+      <td class="val">約 <span class="num">{{ s.minutes_total }}</span> 分鐘</td></tr>
+    {% endif %}
+    {% if s.gold_pass or s.gold_fail %}
+    <tr><th>校準題對照結果</th>
+      <td class="val">一致 <span class="num">{{ s.gold_pass }}</span>、不一致 <span class="num">{{ s.gold_fail }}</span></td></tr>
+    {% endif %}
+  </table>
+  {% if s.no_views %}
+  <p class="note">證據頁沒點開不代表答錯——如果那一題光看引用的文字就夠判斷，那是正常的。</p>
+  {% endif %}
+  <p class="note">時間只算你真的停在該題分頁的時候：切到其他分頁或視窗、視窗縮到背景、關螢幕，
+     或超過兩分鐘完全沒有動作（沒滑鼠、沒鍵盤、沒捲動），都會暫停計時，回來再繼續累加。</p>
+
+  {% if s.gold_rows %}
+  <h2>校準題（所有人共同的前幾題）：你的答案</h2>
+  <p class="note">只列你自己的答案；其他人在這幾題的答案不會出現在這裡。</p>
+  <div class="scroll">
+  <table class="grid tight">
+    <tr><th>#</th><th>公司</th><th>承諾</th><th>Q0</th><th>整體結論（你 ／ AI）</th><th>年度 判錯／全部</th><th>末年預估</th><th>分鐘</th></tr>
+    {% for r in s.gold_rows %}
+    <tr><td>校準 {{ r.gold_rank }}</td><td>{{ r.company }}</td>
+      <td><a href="{{ url_for('Post', assign_id=r.assign_id) }}">{{ r.commitment[:30] }}{% if r.commitment|length > 30 %}…{% endif %}</a></td>
+      <td>{% if r.is_commitment == 'valid' %}是{% elif r.is_commitment == 'not_commitment' %}不是承諾{% elif r.is_commitment == 'no_target' %}沒有目標年份{% elif r.is_commitment == 'unsure' %}不確定{% else %}—{% endif %}</td>
+      <td>{% if r.human_final %}<span class="badge s{{ r.human_final|status_class }}">{{ r.human_final }}</span>{% else %}—{% endif %} ／ <span class="badge s{{ r.ai_final|status_class }}">{{ r.ai_final }}</span></td>
+      <td class="num">{{ r.flagged }} ／ {{ r.years }}</td>
+      <td class="num">{{ r.prob_last if r.prob_last is not none else '—' }}</td>
+      <td class="num">{{ r.minutes if r.minutes is not none else '—' }}</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+  {% endif %}
+
+  <h2>逐題一覽</h2>
+  <p class="note">你送出的每一題；點承諾可回到那一題查看或修改。「判錯」＝你說 AI 該年判定有問題的年度數，「改標」＝其中你把狀態標籤改掉的年度數。★＝你加的星號；承諾若你有修正敘述，顯示修正後的版本。</p>
+  <div class="scroll">
+  <table class="grid tight">
+    <tr><th>題號</th><th>★</th><th>公司</th><th>承諾</th><th>Q0</th><th>出處頁</th><th>整體結論（你 ／ AI）</th><th>年度 判錯／改標／全部</th><th>末年預估</th><th>分鐘</th><th>點開證據</th><th>修改</th><th>備註</th></tr>
+    {% for r in s.item_rows %}
+    <tr>
+      <td>{{ r.idx }}{% if r.is_gold %} <span class="note">校準</span>{% endif %}</td>
+      <td>{% if r.starred %}★{% endif %}</td>
+      <td>{{ r.company }}</td>
+      {% set cm = r.commitment_fix or r.commitment %}
+      <td><a href="{{ url_for('Post', assign_id=r.assign_id) }}">{{ cm[:30] }}{% if cm|length > 30 %}…{% endif %}</a>{% if r.commitment_fix %} <span class="note" title="原始敘述：{{ r.commitment }}">（已修正）</span>{% endif %}</td>
+      <td>{% if r.is_commitment == 'valid' %}是{% elif r.is_commitment == 'not_commitment' %}不是承諾{% elif r.is_commitment == 'no_target' %}沒有目標年份{% elif r.is_commitment == 'unsure' %}不確定{% else %}—{% endif %}</td>
+      <td>{% if r.source_page_ok == 'ok' %}✓{% elif r.source_page_ok == 'wrong_page' %}頁錯{% elif r.source_page_ok == 'not_found' %}找不到{% else %}—{% endif %}</td>
+      <td>{% if r.human_final %}<span class="badge s{{ r.human_final|status_class }}">{{ r.human_final }}</span>{% else %}—{% endif %} ／ <span class="badge s{{ r.ai_final|status_class }}">{{ r.ai_final }}</span>{% if r.final_agree == 0 %} <span class="note">≠</span>{% endif %}</td>
+      <td class="num">{{ r.flagged }} ／ {{ r.flips }} ／ {{ r.years }}</td>
+      <td class="num">{{ r.prob_last if r.prob_last is not none else '—' }}</td>
+      <td class="num">{{ r.minutes if r.minutes is not none else '—' }}</td>
+      <td class="num">{{ r.views if r.views is not none else '—' }}</td>
+      <td class="num">{{ r.n_edits or '' }}</td>
+      <td class="note">{{ r.note[:40] }}{% if r.note|length > 40 %}…{% endif %}</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+
+  <p class="note">首次進入：{{ s.first_seen }} UTC。數字會隨著你送出新的題目即時更新。</p>
+  {% endif %}
+</div>
+{% endblock %}

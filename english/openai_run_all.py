@@ -11,7 +11,9 @@ Enumerates each immediate subdirectory of --pdf_dir as a company and invokes
 openai_run_company.py for it (which itself discovers that company's ROC years and
 runs get -> consolidate -> check). Companies are processed in sorted order; a
 non-zero exit for one company does NOT stop the rest, and a final OK/failed
-summary is printed.
+summary is printed. The exit status of this script is non-zero when any company
+failed or the run was interrupted, so a wrapper cannot mistake a partial run for
+a complete one.
 
 Because the underlying pipeline is resume-friendly (years with an existing
 promise.md skip extraction; target years with an existing promise/{T}.md skip
@@ -44,7 +46,7 @@ def DiscoverCompanies(pdf_dir: str) -> List[str]:
     )
 
 
-def Main():
+def Main() -> int:
     p = argparse.ArgumentParser(
         description="Run openai_run_company.py for every company under pdf/."
     )
@@ -67,7 +69,7 @@ def Main():
     companies = args.companies or DiscoverCompanies(args.pdf_dir)
     if not companies:
         print(f"[Warn] No company folders found under {args.pdf_dir}/. Nothing to do.")
-        return
+        return 1
 
     forwarded = [
         "--pdf_dir", args.pdf_dir,
@@ -87,6 +89,7 @@ def Main():
     print(f"  companies:  {companies}")
 
     results: Dict[str, int] = {}
+    interrupted = False
     try:
         for company in companies:
             cmd = [sys.executable, RUN_COMPANY, "--company", company] + forwarded
@@ -97,6 +100,7 @@ def Main():
             print(f"  -> {company} exit code {completed.returncode}")
     except KeyboardInterrupt:
         print("\n[Interrupted] aborted by user.")
+        interrupted = True
     finally:
         print("\n=== Summary (per company) ===")
         ok = sum(1 for rc in results.values() if rc == 0)
@@ -108,6 +112,13 @@ def Main():
         if not_run:
             print(f"  not run (interrupted): {not_run}")
 
+    # The run is complete only if every company finished cleanly.
+    if failed or not_run or interrupted:
+        print("  RESULT: FAILED -- re-run to resume (finished work is skipped)")
+        return 1
+    print("  RESULT: OK")
+    return 0
+
 
 if __name__ == "__main__":
-    Main()
+    sys.exit(Main())

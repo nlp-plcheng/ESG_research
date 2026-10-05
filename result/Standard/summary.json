@@ -26,9 +26,56 @@
             "本公司二廠更於 2012 年增加新的大型防治設備，期待對排放之空氣品質能有更顯著之效果。（第36頁）",
             "公司已於2010年建構OHSAS18001及TOSHMS自主管理系統，並於2011年1月取得驗證，以PDCA系統性持續管理方式降低同仁之作業危害風險。（第46頁）",
             "為了有效管理員工的安全與衛生，公司依據PDCA原則，制定OHSAS18001&ISO14001環境安全衛生自主管理系統，並於民國100年1月取得驗證資格。（第47頁）"
-          ]
+          ],
+          "evidence_page_orig": "51"
         }
-      ]
+      ],
+      "source_page_orig": "48",
+      "page_shift": {
+        "src": {
+          "orig": "48",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "103": {
+            "evidence": {
+              "orig": "51",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "將提出反應的客戶列為下次問卷優先名單，以確認反應事項是否達到預期狀態",
@@ -47,9 +94,48 @@
             "上半年度問卷調查共有 38 家客戶意見回饋，合計回饋 55 件反應事項；下半年度問卷調查共計 41 家客戶意見回饋，合計回饋 59 件反應事項。（第27頁）",
             "103 年度與 102 年度調查滿意度相較下有逐漸成長趨勢，未來將更積極解決客戶反應事項，期許達到預期滿意狀態。（第27頁）",
             "G4-PR5 客戶滿意度調查的結果／客戶關係管理／27-28／◎（第67頁）"
-          ]
+          ],
+          "evidence_page_orig": "27"
         }
-      ]
+      ],
+      "source_page_orig": "25",
+      "page_shift": {
+        "src": {
+          "orig": "25",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "103": {
+            "evidence": {
+              "orig": "27",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "持續投入研究費用",
@@ -70,9 +156,56 @@
             "配合政府促進產業升級之推動，積極從事產品研發、技術改良及通路開拓，培養企業國際觀，增進內部資源與外部環境之互動頻率，以促進公司業務之穩定成長，提高國際競爭力。（第22頁）",
             "未來將共 同努力，加速研究創新，提供社會更加服務，以「取之於社會，用之於社會」為職志，繼續 投資擴展。（第27頁）",
             "其中研發人員比例佔總人數9.7%（第39頁）"
-          ]
+          ],
+          "evidence_page_orig": "18"
         }
-      ]
+      ],
+      "source_page_orig": "16",
+      "page_shift": {
+        "src": {
+          "orig": "16",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "103": {
+            "evidence": {
+              "orig": "18",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "持續推出研發產品",
@@ -93,9 +226,56 @@
             "本公司每年皆投入大量研究經費，開發各類藥品，且每年營業額皆有所成長，並無因科技改變而對公司財務業務產生影響。（第19頁）",
             "全方位產品競爭性之建立，對於產品或技術之開發，在公司有限資源下，將採重點式發展。（第22頁）",
             "其中研發人員比例佔總人數9.7%（第39頁）"
-          ]
+          ],
+          "evidence_page_orig": "18"
         }
-      ]
+      ],
+      "source_page_orig": "16",
+      "page_shift": {
+        "src": {
+          "orig": "16",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "103": {
+            "evidence": {
+              "orig": "18",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年定期發行企業社會責任報告書並於公司網站公開",
@@ -112,9 +292,40 @@
           "clues": [
             "G4-29 上一次報告的日期（如果有）／範疇與邊界／3／◎（第60頁）",
             "G4-30 報告週期（如每年一次、兩年一次）／範疇與邊界／3／◎（第60頁）"
-          ]
+          ],
+          "evidence_page_orig": "3"
         }
-      ]
+      ],
+      "source_page_orig": "3",
+      "page_shift": {
+        "src": {
+          "orig": "3",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "103": {
+            "evidence": {
+              "orig": "3",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "持續投入研發經費",
@@ -135,9 +346,56 @@
             "其中研發人員比例佔總人數9.48％（第41頁）",
             "2015年職務類別分佈 研發10%（第43頁）",
             "生達e大學是公司學習發展的主軸，依照不同生產人需求，系統性規劃發展，設有六大學院，導入全方位人才培訓，同時提供外部訓練資源和在職進修補助，鼓勵同仁持續進修，接受外界新刺激。（第46頁）"
-          ]
+          ],
+          "evidence_page_orig": "19"
         }
-      ]
+      ],
+      "source_page_orig": "18",
+      "page_shift": {
+        "src": {
+          "orig": "18",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "104": {
+            "evidence": {
+              "orig": "19",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提升國外銷售產品占綜合併營收比重至 50% 以上",
@@ -159,7 +417,45 @@
             "本公司通過FDA、PIC/S GMP、日本厚生省、ISO 9001、ISO 14001及OHSAS 18001等多國官方查廠與多項國際認證，技術、品質有明確保障，國際間形象亦有非常正面意義，有利於爭取國際代工機會。（第22頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "104": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "研發產品上市",
@@ -178,9 +474,48 @@
             "本公司在製劑技術及品質不斷提升後，除了研發學名藥外，已陸續研發新劑型藥物、台灣新藥、及跨入世界新藥研究行列，追求更高製劑技術及附加價值之藥物發展。（第19頁）",
             "本公司陸續開發特殊劑型，如控釋劑型、速崩錠、發泡錠劑、貼布等，除加強內部研發，亦尋求國外技術合作或代理銷售，以增加市場之競爭力。（第21頁）",
             "對於較具市場價值或易執行生體相等性試驗之處方藥品，加速完成藥品生物可用率／生體相等性（BA/BE）試驗、保障藥品價格、鞏固市場，對於已進行研發，但未上市之產品或技術，把握市場商機，制訂研發優先順序表，並依難易度及時程，採同步工程技術及電腦管理，以縮短研發時間，掌握產品上市契機。（第23頁）"
-          ]
+          ],
+          "evidence_page_orig": "15"
         }
-      ]
+      ],
+      "source_page_orig": "18",
+      "page_shift": {
+        "src": {
+          "orig": "18",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "104": {
+            "evidence": {
+              "orig": "15",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "邁向零災害目標",
@@ -203,7 +538,49 @@
             "G4-LA7 與其職業有關之疾病高發生率與高風險的勞工　員工健康管理　47-55（第66頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "48",
+      "page_shift": {
+        "src": {
+          "orig": "48",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "104": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "支持並參與兒童寫生比賽活動",
@@ -223,9 +600,52 @@
             "「本公司善盡企業社會責任，除對環保與工作安全之加強外，定期舉辦各項社教公益活動，包括健康醫療講座、愛心園遊會、寫生比賽、桌球邀請賽、捐贈藥品等，企業形象相當良好。」（第20頁）",
             "「社扶活動 • 寫生比賽」（第58頁）",
             "「2. 生達盃兒童寫生比賽」（第60頁）"
-          ]
+          ],
+          "evidence_page_orig": "60"
         }
-      ]
+      ],
+      "source_page_orig": "57",
+      "page_shift": {
+        "src": {
+          "orig": "57",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "105": {
+            "evidence": {
+              "orig": "60",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "新產品陸續上市",
@@ -245,9 +665,52 @@
             "「2.研發方面，每項產品研究所需時間平均約 2-5 年，生達每年投入 2 億元以上之研究費，新產品未來將陸續上市。」（第19頁）",
             "「未來研發新藥上市速度將更快速，藉以取代被迫縮短之價格生命週期，維持西藥銷售業績之持續成長。」（第20頁）",
             "「擁有研發團隊與藥品法規專員，將有助於產品研發及查驗登記，縮短產品上市時間。」（第21頁）"
-          ]
+          ],
+          "evidence_page_orig": "15"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "105": {
+            "evidence": {
+              "orig": "15",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "維持並邁向零災害",
@@ -265,9 +728,44 @@
             "職場健康與安全是生達製藥對同仁最基本的承諾，公司已於 2010 年建構 OHSAS18001 及TOSHMS 自主管理系統，並於 2011 年 1 月取得驗證，以 PDCA 系統性持續管理方式降低同仁之作業危害風險。（第50頁）",
             "安全衛生委員會除了每季針對職業傷害事故進行檢討與改善，更對勞安人員及現場作業主管平日巡察之異常提出檢討進行改善，以降低作業風險。（第51頁）",
             "公司針對各種緊急事故狀況，制定緊急應變程序作為執行之依據。並且定期進行消防演習及各種緊急狀況演練，加強同仁緊急應變能力。（第54頁）"
-          ]
+          ],
+          "evidence_page_orig": "53"
         }
-      ]
+      ],
+      "source_page_orig": "50",
+      "page_shift": {
+        "src": {
+          "orig": "50",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "105": {
+            "evidence": {
+              "orig": "53",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "不任用未滿16歲員工",
@@ -288,9 +786,56 @@
             "102-8 員工與其他工作者的資訊 43（第61頁）",
             "GRI 401：勞雇關係（第63頁）",
             "GRI 405：員工多元化與平等機會（第63頁）"
-          ]
+          ],
+          "evidence_page_orig": "42"
         }
-      ]
+      ],
+      "source_page_orig": "43",
+      "page_shift": {
+        "src": {
+          "orig": "43",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "106": {
+            "evidence": {
+              "orig": "42",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "對子公司背書保證實際動支餘額為零",
@@ -308,7 +853,29 @@
             "本公司對子公司背書保證，截至 107 年 3 月 31 日止其實際動支餘額為美金參佰萬元。（第18頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "106": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "對子公司資金貸與餘額維持於美金參佰萬元",
@@ -322,9 +889,31 @@
           "status": "已達成",
           "evidence": "本公司對子公司資金貸與，截至 107 年 3 月 31 日止其餘額為美金參佰萬元，其餘未從事其他高風險、高槓桿投資及衍生性商品之交易。",
           "evidence_page": "18",
-          "clues": []
+          "clues": [],
+          "evidence_page_orig": "18"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "106": {
+            "evidence": {
+              "orig": "18",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "不任用未滿 16 歲之員工",
@@ -344,9 +933,52 @@
             "GRI 408：童工（第63頁）",
             "408-1 營運據點和供應商使用童工之重大風險（第63頁）",
             "103-1 解釋重大主題及其邊界 41／103-2 管理方針及其要素 41／103-3 管理方針的評估 41（第63頁）"
-          ]
+          ],
+          "evidence_page_orig": "42"
         }
-      ]
+      ],
+      "source_page_orig": "42",
+      "page_shift": {
+        "src": {
+          "orig": "42",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "107": {
+            "evidence": {
+              "orig": "42",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "汰換低效率燃料油鍋爐並改以高效率天然氣鍋爐取代",
@@ -364,9 +996,44 @@
             "生達公司2018年比2017年鍋爐燃料油使用量減少180,000L，換算溫室氣體排放量約536.58公噸CO2/年。考量環保效益及整體經濟價值，於2018年9月汰換5台及修改1台低效率燃料油鍋爐，以高效率天然氣鍋爐取代，以降低空汙污染排放。燃料油鍋爐燃燒效率86%，更換新的天然氣鍋爐燃燒效率為97%，預估可以節省11%燃料，降低溫室氣體排放。（第35頁）",
             "生達公司2018年溫室氣體總排放當量為9,538.560公噸CO2-e/年，2018年溫室氣體排放當量比2017年降低了368.226公噸CO2-e/年，主要影響因素為2018年9月汰換5台及修改1台低效率燃料油鍋爐，改以高效率天然氣鍋爐取代，有效降低溫室氣體的排放。（第37頁）",
             "生達公司一廠方面自 2010 年起已改用乾淨燃料之天然氣後，每年均未達固定污染源空污費徵收之標準；二廠於 2018 年 9 月也改用天然氣曾鍋爐燃料油，經統計 2014~2018 年固定污染源排放量統計圖如右圖，截至 2018 年底止，2018 年每億元產值比 2017 年每億元產值約降低固定污染源 SOX 排放量 0.73 噸/年(54%)、NOX 排放量 0.34 噸/年(37%)，由此可見更換鍋爐燃料油明顯降低硫氧化物及氮氧化物的排放。（第39頁）"
-          ]
+          ],
+          "evidence_page_orig": "37"
         }
-      ]
+      ],
+      "source_page_orig": "35",
+      "page_shift": {
+        "src": {
+          "orig": "35",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "107": {
+            "evidence": {
+              "orig": "37",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "汰換廠內水銀路燈為 LED 路燈",
@@ -382,7 +1049,24 @@
           "evidence_page": null,
           "clues": []
         }
-      ]
+      ],
+      "source_page_orig": "35",
+      "page_shift": {
+        "src": {
+          "orig": "35",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "107": {
+            "evidence": null,
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "定期發行企業社會責任報告書",
@@ -401,7 +1085,8 @@
             "102-50 報導期間 3（第60頁）",
             "102-51 上一次報告書的日期 3（第60頁）",
             "102-52 報導週期 3（第60頁）"
-          ]
+          ],
+          "evidence_page_orig": "3"
         },
         {
           "year": 108,
@@ -413,9 +1098,73 @@
             "102-50 報導期間 3（第61頁）",
             "102-51 上一次報告書的日期 3（第61頁）",
             "102-52 報導週期 3（第61頁）"
-          ]
+          ],
+          "evidence_page_orig": "3"
         }
-      ]
+      ],
+      "source_page_orig": "3",
+      "page_shift": {
+        "src": {
+          "orig": "3",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "107": {
+            "evidence": {
+              "orig": "3",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "108": {
+            "evidence": {
+              "orig": "3",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提供業界一流的福利待遇",
@@ -436,9 +1185,56 @@
             "由於勞工意識高漲及各項福利的提昇，使公司之營運成本日漸提高，生達公司為因應此一人工成本之提高，積極加強製程管制、流程改善以提升生產效率，對於低效率之設備進行汰舊更新工作，以提高產量與生產力，進而降低產品成本，增加競爭優勢。（第21頁）",
             "保險與健康促進 團體保險(壽險/意外險/癌症險/職災險) 年度健康檢查 海外出差旅險（第43頁）",
             "2019年各項福利實績 績優員工選拔 共12位同仁獲獎，每人獲得兩錢純金金幣 資深員工感勞 共99位同仁獲獎，每位員工獲得純金金牌一份 員工旅遊 舉辦3次員工旅遊，總計438位員工與眷屬參加 員工信託補助 共521人申請，佔全體員工65.5%，補助454萬元 員工子女獎助學金補助 共439人次申請，發出203萬元（第43頁）"
-          ]
+          ],
+          "evidence_page_orig": "43"
         }
-      ]
+      ],
+      "source_page_orig": "44",
+      "page_shift": {
+        "src": {
+          "orig": "44",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "43",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "進行原料藥研發與生產，確保原料藥供貨順利並具競爭力",
@@ -458,9 +1254,52 @@
             "(8) 原料藥。（第11頁）",
             "生達集團為具有垂直整合三效的企業體，從原料到製劑之研、產、銷一貫生產及管理，較一般生產或銷售導向的製藥廠更具競爭力。（第20頁）",
             "生達公司陸續開發特殊劑型，如控釋劑型、速崩錠、發泡錠劑、貼布等，除加強內部研發，亦尋求國外技術合作或代理銷售，以增加市場之競爭力。（第20頁）"
-          ]
+          ],
+          "evidence_page_orig": "22"
         }
-      ]
+      ],
+      "source_page_orig": "22",
+      "page_shift": {
+        "src": {
+          "orig": "22",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "22",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "定期發行企業社會責任報告書",
@@ -479,7 +1318,8 @@
             "102-50 報導期間 3（第61頁）",
             "102-51 上一次報告書的日期 3（第61頁）",
             "102-52 報導週期 3（第61頁）"
-          ]
+          ],
+          "evidence_page_orig": "3"
         },
         {
           "year": 109,
@@ -488,9 +1328,61 @@
           "evidence_page": "3",
           "clues": [
             "本次版本發行時間：2021 年 9 月，預計下一次版本發行時間為 2022 年 9 月。（第3頁）"
-          ]
+          ],
+          "evidence_page_orig": "3"
         }
-      ]
+      ],
+      "source_page_orig": "3",
+      "page_shift": {
+        "src": {
+          "orig": "3",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "108": {
+            "evidence": {
+              "orig": "3",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "109": {
+            "evidence": {
+              "orig": "3",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "持續節能減碳並降低溫室氣體排放",
@@ -511,9 +1403,56 @@
             "節能減碳、污染預防：積極落實節約能源、減少碳足跡的耗損，設定與執行環境項目標與標的（第39頁）",
             "GRI 302：能源　302-4 減少能源消耗　28（第53頁）",
             "GRI 305：排放　305-1 直接(範疇一)溫室氣體排放／305-2 能源間接(範疇二)溫室氣體排放／305-3 其他間接(範疇三)溫室氣體排放　30（第53頁）"
-          ]
+          ],
+          "evidence_page_orig": "27"
         }
-      ]
+      ],
+      "source_page_orig": "36",
+      "page_shift": {
+        "src": {
+          "orig": "36",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "109": {
+            "evidence": {
+              "orig": "27",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "預計發行下一版報告",
@@ -532,7 +1471,8 @@
             "102-50 報導期間　3（第53頁）",
             "102-51 上一次報告書的日期　3（第53頁）",
             "102-52 報導週期　3（第53頁）"
-          ]
+          ],
+          "evidence_page_orig": "3"
         },
         {
           "year": 110,
@@ -542,9 +1482,65 @@
           "clues": [
             "本報告書範疇包含生達公司、㇐廠、二廠及台北、台中、嘉南、高雄辦事處，於 2021 年 1 月至 2021 年 12 月之企業永續發展表現績效。（第3頁）",
             "本公司報告書首次發行為 2014 年 11 月，未來仍將持續每年定期發行，並於本公司網站上公開發表並提供閱覽。（第3頁）"
-          ]
+          ],
+          "evidence_page_orig": "3"
         }
-      ]
+      ],
+      "source_page_orig": "3",
+      "page_shift": {
+        "src": {
+          "orig": "3",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "109": {
+            "evidence": {
+              "orig": "3",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "110": {
+            "evidence": {
+              "orig": "3",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "持續節能減碳並降低溫室氣體排放",
@@ -565,9 +1561,56 @@
             "生達公司 2021 年比 2020 年減少用電量 1,000 千度，換算溫室氣體排放量約 502.2 公噸 CO2/年。因有效節電，故每新台幣百萬產值用電量是減少的。（第27頁）",
             "生達公司 2021 年溫室氣體總排放當量為 9,053.528 公噸 CO2-e/年，較 2020 年減少了 885.944 公噸 CO2-e/年，2021 年每新台幣百萬元產值比 2020 年少 0.44 公噸 CO2-e/年，因有效節電，故每新台幣百萬產值溫室氣體排放當量是減少的，2022 年將持續進行節能減碳的改善，降低溫室氣體的排放。（第29頁）",
             "2021 年因為缺水，生達公司進行有效節水措施，2021 年總用水量 134,418 公噸，每新台幣百萬元產值用水量為 47 公噸，較 2020 年每新台幣百萬元產值用水量為 58 公噸減少 18.9%，2017~2021 年總用水量如下圖所示。2021 年比 2020 年減少自來水用量 23,426 度，換算溫室氣體排放量約 3.56 公噸 CO2/年。（第26頁）"
-          ]
+          ],
+          "evidence_page_orig": "28"
         }
-      ]
+      ],
+      "source_page_orig": "29",
+      "page_shift": {
+        "src": {
+          "orig": "29",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "110": {
+            "evidence": {
+              "orig": "28",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "預計發行下一版報告",
@@ -584,18 +1627,66 @@
           "clues": [
             "本報告書範疇包含生達公司、㇐廠、二廠及台北、台中、嘉南、高雄辦事處，於 2021 年 1 月至 2021 年 12 月之企業永續發展表現績效。（第3頁）",
             "本公司報告書首次發行為 2014 年 11 月，未來仍將持續每年定期發行，並於本公司網站上公開發表並提供閱覽。（第3頁）"
-          ]
+          ],
+          "evidence_page_orig": "3"
         },
         {
           "year": 111,
           "status": "已達成",
           "evidence": "本次版本發行時間：2023年9月，預計下㇐次版本發行時間為2024年9月。",
-          "evidence_page": "4",
+          "evidence_page": "5",
           "clues": [
+            "預計將於2023年11月通過董事會追認。（第4頁）"
+          ],
+          "evidence_page_orig": "4",
+          "clues_orig": [
             "預計將於2023年11月通過董事會追認。（第3頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "3",
+      "page_shift": {
+        "src": {
+          "orig": "3",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "110": {
+            "evidence": {
+              "orig": "3",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "111": {
+            "evidence": {
+              "orig": "4",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "持續節能減碳並降低溫室氣體排放",
@@ -608,8 +1699,17 @@
           "year": 111,
           "status": "部分達成",
           "evidence": "• 廠房整建、汰換T5螢光燈改為LED燈，㇐年約可節省電量24,960度電。<br>• 將75HP+50HP皮帶傳動式無變頻鼓風機，汰舊更新為60HP+40HP直結式變頻鼓風機，㇐年可節省295,650度電。<br>• 以確保存貨品質為前提，將存貨依產品類別存放，減少部分倉庫儲位濕度控制，取消使用除濕機共5台，㇐年可節省91,980度電。<br>• 另採用節能空調系統、定期檢查卻水器及將熱水回收以減少天然氣消耗、改善RO系統操作參數及變更軟水機製造再生條件以減少電力消耗等措施，均可有效減碳、兼顧成本效益與節約能源。",
-          "evidence_page": "16",
+          "evidence_page": "17",
           "clues": [
+            "對於環境，將【環保、節能、愛地球】的文化，內化成日常作業，致力能源減量(Reduce)、回收再利用(Reuse)、再循環(Recycle)。（第6頁）",
+            "淨零措施中，金管會要求上市櫃公司2026年完成碳盤查，生達提早於2014年完成取得查證聲明書 ， 並逐年進行碳盤查 ， 2010 年通過 ISO14001 環境管理系統 ， 2023 年取得ISO14001:2015，並陸續進行設備更新，如更換冷卻水塔熱材、冰水進水管路三通改二通以節省電力等。（第6頁）",
+            "關注全球氣候變遷的議題，從產品設計、供應商管理、製造組裝到顧客服務階段，持續努力控制溫室氣體的排放；各項管理及系統運作，皆符合中央主管機關所訂定之環保法規要求，致力於提升資源利用效率等。（第16頁）",
+            "本公司除了要求自身善盡環保責任，也鼓勵供應商㇐同響應追求永續發展，確保各項作業均能符合環保及企業社會責任規範，共同追求穩定發展與永續經營。（第34頁）",
+            "危險物質、事業廢棄物、空氣汙染物或廢汙水處理、減少能源消耗及溫室氣體排放目標、優先選用對環境負擔較低之原料及製程（第35頁）",
+            "然為減緩原物料採購運輸對環境之衝擊、降低溫室氣體排放，近年來公司API貨源已由歐美地區，移轉到中國、印度、日本等鄰近國家。（第35頁）"
+          ],
+          "evidence_page_orig": "16",
+          "clues_orig": [
             "對於環境，將【環保、節能、愛地球】的文化，內化成日常作業，致力能源減量(Reduce)、回收再利用(Reuse)、再循環(Recycle)。（第5頁）",
             "淨零措施中，金管會要求上市櫃公司2026年完成碳盤查，生達提早於2014年完成取得查證聲明書 ， 並逐年進行碳盤查 ， 2010 年通過 ISO14001 環境管理系統 ， 2023 年取得ISO14001:2015，並陸續進行設備更新，如更換冷卻水塔熱材、冰水進水管路三通改二通以節省電力等。（第5頁）",
             "關注全球氣候變遷的議題，從產品設計、供應商管理、製造組裝到顧客服務階段，持續努力控制溫室氣體的排放；各項管理及系統運作，皆符合中央主管機關所訂定之環保法規要求，致力於提升資源利用效率等。（第15頁）",
@@ -618,7 +1718,53 @@
             "然為減緩原物料採購運輸對環境之衝擊、降低溫室氣體排放，近年來公司API貨源已由歐美地區，移轉到中國、印度、日本等鄰近國家。（第34頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "29",
+      "page_shift": {
+        "src": {
+          "orig": "29",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "111": {
+            "evidence": {
+              "orig": "16",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "預計下次版本發行",
@@ -631,8 +1777,12 @@
           "year": 111,
           "status": "已達成",
           "evidence": "本次版本發行時間：2023年9月，預計下㇐次版本發行時間為2024年9月。",
-          "evidence_page": "4",
+          "evidence_page": "5",
           "clues": [
+            "預計將於2023年11月通過董事會追認。（第4頁）"
+          ],
+          "evidence_page_orig": "4",
+          "clues_orig": [
             "預計將於2023年11月通過董事會追認。（第3頁）"
           ]
         },
@@ -640,45 +1790,134 @@
           "year": 112,
           "status": "已達成",
           "evidence": "本次版本發行時間：2024年8月，預計下㇐次版本發行時間為2025年8月。",
-          "evidence_page": "4",
-          "clues": []
+          "evidence_page": "5",
+          "clues": [],
+          "evidence_page_orig": "4"
         }
-      ]
+      ],
+      "source_page_orig": "3",
+      "page_shift": {
+        "src": {
+          "orig": "3",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "111": {
+            "evidence": {
+              "orig": "4",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          },
+          "112": {
+            "evidence": {
+              "orig": "4",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": []
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成董事增選，提升董事會成員至9席、獨立董事至4席",
       "declared_year": 111,
       "target_year": 112,
-      "source_page": "19",
+      "source_page": "20",
       "final_status": "已達成",
       "status": [
         {
           "year": 112,
           "status": "已達成",
           "evidence": "於2023年增選㇐席董事與㇐席獨立董事，董事會成員共9席，包含4席獨立董事，佔全體董事成員比例44.44%，超過三分之㇐",
-          "evidence_page": "19",
+          "evidence_page": "20",
           "clues": [
+            "2023年增選董事與獨立董事各㇐名。（第21頁）",
+            "並已於2023年6月20日股東會增選董事與獨立董事各㇐名，持續董事會成員過半數未兼任員工或經理人，以加強監督與制衡之機制，保障利害關係人之權益。（第21頁）",
+            "2-9 治理結構與組成 1.1 公司治理 19（第81頁）",
+            "2-10 最高治理單位的提名與遴選 1.1 公司治理 20（第81頁）"
+          ],
+          "evidence_page_orig": "19",
+          "clues_orig": [
             "2023年增選董事與獨立董事各㇐名。（第20頁）",
             "並已於2023年6月20日股東會增選董事與獨立董事各㇐名，持續董事會成員過半數未兼任員工或經理人，以加強監督與制衡之機制，保障利害關係人之權益。（第20頁）",
             "2-9 治理結構與組成 1.1 公司治理 19（第80頁）",
             "2-10 最高治理單位的提名與遴選 1.1 公司治理 20（第80頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "19",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "改善能源使用結構，穩定每年減少溫室氣體排放",
       "declared_year": 111,
       "target_year": 112,
-      "source_page": "16",
+      "source_page": "17",
       "final_status": "部分達成",
       "status": [
         {
           "year": 112,
           "status": "部分達成",
           "evidence": "• 製劑大樓T5螢光燈更換為T8 LED燈，共774盞，廠內部份生產區、分裝區、包裝區、倉儲區T5螢光燈更換為LED平板燈，共266座，㇐年約可節省電量70,062度電。<br>• ㇐廠、二廠原空調箱夜間風車以50Hz運轉改為降頻35Hz運轉，㇐年約可節省電量476,538度電。<br>• 高致敏廠及㇐般針劑廠之半成品及成品室停用4台5HP除濕機，㇐年約可節省電量48,384度電。<br>2021 2022 2023<br>範疇㇐+範疇二(tonCO2e)* 9054 8900 8499<br>排放強度<br>(範疇㇐+範疇二/營收台幣百萬元) 3.19 3.21 2.84",
-          "evidence_page": "42",
+          "evidence_page": "43",
           "clues": [
+            "• 中期目標：持續購入節能設備，改建時優先選擇綠能建材，改善能源使用結構，達成穩定每年減少1%的溫室氣體排放目標。（第17頁）",
+            "• 友善環境方面，生達製藥將【環保、節能、愛地球】的文化，內化成日常作業，致力能源減量(Reduce)、回收再利用(Reuse)、再循環(Recycle)。（第6頁）",
+            "減少能源消耗及溫室氣體排放目標、優先選用對環境負擔較低之原料及製程（第35頁）",
+            "然為減緩原物料採購運輸對環境之衝擊、降低溫室氣體排放，近年來公司API貨源已由歐美地區，移轉到中國、印度、日本等鄰近國家。（第35頁）",
+            "本公司評估在地採購具諸多優點，經濟面可降低運費與關稅成本且即時供料，環境面能減少能源消耗與碳排放量（第35頁）",
+            "• 中期目標：持續購入節能設備，改建時優先選擇綠能建材，改善能源使用結構，達成穩定每年減少1%的溫室氣體排放目標。（第39頁）"
+          ],
+          "evidence_page_orig": "42",
+          "clues_orig": [
             "• 中期目標：持續購入節能設備，改建時優先選擇綠能建材，改善能源使用結構，達成穩定每年減少1%的溫室氣體排放目標。（第16頁）",
             "• 友善環境方面，生達製藥將【環保、節能、愛地球】的文化，內化成日常作業，致力能源減量(Reduce)、回收再利用(Reuse)、再循環(Recycle)。（第5頁）",
             "減少能源消耗及溫室氣體排放目標、優先選用對環境負擔較低之原料及製程（第34頁）",
@@ -687,41 +1926,135 @@
             "• 中期目標：持續購入節能設備，改建時優先選擇綠能建材，改善能源使用結構，達成穩定每年減少1%的溫室氣體排放目標。（第38頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "16",
+      "page_shift": {
+        "src": {
+          "orig": "16",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "42",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "綠色採購申報金額達100萬元",
       "declared_year": 111,
       "target_year": 112,
-      "source_page": "44",
+      "source_page": "45",
       "final_status": "已達成",
       "status": [
         {
           "year": 112,
           "status": "已達成",
           "evidence": "2023年度綠色採購金額達570萬。",
-          "evidence_page": "38",
+          "evidence_page": "39",
           "clues": [
+            "於2023年實際綠色採購申報金額達570萬元，（第45頁）",
+            "• 短期目標：持續關注國際最新溫室氣體排放、能源管理與氣候變遷等相關議題，了解最新規範，以滿足有關要求；另倡導綠色採購。（第40頁）",
+            "持續倡導綠色採購、訂定節能措施、投資綠能設備，以吸引潛在客戶訂單及投資者投資。（第41頁）"
+          ],
+          "evidence_page_orig": "38",
+          "clues_orig": [
             "於2023年實際綠色採購申報金額達570萬元，（第44頁）",
             "• 短期目標：持續關注國際最新溫室氣體排放、能源管理與氣候變遷等相關議題，了解最新規範，以滿足有關要求；另倡導綠色採購。（第39頁）",
             "持續倡導綠色採購、訂定節能措施、投資綠能設備，以吸引潛在客戶訂單及投資者投資。（第40頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "44",
+      "page_shift": {
+        "src": {
+          "orig": "44",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "38",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "維持女性董事比例在20%以上",
       "declared_year": 111,
       "target_year": 112,
-      "source_page": "19",
+      "source_page": "20",
       "final_status": "已達成",
       "status": [
         {
           "year": 112,
           "status": "已達成",
           "evidence": "本公司亦注重董事會成員組成之性別平等，其中女性董事2席，比例達22.22%，未來目標預期維持在20%以上。",
-          "evidence_page": "19",
+          "evidence_page": "20",
           "clues": [
+            "「管理 22 2.7% 43 5.4% 65 8.1%」（第61頁）",
+            "「高階(經理級以上) 0 0 4 1 20 6 31」（第61頁）",
+            "「本公司積極塑造多元平等的職場環境」（第59頁）",
+            "2-9 治理結構與組成 1.1 公司治理 19（第81頁）",
+            "405-1 治理單位與員工的多元化 4.1 人才吸引與留任 60（第88頁）"
+          ],
+          "evidence_page_orig": "19",
+          "clues_orig": [
             "「管理 22 2.7% 43 5.4% 65 8.1%」（第60頁）",
             "「高階(經理級以上) 0 0 4 1 20 6 31」（第60頁）",
             "「本公司積極塑造多元平等的職場環境」（第58頁）",
@@ -729,21 +2062,72 @@
             "405-1 治理單位與員工的多元化 4.1 人才吸引與留任 60（第87頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "19",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "改善能源使用結構，穩定每年減少 1% 溫室氣體排放",
       "declared_year": 112,
       "target_year": 113,
-      "source_page": "16",
+      "source_page": "17",
       "final_status": "部分達成",
       "status": [
         {
           "year": 113,
           "status": "部分達成",
           "evidence": "• 倉儲區將T5螢光燈更換為LED平板燈共180盞，㇐年約可節省電量13,478度電。<br>• 液高廠新購30HP變頻空壓機汰換25HP定頻空壓機，㇐年約可節省電量33,400度電。<br>• 製劑廠新增125HP變頻式空壓機+真空型吸附式乾燥機，以125HP變頻式空壓機+真空型吸附式乾燥機為啟動主機，若超過125HP則以125HP空壓機無變頻螺旋式空壓機為主機，不足時以125HP變頻式空壓機補足，㇐年約可節省電量258,990度電。<br>• 另採用自動控制節能空調系統、及定期檢查卻水器以減少天然氣消耗，並持續實施中午休息時間辦公區與實驗室關燈㇐小時及空調設定26度，均有效減碳、兼顧成本效益與節約能源。",
-          "evidence_page": "16",
+          "evidence_page": "17",
           "clues": [
+            "• 中期目標：持續購入節能設備，改建時優先選擇綠能建材，改善能源使用結構，達成穩定每年減少1%的溫室氣體排放目標。（第17頁）",
+            "• 2014年即完成首次碳盤查並取得查證聲明書，並持續每年執行碳盤查，以符合金管會對上市櫃公司2026年完成碳揭露的要求。（第6頁）",
+            "「• 倉儲區將T5螢光輕鋼架燈更換為T8 LED平板燈，共180盞，㇐年約可節省電量13,478度電。」（第39頁）",
+            "「• 液高廠新購30HP變頻空壓機汰換25HP定頻空壓機，㇐年約可節省電量33,400度電。」（第39頁）",
+            "「本公司進行溫室氣體盤查後，進而了解公司產生溫室氣體的主要來源為電力設備，陸續推動各項電力設備的節能減碳措施…並訂定碳排減量目標為每年至少減少1%的溫室氣體排放」（第45頁）",
+            "本公司通過「ISO 14064-1 溫室氣體盤查」第三方查證，下圖為溫室氣體查證聲明書（第90頁）"
+          ],
+          "evidence_page_orig": "16",
+          "clues_orig": [
             "• 中期目標：持續購入節能設備，改建時優先選擇綠能建材，改善能源使用結構，達成穩定每年減少1%的溫室氣體排放目標。（第16頁）",
             "• 2014年即完成首次碳盤查並取得查證聲明書，並持續每年執行碳盤查，以符合金管會對上市櫃公司2026年完成碳揭露的要求。（第5頁）",
             "「• 倉儲區將T5螢光輕鋼架燈更換為T8 LED平板燈，共180盞，㇐年約可節省電量13,478度電。」（第38頁）",
@@ -752,40 +2136,130 @@
             "本公司通過「ISO 14064-1 溫室氣體盤查」第三方查證，下圖為溫室氣體查證聲明書（第89頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "16",
+      "page_shift": {
+        "src": {
+          "orig": "16",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "16",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "維持女性董事比例在 20% 以上",
       "declared_year": 112,
       "target_year": 113,
-      "source_page": "19",
+      "source_page": "20",
       "final_status": "已達成",
       "status": [
         {
           "year": 113,
           "status": "已達成",
           "evidence": "本公司亦注重董事會成員組成之性別平等，其中女性董事2席，比例達22.22%，未來目標預期維持在20%以上。",
-          "evidence_page": "19",
+          "evidence_page": "20",
           "clues": [
+            "董事 葉翠雯 女 61-70（第21頁）",
+            "獨立董事 張宜眞 女 61-70（第21頁）"
+          ],
+          "evidence_page_orig": "19",
+          "clues_orig": [
             "董事 葉翠雯 女 61-70（第20頁）",
             "獨立董事 張宜眞 女 61-70（第20頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "19",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "針對重要議題提出改善方案，提升員工滿意度與留任率",
       "declared_year": 112,
       "target_year": 113,
-      "source_page": "63",
+      "source_page": "64",
       "final_status": "部分達成",
       "status": [
         {
           "year": 113,
           "status": "部分達成",
           "evidence": "「2024年度主管職缺由內部員工晉升比率97.6%」<br>「2024年度主管留任率96.6%」",
-          "evidence_page": "63",
+          "evidence_page": "64",
           "clues": [
+            "• 中期目標：透過員工滿意度調查瞭解員工的需求，每年度針對1-2項重要議題提出改善方案，以提升員工滿意度與留任率。（第18頁）",
+            "• 數位學習網：將內部知識轉化、建置在E-Learning系統、並持續更新，讓專業知識及技能傳承給各位同仁。（第18頁）",
+            "• 內外訓課程：視教育訓練為㇐項戰略投資，每年均特別編列教育訓練預算。（第18頁）",
+            "「中期目標：透過員工滿意度調查瞭解員工的需求，每年度針對1-2項重要議題提出改善方案，以提升員工滿意度與留任率。」（第64頁）",
+            "「2023年度休完育嬰假且復職後十二個月仍在職的員工總數（F） 1 5 6」及「留任率（F／E） - 100% 100%」（第63頁）",
+            "「2024年度內部輪調員工共計96人。」（第65頁）"
+          ],
+          "evidence_page_orig": "63",
+          "clues_orig": [
             "• 中期目標：透過員工滿意度調查瞭解員工的需求，每年度針對1-2項重要議題提出改善方案，以提升員工滿意度與留任率。（第17頁）",
             "• 數位學習網：將內部知識轉化、建置在E-Learning系統、並持續更新，讓專業知識及技能傳承給各位同仁。（第17頁）",
             "• 內外訓課程：視教育訓練為㇐項戰略投資，每年均特別編列教育訓練預算。（第17頁）",
@@ -794,60 +2268,190 @@
             "「2024年度內部輪調員工共計96人。」（第64頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "63",
+      "page_shift": {
+        "src": {
+          "orig": "63",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "63",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "預計下次版本發行",
       "declared_year": 112,
       "target_year": 114,
-      "source_page": "4",
+      "source_page": "5",
       "final_status": "已達成",
       "status": [
         {
           "year": 113,
           "status": "已達成",
           "evidence": "本次版本發行時間：2025年8月，預計下㇐次版本發行時間為2026年8月。",
-          "evidence_page": "4",
+          "evidence_page": "5",
           "clues": [
+            "使用聲明 生達已參考GRI準則報導2024年1月1日至2024年12月31日期間的內容（第82頁）",
+            "2-3 報導期間、頻率及聯絡人 關於報告書 4（第82頁）"
+          ],
+          "evidence_page_orig": "4",
+          "clues_orig": [
             "使用聲明 生達已參考GRI準則報導2024年1月1日至2024年12月31日期間的內容（第81頁）",
             "2-3 報導期間、頻率及聯絡人 關於報告書 4（第81頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "4",
+      "page_shift": {
+        "src": {
+          "orig": "4",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "4",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "取得並維持 ISO 14001:2015 環境管理系統驗證有效性",
       "declared_year": 112,
       "target_year": 115,
-      "source_page": "38",
+      "source_page": "39",
       "final_status": "已達成",
       "status": [
         {
           "year": 113,
           "status": "已達成",
           "evidence": "「2010年驗證通過ISO14001環境管理系統；並於2023年取得ISO14001:2015，有效期限為2023/2/13~2026/1/18。」",
-          "evidence_page": "38",
+          "evidence_page": "39",
           "clues": [
+            "• 具ISO9001、ISO14001、ISO 45001及PIC/S GMP等系統建置、驗證與登記， 更獲頒國家生技暨醫療品質整體金質獎。（第10頁）",
+            "通過FDA、PIC/S GMP、日本厚生省、ISO9001、ISO14001及ISO 45001等多國官方查廠與多項國際認證（第26頁）",
+            "本公司通過「ISO 14064-1 溫室氣體盤查」第三方查證，下圖為溫室氣體查證聲明書（第90頁）"
+          ],
+          "evidence_page_orig": "38",
+          "clues_orig": [
             "• 具ISO9001、ISO14001、ISO 45001及PIC/S GMP等系統建置、驗證與登記， 更獲頒國家生技暨醫療品質整體金質獎。（第9頁）",
             "通過FDA、PIC/S GMP、日本厚生省、ISO9001、ISO14001及ISO 45001等多國官方查廠與多項國際認證（第25頁）",
             "本公司通過「ISO 14064-1 溫室氣體盤查」第三方查證，下圖為溫室氣體查證聲明書（第89頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "38",
+      "page_shift": {
+        "src": {
+          "orig": "38",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "38",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "消除教育上的兩性不平等，確保弱勢族群有接受各階級教育的管道與職業訓練",
       "declared_year": 112,
       "target_year": 119,
-      "source_page": "15",
+      "source_page": "16",
       "final_status": "部分達成",
       "status": [
         {
           "year": 113,
           "status": "部分達成",
           "evidence": "• 財團法人范道南文教基金會：設置大學、高中、國中及國小獎助學金，減輕環境清寒家庭之學子壓力；舉辦兒童寫生比賽、全國桌球錦標賽及兒童園遊會等，陪伴兒童快樂成長；提供課輔活動，提供偏遠地區學子課後學習機會。",
-          "evidence_page": "17",
+          "evidence_page": "18",
           "clues": [
+            "• 成立財團法人范道南文教基金會，主要舉辦文教活動、設置獎助學金及舉辦健康講座等相關公益性教育事務；另與地方政府合作創立達康運動保健中心，目的為預防及延緩失能照護，提升健康福祉。（第16頁）",
+            "• 社會參與與公益投入：秉持「取之於社會、用之於社會」的精神，生達與范道南文教基金會持續推動公益，包括「助學金專案」、「希望課輔專案」與營養午餐補助，協助弱勢孩童。（第6頁）",
+            "「另為落實企業社會責任、傳遞多元和包容的價值觀、並促進企業創新與永續發展，本公司亦聘用㇐定人數之原住民、外籍員工與身心障礙者，在招聘、培訓和工作環境方面採取相應措施，以確保這些員工能夠獲得平等的機會與支持。」（第61頁）",
+            "「分類 男性 女性」受訓時數表（第65頁）",
+            "「值得㇐提的是在過去年度無論男女都有申請育嬰假的紀錄，此有助打破性別平等的障礙，並促進多元和包容的價值觀。」（第63頁）",
+            "• 藥學相關科系：3所8人"
+          ],
+          "evidence_page_orig": "17",
+          "clues_orig": [
             "• 成立財團法人范道南文教基金會，主要舉辦文教活動、設置獎助學金及舉辦健康講座等相關公益性教育事務；另與地方政府合作創立達康運動保健中心，目的為預防及延緩失能照護，提升健康福祉。（第15頁）",
             "• 社會參與與公益投入：秉持「取之於社會、用之於社會」的精神，生達與范道南文教基金會持續推動公益，包括「助學金專案」、「希望課輔專案」與營養午餐補助，協助弱勢孩童。（第5頁）",
             "「另為落實企業社會責任、傳遞多元和包容的價值觀、並促進企業創新與永續發展，本公司亦聘用㇐定人數之原住民、外籍員工與身心障礙者，在招聘、培訓和工作環境方面採取相應措施，以確保這些員工能夠獲得平等的機會與支持。」（第60頁）",
@@ -856,7 +2460,53 @@
             "• 藥學相關科系：3所8人"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "15",
+      "page_shift": {
+        "src": {
+          "orig": "15",
+          "d": 1,
+          "kind": "uniform"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "17",
+              "d": 1,
+              "kind": "uniform"
+            },
+            "clues": [
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 1,
+                "kind": "uniform"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": "2026-09-27 18:38:12",
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     }
   ]
 }

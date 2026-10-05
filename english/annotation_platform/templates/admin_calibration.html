@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Admin: calibration items{% endblock %}
+{% block body %}
+<style>
+  table.cal td, table.cal th { text-align: center; vertical-align: top; }
+  table.cal td.lbl, table.cal th.lbl { text-align: left; white-space: nowrap; }
+  table.cal .pr { display: block; font-size: 11px; color: var(--mute); }
+  table.cal td.dis { background: #fdf3f3; }
+  table.cal td.maj { font-weight: 600; }
+  p.commit { margin: 0 0 6px; font-weight: 600; }
+</style>
+<div class="card">
+  <h1>Calibration items (the items everyone answers)</h1>
+  <p class="note">
+    <a href="{{ url_for('Admin', key=key) }}">← back to progress</a>
+    <a href="{{ url_for('AdminAnnotators', key=key) }}">Per-annotator statistics</a>
+    <a href="{{ url_for('AdminItems', key=key, gold=1) }}">Calibration items, answer by answer</a>
+    {% if not with_test %}　<a href="{{ url_for('AdminCalibration', key=key, test=1) }}">include test accounts</a>{% endif %}<br>
+    One table per item: every person's verdict and 0–100 estimate for every year side by side, then the majority label,
+    the share of people behind it, and the median and quartile range of the estimates. A shaded cell differs from the majority. Read-only.
+  </p>
+
+  {% if not blocks %}<p>No calibration items yet, or nobody has submitted one.</p>{% endif %}
+  {% for b in blocks %}
+  <h2>Calibration #{{ b.item.gold_rank }}　{{ b.item.company }}　<span class="note">{{ b.item.declared_year }} → {{ b.item.target_year }}　#{{ b.item.item_id }}</span></h2>
+  <p class="commit">{{ b.item.commitment }}</p>
+  {% if not b.present %}
+  <p class="note">Nobody has submitted this item yet.</p>
+  {% else %}
+  <div class="scrollx">
+  <table class="grid tight cal">
+    <tr><th class="lbl"></th><th>AI</th>
+      {% for p in b.present %}<th><code>{{ p.prolific_pid }}</code>{% if p.is_test %}<span class="pr">test</span>{% endif %}</th>{% endfor %}
+      <th>Majority</th><th>Agree</th><th>Estimate: median (Q1–Q3)</th></tr>
+    <tr><th class="lbl">Q0 a commitment?</th><td>—</td>
+      {% for p in b.present %}{% set a = b.cells[p.worker_id] %}
+      <td class="{% if a.is_commitment and a.is_commitment != b.q0_major %}dis{% endif %}">{% if a.is_commitment == 'valid' %}yes{% elif a.is_commitment == 'not_commitment' %}no{% elif a.is_commitment == 'no_target' %}no target year{% elif a.is_commitment == 'unsure' %}unsure{% else %}—{% endif %}</td>{% endfor %}
+      <td class="maj">{{ {'valid': 'yes', 'not_commitment': 'no', 'no_target': 'no target year', 'unsure': 'unsure'}.get(b.q0_major, '—') }}</td>
+      <td>{% if b.q0_share is not none %}{{ b.q0_share }}%{% endif %}</td><td></td></tr>
+    <tr><th class="lbl">Source page</th><td>—</td>
+      {% for p in b.present %}{% set a = b.cells[p.worker_id] %}
+      <td>{% if a.source_page_ok == 'ok' %}✓{% elif a.source_page_ok == 'wrong_page' %}wrong page{% elif a.source_page_ok == 'not_found' %}not found{% else %}—{% endif %}</td>{% endfor %}
+      <td></td><td></td><td></td></tr>
+    {% for y in b.years %}
+    <tr><th class="lbl">{{ y.year }}</th><td><span class="badge s{{ y.ai|status_class }}">{{ y.ai }}</span></td>
+      {% for p in b.present %}{% set lab = y.labels.get(p.worker_id) %}
+      <td class="{% if lab and lab != y.major %}dis{% endif %}">{% if lab %}<span class="badge s{{ lab|status_class }}">{{ lab }}</span>{% if y.probs.get(p.worker_id) is not none %}<span class="pr">{{ y.probs[p.worker_id] }}</span>{% endif %}{% else %}—{% endif %}</td>{% endfor %}
+      <td class="maj">{% if y.major %}<span class="badge s{{ y.major|status_class }}">{{ y.major }}</span>{% endif %}</td>
+      <td>{% if y.share is not none %}{{ y.share }}%<span class="pr">{{ y.n }} people</span>{% endif %}</td>
+      <td>{% if y.pq %}{{ y.pq.median }}<span class="pr">{{ y.pq.q1 }}–{{ y.pq.q3 }}</span>{% endif %}</td></tr>
+    {% endfor %}
+    <tr><th class="lbl">Overall conclusion</th><td><span class="badge s{{ b.ai_final|status_class }}">{{ b.ai_final }}</span></td>
+      {% for p in b.present %}{% set f = b.finals.get(p.worker_id) %}
+      <td class="{% if f and f != b.f_major %}dis{% endif %}">{% if f %}<span class="badge s{{ f|status_class }}">{{ f }}</span>{% else %}—{% endif %}</td>{% endfor %}
+      <td class="maj">{% if b.f_major %}<span class="badge s{{ b.f_major|status_class }}">{{ b.f_major }}</span>{% endif %}</td>
+      <td>{% if b.f_share is not none %}{{ b.f_share }}%{% endif %}</td><td></td></tr>
+    <tr><th class="lbl">Minutes / evidence opened</th><td></td>
+      {% for p in b.present %}{% set a = b.cells[p.worker_id] %}
+      <td>{{ (a.active_seconds / 60)|round(1) if a.active_seconds else '—' }} / {{ a.n_page_views if a.n_page_views is not none else '—' }}</td>{% endfor %}
+      <td></td><td></td><td></td></tr>
+  </table>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+  <h2>Each person on the calibration items</h2>
+  <div class="scrollx">
+  <table class="grid tight">
+    <tr><th>PID</th><th>Calibration items done</th><th>Years</th><th>Years with the majority</th><th>Conclusion with the majority</th><th>Q0 with the majority</th><th>Mean distance of estimate from the group median</th><th>Min/item (median)</th></tr>
+    {% for r in summary %}
+    <tr><td><code>{{ r.pid }}</code>{% if r.is_test %} <span class="note">test</span>{% endif %}</td>
+      <td>{{ r.done }}</td><td>{{ r.years }}</td>
+      <td>{{ r.agree }}{% if r.years %} <span class="note">({{ Pct(r.agree, r.years) }}%)</span>{% endif %}</td>
+      <td>{{ r.final_agree }} / {{ r.final_n }}</td>
+      <td>{{ r.q0_agree }} / {{ r.q0_n }}</td>
+      <td>{{ r.dev if r.dev is not none else '—' }}</td>
+      <td>{{ r.minutes if r.minutes is not none else '—' }}</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+  <ul class="ways">
+    <li><b>Majority</b>: the label most people gave for that year (or item); a tie goes to the label listed first (Achieved → Not yet achieved → Moving away from target → Not mentioned). The majority is not the right answer, only a way to see whose standard drifts.</li>
+    <li><b>Estimate: median (Q1–Q3)</b>: the median of everyone's 0–100 estimate for that year, with the first and third quartile; a wide range means people disagree on how sure they are.</li>
+    <li><b>Mean distance from the group median</b>: this person's estimate minus the group's median for the same year, absolute value, averaged over their years; larger means consistently more optimistic or more pessimistic than the group.</li>
+  </ul>
+  <p class="note">This page only reads the database and writes nothing. Crop the PID column out of any screenshot — those ids are credentials.</p>
+</div>
+{% endblock %}

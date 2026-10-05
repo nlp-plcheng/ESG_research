@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Latest submitted answers{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>Latest submitted answers</h1>
+  <p class="note">Read straight from the database, test accounts included (marked “test”, excluded from the dataset). An answer just submitted should appear at the top immediately.
+     Showing the latest {{ limit }}{% if pid %}, only <code>{{ pid }}</code>{% endif %}.
+     <a href="{{ url_for('Admin', key=key) }}">← Back to admin</a>
+     {% if pid %}　<a href="{{ url_for('AdminAnswers', key=key, limit=limit) }}">everyone</a>
+     　<a href="{{ url_for('AdminAnswers', key=key, limit=200, pid=pid) }}">show 200</a>
+     {% else %}　<a href="{{ url_for('AdminAnswers', key=key, limit=200) }}">show 200</a>{% endif %}</p>
+  {% if not rows %}
+  <p>No submitted answers yet.</p>
+  {% else %}
+  <table class="grid answers">
+    <tr><th>Submitted (UTC)</th><th>Id</th><th>Item</th><th>Q0</th><th>Per year</th><th>Overall</th><th>Year range</th><th>Seconds (visible / total)</th></tr>
+    {% for r in rows %}
+    <tr>
+      <td>{{ r.submitted_at }}{% if r.n_edits %}<br><span class="note">revised {{ r.n_edits }}×, last {{ r.edited_at }}</span>{% endif %}</td>
+      <td><code>{{ r.prolific_pid }}</code>{% if r.is_test %}<br><span class="note">test (not counted)</span>{% endif %}</td>
+      <td>{% if r.is_gold %}<span class="note">calibration #{{ r.gold_rank }}</span><br>{% endif %}{{ r.company }} · {{ r.commitment[:36] }}{% if r.commitment|length > 36 %}…{% endif %}</td>
+      <td>{% if r.is_commitment == 'valid' %}yes{% elif r.is_commitment == 'not_commitment' %}not a commitment<br><span class="note">{{ r.not_reason }}</span>{% elif r.is_commitment == 'no_target' %}no target year{% if r.not_reason %}<br><span class="note">{{ r.not_reason }}</span>{% endif %}{% elif r.is_commitment == 'unsure' %}unsure{% else %}—{% endif %}
+          {% if r.commitment_fix %}<br><span class="note">wording fix: {{ r.commitment_fix }}</span>{% endif %}
+          {% if r.target_year_fix %}<br><span class="note">target year fix: {{ r.target_year_fix }}</span>{% endif %}</td>
+      <td>{% for v in verdicts.get(r.assign_id, []) %}
+          <div><b>{{ v.year }}</b>
+            {% if v.evidence_quality == 'ok' %}correct{% else %}wrong → {{ v.human_status }}{% if v.evidence_quality == 'none' %} (no basis){% elif v.evidence_quality == 'other' %} (own evidence){% elif v.alt_clue %} (basis {{ v.alt_clue }}){% endif %}{% if v.correct_page %} p.{{ v.correct_page }}{% endif %}{% endif %}
+            <span class="note">prob. {{ v.achieve_prob }}</span>
+            {% if v.custom_basis %}<br><span class="note">own text: {{ v.custom_basis }}</span>{% endif %}</div>
+          {% else %}<span class="note">—</span>{% endfor %}</td>
+      <td>{{ (r.human_final_status|final) or '—' }}{% if r.human_final_status and (r.human_final_status|final) != (r.final_status|final) %}<br><span class="note">AI: {{ r.final_status|final }}</span>{% endif %}</td>
+      <td>{{ window_labels.get(r.window_ok, r.window_ok) or '—' }}{% if r.correct_target_year %}<br><span class="note">→ {{ r.correct_target_year }}</span>{% endif %}</td>
+      <td>{{ r.active_seconds if r.active_seconds is not none else '—' }}<br><span class="note">total {{ r.seconds if r.seconds is not none else '—' }}</span></td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+</div>
+{% endblock %}

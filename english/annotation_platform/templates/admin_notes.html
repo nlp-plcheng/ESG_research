@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Admin: stars, notes and questions{% endblock %}
+{% block body %}
+<style>
+  table.notes td.txt { white-space: normal; min-width: 240px; }
+  table.notes td.star { font-size: 18px; text-align: center; }
+</style>
+<div class="card">
+  <h1>Stars, notes and questions</h1>
+  <p class="note">
+    <a href="{{ url_for('Admin', key=key) }}">← back to progress</a>
+    <a href="{{ url_for('AdminItems', key=key) }}">Results by item</a>
+    {% if not with_test %}　<a href="{{ url_for('AdminNotes', key=key, test=1) }}">include test accounts</a>{% endif %}
+    {% if pid %}| showing only <code>{{ pid }}</code> (<a href="{{ url_for('AdminNotes', key=key) }}">everyone</a>){% endif %}<br>
+    One row per person and item with something left behind: a star (unsure, worth revisiting), a private note, the reason for “not a commitment” / “no target year”, a corrected wording.
+    {{ rows|length }} row(s){% if rows|length >= limit %} (only the first {{ limit }} shown; add <code>&amp;limit=1000</code> to the address for more){% endif %}, {{ n_marks }} of them with a star or note. Newest first. Read-only.
+  </p>
+
+  {% if not rows %}
+  <p>Nobody has left a star, note or reason yet.</p>
+  {% else %}
+  <div class="scrollx">
+  <table class="grid tight notes">
+    <tr><th>Time (UTC)</th><th>Id</th><th>Item</th><th>★</th><th>Note</th><th>Q0 reason</th><th>Corrected wording</th><th></th></tr>
+    {% for r in rows %}
+    <tr>
+      <td><span class="note">{{ r.updated_at or r.submitted_at or '(in progress)' }}</span></td>
+      <td><code>{{ r.prolific_pid }}</code>{% if r.is_test %}<br><span class="note">test</span>{% endif %}</td>
+      <td class="txt">{% if r.is_gold %}<span class="note">calibration #{{ r.gold_rank }}</span><br>{% endif %}
+        <b>{{ r.company }}</b> <span class="note">#{{ r.item_id }}{% if r.stage != 3 %}　in progress{% endif %}</span><br>
+        {{ r.commitment[:60] }}{% if r.commitment|length > 60 %}…{% endif %}</td>
+      <td class="star">{% if r.starred %}★{% endif %}</td>
+      <td class="txt">{{ r.note }}</td>
+      <td class="txt">{% if r.is_commitment == 'not_commitment' %}<b>not a commitment</b>{% elif r.is_commitment == 'no_target' %}<b>no target year</b>{% endif %}
+        {% if r.not_reason %}<br>{{ r.not_reason }}{% endif %}
+        {% if r.comment %}<br><span class="note">wrap-up comment: {{ r.comment }}</span>{% endif %}</td>
+      <td class="txt">{{ r.commitment_fix or '' }}</td>
+      <td><a href="{{ url_for('AdminItems', key=key, item=r.item_id) }}">by item</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  </div>
+  {% endif %}
+  <p class="note">This page only reads the database and writes nothing. Crop the id column out of any screenshot — those ids are credentials.</p>
+</div>
+{% endblock %}

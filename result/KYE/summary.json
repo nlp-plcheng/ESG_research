@@ -26,9 +26,56 @@
             "305-1 直接溫室氣體排放（範疇一） 4.4 溫室氣體管理 60（第94頁）",
             "305-2 間接溫室氣體排放（範疇二） 4.4 溫室氣體管理 60（第94頁）",
             "昆盈公司已進行母公司及東莞廠溫室氣體盤查事宜（第98頁）"
-          ]
+          ],
+          "evidence_page_orig": "58"
         }
-      ]
+      ],
+      "source_page_orig": "40",
+      "page_shift": {
+        "src": {
+          "orig": "40",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "58",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "向董事會報告整體風險管理執行情形",
@@ -49,9 +96,56 @@
             "審查風險管理執行情形，定期 ( 至少一年一次 ) 向董事會報告風險管理執行情形。（第34頁）",
             "「風險管理委員會 • 擬查風險管理執行情形，並定期向董事會報告」（第50頁）",
             "「環境永續小組定期向永續發展推動委員會及董事會報告節能減碳的措施和成果。」（第58頁）"
-          ]
+          ],
+          "evidence_page_orig": "34"
         }
-      ]
+      ],
+      "source_page_orig": "32",
+      "page_shift": {
+        "src": {
+          "orig": "32",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "34",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "東莞廠用電量較去年同期減少 3%",
@@ -69,9 +163,44 @@
             "揭露範疇以本公司重要營運據點為主，包含台北總公司及東莞昆盈公司（工廠）。（第6頁）",
             "用電量每年降低 3% 以上（第17頁）",
             "「本公司設定 2024 年溫室氣體排放目標對比去年減少 1 %，東莞廠用電量目標對比去年減少 3%。」（第60頁）"
-          ]
+          ],
+          "evidence_page_orig": "61"
         }
-      ]
+      ],
+      "source_page_orig": "58",
+      "page_shift": {
+        "src": {
+          "orig": "58",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "61",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "次年 3 月底前一次提撥退休準備金差額",
@@ -89,9 +218,44 @@
             "年度終了前，若估算專戶餘額不足給付次一年度內預估達到退休條件之勞工，次年度 3 月底前將一次提撥其差額。（第37頁）",
             "「年度終了前，若估算專戶餘額不足給付次一年度內預估達到退休條件之勞工，次年度 3 月底前將一次提撥其差額。」（第37頁）",
             "201-3 定義福利計劃義務與其他退休計畫 3.2 營運績效 5.2 勞雇關係 37、81（第93頁）"
-          ]
+          ],
+          "evidence_page_orig": "81"
         }
-      ]
+      ],
+      "source_page_orig": "78",
+      "page_shift": {
+        "src": {
+          "orig": "78",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "81",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年至少召開一次風險管理委員會",
@@ -109,9 +273,44 @@
             "本公司 2022 年成立「風險管理委員會」，負責辨識及督導管理公司營運所面臨的風險，包含氣候變遷相關風險與機會及其因應措施，並採用 TCFD 框架進行評估與揭露。（第4頁）",
             "本公司設有風險管理委員會，每年至少召開一次，履行本公司「風險管理委員會組織規程」所定之職權事項，並將所提建議提交董事會決議，董事會須定期審核公司風險管理策略之適用性與執行效能（第19頁）",
             "風險管理委員會議每年至少召開一次，並得視需要隨時召集之。（第34頁）"
-          ]
+          ],
+          "evidence_page_orig": "34"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "34",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年至少召開二次永續發展推動委員會",
@@ -132,9 +331,56 @@
             "2023 年度共召開 3 次會議，議案內容包含 (1) 推動永續發展執行工作；鑑別永續之重大議題及擬訂因應行動方案 (2) 審議 2022 年度永續報告書 (3) 監督永續經營項目之落實及評估執行情形；規劃 2024 年度永續發展工作重點。（第31頁）",
             "「永續發展推動委員會」每半年向董事會報告永續發展執行成果及未來工作計畫（第31頁）",
             "「永續發展推動委員會每半年召開會議，對包括氣候變遷相關風險與機會等永續議題執行成果進行討論，並提報董事會。」（第38頁）"
-          ]
+          ],
+          "evidence_page_orig": "32"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "32",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "汰換老舊空壓機以降低用電量與氣量",
@@ -153,7 +399,33 @@
             "「2024 年在滿足工廠生產需求情況下，將老舊的 100P 空壓機置換成 50P 的空壓機，降低用電量和氣量」 （第62頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "60",
+      "page_shift": {
+        "src": {
+          "orig": "60",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "進行溫室氣體資料收集",
@@ -174,7 +446,8 @@
             "「綠色供應鏈的管理方面，除了行之有年的 e-RSC 平台，讓供應商了解無有害物質的最新環保法規要求，供應商也可以從 e-RSC 平台了解到昆盈正在推行的綠色環境政策，如溫室氣體盤查及教育訓練」（第56頁）",
             "「2021~2023 年類別二外購電力統計 :」（第60頁）",
             "「2020~2023 年類別一及類別二溫室氣體排放統計 :」（第63頁）"
-          ]
+          ],
+          "evidence_page_orig": "60"
         },
         {
           "year": 113,
@@ -186,9 +459,81 @@
             "「2022~2024 年範疇一及範疇二溫室氣體排放統計」（第63頁）",
             "「305-3 其他間接溫室氣體排放（範疇三） 尚未收集相關數據，本年度暫不揭露」（第96頁）",
             "「昆盈公司已進行母公司及東莞廠溫室氣體盤查事宜」（第100頁）"
-          ]
+          ],
+          "evidence_page_orig": "60"
         }
-      ]
+      ],
+      "source_page_orig": "55",
+      "page_shift": {
+        "src": {
+          "orig": "55",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "60",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "60",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "分析內外部環境與營運風險",
@@ -209,9 +554,56 @@
             "•本公司透過永續發展委員會執行長召集各工作成員，對 TCFD 氣候變遷相關風險與機會及風險管理策略等財務揭露議題及進行討論，針對 TCFD 所建議的實體風險、法規政策轉型風險及市場轉型風險及資源效率、產品、市場等機會進行辨識與評估。綜整對本公司營運財務面有影響的 11 項氣候風險與 5 項相關機會。（第39頁）",
             "•依其發生機率 / 頻率 ( 可能性 ) 及對本公司造成的衝擊及影響程度作交叉分析，評估風險值與機會值，以鑑別優先關注的實體風險與轉型風險，及相關的機會進行因應與管理。（第39頁）",
             "•使用財務衝擊影響程度及發生可能性矩陣圖進行氣候風險與機會之分析評估（第42頁）"
-          ]
+          ],
+          "evidence_page_orig": "12"
         }
-      ]
+      ],
+      "source_page_orig": "34",
+      "page_shift": {
+        "src": {
+          "orig": "34",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "12",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成範疇一與範疇二溫室氣體排放數據自我盤查",
@@ -231,9 +623,52 @@
             "「305-1 直接溫室氣體排放（範疇一） 4.4 溫室氣體管理 63」（第96頁）",
             "「305-2 間接溫室氣體排放（範疇二） 4.4 溫室氣體管理 63」（第96頁）",
             "「昆盈公司已進行母公司及東莞廠溫室氣體盤查事宜」（第100頁）"
-          ]
+          ],
+          "evidence_page_orig": "63"
         }
-      ]
+      ],
+      "source_page_orig": "42",
+      "page_shift": {
+        "src": {
+          "orig": "42",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "63",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "新進人員職能受訓率達 100%",
@@ -252,9 +687,48 @@
             "本年度共有一般受雇員工及新進人員 42 人次合計 126 人時參加法遵相關之教育訓練。（第45頁）",
             "對新進人員進行職安衛教育訓練。（第52頁）",
             "「新進同仁報告時會由專人宣導公司內部各項規章制度與職業安全相關知識，再由所屬部門對其進行專業培訓。」（第85頁）"
-          ]
+          ],
+          "evidence_page_orig": "84"
         }
-      ]
+      ],
+      "source_page_orig": "83",
+      "page_shift": {
+        "src": {
+          "orig": "83",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "84",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "東莞廠用電量較去年減少 3%",
@@ -273,9 +747,48 @@
             "加裝省電裝置，如在飲水機加裝定時開關，上班開下班關，節省和降低能源之耗用。（第55頁）",
             "「本公司設定 2024 年溫室氣體排放目標對比去年減少 1 %，東莞廠用電量目標對比去年減少 3%。」（第60頁）",
             "「2024 年 257,305.20 -61.00」（第61頁）"
-          ]
+          ],
+          "evidence_page_orig": "61"
         }
-      ]
+      ],
+      "source_page_orig": "60",
+      "page_shift": {
+        "src": {
+          "orig": "60",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "61",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "汰換老舊 100P 空壓機為 50P 空壓機",
@@ -294,7 +807,33 @@
             "「減少大空壓機的使用，儘量使用小量空壓機」（第61頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "62",
+      "page_shift": {
+        "src": {
+          "orig": "62",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "溫室氣體排放量較去年減少 1%",
@@ -314,9 +853,52 @@
             "溫室氣體排放量 每年減少 1% 以上（第43頁）",
             "◇ 逐步汰換能源效率較差的設備；採用節能裝置並開啟省電模式。（第52頁）",
             "「昆盈公司 2024 年溫室氣體總排放量為 414.6685 公噸 CO2e/ 年較 2023 年減少 38 07%，達到 2024 年設定年減 1% 的目標。」（第63頁）"
-          ]
+          ],
+          "evidence_page_orig": "58"
         }
-      ]
+      ],
+      "source_page_orig": "60",
+      "page_shift": {
+        "src": {
+          "orig": "60",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "58",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "規劃永續發展工作重點",
@@ -336,9 +918,52 @@
             "2024 年度共召開 3 次會議，議案內容包含 (1) 推動永續發展執行工作；鑑別永續之重大議題及擬訂因應行動方案 (2) 審議 2023 年度永續報告書 (3) 監督永續經營項目之落實及評估執行情形；規劃 2025 年度永續發展工作重點。（第31頁）",
             "•依據本公司長期管理目標，擬訂「低碳轉型、提高能源使用效率、循環經濟及碳足跡管理」四大策略。（第39頁）",
             "• 永續發展推動委員會工作小組完成氣候環境背景資料蒐集（第42頁）"
-          ]
+          ],
+          "evidence_page_orig": "32"
         }
-      ]
+      ],
+      "source_page_orig": "32",
+      "page_shift": {
+        "src": {
+          "orig": "32",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "32",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成主力機種產品碳足跡調查",
@@ -367,7 +992,49 @@
           "evidence_page": null,
           "clues": []
         }
-      ]
+      ],
+      "source_page_orig": "40",
+      "page_shift": {
+        "src": {
+          "orig": "40",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "永續發展推動委員會委員任期屆滿",
@@ -397,7 +1064,50 @@
             "職稱 姓名 審計委員會 薪資報酬委員會 永續發展推動委員會 風險管理委員會（第29頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "29",
+      "page_shift": {
+        "src": {
+          "orig": "29",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "進行排放量計算與數據匯整",
@@ -418,7 +1128,8 @@
             "「2021~2023 年溫室氣體排放密集度統計 :」（第65頁）",
             "305-1 直接溫室氣體排放（範疇一） 4.4 溫室氣體管理 60（第94頁）",
             "305-2 間接溫室氣體排放（範疇二） 4.4 溫室氣體管理 60（第94頁）"
-          ]
+          ],
+          "evidence_page_orig": "63"
         },
         {
           "year": 113,
@@ -428,9 +1139,73 @@
           "clues": [
             "「本公司將台北總公司及東莞廠溫室氣體逐一盤查並建立清冊，依排放來源分為直接排放與能源間接排放。」（第60頁）",
             "「2022~2024 年範疇一及範疇二溫室氣體排放統計」（第63頁）"
-          ]
+          ],
+          "evidence_page_orig": "63"
         }
-      ]
+      ],
+      "source_page_orig": "55",
+      "page_shift": {
+        "src": {
+          "orig": "55",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "63",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "63",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "風險管理委員會委員任期屆滿",
@@ -460,7 +1235,50 @@
             "職稱 姓名 審計委員會 薪資報酬委員會 永續發展推動委員會 風險管理委員會（第29頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "32",
+      "page_shift": {
+        "src": {
+          "orig": "32",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成溫室氣體盤查",
@@ -479,7 +1297,8 @@
             "「為落實執行公司的環保政策，本公司積極推動各項環境管理系統，如 ISO 14001 環境管理系統、ISO 14064-1 溫室氣體盤查管理系統、QC 080000 無有害物質管理系統、ISO 50001 能源管理系統」（第55頁）",
             "「溫室氣體盤查的目的為瞭解公司溫室氣體排放情形，進而規劃溫室氣體控管措施及減量計劃，達到節能減碳目標。」（第60頁）",
             "9 溫室氣體盤查及確信情形。（第98頁）"
-          ]
+          ],
+          "evidence_page_orig": "58"
         },
         {
           "year": 113,
@@ -491,9 +1310,73 @@
             "「2024 年溫室氣體總排放量為 414.6685 公噸 CO2e/ 年，較 2023 年減少 38.51% 達成 2024 年溫室氣體總排放量減少 1% 的目標。」（第58頁）",
             "「昆盈公司已進行母公司及東莞廠溫室氣體盤查事宜」（第100頁）",
             "「依據金融監督管理委員會規劃之資訊揭露時程，本公司經董事會通過預計於 2026 年完成溫室氣體盤查」（第100頁）"
-          ]
+          ],
+          "evidence_page_orig": "60"
         }
-      ]
+      ],
+      "source_page_orig": "55",
+      "page_shift": {
+        "src": {
+          "orig": "55",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "58",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "60",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "溫室氣體盤查文件化",
@@ -512,7 +1395,8 @@
             "「RoHS 文件管理」（第56頁）",
             "「2026 年溫室氣體盤查文件化， 2028 年完成查證。」（第58頁）",
             "9 溫室氣體盤查及確信情形。（第98頁）"
-          ]
+          ],
+          "evidence_page_orig": "98"
         },
         {
           "year": 113,
@@ -521,7 +1405,49 @@
           "evidence_page": null,
           "clues": []
         }
-      ]
+      ],
+      "source_page_orig": "55",
+      "page_shift": {
+        "src": {
+          "orig": "55",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "98",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "歐盟碳關稅開徵因應",
@@ -544,7 +1470,49 @@
             "「二 敘明所辨識之氣候風險與機會如何影響企業之業務、策略及財務 ( 短期、中期、長期 )。 3.2. 營運績效 氣候相關財務揭露 (TCFD)」（第100頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "4",
+      "page_shift": {
+        "src": {
+          "orig": "4",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成合併報表子公司溫室氣體盤查",
@@ -562,7 +1530,29 @@
             "「另合併報表子公司預計於 2027 年完成溫室氣體盤查」（第100頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "98",
+      "page_shift": {
+        "src": {
+          "orig": "98",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成個體公司溫室氣體查證",
@@ -589,7 +1579,38 @@
             "「2028 年完成查證」（第100頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "94",
+      "page_shift": {
+        "src": {
+          "orig": "94",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成溫室氣體查證",
@@ -614,7 +1635,33 @@
           "evidence_page": null,
           "clues": []
         }
-      ]
+      ],
+      "source_page_orig": "55",
+      "page_shift": {
+        "src": {
+          "orig": "55",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成合併報表子公司溫室氣體查證",
@@ -641,7 +1688,38 @@
             "「另合併報表子公司預計於 2027 年完成溫室氣體盤查，2029 年完成查證」（第100頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "94",
+      "page_shift": {
+        "src": {
+          "orig": "94",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "達成淨零排放",
@@ -678,7 +1756,78 @@
             "◇ 長期策略係持續關注淨零與碳排風險議題對公司產生的威脅與機會，再實施相關因應措施。（第52頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "47",
+      "page_shift": {
+        "src": {
+          "orig": "47",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "開發綠能減碳產品、落實減碳管理並深化環境教育",
@@ -699,9 +1848,56 @@
             "• 提供員工適當的教育訓練，以期全體從業人員能夠自發地做好環保工作、節約能源及資源的使用（第55頁）",
             "供應商也可以從 e-RSC 平台了解到昆盈正在推行的綠色環境政策，如溫室氣體盤查及教育訓練（第56頁）",
             "「開發符合環境友善與客戶需求的綠色科技產品，充分掌握綠海商機。」（第59頁）"
-          ]
+          ],
+          "evidence_page_orig": "7"
         }
-      ]
+      ],
+      "source_page_orig": "55",
+      "page_shift": {
+        "src": {
+          "orig": "55",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "7",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     }
   ]
 }

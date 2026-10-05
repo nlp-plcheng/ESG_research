@@ -22,6 +22,7 @@ keeps the year-by-year trace.
 | `english/` | The pipeline with **English prompt instructions** — for international teams. `english/PROMPTS_EN.md` documents all six prompts and the Chinese output tokens that must never change. |
 | `chinese/` | The pipeline with the **original Chinese prompts** (原始中文版), plus the full Chinese guide `chinese/README.md`. |
 | `result/` | Sample outputs from real runs: `result/{company}/{year}/promise.md` + `check_result.md`, `result/{company}/promise/{target}.md`, and one `summary.json` per company. |
+| `english/annotation_platform/`, `chinese/annotation_platform/` | Step 5: the **human verification platform** for each edition (Flask + SQLite; annotators check the `summary.json` verdicts year by year). Each has its own README with the required `pdf/` + `result/` layout and the configuration. |
 
 The two editions are **identical except the six prompt-builder functions in
 `openai_utils.py`** (plus a few English log messages in `english/`). Both demand
@@ -226,7 +227,10 @@ evidence page | other related/suspicious evidence)
   and `result/` folders created at runtime are git-ignored.
 - If the model ever drifts from the Chinese output schema, the built-in table
   validators reject the malformed response and retry; the token contract is spelled
-  out in `english/PROMPTS_EN.md`.
+  out in `english/PROMPTS_EN.md`. After `OPENAI_MAX_RETRIES` failed attempts a stage
+  stops with a non-zero exit and writes nothing for that year — it never records a
+  failed call as 未提及 / 無資料 — and `openai_run_company.py` / `openai_run_all.py`
+  exit non-zero too, so a partial run is never mistaken for a finished one.
 
 ---
 
@@ -242,6 +246,8 @@ evidence page | other related/suspicious evidence)
   [`english/PROMPTS_EN.md`](english/PROMPTS_EN.md)。
 - **`result/`** — 實際跑出的範例結果（`promise.md`、`check_result.md`、
   `summary.json`），兩版產出格式相同。
+- **`chinese/annotation_platform/`、`english/annotation_platform/`** — 第 5 步：人工複核平台
+  （標註者逐年檢查 `summary.json` 的判定），各有自己的 README 說明檔案結構與設定。
 
 執行方式：進入 `chinese/` 或 `english/`，把報告放到 `pdf/<公司>/<民國年>.pdf`，
 依上方 §3 的指令執行即可。

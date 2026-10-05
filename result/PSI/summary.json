@@ -25,9 +25,52 @@
             "未來，將持續關注人權保障議題、宣導並推動相關教育訓練，以提高人權保障意識，降低相關風險發生的可能性。（第69頁）",
             "2-24 納入政策承諾 前言-總經理的話、永續經營-永續發展政策、公司治理-稅務政策、永續供應鏈-責任礦產採購、社會共榮-人權承諾與政策 6、11、27、57、69（第91頁）",
             "409-1 具強迫或強制勞動事件重大風險的營運據點和供應商 社會共榮-人權承諾與政策 69（第94頁）"
-          ]
+          ],
+          "evidence_page_orig": "21"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "21",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "員工敬業度分數達 4.7",
@@ -45,9 +88,44 @@
             "「人才留任與員工關懷 影響人力最佳化運用，確保企業永續發展的人才發展策略」（第18頁）",
             "「• 傾聽並包容多元聲音，瞭解員工需求與想法，推動多元化留才措施及薪資福利活動，朝向幸福企業之路。」（第18頁）",
             "「• 員工滿意度/敬業度分數較前一年增加5%」（第21頁）"
-          ]
+          ],
+          "evidence_page_orig": "21"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "21",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "員工滿意度分數達 4.54",
@@ -66,9 +144,48 @@
             "「4. 員工申訴信箱、員工滿意度調查」（第12頁）",
             "「人才留任與員工關懷 影響人力最佳化運用，確保企業永續發展的人才發展策略」（第18頁）",
             "「• 員工滿意度/敬業度分數較前一年增加5%」（第21頁）"
-          ]
+          ],
+          "evidence_page_orig": "21"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "21",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "員工申訴結案率 100%",
@@ -87,9 +204,48 @@
             "「• 員工申訴案件結案率100%」（第21頁）",
             "2023年申訴或意見單共20件，其中11件具名、2件匿名，意見單已全數完成回覆或公告。（第70頁）",
             "2-25 補救負面衝擊的程序 社會共榮-員工申訴管道 70（第91頁）"
-          ]
+          ],
+          "evidence_page_orig": "70"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "70",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "員工誠信經營相關議題完訓率 100%",
@@ -110,7 +266,41 @@
             "205-2 有關反貪腐政策和程序的溝通及訓練 公司治理-誠信經營 30（第92頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "員工資安訓練完訓率 100%",
@@ -128,9 +318,44 @@
             "「• 成立資安管理組織，取得國際資訊安全標準ISO 27001 認證，定期進行資訊系統的災難復原演練，全面保護客戶及公司之資訊做完善的保密管控。」（第16頁）",
             "「所有新進及在職員工均須完成每年1次的資安教育訓練」（第32頁）",
             "「• 落實資安教育訓練並定期進行災害復原演練。」（第33頁）"
-          ]
+          ],
+          "evidence_page_orig": "19"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "19",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "單位產品溫室氣體排放量減少 2% 以上",
@@ -153,7 +378,49 @@
             "溫排排放強度 ((類別1+2 ton)/百萬營收) 2022 8.027 2023 9.482（第47頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "50",
+      "page_shift": {
+        "src": {
+          "orig": "50",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "單位產品用電量減少 1% 以上",
@@ -176,7 +443,49 @@
             "電力強度 (gwh/百萬營收) 2022 0.013 2023 0.015（第47頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "48",
+      "page_shift": {
+        "src": {
+          "orig": "48",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "單位產品自來水用量較前一年下降 1% 以上",
@@ -199,7 +508,49 @@
             "303-5 耗水量（第93頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "52",
+      "page_shift": {
+        "src": {
+          "orig": "52",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "單片產品廢水排放量較前一年下降 1% 以上",
@@ -221,7 +572,45 @@
             "環境永續-水資源管理 42~43（第93頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "52",
+      "page_shift": {
+        "src": {
+          "orig": "52",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "在地採購達 50%",
@@ -242,9 +631,56 @@
             "為落實企業永續經營管理方針，昇陽半導體以持續推動在地採購為目標（第55頁）",
             "2023年原物料在地採購金額比例為41.2%, 昇陽半導體主要產品服務為晶圓再生(Wafering)與晶圓薄化(Thinning)，2023年下半年半導體市場需求疲軟, 在地原物料採購數量大幅降低, 為2023年原物料在地採購金額佔比降低主因。（第55頁）",
             "採購實務 204-1 來自當地供應商的採購支出比例 創新服務-在地採購 55（第92頁）"
-          ]
+          ],
+          "evidence_page_orig": "55"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "55",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "失能傷害嚴重度 0",
@@ -262,9 +698,44 @@
             "「• FR及SR低於半導體行業3年平均值以下」（第21頁）",
             "失能傷害嚴重率 (註4) 12 0 22.1（第76頁）",
             "403-9 職業傷害 友善職場-健康管理及促進 83（第94頁）"
-          ]
+          ],
+          "evidence_page_orig": "76"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "76",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "失能傷害頻率 0",
@@ -284,9 +755,52 @@
             "「• FR及SR低於半導體行業3年平均值以下」（第21頁）",
             "失能傷害頻率 (註3) 3.7 0 1.7（第76頁）",
             "403-9 職業傷害 友善職場-健康管理及促進 83（第94頁）"
-          ]
+          ],
+          "evidence_page_orig": "7"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "7",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "安衛提案改善完成率 100%",
@@ -307,9 +821,56 @@
             "安全衛生改善方案件數 7 5 9（第75頁）",
             "403-2 危害辨識、風險評估及事故調查 友善職場-安全衛生組織 76（第94頁）",
             "403-4 有關職業安全衛生之工作者參與、諮詢與溝通 友善職場-安全衛生組織 74（第94頁）"
-          ]
+          ],
+          "evidence_page_orig": "7"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "7",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成範疇一主要排放源 PFCS 處理設備建置",
@@ -325,9 +886,36 @@
           "evidence_page": "87",
           "clues": [
             "國家碳排政策 可能受到氣候變遷因應法衝擊，預計將繳納碳費。/ 建置PFCs氣體處理設備,減少PFCs排放量（第38頁）"
-          ]
+          ],
+          "evidence_page_orig": "87"
         }
-      ]
+      ],
+      "source_page_orig": "78",
+      "page_shift": {
+        "src": {
+          "orig": "78",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "87",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "客戶滿意度－晶圓再生達 92 分",
@@ -346,7 +934,33 @@
             "「• 了解客戶的意見、掌握客戶之需求，進而提高客戶滿意度」（第16頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "客戶滿意度－晶圓薄化達 81 分",
@@ -363,9 +977,40 @@
           "clues": [
             "「客戶 客戶購買產品收主要來源 • 誠信經營 • 溫室氣體管理 • 永續供應鏈 1. 客戶滿意度調查(每年)」（第13頁）",
             "「• 了解客戶的意見、掌握客戶之需求，進而提高客戶滿意度」（第16頁）"
-          ]
+          ],
+          "evidence_page_orig": "19"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "19",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "導入 ISO 27001 資安標準",
@@ -388,7 +1033,49 @@
             "➢ 降低企業營運風險，導入ISO27001資訊安全管理系統。-May（第65頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "32",
+      "page_shift": {
+        "src": {
+          "orig": "32",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "廢棄物回收再利用率較前一年增加 3%",
@@ -411,7 +1098,49 @@
             "昇陽半導體製程中需要用到大量的化學藥劑, 透過轉換供應方式及再生利用方式, 達到廢棄物減量目標。（第58頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "54",
+      "page_shift": {
+        "src": {
+          "orig": "54",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "建置範疇一主要排放源處理設備，使範疇一排放量減少 95% 以上",
@@ -429,9 +1158,44 @@
             "「• 溫室氣體排放量的盤查與數據管理，範疇一排放削減技術。」（第17頁）",
             "國家碳排政策 可能受到氣候變遷因應法衝擊，預計將繳納碳費。/ 建置PFCs氣體處理設備,減少PFCs排放量（第38頁）",
             "類別一之製程排放佔比達97%，主因為製程使用含氟氣體(CF4)，其溫室氣體排放量達6915.74公噸CO2e（第87頁）"
-          ]
+          ],
+          "evidence_page_orig": "41"
         }
-      ]
+      ],
+      "source_page_orig": "51",
+      "page_shift": {
+        "src": {
+          "orig": "51",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "41",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "強化資料安全保存",
@@ -452,7 +1216,41 @@
             "於任職期間定期舉辦智慧財產權教育宣導，且定期召開資訊安全管理會議報告查核結果（第51頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "33",
+      "page_shift": {
+        "src": {
+          "orig": "33",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "新機台電腦網路開通前執行自動化檢測及掃毒程序",
@@ -470,7 +1268,29 @@
             "「➢ 新機台電腦網路開通前，自動化檢測及掃毒程序，防止電腦病毒感染及擴散風險」（第32頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "33",
+      "page_shift": {
+        "src": {
+          "orig": "33",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每年至少召開 4 次勞資交流會議",
@@ -487,9 +1307,40 @@
           "clues": [
             "「1. 員工大會、勞資會議、福利委員會(每季)」（第12頁）",
             "為建立和諧勞資關係，促進勞資合作，改善勞工福利等事項，昇陽建立多元暢通的透明溝通管道，包含橫向溝通及縱向傳達。（第65頁）"
-          ]
+          ],
+          "evidence_page_orig": "65"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "65",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每月舉辦資安月會與各部門溝通資安管理措施",
@@ -509,7 +1360,37 @@
             "定期召開資訊安全管理會議報告查核結果（第51頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "33",
+      "page_shift": {
+        "src": {
+          "orig": "33",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "每週提供不同主題資安宣導",
@@ -529,7 +1410,37 @@
             "於任職期間定期舉辦智慧財產權教育宣導，且定期召開資訊安全管理會議報告查核結果（第51頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "33",
+      "page_shift": {
+        "src": {
+          "orig": "33",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "無衝突礦使用率 100%",
@@ -548,9 +1459,48 @@
             "同時建置供應商風險評估機制，不使用衝突礦產，兼顧品質及禁用有害物質，秉持在地供應鏈優先，降低自然與環境相關衝擊（第55頁）",
             "• 行為準則法規 / 無衝突礦物 / 綠色管理（第56頁）",
             "Psi身為世界公民，我們宣示並承諾不採購使用來自剛果民主共和國或周圍國家之責任礦產：鉭(Ta)、錫(Sn)、金(Au)、鎢(W) 及鈷(Co)之金屬材料。（第57頁）"
-          ]
+          ],
+          "evidence_page_orig": "19"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "19",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "職場不法侵害 0 件",
@@ -571,9 +1521,56 @@
             "定期進行風險評估（第70頁）",
             "建立事件處理程序（第70頁）",
             "406-1 歧視事件以及組織採取的改善行動 社會共榮-員工夥伴 71（第94頁）"
-          ]
+          ],
+          "evidence_page_orig": "21"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "21",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "行為準則簽署率 100%",
@@ -594,9 +1591,56 @@
             "我們要求供應商100%簽署（第54頁）",
             "要求供應商100%簽署『供應商承諾聲明書』。（第56頁）",
             "供應商承諾聲明書簽署 2022年 2023年 2024年目標"
-          ]
+          ],
+          "evidence_page_orig": "56"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "56",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "貪腐案件 0 件",
@@ -614,9 +1658,44 @@
             "「• 頒布行為與道德守則，並且設置舉報系統，避免違犯反貪腐/反競爭行為。」（第16頁）",
             "「誠信經營與反貪腐規範」（第29頁）",
             "205-3 已確認的貪腐事件及採取的行動 公司治理-誠信經營 29（第92頁）"
-          ]
+          ],
+          "evidence_page_orig": "19"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "19",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "資安宣導事項達成 30 項",
@@ -635,7 +1714,33 @@
             "「• 定期於公司內部入口網站及公佈欄以時事新聞宣導資訊安全實例及重要性。」（第33頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "32",
+      "page_shift": {
+        "src": {
+          "orig": "32",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "資安漏洞檢測至少 1 次",
@@ -654,7 +1759,33 @@
             "「• 導入裝置合規檢查，經由主動檢查開機電腦是否有開啟防毒軟體及病毒碼更新、修補漏洞，以提升裝置資訊安全性。」（第33頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "資訊服務妥善率達 99.9%",
@@ -673,7 +1804,33 @@
             "「資訊系統之整體性規劃、軟硬體建置與維護、資料庫備份與還原演練及系統之安全防護與管制等皆控制良好」（第33頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "32",
+      "page_shift": {
+        "src": {
+          "orig": "32",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "違反誠信經營申訴舉報案件 0 件",
@@ -692,9 +1849,48 @@
             "「本公司2023年並未接獲違反公司誠信經營之申訴舉報案件。」（第30頁）",
             "2-25 補救負面衝擊的程序 社會共榮-員工申訴管道 70（第91頁）",
             "205-3 已確認的貪腐事件及採取的行動 公司治理-誠信經營 29（第92頁）"
-          ]
+          ],
+          "evidence_page_orig": "19"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "19",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "酸性洗滌設備粒狀污染物處理效率大於 90%",
@@ -710,7 +1906,24 @@
           "evidence_page": null,
           "clues": []
         }
-      ]
+      ],
+      "source_page_orig": "50",
+      "page_shift": {
+        "src": {
+          "orig": "50",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "重大違法情事 0 件",
@@ -729,9 +1942,48 @@
             "「法規遵循是企業展現其合法性與社會責任的重要標誌之一。」（第30頁）",
             "2-27 法規遵循 公司治理-誠信經營 29（第91頁）",
             "反競爭行為 206-1 反競爭行為、反托拉斯和壟斷行為的法律行動 本公司2023年無違反相關情事（第92頁）"
-          ]
+          ],
+          "evidence_page_orig": "19"
         }
-      ]
+      ],
+      "source_page_orig": "17",
+      "page_shift": {
+        "src": {
+          "orig": "17",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "19",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "重要服務站台進行滲透測試並改善潛在風險",
@@ -749,7 +2001,29 @@
             "「➢ 重要服務站台進行滲透測試，發掘潛在風險並進行改善」（第32頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "33",
+      "page_shift": {
+        "src": {
+          "orig": "33",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "開辦員工座談會 2 次",
@@ -769,9 +2043,52 @@
             "•到職一個月內新進同仁",
             "•共244人",
             "新人活力營（第65頁）"
-          ]
+          ],
+          "evidence_page_orig": "21"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "21",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "關鍵績優員工留任率達 88% 以上",
@@ -792,7 +2109,41 @@
             "留任員工策略上，在2023年度，為了將新人留任措施落實至各單位，推展Mentor培訓與規劃相關制度（第61頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "59",
+      "page_shift": {
+        "src": {
+          "orig": "59",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "關鍵績優員工留任率達 90% 以上",
@@ -811,7 +2162,33 @@
             "「• 傾聽並包容多元聲音，瞭解員工需求與想法，推動多元化留才措施及薪資福利活動，朝向幸福企業之路。」（第18頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "離職率低於 3%",
@@ -829,9 +2206,44 @@
             "「人才留任與員工關懷 影響人力最佳化運用，確保企業永續發展的人才發展策略」（第18頁）",
             "「• 傾聽並包容多元聲音，瞭解員工需求與想法，推動多元化留才措施及薪資福利活動，朝向幸福企業之路。」（第18頁）",
             "401-1 新進員工和離職員工 社會共榮-人才吸引與留任 60（第94頁）"
-          ]
+          ],
+          "evidence_page_orig": "21"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "21",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "在地採購達 52%",
@@ -851,7 +2263,8 @@
             "為落實企業永續經營管理方針，昇陽半導體以持續推動在地採購為目標（第55頁）",
             "採購實務 204-1 來自當地供應商的採購支出比例 創新服務-在地採購 55（第92頁）",
             "204-1 來自當地供應商的採購支出比例 創新服務-在地採購 55（第92頁）"
-          ]
+          ],
+          "evidence_page_orig": "55"
         },
         {
           "year": 113,
@@ -864,7 +2277,66 @@
             "41% 43% 55% 60% 67% / 2023 2024 2025 2026 2027（第49頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "43",
+      "page_shift": {
+        "src": {
+          "orig": "43",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "55",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "全公司年節電率達 2% 以上",
@@ -882,9 +2354,44 @@
             "「在總產能年增23.5%的情況下，我們成功將溫室氣體排放量減少6.4%、用電量下降1.9%、自來水用量下降17.7%，更減少140公噸廢棄物」（第3頁）",
             "• 2025年累積節電量>75萬度 (基準年2023年，2024年節電量45萬)（第21頁）",
             "各廠區均落實能源法規要求，年度節電率目標１％以上。（第64頁）"
-          ]
+          ],
+          "evidence_page_orig": "4"
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "4",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "原物料在地化採購達 44% 以上",
@@ -901,9 +2408,40 @@
           "clues": [
             "「• 原物料在地化採購達44%以上，2027年達67%以上」（第20頁）",
             "「• 原物料在地化採購 55%」（第20頁）"
-          ]
+          ],
+          "evidence_page_orig": "20"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "20",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "回收再利用化學品廢棄空桶以減少廢棄物",
@@ -924,9 +2462,56 @@
             "昇陽半導體製程中需要用到大量的化學藥劑, 透過轉換供應方式及再生利用方式,達到廢棄物減量目標。（第49頁）",
             "同時，化學供應商協助進行化學品容器回收再使用，減輕對環境的衝擊，朝向資源循環最大化與零廢棄的目標邁進（第68頁）",
             "公司秉持ESG永續發展理念，致力於強化化學品全生命週期管理（第86頁）"
-          ]
+          ],
+          "evidence_page_orig": "70"
         }
-      ]
+      ],
+      "source_page_orig": "58",
+      "page_shift": {
+        "src": {
+          "orig": "58",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "70",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成責任礦產調查比例達全數覆蓋",
@@ -943,9 +2528,40 @@
           "clues": [
             "採用或供應者使用衝突礦產報告模板(Conflict Minerals Reporting Template, CMRT)及(Extended Minerals Reporting Template, EMRT)做為調查工具（第47頁）",
             "無衝突礦使用 100%（第111頁）"
-          ]
+          ],
+          "evidence_page_orig": "47"
         }
-      ]
+      ],
+      "source_page_orig": "57",
+      "page_shift": {
+        "src": {
+          "orig": "57",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "47",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "完成開發多元貨源方案",
@@ -961,9 +2577,36 @@
           "evidence_page": "20",
           "clues": [
             "「• 提升永續風險管控(多方貨源/責任礦產/行為準則)，降低營運中斷風險」（第17頁）"
-          ]
+          ],
+          "evidence_page_orig": "20"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "20",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "提升再生水回收率超過 10%",
@@ -982,9 +2625,48 @@
             "• 2025年提升再生水回收率>10%（第21頁）",
             "• 2030年再生水回收率達65%（第21頁）",
             "2.回收製造生產用水,監控回收水之水質,並分流回用至相關系統,持續提升水資源回收再使用率（第59頁）"
-          ]
+          ],
+          "evidence_page_orig": "67"
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "67",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "新供應商簽署供應商承諾聲明書比例達 100%",
@@ -1003,9 +2685,48 @@
             "• 除簽訂供應商承諾聲明書外，於合約載明若有不誠信行為發生者，本公司得隨時終止或解除契約。（第30頁）",
             "要求供應商100%簽署『供應商承諾聲明書』（第45頁）",
             "要求供應商100%簽署『供應商承諾聲明書』。（第47頁）"
-          ]
+          ],
+          "evidence_page_orig": "47"
         }
-      ]
+      ],
+      "source_page_orig": "56",
+      "page_shift": {
+        "src": {
+          "orig": "56",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "47",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "於中港廠建置一套相同處理設備",
@@ -1024,7 +2745,33 @@
             "目前新竹及台中廠區已導入ISO 45001管理系統並通過CNS 45001驗證取得「臺灣職業安全衛生管理系統」認證（第83頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "87",
+      "page_shift": {
+        "src": {
+          "orig": "87",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "氨氮放流水總污染值減量 50%",
@@ -1045,7 +2792,41 @@
             "中港廠原將氨氮廢水排入廠內廢水處理處理系統，改建置氨氮廢水處理處理設備，其所產生之副產物委由合格之再利用機構處理。（第68頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "減少廢棄物 140 噸",
@@ -1066,9 +2847,56 @@
             "• 2030年廢棄物再利用率98%（第21頁）",
             "2024年廢棄物減量措施及效益（第70頁）",
             "原供應商回收化學空桶 減少有害事業廢棄物量 有害廢棄物減量25.89公噸（第70頁）"
-          ]
+          ],
+          "evidence_page_orig": "21"
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "21",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "減碳超過 2%",
@@ -1089,9 +2917,56 @@
             "2024年共計執行8項節能減碳計畫，單位產品(晶圓面積平方公尺)溫室氣體排放量下降14.28%；單位營收溫室氣體排放量下降14.87%。（第61頁）",
             "2024年溫室氣體排放量，83.66% 皆為外購電力所產生的類別二排放，類別一排放量約佔總排放量16.34%，其中製程排放佔類別一排放量97.02%，來源為製程使用之全氟碳化物(PFCs) 。（第102頁）",
             "2024年範疇一 4,679.7174；2024年範疇二 23,966.9688（第106頁）"
-          ]
+          ],
+          "evidence_page_orig": "60"
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "60",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "綠電使用率達 10%",
@@ -1112,9 +2987,56 @@
             "• 2030年綠電使用率50%（第21頁）",
             "有感於外購電力為本公司能源佔比最大之耗用來源，本公司中港廠區於2024年12月開始進行廠區既設再生能源設備(太陽能)轉為自發自用之申請，並與再生能源售電業簽訂供電合約於2025年3月開始正式使用再生能源。（第64頁）",
             "1.訂定再生能源使用目標 : 2030年RE50，2040年RE100（第59頁）"
-          ]
+          ],
+          "evidence_page_orig": "102"
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "102",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "製程水回收率達 50%",
@@ -1132,9 +3054,44 @@
             "「• 進行水源用水分析與監控，降低汙水排放總量，提升回收水」（第18頁）",
             "• 2025年製程水回收率達50%（第21頁）",
             "• 2030年製程水回收率達70%（第21頁）"
-          ]
+          ],
+          "evidence_page_orig": "67"
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "67",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "零配件在地化採購達 33% 以上",
@@ -1150,9 +3107,36 @@
           "evidence_page": "20",
           "clues": [
             "「• 推動綠色低碳供應鏈(在地化供應/ISO14064)，提升供應鏈永續發展」（第17頁）"
-          ]
+          ],
+          "evidence_page_orig": "20"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "20",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "高用電供應商取得 ISO 14064 溫室氣體排放查證證書完成率達 10%",
@@ -1169,9 +3153,40 @@
           "clues": [
             "「• 推動綠色低碳供應鏈(在地化供應/ISO14064)，提升供應鏈永續發展」（第17頁）",
             "本公司取佔採購金額前80%之原物料供應商進行碳足跡盤查,並推動高用電供應商取得ISO14064溫室氣體排放查證證書。（第49頁）"
-          ]
+          ],
+          "evidence_page_orig": "20"
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "20",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "在地採購達 54%",
@@ -1191,7 +3206,8 @@
             "為落實企業永續經營管理方針，昇陽半導體以持續推動在地採購為目標（第55頁）",
             "採購實務 204-1 來自當地供應商的採購支出比例 創新服務-在地採購 55（第92頁）",
             "204-1 來自當地供應商的採購支出比例 創新服務-在地採購 55（第92頁）"
-          ]
+          ],
+          "evidence_page_orig": "55"
         },
         {
           "year": 113,
@@ -1206,7 +3222,74 @@
             "41% 43% 55% 60% 67% / 2023 2024 2025 2026 2027（第49頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "43",
+      "page_shift": {
+        "src": {
+          "orig": "43",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "55",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "循環產品佔營收 5‰",
@@ -1229,7 +3312,49 @@
             "2024年本公司再生晶圓約當12吋年產能達700萬片（第104頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "在地採購達 56%",
@@ -1249,7 +3374,8 @@
             "為落實企業永續經營管理方針，昇陽半導體以持續推動在地採購為目標（第55頁）",
             "採購實務 204-1 來自當地供應商的採購支出比例 創新服務-在地採購 55（第92頁）",
             "204-1 來自當地供應商的採購支出比例 創新服務-在地採購 55（第92頁）"
-          ]
+          ],
+          "evidence_page_orig": "55"
         },
         {
           "year": 113,
@@ -1262,7 +3388,66 @@
             "41% 43% 55% 60% 67% / 2023 2024 2025 2026 2027（第49頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "43",
+      "page_shift": {
+        "src": {
+          "orig": "43",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "55",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "建立節水目標",
@@ -1283,9 +3468,56 @@
             "• 2030年再生水回收率達65%（第21頁）",
             "水資源管理 • 降低取水密集度 • 提升水資源回用率（第52頁）",
             "有效運用能資源：積極投入再生能源使用、導入高效節能設備、水資源回收再利用、物料源頭管理及廢棄物減量，制定年度執行目標（第54頁）"
-          ]
+          ],
+          "evidence_page_orig": "65"
         }
-      ]
+      ],
+      "source_page_orig": "58",
+      "page_shift": {
+        "src": {
+          "orig": "58",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "65",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "建立節電目標",
@@ -1306,9 +3538,56 @@
             "能源管理 • 降低能源耗用密集度( 非再生能源) • 持續推動全員節能作為( 每年)（第52頁）",
             "有效運用能資源：積極投入再生能源使用、導入高效節能設備、水資源回收再利用、物料源頭管理及廢棄物減量，制定年度執行目標（第54頁）",
             "2.設定能源管理目標,年平均節電率大於1%。（第58頁）"
-          ]
+          ],
+          "evidence_page_orig": "64"
         }
-      ]
+      ],
+      "source_page_orig": "58",
+      "page_shift": {
+        "src": {
+          "orig": "58",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "64",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "推動原物料供應商完成碳排、水資源及能源管理問卷調查",
@@ -1331,7 +3610,49 @@
             "導入TCFD，氣候及水資源風險與機會鑑別因應（第55頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "58",
+      "page_shift": {
+        "src": {
+          "orig": "58",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "確立減碳目標",
@@ -1352,9 +3673,56 @@
             "落實環境保護政策、溫室氣體減量目標（第55頁）",
             "有效減少碳足跡：依據ISO 14064盤查結果,鑑別出重大排放源，擬定減量排放計畫（第54頁）",
             "以基準年做為比較基礎降低溫室氣體排放量( 範疇一、二)（第52頁）"
-          ]
+          ],
+          "evidence_page_orig": "60"
         }
-      ]
+      ],
+      "source_page_orig": "58",
+      "page_shift": {
+        "src": {
+          "orig": "58",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "60",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "在地採購達 58%",
@@ -1374,7 +3742,8 @@
             "為落實企業永續經營管理方針，昇陽半導體以持續推動在地採購為目標（第55頁）",
             "採購實務 204-1 來自當地供應商的採購支出比例 創新服務-在地採購 55（第92頁）",
             "204-1 來自當地供應商的採購支出比例 創新服務-在地採購 55（第92頁）"
-          ]
+          ],
+          "evidence_page_orig": "55"
         },
         {
           "year": 113,
@@ -1387,7 +3756,66 @@
             "41% 43% 55% 60% 67% / 2023 2024 2025 2026 2027（第49頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "43",
+      "page_shift": {
+        "src": {
+          "orig": "43",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "55",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "無衝突礦使用 100%",
@@ -1404,7 +3832,8 @@
           "clues": [
             "同時建置供應商風險評估機制，不使用衝突礦產，兼顧品質及禁用有害物質，秉持在地供應鏈優先，降低自然與環境相關衝擊（第55頁）",
             "• 行為準則法規 / 無衝突礦物 / 綠色管理（第56頁）"
-          ]
+          ],
+          "evidence_page_orig": "19"
         },
         {
           "year": 113,
@@ -1416,9 +3845,65 @@
             "Psi身為世界公民，我們宣示並承諾不採購使用來自剛果民主共和國或周圍國家之責任礦產：金、鉭、錫、鎢、鈷、雲母、銅、石墨（天然）、鋰和鎳材料。（第47頁）",
             "確保礦物供應鏈沒有採購來自受衝突影響及高風險區域之材料，並且符合負責礦產保證政策。（第47頁）",
             "無衝突礦使用 100%（第111頁）"
-          ]
+          ],
+          "evidence_page_orig": "47"
         }
-      ]
+      ],
+      "source_page_orig": "43",
+      "page_shift": {
+        "src": {
+          "orig": "43",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "19",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "47",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "行為準則簽署 100%",
@@ -1436,7 +3921,8 @@
             "「本公司邀集供應商共同承諾、遵守「誠信經營守則」及「責任商業聯盟行為準則」，已有合計483家廠商共同承諾、遵守。」（第30頁）",
             "我們要求供應商100%簽署（第54頁）",
             "要求供應商100%簽署『供應商承諾聲明書』。（第56頁）"
-          ]
+          ],
+          "evidence_page_orig": "56"
         },
         {
           "year": 113,
@@ -1446,9 +3932,61 @@
           "clues": [
             "也要求供應商均必須配合簽署負責任商業聯盟（Responsible Business Alliance，簡稱RBA）制定之RBA行為準則(RBA code of conduct) 之社會責任承諾書（第47頁）",
             "若供應商有自訂行為準則， 則以法務審查方式檢視其適當性（第47頁）"
-          ]
+          ],
+          "evidence_page_orig": "47"
         }
-      ]
+      ],
+      "source_page_orig": "43",
+      "page_shift": {
+        "src": {
+          "orig": "43",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "56",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "47",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "原物料在地化採購達 67% 以上",
@@ -1469,7 +4007,41 @@
             "• 原物料在地化採購 55%（第20頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "回到 2021 年溫室氣體排放水準",
@@ -1491,7 +4063,45 @@
             "2021年合併廠區之類別一溫室氣體排放量(公噸CO2e)3917.5251；2021年合併廠區之類別二溫室氣體排放量(公噸CO2e)20416.7386（第60頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "綠電使用率達 30%",
@@ -1514,7 +4124,49 @@
             "積極綠色能源規劃：太陽能建置、購買綠電/ 再生能源憑證（第55頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "開發多元貨源方案累積達 40 項",
@@ -1534,7 +4186,37 @@
             "能源替代/多元化（第57頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "零配件在地化採購達 74% 以上",
@@ -1553,7 +4235,33 @@
             "• 零配件在地化採購達33%以上，2027年達74%以上（第20頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "高用電供應商取得 ISO 14064 溫室氣體排放查證證書完成率達 100%",
@@ -1574,7 +4282,41 @@
             "本公司取佔採購金額前80%之原物料供應商進行碳足跡盤查,並推動高用電供應商取得ISO14064溫室氣體排放查證證書。（第49頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "19",
+      "page_shift": {
+        "src": {
+          "orig": "19",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "協同供應商逐年強化減碳目標與行動",
@@ -1596,7 +4338,45 @@
             "「低碳晶圓供應鏈」供應商大會，實現自動化、智慧化及綠能化的宗旨。-Dec（第80頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "58",
+      "page_shift": {
+        "src": {
+          "orig": "58",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "定期追蹤供應商減碳目標執行情況",
@@ -1617,7 +4397,41 @@
             "「低碳晶圓供應鏈」供應商大會，實現自動化、智慧化及綠能化的宗旨。-Dec（第80頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "58",
+      "page_shift": {
+        "src": {
+          "orig": "58",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "單位產品溫室氣體排放量下降 10% 以上",
@@ -1638,7 +4452,8 @@
             "「2021",
             "2030",
             "2040"
-          ]
+          ],
+          "evidence_page_orig": "41"
         },
         {
           "year": 113,
@@ -1647,9 +4462,69 @@
           "evidence_page": "61",
           "clues": [
             "未來，昇陽半導體會持續執行節能減碳措施，朝2050碳中和目標前進。（第61頁）"
-          ]
+          ],
+          "evidence_page_orig": "61"
         }
-      ]
+      ],
+      "source_page_orig": "48",
+      "page_shift": {
+        "src": {
+          "orig": "48",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "41",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": {
+              "orig": "61",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "溫室氣體排放減量超過 15%",
@@ -1670,9 +4545,56 @@
             "• 2023年較基準年↓20% (基準年為2023年)（第21頁）",
             "溫室氣體排放量 較基準年減少9.2%（第51頁）",
             "以基準年做為比較基礎降低溫室氣體排放量( 範疇一、二)（第52頁）"
-          ]
+          ],
+          "evidence_page_orig": "106"
         }
-      ]
+      ],
+      "source_page_orig": "36",
+      "page_shift": {
+        "src": {
+          "orig": "36",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "106",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "單位產品溫室氣體排放量下降 50%",
@@ -1693,7 +4615,8 @@
             "2030",
             "2040",
             "2023年因新增中港廠區，類別1+2之溫室氣體排放量較2022年增加約25%。（第41頁）"
-          ]
+          ],
+          "evidence_page_orig": "41"
         },
         {
           "year": 113,
@@ -1702,7 +4625,57 @@
           "evidence_page": null,
           "clues": []
         }
-      ]
+      ],
+      "source_page_orig": "48",
+      "page_shift": {
+        "src": {
+          "orig": "48",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": {
+              "orig": "41",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": []
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "溫室氣體排放減量超過 60%",
@@ -1721,9 +4694,48 @@
             "「9% 溫室氣體排放量較基準年」（第4頁）",
             "2024 年溫室氣體排放量(類別一+類別二)較基準年減少9.2%（第60頁）",
             "2024年範疇一 4,679.7174 1.318；2024年範疇二 23,966.9688 6.748（第106頁）"
-          ]
+          ],
+          "evidence_page_orig": "106"
         }
-      ]
+      ],
+      "source_page_orig": "36",
+      "page_shift": {
+        "src": {
+          "orig": "36",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "106",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "零廢棄物",
@@ -1743,9 +4755,52 @@
             "朝向資源循環最大化與零廢棄的目標邁進（第68頁）",
             "2024 KPI ( 廢棄物再利用率) 目標>95% 實際達成率95.91%（第68頁）",
             "2024年有害廢棄物產量佔總廢棄物40.71%(1,246.47公噸)，本公司優先採用處置中移轉的廢棄物回收再利用處理方式，包含洗淨再利用、廢液純化及提煉成副產物；熱處理為處理無機污泥，使用變成水泥的次級配料，再利用率達95.91%。（第104頁）"
-          ]
+          ],
+          "evidence_page_orig": "102"
         }
-      ]
+      ],
+      "source_page_orig": "20",
+      "page_shift": {
+        "src": {
+          "orig": "20",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "113": {
+            "evidence": {
+              "orig": "102",
+              "d": 0,
+              "kind": "none"
+            },
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     },
     {
       "commitment": "達成碳中和",
@@ -1780,7 +4835,70 @@
             "2.減量目標：2025年溫室氣體排放量減少5%以上，2030減碳10%以上，2050年達到碳中和。 （第106頁）"
           ]
         }
-      ]
+      ],
+      "source_page_orig": "48",
+      "page_shift": {
+        "src": {
+          "orig": "48",
+          "d": 0,
+          "kind": "none"
+        },
+        "years": {
+          "112": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          },
+          "113": {
+            "evidence": null,
+            "clues": [
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              },
+              {
+                "d": 0,
+                "kind": "none"
+              }
+            ]
+          }
+        },
+        "at": null,
+        "updated": "2026-09-27 18:38:12",
+        "note": "pages are PDF page indices; kind: pdf=was already, printed=shifted, assumed=shifted without a quote to check, wrong/unknown/out_of_range=kept, held=report held back, field untouched"
+      }
     }
   ]
 }

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+logs/
+cloudflared
+*.pyc
+static/pages/
+exports/
+env.prod.sh
+env.local.sh
+env.*.local
+.env
+*.pem
+*.key
+*.db
+*.db-wal
+*.db-shm

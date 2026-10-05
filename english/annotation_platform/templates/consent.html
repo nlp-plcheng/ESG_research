@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Study information and consent{% endblock %}
+{% block body %}
+
+{% if no_pid %}
+<div class="card">
+  <h1>You don’t have access</h1>
+  <p>This page needs a valid personal code. Please use the personal link the research team sent you;
+     typing the address by hand, or using an unregistered code, does not work.</p>
+</div>
+{% else %}
+<div class="card">
+  <h1>Study information and consent</h1>
+  <p>Thank you for taking part. We are testing whether an AI system correctly tracks the public commitments
+     made in <strong>corporate sustainability (ESG) reports</strong>. Your job is to read the AI’s judgements
+     and point out where they are wrong.</p>
+
+  <h2>What you will do</h2>
+  <ul>
+    <li>Each item is one public corporate commitment, together with the AI’s verdict on it in each subsequent year’s report,
+        the evidence text it quoted, and a <strong>report excerpt (PDF)</strong>.</li>
+    <li>Check, year by year, whether the AI’s verdict and evidence make sense, and correct the status where it is wrong.</li>
+    <li>For each year, use a 0–100 slider to estimate, from the clues so far, how likely the commitment is to
+        <strong>actually be met by the target year</strong>.</li>
+    {% if n_tasks and volunteer %}<li>{{ n_tasks }} items in total, in as many sittings as you like: close the page and come back with the same link to pick up where you left off.</li>
+    {% elif n_tasks %}<li>{{ n_tasks }} items in total, about 25–35 minutes.</li>
+    {% else %}<li>Items come one after another and you may stop whenever you like; close the page and come back with the same link to pick up where you left off.</li>{% endif %}
+  </ul>
+
+  <h2>Data and privacy</h2>
+  <ul>
+    <li>This study <strong>collects no personal data</strong>. We record only your anonymous code, your answers and the time taken.</li>
+    <li>Everything you see comes from reports the companies publish by law.</li>
+    <li>The data is used only for academic research and to build a dataset; results are published in aggregate and never identify individuals.</li>
+    <li>You may close the page and leave at any time; the parts you completed have no consequences for you.</li>
+  </ul>
+
+  {% if volunteer %}
+  <h2>Participation</h2>
+  <p>Participation is voluntary and unpaid. The first few items are the same calibration items for everyone — judge them by your usual standard.</p>
+  {% else %}
+  <h2>Payment</h2>
+  <p>Complete all items and return to Prolific to submit, and you will be paid. Too many failed quality-check items may lead to rejection.</p>
+  {% endif %}
+
+  <form method="post" action="{{ url_for('Consent') }}">
+    <label class="consent-line">
+      <input type="checkbox" name="agree" value="yes" required>
+      I have read and understood the above and agree to take part.
+    </label>
+    <button type="submit" class="primary">Agree and start</button>
+  </form>
+</div>
+{% endif %}
+{% endblock %}

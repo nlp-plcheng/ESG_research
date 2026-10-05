@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}ESG 承諾驗證{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+  <span class="brand">ESG 承諾追蹤・人工複核</span>
+  <span class="hdr">
+    {% if progress %}<span class="progress">第 {{ progress[0] }} 題{% if progress|length > 2 %}　已送出 {{ progress[2] }}{% if progress[1] %} / {{ progress[1] }}{% endif %} 題{% elif progress[1] %} / {{ progress[1] }}{% endif %}</span>{% endif %}
+    {# Opens in its own tab: the task page is never left, so an answer in
+       progress (and its autosave) is untouched. #}
+    {% if worker and worker.consented_at and not stats_page %}
+    <a class="statslink" href="{{ url_for('MyStats') }}" target="_blank" rel="noopener">查看統計</a>
+    {% endif %}
+  </span>
+</header>
+<main>
+  {% if errors %}
+  <div class="errors">
+    <strong>請修正以下問題：</strong>
+    <ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul>
+  </div>
+  {% endif %}
+  {% block body %}{% endblock %}
+</main>
+<footer>國立臺灣大學 自然語言處理實驗室・ESG 承諾驗證研究</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

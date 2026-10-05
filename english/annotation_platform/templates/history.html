@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}My answers{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>My answers</h1>
+  {% if notice %}<div class="notice">{{ notice }}</div>{% endif %}
+  <p class="note">“Revise” reopens an item; “Save changes” — or simply switching to another item — stores the edit. Revisions do not change your item count or progress.
+     Stars and notes are the ones you added on the task page (visible only to you and the admin); a commitment whose wording you corrected is shown as corrected.
+     <span class="navlinks">
+       {% if starred %}<a href="{{ url_for('History') }}">Show all</a>{% else %}<a href="{{ url_for('History', starred=1) }}">Starred only</a>{% endif %}
+       <a href="{{ url_for('Task') }}">Back to the current item →</a></span></p>
+  {% if not rows %}
+  <p>{% if starred %}No starred items yet.{% else %}You have not submitted any item yet.{% endif %}</p>
+  {% else %}
+  <table class="grid">
+    <tr><th>#</th><th>★</th><th>Company</th><th>Commitment</th><th>Your conclusion</th><th>AI conclusion</th><th>Note</th><th>Submitted (UTC)</th><th>Revised</th><th></th></tr>
+    {% for r in rows %}
+    <tr>
+      <td>{{ r.idx }}</td>
+      <td>{% if r.starred %}<span title="You starred this item">★</span>{% endif %}</td>
+      <td>{{ r.company }}</td>
+      {% set cm = r.commitment_fix or r.commitment %}
+      <td>{{ cm[:40] }}{% if cm|length > 40 %}…{% endif %}{% if r.commitment_fix %} <span class="note" title="Original wording: {{ r.commitment }}">(corrected)</span>{% endif %}</td>
+      <td>{% if r.is_commitment == 'not_commitment' %}Not a commitment{% elif r.is_commitment == 'no_target' %}No target year{% else %}{{ (r.human_final_status|final) or '—' }}{% endif %}</td>
+      <td>{{ r.final_status|final }}</td>
+      <td class="note">{{ r.note[:60] }}{% if r.note|length > 60 %}…{% endif %}</td>
+      <td>{{ r.submitted_at }}</td>
+      <td>{% if r.n_edits %}{{ r.n_edits }}×{% else %}—{% endif %}</td>
+      <td><a href="{{ url_for('Post', assign_id=r.assign_id) }}">Revise</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}Admin: per-annotator statistics{% endblock %}
+{% block body %}
+{# Pct is a jinja global, not a render argument: a macro resolves globals. #}
+{% macro share(part, whole) -%}
+  {{ part }}{% if whole %} <span class="note">({{ Pct(part, whole) }}%)</span>{% endif %}
+{%- endmacro %}
+<div class="card">
+  <h1>Per-annotator statistics</h1>
+  <p class="note">
+    <a href="{{ url_for('Admin', key=key) }}">← back to progress</a>
+    <a href="{{ url_for('AdminItems', key=key) }}">Results by item</a>
+    <a href="{{ url_for('AdminCalibration', key=key) }}">Calibration items</a><br>
+    These are exactly the figures each person sees under “My stats” — the same function computes
+    both, so they cannot drift apart. The last row is the team total; its quartiles pool everyone's
+    years / items together. Read-only.
+  </p>
+
+  <div class="scrollx">
+  <table class="grid tight">
+    <tr>
+      <th>PID</th><th>Slot</th><th>Done</th><th>Open</th>
+      <th>Calibration ✓/✗</th>
+      <th>Years</th><th>AI judged wrong</th><th>Label changed</th><th>Page supplied</th>
+      <th>Conclusion changed</th><th>Year range flagged</th>
+      <th>Source page ok/wrong/not found</th>
+      <th>Not a commitment / unsure</th>
+      <th>Estimate Q1 / median / Q3</th><th>Estimate mean</th><th>Min/item Q1 / median / Q3</th>
+      <th>Evidence opened</th><th>Per item Q1 / median / Q3</th><th>Never opened</th><th>Revisions</th>
+    </tr>
+
+    {% for r in rows %}
+    {% set s = r.s %}
+    <tr class="{% if r.w.gold_fail > r.w.gold_pass or s.no_views %}bad{% endif %}">
+      <td><code><a href="{{ url_for('AdminAnswers', key=key, pid=r.w.prolific_pid) }}">{{ r.w.prolific_pid }}</a></code></td>
+      <td>{% if r.w.is_test %}<span class="note">test</span>{% elif r.w.slot is not none %}{{ r.w.slot }}{% else %}—{% endif %}</td>
+      <td>{{ s.done }}{% if s.total %} <span class="note">/ {{ s.total }}</span>{% endif %}</td>
+      <td>{{ s.open }}</td>
+      <td>{{ s.gold_done }} items　{{ s.gold_pass }} / <b class="{% if s.gold_fail %}bad{% endif %}">{{ s.gold_fail }}</b></td>
+
+      <td>{{ s.years }}</td>
+      <td>{{ share(s.flagged, s.years) }}</td>
+      <td>{{ share(s.flips, s.years) }}</td>
+      <td>{{ s.page_fixes }}</td>
+
+      <td>{{ share(s.final_flips, s.finals) }}</td>
+      <td>{{ s.window_bad }}</td>
+
+      <td>{{ s.src_ok }} / <b>{{ s.src_wrong }}</b> / <b>{{ s.src_notfound }}</b>
+        {%- if s.n_items > s.src_asked %} <span class="note">({{ s.n_items - s.src_asked }} not asked)</span>{% endif %}</td>
+
+      <td>{{ s.not_commit }} / {{ s.unsure }}</td>
+
+      <td>{% if s.prob_q %}{{ s.prob_q.q1 }} / <b>{{ s.prob_q.median }}</b> / {{ s.prob_q.q3 }}{% else %}—{% endif %}</td>
+      <td>{{ s.prob_q.mean if s.prob_q else '—' }}</td>
+      <td>{% if s.minutes_q %}{{ s.minutes_q.q1 }} / <b>{{ s.minutes_q.median }}</b> / {{ s.minutes_q.q3 }}{% else %}—{% endif %}</td>
+      <td>{{ s.views }}{% if s.views_avg is not none %} <span class="note">({{ s.views_avg }}/item)</span>{% endif %}</td>
+      <td>{% if s.views_q %}{{ s.views_q.q1 }} / <b>{{ s.views_q.median }}</b> / {{ s.views_q.q3 }}{% else %}—{% endif %}</td>
+      <td class="{% if s.no_views %}bad{% endif %}">{{ s.no_views }}</td>
+      <td>{{ s.edits }}</td>
+    </tr>
+    {% endfor %}
+
+    <tr class="totals">
+      <td colspan="2"><b>Team</b> <span class="note">({{ total.n }} people, tests excluded)</span></td>
+      <td>{{ total.done }}</td>
+      <td>{{ total.open }}</td>
+      <td>{{ total.gold_pass }} / {{ total.gold_fail }}</td>
+      <td>{{ total.years }}</td>
+      <td>{{ share(total.flagged, total.years) }}</td>
+      <td>{{ share(total.flips, total.years) }}</td>
+      <td>{{ total.page_fixes }}</td>
+      <td>{{ share(total.final_flips, total.finals) }}</td>
+      <td>{{ total.window_bad }}</td>
+      <td>{{ total.src_ok }} / {{ total.src_wrong }} / {{ total.src_notfound }}</td>
+      <td>{{ total.not_commit }} / {{ total.unsure }}</td>
+      <td>{% if total.prob_q %}{{ total.prob_q.q1 }} / <b>{{ total.prob_q.median }}</b> / {{ total.prob_q.q3 }}{% else %}—{% endif %}</td>
+      <td>{{ total.prob_q.mean if total.prob_q else '—' }}</td>
+      <td>{% if total.minutes_q %}{{ total.minutes_q.q1 }} / <b>{{ total.minutes_q.median }}</b> / {{ total.minutes_q.q3 }}{% else %}—{% endif %}</td>
+      <td>{{ total.views }}</td>
+      <td>{% if total.views_q %}{{ total.views_q.q1 }} / <b>{{ total.views_q.median }}</b> / {{ total.views_q.q3 }}{% else %}—{% endif %}</td>
+      <td>{{ total.no_views }}</td>
+      <td>{{ total.edits }}</td>
+    </tr>
+  </table>
+  </div>
+
+  <h2>Reading it</h2>
+  <ul class="ways">
+    <li><b>AI judged wrong</b> / <b>Label changed</b>: both near 0% usually means clicking
+      “correct” all the way down without reading. Far above the team figure may mean a
+      different standard — look at that person's calibration answers first.</li>
+    <li><b>Source page</b>: <code>wrong</code> is a retrieval-precision problem in the pipeline
+      (the commitment is real, the reference is off); <code>not found</code> means the pipeline
+      produced a commitment that is nowhere in the report. Two different things — never sum
+      them. If one person's “not found” count is far above the rest, check they know to search
+      the full report before ticking it.</li>
+    <li><b>Never opened</b> (red): the item was answered without opening a single evidence page.
+      One or two is normal; a pattern is worth asking about.</li>
+    <li><b>Min/item</b>: only time actually spent in that tab (switching away and idling do not
+      count), so these are directly comparable between people.</li>
+    <li><b>Q1 / median / Q3</b>: this person's values (estimates per year; minutes and look-ups per
+      item) sorted, and the values a quarter, half and three quarters of the way up. A median close
+      to the team's but a wide Q1–Q3 means the answers swing a lot. The team row pools everyone's
+      values; it is not the average of the personal medians.</li>
+    <li><b>Calibration ✗</b>: non-zero only when <code>ESG_GOLD_FILE</code> is set with
+      <code>expect</code> values. The automatic calibration items carry no expected answer, so
+      both columns stay 0.</li>
+  </ul>
+
+  <p class="note">
+    This page only reads the database and writes nothing, so it is safe to open at any time.
+    Crop the PID column out of any screenshot — those ids are credentials.
+  </p>
+</div>
+{% endblock %}

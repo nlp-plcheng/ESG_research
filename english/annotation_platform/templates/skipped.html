@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Skipped items{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>Skipped items</h1>
+  {% if notice %}<div class="notice">{{ notice }}</div>{% endif %}
+  <p class="note">These items are not submitted yet; whatever you had filled in is kept. Once the other items are done
+     they come back in the order you skipped them. To go back to one now, press “Return to this item”.
+     <a href="{{ url_for('Task') }}">Back to the current item →</a></p>
+  {% if not rows %}
+  <p>No skipped items at the moment.</p>
+  {% else %}
+  <table class="grid">
+    <tr><th>#</th><th>Company</th><th>Commitment</th><th>Years</th><th>Skipped at (UTC)</th><th></th></tr>
+    {% for r in rows %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ r.company }}</td>
+      <td>{{ r.commitment[:60] }}{% if r.commitment|length > 60 %}…{% endif %}</td>
+      <td>{{ r.declared_year }} → {{ r.target_year }}</td>
+      <td>{{ r.skipped_at }}</td>
+      <td><form method="post" action="{{ url_for('Resume', assign_id=r.assign_id) }}" class="inline">
+            <button type="submit" class="ghost">Return to this item</button></form></td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+</div>
+{% endblock %}

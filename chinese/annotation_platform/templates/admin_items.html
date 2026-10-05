@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}後台：逐題結果{% endblock %}
+{% block body %}
+<style>
+  table.items td.me { background: #eef4ff; }
+  table.items td.item { white-space: normal; min-width: 260px; }
+</style>
+<div class="card">
+  <h1>逐題結果（每一題每個人的作答）</h1>
+  <p class="note">
+    <a href="{{ url_for('Admin', key=key) }}">← 回收集進度</a>
+    <a href="{{ url_for('AdminAnnotators', key=key) }}">每人統計</a>
+    <a href="{{ url_for('AdminCalibration', key=key) }}">校準題統計</a><br>
+    篩選：<a href="{{ url_for('AdminItems', key=key) }}">全部</a> ／
+    <a href="{{ url_for('AdminItems', key=key, gold=1) }}">只看校準題</a> ／
+    <a href="{{ url_for('AdminItems', key=key, disagree=1) }}">只看有分歧的題</a> ／
+    <a href="{{ url_for('AdminItems', key=key, test=1) }}">含測試帳號</a>
+    {% if pid %}｜目前只列 <code>{{ pid }}</code> 作答過的題（同一題其他人的答案照列，這個人的格子有底色）{% endif %}
+    {% if item_id %}｜目前只列題 #{{ item_id }}（承諾全文照列；<a href="{{ url_for('AdminItems', key=key) }}">看全部</a>）{% endif %}<br>
+    共 {{ n_all }} 題符合{% if n_all > limit %}，只顯示前 {{ limit }} 題（網址加 <code>&amp;limit=1000</code> 看更多）{% endif %}。
+    排序：校準題在前，接著是有分歧的題，再依作答人數。純唯讀。
+  </p>
+
+  {% if not items %}
+  <p>沒有符合的題目。</p>
+  {% else %}
+  <div class="scrollx">
+  <table class="grid tight items">
+    <tr>
+      <th>題目</th><th>AI 結論</th><th>人數</th>
+      <th>PID</th><th>Q0</th><th>出處頁</th><th>整體結論</th><th>年份範圍</th>
+      <th>年度 判錯／改標／全部</th><th>末年預估</th><th>分鐘</th><th>點開證據</th><th>送出</th>
+    </tr>
+    {% for it in items %}
+    {% for a in it.answers %}
+    <tr class="{% if it.disagree %}bad{% endif %}">
+      {% if loop.first %}
+      <td rowspan="{{ it.n }}" class="item">
+        {% if it.is_gold %}<span class="note">校準 #{{ it.gold_rank }}</span><br>{% endif %}
+        <b>{{ it.company }}</b> <span class="note">{{ it.declared_year }} → {{ it.target_year }}　#{{ it.item_id }}</span><br>
+        {% if item_id %}{{ it.commitment }}{% else %}{{ it.commitment[:60] }}{% if it.commitment|length > 60 %}…{% endif %}{% endif %}
+        {% if it.disagree %}<br><b class="bad">有分歧</b>{% endif %}</td>
+      <td rowspan="{{ it.n }}"><span class="badge s{{ it.ai_final|status_class }}">{{ it.ai_final }}</span></td>
+      <td rowspan="{{ it.n }}">{{ it.n }}</td>
+      {% endif %}
+      <td class="{% if pid and a.pid == pid %}me{% endif %}"><code>{{ a.pid }}</code>{% if a.is_test %} <span class="note">測試</span>{% endif %}</td>
+      <td>{% if a.is_commitment == 'valid' %}是{% elif a.is_commitment == 'not_commitment' %}<b>不是承諾</b>{% elif a.is_commitment == 'no_target' %}<b>沒有目標年份</b>{% elif a.is_commitment == 'unsure' %}不確定{% else %}—{% endif %}
+        {% if a.target_year_fix %}<br><span class="note">目標年 → {{ a.target_year_fix }}</span>{% endif %}</td>
+      <td>{% if a.source_page_ok == 'ok' %}✓{% elif a.source_page_ok == 'wrong_page' %}<b>頁錯</b>{% elif a.source_page_ok == 'not_found' %}<b>找不到</b>{% else %}—{% endif %}</td>
+      <td>{% if a.human_final %}<span class="badge s{{ a.human_final|status_class }}">{{ a.human_final }}</span>{% if a.final_agree == 0 %} <span class="note">≠ AI</span>{% endif %}{% else %}—{% endif %}</td>
+      <td>{{ window_labels.get(a.window_ok, a.window_ok) or '—' }}</td>
+      <td>{{ a.flagged }} ／ {{ a.flips }} ／ {{ a.years }}</td>
+      <td>{{ a.prob_last if a.prob_last is not none else '—' }}</td>
+      <td>{{ a.minutes if a.minutes is not none else '—' }}</td>
+      <td class="{% if a.views == 0 %}bad{% endif %}">{{ a.views if a.views is not none else '—' }}</td>
+      <td><span class="note">{{ a.submitted_at }}{% if a.n_edits %}<br>修改 {{ a.n_edits }} 次{% endif %}</span></td>
+    </tr>
+    {% endfor %}
+    {% endfor %}
+  </table>
+  </div>
+  {% endif %}
+
+  <h2>怎麼看</h2>
+  <ul class="ways">
+    <li><b>有分歧</b>（整列淡紅）：同一題至少兩人作答，而且 Q0（是不是承諾）或整體結論不同。這些是最值得逐題對照的題。</li>
+    <li><b>年度 判錯／改標／全部</b>：這個人說 AI 該年判定有問題的年度數、其中真的把狀態標籤改掉的年度數、這一題總共幾個年度。</li>
+    <li><b>末年預估</b>：這個人在最後一個追蹤年度給的 0–100 達成機率。</li>
+    <li><b>出處頁</b>：<code>頁錯</code>＝承諾是真的但頁碼指錯；<code>找不到</code>＝報告書裡沒有這條承諾。</li>
+  </ul>
+  <p class="note">這一頁只讀資料庫，不寫入任何東西。截圖給別人前記得裁掉 PID 那一欄——代號等同密碼。</p>
+</div>
+{% endblock %}

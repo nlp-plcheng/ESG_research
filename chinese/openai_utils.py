@@ -161,6 +161,16 @@ def _CleanResponse(text: str) -> str:
     return cleaned
 
 
+class OpenaiCallFailed(RuntimeError):
+    """A chat call still had no acceptable answer after MAX_RETRIES attempts.
+
+    Raised instead of returning "" so that no stage can mistake a failed call
+    for a legitimate empty answer: a verify chunk that failed must not read as
+    未提及, a failed judge call must not turn into 無資料. The stage scripts let
+    it propagate, exit non-zero and write no result file, so a re-run redoes
+    the year instead of building on a hole."""
+
+
 def CallOpenaiWithRetry(
     client: OpenAI,
     model: str,
@@ -177,6 +187,7 @@ def CallOpenaiWithRetry(
     (extraction legitimately returns nothing when a chunk has no commitments).
     """
     tag = f"{model}" + (f" [{label}]" if label else "")
+    last = "no attempt made"
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             response = client.chat.completions.create(
@@ -191,27 +202,35 @@ def CallOpenaiWithRetry(
             if not cleaned:
                 if allow_empty:
                     return ""
+                last = "empty response"
                 print(f"[Retry {attempt}/{MAX_RETRIES}] {tag} empty response; retrying.")
-                time.sleep(min(30, 2 ** attempt))
+                if attempt < MAX_RETRIES:
+                    time.sleep(min(30, 2 ** attempt))
                 continue
 
             if validator is not None:
                 ok, reason = validator(cleaned)
                 if not ok:
+                    last = f"invalid output: {reason}"
                     preview = cleaned[:200].replace("\n", " ")
                     print(f"[Retry {attempt}/{MAX_RETRIES}] {tag} invalid ({reason}); "
                           f"retrying. preview: {preview!r}")
-                    time.sleep(min(30, 2 ** attempt))
+                    if attempt < MAX_RETRIES:
+                        time.sleep(min(30, 2 ** attempt))
                     continue
 
             return cleaned
 
         except Exception as error:
+            last = f"API error: {error}"
             print(f"[Retry {attempt}/{MAX_RETRIES}] {tag} API error: {error}")
-            time.sleep(min(60, 2 ** attempt))
+            if attempt < MAX_RETRIES:
+                time.sleep(min(60, 2 ** attempt))
 
-    print(f"[Error] {tag} exhausted {MAX_RETRIES} retries; returning empty.")
-    return ""
+    # Not an answer: the caller must not write anything built on this call.
+    print(f"[Error] {tag} exhausted {MAX_RETRIES} retries ({last}); giving up.")
+    raise OpenaiCallFailed(
+        f"{tag}: no acceptable response after {MAX_RETRIES} attempts ({last})")
 
 
 # ===============================

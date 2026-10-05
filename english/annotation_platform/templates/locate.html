@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Which page is this on?{% endblock %}
+{% block body %}
+{# Opened in its own tab from the task page: nothing here touches the answer in
+   progress, and nothing here says what the answer should be. #}
+<div class="card">
+  <h1>Which page is this text actually on?</h1>
+
+  <p class="note">
+    {{ item.company }} — {% if year %}the evidence the AI quoted from the {{ year|yr }} report{% else %}the commitment source ({{ item.declared_year|yr }} report){% endif %}.
+    The text below was matched against every page of the report. This reports only
+    <i>where</i> it is; the verdict stays yours.
+  </p>
+
+  <p class="quote">{{ needle }}</p>
+  <p class="note">Cited by the AI: {% if cited %}p. {{ cited|join(', ') }}{% else %}(no page given){% endif %}</p>
+
+  {% set cited_year = results|selectattr('is_cited_year')|first %}
+  {% set anywhere = results|selectattr('pages')|list %}
+
+  <h2>Candidate pages — open them and confirm</h2>
+  <p class="note">The match is literal (whitespace removed) on the first, middle and last short
+    slice of the text. What comes back are <b>candidate pages</b>, not a verdict. Open them and
+    check before you answer — this page will not, and should not, decide for you.</p>
+  {% if not anywhere %}
+  <p>This text is <b>not in that report</b>{% if searched_all %}, nor in this company's earlier report years{% endif %}.</p>
+  <ul class="ways">
+    {% if not searched_all %}
+    <li><a class="pdflink" href="{{ url_for('Locate', item_id=item.item_id, year=year, all=1) }}">Search this company's other report years</a>
+      — the AI sometimes attributes one year's sentence to another.</li>
+    {% endif %}
+    <li><a class="pdflink" target="_blank"
+           href="{{ url_for('ReportPdf', company=item.company, year=target) }}">Open the full report</a>
+      and Ctrl+F a keyword yourself — the match here is literal, so a single reworded
+      character is enough to miss it.</li>
+  </ul>
+  <p class="note">
+    A scanned report (text stored as images) and a quote the AI reworded both come back empty, so
+    “not found here” does <b>not</b> mean it is absent from the report. If you cannot find it
+    either, go back and mark the year “wrong” with the basis <b>“I cannot find this text”</b> —
+    that option exists to record exactly this. Do not use “not mentioned” instead; that says the
+    company disclosed nothing, which is a different claim.
+  </p>
+  {% else %}
+  <table class="grid">
+    <tr><th>Report</th><th>Found on (page index in the file)</th><th>Open</th></tr>
+    {% for r in results %}
+    {% if r.pages or r.is_cited_year %}
+    <tr{% if not r.is_cited_year and r.pages %} class="bad"{% endif %}>
+      <td>{{ r.year|yr }}{% if r.is_cited_year %}　<span class="note">(the one the AI named)</span>{% endif %}</td>
+      <td>
+        {% if r.missing %}<span class="note">no file for this year on the server</span>
+        {% elif r.pages %}<b>{{ r.pages|join(', ') }}</b>
+          {% if r.is_cited_year and cited and r.pages[0] not in cited %}
+          　<span class="note">(the AI said p. {{ cited|join(', ') }} — off by {{ r.pages[0] - cited[0] }})</span>
+          {% endif %}
+        {% else %}<span class="note">not in this one</span>{% endif %}
+      </td>
+      <td>
+        {% if r.pages %}
+        <a class="pdflink" target="_blank"
+           href="{{ url_for('PdfExcerpt', company=item.company, year=r.year, p=r.pages) }}">excerpt PDF</a>
+        <a class="pdflink alt" target="_blank"
+           href="{{ url_for('PageImage', company=item.company, year=r.year, page=r.pages[0]) }}">page image</a>
+        {% endif %}
+      </td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+  </table>
+
+  {% if cited_year and not cited_year.pages %}
+  <p class="note">
+    The text does not match the report the AI named, but does appear in an earlier year above —
+    <b>possibly</b> evidence attributed to the wrong year. Open them and confirm: if it really is
+    another year's sentence, this year has no valid evidence, so tick “I cannot find this text”.
+  </p>
+  {% elif cited_year and cited and cited_year.pages and cited_year.pages[0] not in cited %}
+  <p class="note">
+    A page number that does not line up is usually just the gap between the report's printed
+    numbering and the page's index in the file — it <b>does not mean the verdict is wrong</b>.
+    What matters is still whether the sentence supports it. If you like, put the right page in
+    that year's page field.
+  </p>
+  {% endif %}
+
+  {% if not searched_all %}
+  <p class="note"><a class="pdflink" href="{{ url_for('Locate', item_id=item.item_id, year=year, all=1) }}">Search this company's other report years too</a>
+    — for checking whether the AI pulled the sentence from a different year (several reports to
+    scan; give it ten seconds or so).</p>
+  {% endif %}
+  {% endif %}
+
+  <p class="note">Close this tab to go back to the task; your answer is unaffected.</p>
+</div>
+{% endblock %}

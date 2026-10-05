@@ -24,6 +24,7 @@ unused in this PDF-file flow.
 
 import argparse
 import os
+import sys
 import traceback
 from typing import Dict, List
 
@@ -134,8 +135,12 @@ def Main():
         print(f"\n[Success] Promise extraction complete. Saved to: {out_path}")
 
     except Exception as error:
+        # Includes OpenaiCallFailed (retries exhausted): nothing is written and
+        # the exit status says so, so openai_run_company.py reports the year as
+        # failed rather than finished.
         print(f"\n[Error] Pipeline execution failed: {error}")
         traceback.print_exc()
+        sys.exit(1)
 
 
 if __name__ == "__main__":

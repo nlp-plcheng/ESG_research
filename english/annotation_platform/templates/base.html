@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}ESG commitment verification{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+  <span class="brand">ESG Commitment Tracking · Human Review</span>
+  <span class="hdr">
+    {% if progress %}<span class="progress">Item {{ progress[0] }}{% if progress|length > 2 %} · submitted {{ progress[2] }}{% if progress[1] %} / {{ progress[1] }}{% endif %}{% elif progress[1] %} / {{ progress[1] }}{% endif %}</span>{% endif %}
+    {# Opens in its own tab: the task page is never left, so an answer in
+       progress (and its autosave) is untouched. #}
+    {% if worker and worker.consented_at and not stats_page %}
+    <a class="statslink" href="{{ url_for('MyStats') }}" target="_blank" rel="noopener">My stats</a>
+    {% endif %}
+  </span>
+</header>
+<main>
+  {% if errors %}
+  <div class="errors">
+    <strong>Please fix the following:</strong>
+    <ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul>
+  </div>
+  {% endif %}
+  {% block body %}{% endblock %}
+</main>
+<footer>ESG commitment verification study</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

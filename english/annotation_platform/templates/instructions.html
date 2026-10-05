@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block title %}How to answer{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>How to answer</h1>
+  <p>{% if n_tasks %}There are <strong>{{ n_tasks }} items</strong>. {% endif %}Each item is one corporate commitment, plus the AI’s verdict on it in <strong>each subsequent year’s report</strong>, all on one page. Your job is to check whether the AI tracked it correctly.
+     The first few items are the same calibration items for everyone — judge them by your usual standard; close the page and come back with the same link to continue where you left off.
+     Half-finished input is saved automatically; to change a submitted answer, use the red “← Back to previous item” button at the bottom or “My answers” at the top —
+     “Save changes”, or simply switching to another item, stores the edit.</p>
+
+  <h2>Top of the page: is this a commitment?</h2>
+  <p>First decide whether this <strong>is a real commitment</strong>. Statements like “we value environmental protection” or “we are ISO certified”
+     describe the present or an accomplished fact, not a promise about the future: choose “Not a commitment”, give a brief reason, and the item ends.
+     Anything with a <strong>verifiable object</strong> (a number, a share, a count, a regulation, a year) is a commitment even when it reads like a slogan;
+     “slogan” is only for sentences with nothing verifiable in them at all.</p>
+  <p><strong>No target year</strong>: it reads like a commitment, but the report never says by which year it is to be met — the target year the AI shows is its own guess —
+     so there is nothing to track it against year by year. Choose “No target year” (an optional note is welcome) and the item ends.
+     A target given as a range (“2025–2030”) does have a target year: take the <strong>latest year</strong> of the range.</p>
+  <p>If it is a commitment but <strong>the extracted wording or target year is wrong</strong> (sentence cut off, key number missing, target year misread),
+     choosing “Yes” reveals two optional fields: the corrected wording and the correct target year. Leave them blank if everything is fine.
+     A corrected wording <strong>replaces the commitment heading</strong> at the top of the page (for you only; the original stays on the line below).
+     Once you enter the correct target year, <strong>the years beyond it are skipped automatically</strong>, and the year range at the bottom is recorded as “target year misread”.
+     “Years missing” means a year with a <strong>published</strong> report was left untracked; years whose report does not exist yet, because the target year has not arrived, are not missing.</p>
+  <p><strong>Stars and notes</strong>: under the commitment you can star an item (unsure, worth coming back to) and write a note to yourself (a question, a reminder).
+     Both save automatically, show in “My answers” (which can list starred items only), are not part of the answer, and are visible only to you and the admin.</p>
+
+  <h2>How to judge some common situations</h2>
+  <ul class="tight">
+    <li><b>Two targets in one sentence</b> (e.g. long-term and short-term): verify against the <b>long-term</b> target.</li>
+    <li><b>The target year is a range</b>: the <b>latest</b> year of the range is the target year.</li>
+    <li><b>Several items in one sentence</b> (e.g. “cut water use 10% and emissions 5%”): <b>all</b> of them must be met for “Achieved”; meeting only some is “Not achieved” (year by year: “Not yet achieved”).</li>
+    <li><b>Once “Achieved”, but not in the last year</b> — what is the final status? It depends on what kind of thing was promised; three cases:
+      <ul class="tight">
+        <li>Something that <b>cannot be undone</b> (“build N plants within 10 years”, “obtain a certification” — done once, done for good): <b>achieved once counts as “Achieved”</b>.</li>
+        <li>Something that <b>can slip back</b> (an index, a ratio, emissions, a retention rate — numbers that move every year) where the commitment only says a value is to be <b>reached</b> (“cut 20% by 2024”, “raise the share to 95%”): the <b>last year</b> decides — met in the last year is “Achieved”, not held in the last year is “Not achieved”; having reached it in between does not count.</li>
+        <li>The commitment <b>explicitly demands every year</b> (“zero fines every year”, “keep it at or below 25 throughout”, “maintain 95% or more”): the exception to the previous case — <b>every year</b> from declaration to target must hold, and any year that slips makes the final status “Not achieved”. Applies only when the wording itself asks for it year after year.</li>
+      </ul></li>
+    <li><b>The target year has not arrived</b> (the latest report predates it): give the status <b>as of the latest year</b> (Achieved / Not achieved); “Not mentioned” only when no year carries any progress information at all.</li>
+  </ul>
+  <p>You are then asked whether <strong>“Source page N” really shows this commitment</strong>.
+     Every page number on the platform (source page, evidence page, the page references in the clues) is a <strong>PDF page number</strong> —
+     the page counter your PDF viewer shows once the report is open, with the cover as page 1. The number printed on the report page itself is often
+     1–2 pages off; do not use it. Whenever you type a page number yourself, use the PDF page number too.</p>
+
+  <h2>Two things for every year</h2>
+  <ol>
+    <li><strong>Is the AI’s verdict for this year correct?</strong> Only two options:
+      <ul class="tight">
+        <li><b>Correct</b> — verdict and evidence are <b>both</b> reasonable; one click.</li>
+        <li><b>Note</b>: if the “other clues from the same year” contain a more accurate basis than the evidence the AI quoted
+          (e.g. the evidence mentions one inspection with no fine, but a clue lists 6 violations for the year), choose “Wrong” even if the status is right,
+          and switch the basis to that clue.</li>
+        <li><b>Wrong</b> — then answer: <b>what is the correct basis</b> (tick any that apply: the quoted evidence, one or more clues;
+          if none of the listed items fits, tick “<b>None of these</b>”), then <b>re-judge this year’s status</b>;
+          unless the status is “Not mentioned”, enter the <b>page(s) of the report that support it</b> (PDF page numbers) — the pages of ticked clues or of the quoted evidence
+          are filled in for you (several are merged); with “None of these” and evidence you found yourself, just pick the status and type the page
+          (the text may go under “Other”, optional); if there is nothing at all, choose “Not mentioned”.</li>
+      </ul>
+      Each year must be <strong>answered completely</strong> before the next one unlocks.
+      The commonest error is <strong>treating a restated goal as evidence</strong> — “we will achieve this by 2030” does not mean it was done;
+      only actual figures or completed facts count. Every year comes with a <strong>report excerpt (PDF)</strong>
+      (evidence page + clue pages): open it and Ctrl+F to confirm the passage is really there.
+      <br>Four statuses — the buttons show only the name:
+      <ul class="tight">
+        <li><b>Achieved</b> — the target is clearly met (actual figures or completed facts, not a restated goal).</li>
+        <li><b>Not yet achieved</b> — moving toward the target or progress disclosed, but below the expected standard.</li>
+        <li><b>Moving away from target</b> — worse than before, further from the target (the number goes the wrong way).</li>
+        <li><b>Not mentioned</b> — the report says nothing about progress or status.</li>
+      </ul>
+      The AI only has three classes; its “partially achieved” is always shown as “Not yet achieved” — if you think a year was really “Moving away from target”, choose “Wrong” and change it.
+      <br><b>Yearly status = “did this year deliver”</b>: for a commitment that must hold every year until the target (e.g. “keep the severity rate at or below 25”),
+      a year within the threshold counts as “Achieved” for <b>that year</b> — even before the target year. Meeting it in one year does not mean the commitment was ultimately kept;
+      the final result is the overall conclusion at the bottom (see below).</li>
+    <li><strong>Estimate the target-year record</strong>: from the clues up to this year (the current status),
+      use the <strong>0–100 slider</strong> for how likely the target is <strong>actually met by the target year</strong>
+      (0 = almost impossible, 100 = almost certain).
+      <br>The slider <strong>starts at last year’s value</strong>: leave it if nothing changed;
+      drag down when the company keeps silent, up when concrete numbers appear — that year-by-year trajectory is exactly what we need.
+      Years are answered <strong>in order</strong>; finishing one unlocks the next.</li>
+  </ol>
+
+  <h2>Wrap-up at the bottom</h2>
+  <p>The wrap-up opens only after all years are done; only then do the AI’s <strong>year-by-year overview</strong> and its <strong>overall conclusion</strong> appear —
+     judge for yourself first, then compare. Then confirm whether the AI tracked the right <strong>range of years</strong> (every year between declaration and target?),
+     and give the commitment’s <strong>final overall status</strong> — as of <strong>the target year</strong>:</p>
+  <ul class="tight">
+    <li>The overall conclusion has <b>three</b> classes only: Achieved / Not achieved / Not mentioned (no “Moving away from target” here; the AI’s “partially achieved” counts as “Not achieved”).</li>
+    <li><b>Achieved</b>: one-off targets (“reduce 20% by 2024”, “raise the share to 95%”) → look at the <b>last year</b> (the target year, or the latest year when the target year has not arrived); things done once and for good (a plant built, a certification obtained) → achieved once counts; only commitments that <b>explicitly demand every year</b> (“zero fines every year”, “keep it at or below 25 throughout”) → <b>every year</b> from declaration to target must hold.</li>
+    <li><b>Not achieved</b>: not at the standard in the last year — progress that fell short or a step backwards both count; for a commitment that explicitly demands every year, one year that slipped counts too.</li>
+    <li><b>Not mentioned</b>: never mentioned again in the later reports (no year carries any progress information).</li>
+    <li>Commitments whose target-year report <b>is not published yet</b>: give the status as of the latest year (Achieved / Not achieved) — do not answer “Not mentioned” just because the target year has not arrived; the dataset marks them as unresolved.</li>
+    <li>Achieved once but not in the last year: things done once and for good → <b>achieved once counts</b>; numbers that can slip back → the <b>last year</b> decides; commitments that explicitly demand every year → <b>every year must hold</b> (see “How to judge some common situations” above).</li>
+  </ul>
+
+  <h2>Example: a complete item</h2>
+  <p><b>Commitment</b> (a utility; declared in year 1, target year 4): <em>“Raise the proportion of women directors to 20% or more”</em></p>
+  <p>Year 2 — the AI says “<b>Not yet achieved</b>”, evidence: “The company’s 2 women directors account for 13%”. 13% &lt; 20%, disclosed but not met: right.</p>
+  <p>Year 3 — the AI says “<b>Not mentioned</b>” and cites nothing, but clue #1 for that year reads:
+     “There are 2 women directors, a 13% share; the goal is to raise the proportion of women directors. (p. 14)”.
+     Year 4 — the AI says “Not mentioned”; there really is no evidence and no clue. The correct answer:</p>
+  <ol class="tight">
+    <li>Q0: <b>Yes</b>, a commitment (clear number and deadline).</li>
+    <li>Year 2: “<b>Correct</b>”; slider a bit below 50 (two years to go, sizeable gap).</li>
+    <li>Year 3: “<b>Wrong</b>” — the report does disclose the ratio, yet the AI says nothing was mentioned. Tick “<b>Clue #1</b>”,
+        re-judge as “<b>Not yet achieved</b>” (disclosed; 13% is below 20%, same as last year, so no regression); the page fills in as <b>14</b>, just confirm; slider lower.</li>
+    <li>Year 4: “<b>Correct</b>” — genuinely nothing in the target year; slider very low.</li>
+    <li>Year range “Correct” (the target-year report is out and was tracked); overall conclusion “<b>Not achieved</b>”, same as the AI (its “partially achieved” counts as “Not achieved”).</li>
+  </ol>
+  <p><b>Example 2: the year that slipped is “Moving away from target”</b> (an optics company; target two years after declaration):
+     <em>“Keep the disabling injury severity rate (SR) at 28 or below”</em>. First tracked year: SR = 18 ≤ 28, the AI says “Achieved” — correct.
+     Target year: SR = 32 — over 28 and worse than last year’s 18, so the right status is “<b>Moving away from target</b>” and the AI’s “Not yet achieved” must change:
+     “Wrong” → tick “Quoted evidence” (that sentence is where SR = 32 comes from) → “Moving away from target” → the page fills in from the source page.
+     At the bottom, the AI’s <b>overall conclusion</b> is “Achieved” (it took the best year): the target year was not kept, so the final answer is “<b>Not achieved</b>”
+     (the overall conclusion has only Achieved / Not achieved / Not mentioned) — change that too.</p>
+  <p class="note">Conversely, when the evidence is sound and the verdict right, a year takes two clicks: “Correct” and the slider.</p>
+
+  <h2>Common AI mistakes (watch for these)</h2>
+  <ul>
+    <li>One year “Achieved”, the following years “Not yet achieved” or “Not mentioned”. Did the company regress (then it is “Moving away from target”), did that year simply not disclose, or is the verdict wrong?</li>
+    <li>Nearly identical sentences quoted in different years, with different verdicts.</li>
+    <li>The evidence says “zero violations” while the clues below list fines.</li>
+    <li>The quoted passage cannot be found on the cited page.</li>
+  </ul>
+
+  <a class="primary button" href="{{ url_for('Task') }}">Start item 1</a>
+</div>
+{% endblock %}

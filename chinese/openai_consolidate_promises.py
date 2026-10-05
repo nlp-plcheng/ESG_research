@@ -34,6 +34,7 @@ other pipeline scripts.
 
 import argparse
 import os
+import sys
 import traceback
 from typing import Dict, List
 
@@ -108,7 +109,7 @@ def Main():
             wanted = {int(y) for y in args.years}
         except ValueError:
             print(f"[Error] --years must be integers, got: {args.years}")
-            return
+            sys.exit(2)
         targets = [t for t in targets if t in wanted]
         if not targets:
             print(f"[Warn] None of --years {sorted(wanted)} have promises "
@@ -145,6 +146,7 @@ def Main():
 
     client = CreateOpenaiClient()
     written: List[int] = []
+    failed: List[int] = []
 
     for t in pending:
         per_source = {
@@ -161,13 +163,17 @@ def Main():
                 client, per_source, str(t)
             )
         except Exception as error:
+            # Includes OpenaiCallFailed (retries exhausted): this target year is
+            # left unwritten and reported in the exit status below.
             print(f"  [Error] consolidation failed for target {t}: {error}")
             traceback.print_exc()
+            failed.append(t)
             continue
 
         canonical_rows = ParseExtractionTable(canonical_md)
         if not canonical_rows:
-            print(f"  [Warn] target {t}: consolidation produced no rows; skipped.")
+            print(f"  [Error] target {t}: consolidation produced no rows; nothing written.")
+            failed.append(t)
             continue
 
         out_path = os.path.join(out_dir, f"{t}.md")
@@ -180,6 +186,12 @@ def Main():
           f"{written} ===")
     if skipped:
         print(f"  skipped (already existed): {skipped}")
+    if failed:
+        # Non-zero so openai_run_company.py reports Phase 2 as failed; the
+        # written target years are skipped on the next run, the failed ones
+        # are retried.
+        print(f"  FAILED target years: {failed} -- re-run to retry them")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

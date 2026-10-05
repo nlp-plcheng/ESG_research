@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}後台：校準題統計{% endblock %}
+{% block body %}
+<style>
+  table.cal td, table.cal th { text-align: center; vertical-align: top; }
+  table.cal td.lbl, table.cal th.lbl { text-align: left; white-space: nowrap; }
+  table.cal .pr { display: block; font-size: 11px; color: var(--mute); }
+  table.cal td.dis { background: #fdf3f3; }
+  table.cal td.maj { font-weight: 600; }
+  p.commit { margin: 0 0 6px; font-weight: 600; }
+</style>
+<div class="card">
+  <h1>校準題統計（所有人共同的題目）</h1>
+  <p class="note">
+    <a href="{{ url_for('Admin', key=key) }}">← 回收集進度</a>
+    <a href="{{ url_for('AdminAnnotators', key=key) }}">每人統計</a>
+    <a href="{{ url_for('AdminItems', key=key, gold=1) }}">校準題逐題結果</a>
+    {% if not with_test %}　<a href="{{ url_for('AdminCalibration', key=key, test=1) }}">含測試帳號</a>{% endif %}<br>
+    每一題一張表：每個人每一年的判定與 0–100 預估並排，右邊是多數決標籤、同意多數的人數比例、預估的中位數與四分位距。
+    有底色的格子＝與多數不同。純唯讀。
+  </p>
+
+  {% if not blocks %}<p>還沒有校準題，或還沒有人送出。</p>{% endif %}
+  {% for b in blocks %}
+  <h2>校準 #{{ b.item.gold_rank }}　{{ b.item.company }}　<span class="note">{{ b.item.declared_year }} → {{ b.item.target_year }}　#{{ b.item.item_id }}</span></h2>
+  <p class="commit">{{ b.item.commitment }}</p>
+  {% if not b.present %}
+  <p class="note">還沒有人送出這一題。</p>
+  {% else %}
+  <div class="scrollx">
+  <table class="grid tight cal">
+    <tr><th class="lbl"></th><th>AI</th>
+      {% for p in b.present %}<th><code>{{ p.prolific_pid }}</code>{% if p.is_test %}<span class="pr">測試</span>{% endif %}</th>{% endfor %}
+      <th>多數</th><th>一致</th><th>預估 中位（Q1–Q3）</th></tr>
+    <tr><th class="lbl">Q0 是承諾？</th><td>—</td>
+      {% for p in b.present %}{% set a = b.cells[p.worker_id] %}
+      <td class="{% if a.is_commitment and a.is_commitment != b.q0_major %}dis{% endif %}">{% if a.is_commitment == 'valid' %}是{% elif a.is_commitment == 'not_commitment' %}不是{% elif a.is_commitment == 'no_target' %}無目標年{% elif a.is_commitment == 'unsure' %}不確定{% else %}—{% endif %}</td>{% endfor %}
+      <td class="maj">{{ {'valid': '是', 'not_commitment': '不是', 'no_target': '無目標年', 'unsure': '不確定'}.get(b.q0_major, '—') }}</td>
+      <td>{% if b.q0_share is not none %}{{ b.q0_share }}%{% endif %}</td><td></td></tr>
+    <tr><th class="lbl">承諾出處頁碼</th><td>—</td>
+      {% for p in b.present %}{% set a = b.cells[p.worker_id] %}
+      <td>{% if a.source_page_ok == 'ok' %}✓{% elif a.source_page_ok == 'wrong_page' %}頁錯{% elif a.source_page_ok == 'not_found' %}找不到{% else %}—{% endif %}</td>{% endfor %}
+      <td></td><td></td><td></td></tr>
+    {% for y in b.years %}
+    <tr><th class="lbl">{{ y.year }} 年</th><td><span class="badge s{{ y.ai|status_class }}">{{ y.ai }}</span></td>
+      {% for p in b.present %}{% set lab = y.labels.get(p.worker_id) %}
+      <td class="{% if lab and lab != y.major %}dis{% endif %}">{% if lab %}<span class="badge s{{ lab|status_class }}">{{ lab }}</span>{% if y.probs.get(p.worker_id) is not none %}<span class="pr">{{ y.probs[p.worker_id] }}</span>{% endif %}{% else %}—{% endif %}</td>{% endfor %}
+      <td class="maj">{% if y.major %}<span class="badge s{{ y.major|status_class }}">{{ y.major }}</span>{% endif %}</td>
+      <td>{% if y.share is not none %}{{ y.share }}%<span class="pr">{{ y.n }} 人</span>{% endif %}</td>
+      <td>{% if y.pq %}{{ y.pq.median }}<span class="pr">{{ y.pq.q1 }}–{{ y.pq.q3 }}</span>{% endif %}</td></tr>
+    {% endfor %}
+    <tr><th class="lbl">整體結論</th><td><span class="badge s{{ b.ai_final|status_class }}">{{ b.ai_final }}</span></td>
+      {% for p in b.present %}{% set f = b.finals.get(p.worker_id) %}
+      <td class="{% if f and f != b.f_major %}dis{% endif %}">{% if f %}<span class="badge s{{ f|status_class }}">{{ f }}</span>{% else %}—{% endif %}</td>{% endfor %}
+      <td class="maj">{% if b.f_major %}<span class="badge s{{ b.f_major|status_class }}">{{ b.f_major }}</span>{% endif %}</td>
+      <td>{% if b.f_share is not none %}{{ b.f_share }}%{% endif %}</td><td></td></tr>
+    <tr><th class="lbl">分鐘 ／ 點開證據</th><td></td>
+      {% for p in b.present %}{% set a = b.cells[p.worker_id] %}
+      <td>{{ (a.active_seconds / 60)|round(1) if a.active_seconds else '—' }} ／ {{ a.n_page_views if a.n_page_views is not none else '—' }}</td>{% endfor %}
+      <td></td><td></td><td></td></tr>
+  </table>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+  <h2>每個人在校準題上的表現</h2>
+  <div class="scrollx">
+  <table class="grid tight">
+    <tr><th>PID</th><th>校準題完成</th><th>年度數</th><th>與多數一致的年度</th><th>整體結論與多數一致</th><th>Q0 與多數一致</th><th>預估與群體中位數的平均差距</th><th>分鐘／題（中位）</th></tr>
+    {% for r in summary %}
+    <tr><td><code>{{ r.pid }}</code>{% if r.is_test %} <span class="note">測試</span>{% endif %}</td>
+      <td>{{ r.done }}</td><td>{{ r.years }}</td>
+      <td>{{ r.agree }}{% if r.years %} <span class="note">（{{ Pct(r.agree, r.years) }}%）</span>{% endif %}</td>
+      <td>{{ r.final_agree }} / {{ r.final_n }}</td>
+      <td>{{ r.q0_agree }} / {{ r.q0_n }}</td>
+      <td>{{ r.dev if r.dev is not none else '—' }}</td>
+      <td>{{ r.minutes if r.minutes is not none else '—' }}</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+  <ul class="ways">
+    <li><b>多數</b>：同一年（或同一題）所有已作答者的最多票標籤；平手取排序較前的標籤（已達成 → 尚未達成 → 遠離目標 → 未提及）。多數決不是正解，只是用來看誰的標準明顯偏離。</li>
+    <li><b>預估 中位（Q1–Q3）</b>：那一年所有人 0–100 預估的中位數，括號內是第一到第三四分位；範圍越寬代表大家對這一年的把握差越多。</li>
+    <li><b>預估與群體中位數的平均差距</b>：這個人在每一年的預估減掉該年群體中位數，取絕對值後平均；越大代表整體偏樂觀或偏悲觀。</li>
+  </ul>
+  <p class="note">這一頁只讀資料庫，不寫入任何東西。截圖給別人前記得裁掉 PID——代號等同密碼。</p>
+</div>
+{% endblock %}

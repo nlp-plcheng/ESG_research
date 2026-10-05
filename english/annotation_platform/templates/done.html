@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Done{% endblock %}
+{% block body %}
+<div class="card center">
+  {% if screened_out %}
+  <h1>Thank you for your time</h1>
+  <p>You chose not to take part, so this session ends here.{% if not volunteer %} Please use the link below to return to Prolific.{% else %} You can simply close the page.{% endif %}</p>
+  {% elif exhausted %}
+  <h1>No items left right now</h1>
+  <p>Every item has been done — thank you!{% if volunteer %} You completed <strong>{{ worker.n_done if worker else 0 }}</strong> items; you can close the page. If new items are added later, the same link will bring you back in.{% else %} What you completed is still paid; please use the link below to return to Prolific.{% endif %}</p>
+  {% else %}
+  <h1>All done — thank you!</h1>
+  <p>You completed <strong>{{ worker.n_done if worker else 0 }}</strong> items.
+     Every error you pointed out will be used to fix this AI system.{% if volunteer %} You can simply close the page.{% endif %}</p>
+  {% endif %}
+
+  {% if worker and worker.n_done %}
+  <p><a href="{{ url_for('History') }}">View or revise my answers</a></p>
+  {% endif %}
+
+  {% if not volunteer %}
+  <p class="code">Completion code: <code>{{ code }}</code></p>
+  <a class="primary button" href="{{ complete_url }}{{ code }}">Return to Prolific →</a>
+  <p class="note">If the redirect fails, paste the completion code above into Prolific by hand.</p>
+  {% endif %}
+</div>
+{% endblock %}

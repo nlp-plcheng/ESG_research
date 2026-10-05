@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}完成{% endblock %}
+{% block body %}
+<div class="card center">
+  {% if screened_out %}
+  <h1>感謝您的時間</h1>
+  <p>您未同意參與，本次作業到此結束。{% if not volunteer %}請點下方連結回到 Prolific 送出。{% else %}可以直接關閉頁面。{% endif %}</p>
+  {% elif exhausted %}
+  <h1>目前沒有題目了</h1>
+  <p>所有題目都已完成，非常感謝！{% if volunteer %}您總共完成了 <strong>{{ worker.n_done if worker else 0 }}</strong> 題，可以直接關閉頁面；之後若有新題目，用同一條連結進來即可。{% else %}您已完成的部分仍會計酬，請點下方連結回到 Prolific 送出。{% endif %}</p>
+  {% else %}
+  <h1>全部完成，謝謝您！</h1>
+  <p>您總共完成了 <strong>{{ worker.n_done if worker else 0 }}</strong> 題。
+     您指出的每一個錯誤都會實際用來修正這套 AI 系統。{% if volunteer %}可以直接關閉頁面。{% endif %}</p>
+  {% endif %}
+
+  {% if worker and worker.n_done %}
+  <p><a href="{{ url_for('History') }}">查看或修改我的作答紀錄</a></p>
+  {% endif %}
+
+  {% if not volunteer %}
+  <p class="code">完成代碼：<code>{{ code }}</code></p>
+  <a class="primary button" href="{{ complete_url }}{{ code }}">回到 Prolific 送出 →</a>
+  <p class="note">若自動跳轉失敗，請手動把上面的完成代碼貼回 Prolific。</p>
+  {% endif %}
+</div>
+{% endblock %}

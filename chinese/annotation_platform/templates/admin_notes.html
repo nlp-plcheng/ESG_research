@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}後台：星號、備註與疑問{% endblock %}
+{% block body %}
+<style>
+  table.notes td.txt { white-space: normal; min-width: 240px; }
+  table.notes td.star { font-size: 18px; text-align: center; }
+</style>
+<div class="card">
+  <h1>大家的星號、備註與疑問</h1>
+  <p class="note">
+    <a href="{{ url_for('Admin', key=key) }}">← 回收集進度</a>
+    <a href="{{ url_for('AdminItems', key=key) }}">逐題結果</a>
+    {% if not with_test %}　<a href="{{ url_for('AdminNotes', key=key, test=1) }}">含測試帳號</a>{% endif %}
+    {% if pid %}｜目前只列 <code>{{ pid }}</code>（<a href="{{ url_for('AdminNotes', key=key) }}">看全部人</a>）{% endif %}<br>
+    每一列是一個人在一題上留下的東西：星號（不確定、想回頭再看）、自己寫的備註、「不是承諾／沒有目標年份」的理由、修正後的承諾敘述。
+    共 {{ rows|length }} 列{% if rows|length >= limit %}（只顯示前 {{ limit }} 列，網址加 <code>&amp;limit=1000</code> 看更多）{% endif %}，其中有星號或備註的 {{ n_marks }} 列。最新的在前。純唯讀。
+  </p>
+
+  {% if not rows %}
+  <p>還沒有人留下星號、備註或理由。</p>
+  {% else %}
+  <div class="scrollx">
+  <table class="grid tight notes">
+    <tr><th>時間（UTC）</th><th>PID</th><th>題目</th><th>★</th><th>備註</th><th>Q0 理由</th><th>敘述修正</th><th></th></tr>
+    {% for r in rows %}
+    <tr>
+      <td><span class="note">{{ r.updated_at or r.submitted_at or '（進行中）' }}</span></td>
+      <td><code>{{ r.prolific_pid }}</code>{% if r.is_test %}<br><span class="note">測試</span>{% endif %}</td>
+      <td class="txt">{% if r.is_gold %}<span class="note">校準 #{{ r.gold_rank }}</span><br>{% endif %}
+        <b>{{ r.company }}</b> <span class="note">#{{ r.item_id }}{% if r.stage != 3 %}　進行中{% endif %}</span><br>
+        {{ r.commitment[:60] }}{% if r.commitment|length > 60 %}…{% endif %}</td>
+      <td class="star">{% if r.starred %}★{% endif %}</td>
+      <td class="txt">{{ r.note }}</td>
+      <td class="txt">{% if r.is_commitment == 'not_commitment' %}<b>不是承諾</b>{% elif r.is_commitment == 'no_target' %}<b>沒有目標年份</b>{% endif %}
+        {% if r.not_reason %}<br>{{ r.not_reason }}{% endif %}
+        {% if r.comment %}<br><span class="note">收尾備註：{{ r.comment }}</span>{% endif %}</td>
+      <td class="txt">{{ r.commitment_fix or '' }}</td>
+      <td><a href="{{ url_for('AdminItems', key=key, item=r.item_id) }}">逐題結果</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  </div>
+  {% endif %}
+  <p class="note">這一頁只讀資料庫，不寫入任何東西。截圖給別人前記得裁掉 PID 那一欄——代號等同密碼。</p>
+</div>
+{% endblock %}

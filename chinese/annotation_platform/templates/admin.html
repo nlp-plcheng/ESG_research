@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}後台{% endblock %}
+{% block body %}
+<div class="card">
+  <h1>收集進度</h1>
+  <p class="note"><a href="{{ url_for('AdminAnswers', key=key) }}">最近送出的填答 →</a>
+     逐筆列出實際存進資料庫的內容（含測試帳號），用來確認剛送出的答案有真的被記錄。</p>
+  <table class="grid">
+    <tr><th>題目數（一條承諾＝一題）</th><td>{{ stats.items }}（異常 {{ stats.anomaly }} / 對照 {{ stats.items - stats.anomaly }}；其中校準題 {{ stats.gold }}）</td></tr>
+    <tr><th>分配模式</th><td>
+      {% if n_annotators %}等量分配給 {{ n_annotators }} 人（每人 {{ stats.gold }} 題校準 ＋ 分配題）
+        {% if stats.workers > n_annotators %}<br><b class="bad">⚠ 已有 {{ stats.workers }} 人進入，超過設定人數；多出的人會與他人共用槽位。請調高 ESG_N_ANNOTATORS 後跑 restart_web.sh</b>{% endif %}
+      {% else %}先到先做（未設定 ESG_N_ANNOTATORS）{% endif %}</td></tr>
+    <tr><th>標註員（不含測試帳號）</th><td>{{ stats.workers }}</td></tr>
+    <tr><th>已送出作答</th><td>{{ stats.submitted }}</td></tr>
+    <tr><th>進行中（開了還沒送出）</th><td>{{ stats.open }}</td></tr>
+    <tr><th>整體結論被改掉</th><td>{{ stats.final_flips }}</td></tr>
+    <tr><th>單一年度被改掉</th><td>{{ stats.year_flips }}</td></tr>
+    <tr><th>追蹤年份範圍被指為錯誤</th><td>{{ stats.window_bad }}</td></tr>
+    <tr><th>標註員補了正確頁碼</th><td>{{ stats.page_fixes }}</td></tr>
+    <tr><th>一張證據頁都沒點開的作答</th><td class="{% if stats.no_page_views %}bad{% endif %}">{{ stats.no_page_views }}</td></tr>
+    <tr><th>被判定「不是承諾」</th><td>{{ stats.not_commit }}</td></tr>
+  </table>
+
+  <h2>覆蓋度（目標：異常題 {{ redundancy }} 人／題、對照題 {{ redundancy_control }} 人／題；不含校準題）</h2>
+  <table class="grid">
+    <tr><th>層</th><th>已完成人數</th><th>題目數</th></tr>
+    {% for c in coverage %}
+    <tr><td>{{ c.stratum }}</td><td>{{ c.n }}</td><td>{{ c.items }}</td></tr>
+    {% endfor %}
+  </table>
+
+  {% if alloc %}
+  <h2>等量分配（槽位 → 人）</h2>
+  <table class="grid">
+    <tr><th>槽位</th><th>分配題數</th><th>分數總和</th><th>對應 PID</th></tr>
+    {% for r in alloc %}
+    <tr><td>{{ r.slot }}</td><td>{{ r.n }}</td><td>{{ r.score }}</td><td><code>{{ r.pids or '（尚未有人進入）' }}</code></td></tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+
+  <h2>匯出</h2>
+  <ul>
+    <li><a href="{{ url_for('AdminExport', kind='item', key=key) }}">esg_item.csv</a>　每筆作答一列（AI 原答案 + 真人結論）</li>
+    <li><a href="{{ url_for('AdminExport', kind='year', key=key) }}">esg_year.csv</a>　每年一列（糾錯紀錄）</li>
+    <li><a href="{{ url_for('AdminExport', kind='risk', key=key) }}">esg_risk.csv</a>　step-4 risk model 資料集（多數決彙總）</li>
+  </ul>
+
+  <h2>標註員</h2>
+  <p class="note"><a href="{{ url_for('AdminAnnotators', key=key) }}">每人統計 →</a>
+     每個人的修正率、出處頁碼判讀、預估機率與作答時間的四分位數、證據點閱，和全體對照。<br>
+     <a href="{{ url_for('AdminItems', key=key) }}">逐題結果 →</a>
+     每一題每個人的作答並排（Q0、整體結論、判錯年度、分鐘），可只看有分歧的題或某一個人的題。<br>
+     <a href="{{ url_for('AdminCalibration', key=key) }}">校準題統計 →</a>
+     所有人共同的題目逐年並排：多數決、一致率、預估的中位數與四分位距，以及每個人與多數的一致程度。<br>
+     <a href="{{ url_for('AdminNotes', key=key) }}">大家的星號、備註與疑問 →</a>
+     每個人在題目上加的星號與備註，加上「不是承諾／沒有目標年份」的理由與敘述修正，最新的在前。</p>
+  <table class="grid">
+    <tr><th>PID</th><th>槽位</th><th>完成</th><th>gold ✓</th><th>gold ✗</th><th>狀態</th><th>首次進入</th></tr>
+    {% for w in workers %}
+    <tr class="{% if w.gold_fail > w.gold_pass %}bad{% endif %}">
+      <td><code><a href="{{ url_for('AdminAnswers', key=key, pid=w.prolific_pid) }}">{{ w.prolific_pid }}</a></code></td>
+      <td>{% if w.is_test %}測試（不計入）{% elif w.slot is not none %}{{ w.slot }}{% else %}—{% endif %}</td>
+      <td>{{ w.n_done }}</td>
+      <td>{{ w.gold_pass }}</td><td>{{ w.gold_fail }}</td>
+      <td>{{ w.status }}</td><td>{{ w.first_seen }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

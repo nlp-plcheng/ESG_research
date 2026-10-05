@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %}這段文字在第幾頁{% endblock %}
+{% block body %}
+{# Opened in its own tab from the task page: nothing here touches the answer in
+   progress, and nothing here says what the answer should be. #}
+<div class="card">
+  <h1>這段文字實際上在第幾頁？</h1>
+
+  <p class="note">
+    {{ item.company }}　{% if year %}民國 {{ year }} 年報告書的「AI 引用的證據」{% else %}承諾出處（民國 {{ item.declared_year }} 年報告書）{% endif %}。
+    以下是把這段文字拿去整本報告書裡比對的結果——只回報「在哪一頁」，判定還是你自己決定。
+  </p>
+
+  <p class="quote">{{ needle }}</p>
+  <p class="note">AI 標示：第 {{ cited|join('、') if cited else '（沒有頁碼）' }} 頁</p>
+
+  {% set cited_year = results|selectattr('is_cited_year')|first %}
+  {% set anywhere = results|selectattr('pages')|list %}
+
+  <h2>比對結果（候選頁，請自己開起來確認）</h2>
+  <p class="note">比對是「去掉空白後逐字」找出這段文字的頭、中、尾三小段，找到的是<b>候選頁</b>，
+    不是判定。請點開確認過再決定怎麼填——這一頁不會、也不該替你決定答案。</p>
+  {% if not anywhere %}
+  <p>整本報告書裡<b>找不到這段文字</b>{% if searched_all %}，這家公司該年以前的報告書裡也沒有{% endif %}。</p>
+  <ul class="ways">
+    {% if not searched_all %}
+    <li><a class="pdflink" href="{{ url_for('Locate', item_id=item.item_id, year=year, all=1) }}">改在這家公司的其他年度報告書裡找</a>
+      —— AI 有時會把別年的句子掛到這一年。</li>
+    {% endif %}
+    <li><a class="pdflink" target="_blank"
+           href="{{ url_for('ReportPdf', company=item.company, roc_year=target) }}">開啟完整報告書</a>
+      自己用 Ctrl+F 找關鍵字（比對是逐字的，AI 只要改寫過一個字就會比不到）。</li>
+  </ul>
+  <p class="note">
+    掃描版報告書（文字是圖檔）和 AI 改寫過的引文都會比不到，所以「這裡找不到」<b>不等於</b>報告書裡沒有。
+    自己也翻不到的話，回作答頁把這一年標成「錯誤」，依據勾<b>「找不到這段文字」</b>——
+    那是專門記錄這件事的選項，不要用「未提及」代替（未提及是說公司沒揭露，是另一回事）。
+  </p>
+  {% else %}
+  <table class="grid">
+    <tr><th>報告書</th><th>找到的頁次（PDF 檔的第幾頁）</th><th>開啟</th></tr>
+    {% for r in results %}
+    {% if r.pages or r.is_cited_year %}
+    <tr{% if not r.is_cited_year and r.pages %} class="bad"{% endif %}>
+      <td>民國 {{ r.year }} 年{% if r.is_cited_year %}　<span class="note">（AI 說的這本）</span>{% endif %}</td>
+      <td>
+        {% if r.missing %}<span class="note">伺服器上沒有這一年的檔案</span>
+        {% elif r.pages %}<b>{{ r.pages|join('、') }}</b>
+          {% if r.is_cited_year and cited and r.pages[0] not in cited %}
+          　<span class="note">（AI 標第 {{ cited|join('、') }} 頁，差 {{ r.pages[0] - cited[0] }} 頁）</span>
+          {% endif %}
+        {% else %}<span class="note">這一本裡沒有</span>{% endif %}
+      </td>
+      <td>
+        {% if r.pages %}
+        <a class="pdflink" target="_blank"
+           href="{{ url_for('PdfExcerpt', company=item.company, roc_year=r.year, p=r.pages) }}">節錄 PDF</a>
+        <a class="pdflink alt" target="_blank"
+           href="{{ url_for('PageImage', company=item.company, roc_year=r.year, page=r.pages[0]) }}">單頁圖片</a>
+        {% endif %}
+      </td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+  </table>
+
+  {% if cited_year and not cited_year.pages %}
+  <p class="note">
+    這段文字比對不到 AI 說的那一本，卻出現在上表較早的年度——<b>可能</b>是證據掛錯年度。
+    請開起來確認：確定是別年的句子，這一年就沒有有效證據，依據勾「找不到這段文字」。
+  </p>
+  {% elif cited_year and cited and cited_year.pages and cited_year.pages[0] not in cited %}
+  <p class="note">
+    頁碼對不上通常只是「報告書印刷頁碼」和「PDF 檔第幾頁」的落差，<b>不代表 AI 的判定錯</b>。
+    真正要判斷的還是那段文字夠不夠支持它的判定。順手的話，可以把正確頁碼填進該年的「頁碼」欄。
+  </p>
+  {% endif %}
+
+  {% if not searched_all %}
+  <p class="note"><a class="pdflink" href="{{ url_for('Locate', item_id=item.item_id, year=year, all=1) }}">也在這家公司的其他年度報告書裡找一次</a>
+    —— 想確認 AI 有沒有把別年的句子掛過來時用（要掃好幾本，大約十幾秒）。</p>
+  {% endif %}
+  {% endif %}
+
+  <p class="note">關掉這個分頁就回到作答頁，填答內容不受影響。</p>
+</div>
+{% endblock %}

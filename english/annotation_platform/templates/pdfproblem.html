@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Report excerpt unavailable{% endblock %}
+{% block body %}
+{# Shown in the tab the annotator opened the excerpt in. The task page itself is
+   untouched -- their answer and its autosave are still running in the other tab. #}
+<div class="card">
+  <h1>This report excerpt will not open</h1>
+
+  <p class="notice">
+    Your answer is unaffected — this is a separate tab. Go back to the task page and carry on.
+  </p>
+
+  <p>
+    {{ company }}, {{ year|yr }} report, cited page{% if pages|length > 1 %}s{% endif %}
+    <b>{{ pages|join(', ') }}</b>.
+    {% if reason == 'out_of_range' %}
+      The file has only {{ page_count }} pages — the AI most likely misread the page numbering.
+    {% elif reason == 'missing' %}
+      The report file for this year is not on the server.
+    {% else %}
+      The excerpt could not be built: this PDF's internal structure breaks the parser. It is not
+      a page-number problem.
+    {% endif %}
+  </p>
+
+  <h2>Ways round it</h2>
+  <ul class="ways">
+    {% if has_report %}
+    <li><a class="pdflink" target="_blank"
+           href="{{ url_for('ReportPdf', company=company, year=year) }}">Open the full report</a>
+      — a larger file, but Ctrl+F on a phrase from the evidence is more reliable than a page number.</li>
+    {% endif %}
+    {% if reason != 'out_of_range' and reason != 'missing' %}
+    <li>View single pages as images:
+      {% for p in pages %}
+      <a target="_blank" href="{{ url_for('PageImage', company=company, year=year, page=p) }}">p. {{ p }}</a>{% if not loop.last %}, {% endif %}
+      {% endfor %}
+      　(images cannot be searched, but the text is readable)</li>
+    {% endif %}
+    <li>Go back to the task and judge from the quoted sentence itself — is it enough to support
+      the AI's verdict?</li>
+  </ul>
+
+  <p class="note">
+    <b>A report that will not open is not evidence of “not mentioned”.</b>
+    When you cannot check the source, answer with what you actually judged and note
+    “report would not open, could not verify” in the free-text box. Do not change the year to
+    “not mentioned”, or the item to “not a commitment”, because the page would not load.
+  </p>
+
+  <p class="note">
+    Worth reporting: the company, the year and the page numbers (or this page's address).
+  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block title %}後台：每人統計{% endblock %}
+{% block body %}
+{# Pct is a jinja global, not a render argument: a macro resolves globals. #}
+{% macro share(part, whole) -%}
+  {{ part }}{% if whole %} <span class="note">（{{ Pct(part, whole) }}%）</span>{% endif %}
+{%- endmacro %}
+<div class="card">
+  <h1>每位標註員的統計</h1>
+  <p class="note">
+    <a href="{{ url_for('Admin', key=key) }}">← 回收集進度</a>
+    <a href="{{ url_for('AdminItems', key=key) }}">逐題結果</a>
+    <a href="{{ url_for('AdminCalibration', key=key) }}">校準題統計</a><br>
+    這裡的數字和每個人自己在「查看統計」看到的完全一樣（同一個函式算的）。
+    最後一列是全體合計；四分位數是把所有人的年度／題目合在一起算的。純唯讀。
+  </p>
+
+  <div class="scrollx">
+  <table class="grid tight">
+    <tr>
+      <th>PID</th><th>槽位</th><th>完成</th><th>進行中</th>
+      <th>校準 ✓／✗</th>
+      <th>年度數</th><th>判 AI 錯</th><th>改標籤</th><th>補頁碼</th>
+      <th>整體改判</th><th>年份範圍有問題</th>
+      <th>出處頁碼 ✓／頁錯／找不到</th>
+      <th>非承諾／不確定</th>
+      <th>預估機率 Q1／中位／Q3</th><th>機率平均</th><th>分鐘／題 Q1／中位／Q3</th>
+      <th>點開證據</th><th>每題點開 Q1／中位／Q3</th><th>一次沒點</th><th>回頭修改</th>
+    </tr>
+
+    {% for r in rows %}
+    {% set s = r.s %}
+    <tr class="{% if r.w.gold_fail > r.w.gold_pass or s.no_views %}bad{% endif %}">
+      <td><code><a href="{{ url_for('AdminAnswers', key=key, pid=r.w.prolific_pid) }}">{{ r.w.prolific_pid }}</a></code></td>
+      <td>{% if r.w.is_test %}<span class="note">測試</span>{% elif r.w.slot is not none %}{{ r.w.slot }}{% else %}—{% endif %}</td>
+      <td>{{ s.done }}{% if s.total %} <span class="note">/ {{ s.total }}</span>{% endif %}</td>
+      <td>{{ s.open }}</td>
+      <td>{{ s.gold_done }} 題　{{ s.gold_pass }} ／ <b class="{% if s.gold_fail %}bad{% endif %}">{{ s.gold_fail }}</b></td>
+
+      <td>{{ s.years }}</td>
+      <td>{{ share(s.flagged, s.years) }}</td>
+      <td>{{ share(s.flips, s.years) }}</td>
+      <td>{{ s.page_fixes }}</td>
+
+      <td>{{ share(s.final_flips, s.finals) }}</td>
+      <td>{{ s.window_bad }}</td>
+
+      <td>{{ s.src_ok }} ／ <b>{{ s.src_wrong }}</b> ／ <b>{{ s.src_notfound }}</b>
+        {%- if s.n_items > s.src_asked %} <span class="note">（{{ s.n_items - s.src_asked }} 題未問）</span>{% endif %}</td>
+
+      <td>{{ s.not_commit }} ／ {{ s.unsure }}</td>
+
+      <td>{% if s.prob_q %}{{ s.prob_q.q1 }} ／ <b>{{ s.prob_q.median }}</b> ／ {{ s.prob_q.q3 }}{% else %}—{% endif %}</td>
+      <td>{{ s.prob_q.mean if s.prob_q else '—' }}</td>
+      <td>{% if s.minutes_q %}{{ s.minutes_q.q1 }} ／ <b>{{ s.minutes_q.median }}</b> ／ {{ s.minutes_q.q3 }}{% else %}—{% endif %}</td>
+      <td>{{ s.views }}{% if s.views_avg is not none %} <span class="note">（{{ s.views_avg }}／題）</span>{% endif %}</td>
+      <td>{% if s.views_q %}{{ s.views_q.q1 }} ／ <b>{{ s.views_q.median }}</b> ／ {{ s.views_q.q3 }}{% else %}—{% endif %}</td>
+      <td class="{% if s.no_views %}bad{% endif %}">{{ s.no_views }}</td>
+      <td>{{ s.edits }}</td>
+    </tr>
+    {% endfor %}
+
+    <tr class="totals">
+      <td colspan="2"><b>全體</b> <span class="note">（{{ total.n }} 人，不含測試）</span></td>
+      <td>{{ total.done }}</td>
+      <td>{{ total.open }}</td>
+      <td>{{ total.gold_pass }} ／ {{ total.gold_fail }}</td>
+      <td>{{ total.years }}</td>
+      <td>{{ share(total.flagged, total.years) }}</td>
+      <td>{{ share(total.flips, total.years) }}</td>
+      <td>{{ total.page_fixes }}</td>
+      <td>{{ share(total.final_flips, total.finals) }}</td>
+      <td>{{ total.window_bad }}</td>
+      <td>{{ total.src_ok }} ／ {{ total.src_wrong }} ／ {{ total.src_notfound }}</td>
+      <td>{{ total.not_commit }} ／ {{ total.unsure }}</td>
+      <td>{% if total.prob_q %}{{ total.prob_q.q1 }} ／ <b>{{ total.prob_q.median }}</b> ／ {{ total.prob_q.q3 }}{% else %}—{% endif %}</td>
+      <td>{{ total.prob_q.mean if total.prob_q else '—' }}</td>
+      <td>{% if total.minutes_q %}{{ total.minutes_q.q1 }} ／ <b>{{ total.minutes_q.median }}</b> ／ {{ total.minutes_q.q3 }}{% else %}—{% endif %}</td>
+      <td>{{ total.views }}</td>
+      <td>{% if total.views_q %}{{ total.views_q.q1 }} ／ <b>{{ total.views_q.median }}</b> ／ {{ total.views_q.q3 }}{% else %}—{% endif %}</td>
+      <td>{{ total.no_views }}</td>
+      <td>{{ total.edits }}</td>
+    </tr>
+  </table>
+  </div>
+
+  <h2>怎麼看</h2>
+  <ul class="ways">
+    <li><b>判 AI 錯</b>／<b>改標籤</b>：兩個都接近 0%，通常是一路按「正確」沒有真的在看；
+      遠高於全體則可能是標準抓得不一樣——先看他的校準題答案。</li>
+    <li><b>出處頁碼</b>：<code>頁錯</code> 是 pipeline 的引用精度問題（承諾是真的，只是頁碼指錯）；
+      <code>找不到</code> 是 pipeline 生出了報告書裡不存在的承諾。兩者意義完全不同，不要合併看。
+      某個人的「找不到」遠多於別人時，先確認他知道要開完整報告書搜過再勾。</li>
+    <li><b>一次沒點</b>（紅字）：整題沒開過任何證據頁就作答。偶爾一兩題正常，多了就要問。</li>
+    <li><b>分鐘／題</b>：只算真的停留在該分頁的時間（切走、閒置都不計），所以可以直接互相比較。</li>
+    <li><b>Q1／中位／Q3</b>：把這個人所有年度（預估機率）或所有題目（分鐘、點開次數）的值由小到大排，
+      四分之一、一半、四分之三位置的值。中位相近但 Q1–Q3 很寬，代表這個人的作答忽高忽低；
+      全體列是把所有人的值合在一起算，不是各人中位數的平均。</li>
+    <li><b>校準 ✗</b>：只有在設了 <code>ESG_GOLD_FILE</code> 且填了 <code>expect</code> 時才會有數字；
+      目前的自動校準題沒有正解，這兩欄會都是 0。</li>
+  </ul>
+
+  <p class="note">
+    這一頁只讀資料庫，不寫入任何東西，隨時可以開。
+    截圖給別人前記得裁掉 PID 那一欄——代號等同密碼。
+  </p>
+</div>
+{% endblock %}
